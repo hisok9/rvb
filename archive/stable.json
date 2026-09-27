@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-09-27T03:15:32Z"
+    "publishedAt": "2026-09-27T10:39:04Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -8102,18 +8102,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.32.0.mpp"
+        "byehi98/patches-1.33.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.32.0"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.33.1"
       ],
       "appliedPatches": [
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260132",
+      "publishedAt": "2026-09-27T10:38:51Z"
     },
     "swift-backup-byehi98-v5.1.0-arm-v7a.apk": {
       "name": "swift-backup-byehi98",
@@ -8128,18 +8128,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.32.0.mpp"
+        "byehi98/patches-1.33.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.32.0"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.33.1"
       ],
       "appliedPatches": [
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260132",
+      "publishedAt": "2026-09-27T10:38:51Z"
     },
     "youtube-morphe-experimental-module-v21.38.123-arm64-v8a.zip": {
       "name": "youtube-morphe-experimental",
@@ -16802,6 +16802,54 @@
       ],
       "originBuild": "260131",
       "publishedAt": "2026-09-27T03:15:00Z"
+    },
+    "byair-franticg33k-v2.39.2-arm64-v8a.apk": {
+      "name": "byair-franticg33k",
+      "version": "2.39.2",
+      "appKey": "byair",
+      "appName": "ByAir",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "franticg33k",
+      "brandName": "franticg33k",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.byairapp.android",
+      "patchSources": [
+        "franticg33k/patches-1.3.10.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/franticg33k/morphe-patches/releases/tag/v1.3.10"
+      ],
+      "appliedPatches": [
+        "Enable Pro"
+      ],
+      "originBuild": "260132",
+      "publishedAt": "2026-09-27T10:38:51Z"
+    },
+    "byair-franticg33k-v2.39.2-arm-v7a.apk": {
+      "name": "byair-franticg33k",
+      "version": "2.39.2",
+      "appKey": "byair",
+      "appName": "ByAir",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "franticg33k",
+      "brandName": "franticg33k",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.byairapp.android",
+      "patchSources": [
+        "franticg33k/patches-1.3.10.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/franticg33k/morphe-patches/releases/tag/v1.3.10"
+      ],
+      "appliedPatches": [
+        "Enable Pro"
+      ],
+      "originBuild": "260132",
+      "publishedAt": "2026-09-27T10:38:51Z"
     }
   }
 }
