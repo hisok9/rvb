@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-09-26T05:22:09Z"
+    "publishedAt": "2026-09-27T01:26:16Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -3198,39 +3198,6 @@
       ],
       "originBuild": "260078",
       "publishedAt": "2026-09-18T20:37:16Z"
-    },
-    "brave-browser-kveld9-v1.95.101-arm-v7a.apk": {
-      "name": "brave-browser-kveld9",
-      "version": "1.95.101",
-      "appKey": "bravebrowser",
-      "appName": "Brave Browser",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "kveld9",
-      "brandName": "kveld9",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.brave.browser",
-      "patchSources": [
-        "kveld9/patches-1.41.1.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v1.41.1"
-      ],
-      "appliedPatches": [
-        "Block Brave Telemetry ",
-        "Brave In-Product & Commercial Notification Optimizer ",
-        "Brave Origin ",
-        "Brave Startup Performance Optimization ",
-        "Clean New Tab Page ",
-        "Clean Share URL ",
-        "Disable Background Sync & Periodic Sync ",
-        "Disable Battery Status API & OS Listener ",
-        "Sensor Privacy Guard ",
-        "Skip First Run "
-      ],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
     },
     "youtube-music-morphe-experimental-v9.36.50-arm64-v8a.apk": {
       "name": "youtube-music-morphe-experimental",
@@ -16466,6 +16433,54 @@
       ],
       "originBuild": "260126",
       "publishedAt": "2026-09-26T05:21:30Z"
+    },
+    "atvtools-hxreborn-v1.3.2-arm-v7a.apk": {
+      "name": "atvtools-hxreborn",
+      "version": "1.3.2",
+      "appKey": "atvtools",
+      "appName": "atvTools",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "dev.vodik7.atvtools",
+      "patchSources": [
+        "hxreborn/patches-1.30.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.30.0"
+      ],
+      "appliedPatches": [
+        "Unlock premium"
+      ],
+      "originBuild": "260127",
+      "publishedAt": "2026-09-27T01:26:05Z"
+    },
+    "atvtools-hxreborn-v1.3.2-arm64-v8a.apk": {
+      "name": "atvtools-hxreborn",
+      "version": "1.3.2",
+      "appKey": "atvtools",
+      "appName": "atvTools",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "dev.vodik7.atvtools",
+      "patchSources": [
+        "hxreborn/patches-1.30.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.30.0"
+      ],
+      "appliedPatches": [
+        "Unlock premium"
+      ],
+      "originBuild": "260127",
+      "publishedAt": "2026-09-27T01:26:05Z"
     }
   }
 }
