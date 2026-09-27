@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-09-27T02:25:42Z"
+    "publishedAt": "2026-09-27T02:58:09Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -2674,54 +2674,56 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "icysymmetra/patches-0.8.0-dev.11.mpp"
+        "icysymmetra/patches-0.8.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/icysymmetra/tiktok-patches-for-morphe/releases/tag/v0.8.0-dev.11"
+        "https://github.com/icysymmetra/tiktok-patches-for-morphe/releases/tag/v0.8.0"
       ],
       "appliedPatches": [
-        "Always show publish date ",
-        "Comment sort controls ",
-        "Copy comments without username ",
-        "Custom offline videos limit ",
-        "Disable login requirement ",
-        "Disable long-press quick share ",
-        "Disable long-press repost ",
-        "Downloads ",
-        "Enable Live search ",
-        "Enable non-personalized search ",
-        "Enable voice comments ",
-        "Feature Gate Lab ",
-        "Feed filter ",
-        "Feed tab navigation ",
-        "Fix Google login ",
-        "Foldable split comment view ",
-        "Force show Auto scroll ",
-        "Hide CAPTCHA popups ",
-        "Hide feed LIVE button ",
-        "Hide feed follow button ",
-        "Hide feed save button ",
-        "Hide feed search button ",
-        "Hide floating promotions ",
-        "Hide quick comment reactions ",
-        "Hide suggested accounts ",
-        "Hold-and-slide 2x lock ",
-        "Open external links directly ",
-        "Playback speed ",
-        "Region spoof ",
-        "Remember clear display ",
-        "Resume videos after scrolling ",
-        "Sanitize sharing links ",
-        "Settings ",
-        "Share sheet modification ",
-        "Show seekbar ",
-        "Show seekbar thumbnail ",
-        "Stop video looping ",
-        "Translate comments ",
-        "Disable screen capture detection "
+        "Always show publish date",
+        "Comment sort controls",
+        "Copy comments without username",
+        "Custom offline videos limit",
+        "Disable login requirement",
+        "Disable long-press quick share",
+        "Disable long-press repost",
+        "Downloads",
+        "Enable Live search",
+        "Enable non-personalized search",
+        "Enable voice comments",
+        "Feature Gate Lab",
+        "Feed filter",
+        "Feed tab navigation",
+        "Fix Google login",
+        "Foldable split comment view",
+        "Force show Auto scroll",
+        "Hide AI content",
+        "Hide CAPTCHA popups",
+        "Hide FYP unpersonalized slop videos",
+        "Hide feed LIVE button",
+        "Hide feed follow button",
+        "Hide feed save button",
+        "Hide feed search button",
+        "Hide floating promotions",
+        "Hide quick comment reactions",
+        "Hide suggested accounts",
+        "Hold-and-slide 2x lock",
+        "Open external links directly",
+        "Playback speed",
+        "Region spoof",
+        "Remember clear display",
+        "Resume videos after scrolling",
+        "Sanitize sharing links",
+        "Settings",
+        "Share sheet modification",
+        "Show seekbar",
+        "Show seekbar thumbnail",
+        "Stop video looping",
+        "Translate comments",
+        "Disable screen capture detection"
       ],
-      "originBuild": "260054",
-      "publishedAt": "2026-09-14T21:36:32Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "tiktok-icysymmetra-v46.2.3-arm-v7a.apk": {
       "name": "tiktok-icysymmetra",
@@ -2736,54 +2738,56 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "icysymmetra/patches-0.8.0-dev.11.mpp"
+        "icysymmetra/patches-0.8.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/icysymmetra/tiktok-patches-for-morphe/releases/tag/v0.8.0-dev.11"
+        "https://github.com/icysymmetra/tiktok-patches-for-morphe/releases/tag/v0.8.0"
       ],
       "appliedPatches": [
-        "Always show publish date ",
-        "Comment sort controls ",
-        "Copy comments without username ",
-        "Custom offline videos limit ",
-        "Disable login requirement ",
-        "Disable long-press quick share ",
-        "Disable long-press repost ",
-        "Downloads ",
-        "Enable Live search ",
-        "Enable non-personalized search ",
-        "Enable voice comments ",
-        "Feature Gate Lab ",
-        "Feed filter ",
-        "Feed tab navigation ",
-        "Fix Google login ",
-        "Foldable split comment view ",
-        "Force show Auto scroll ",
-        "Hide CAPTCHA popups ",
-        "Hide feed LIVE button ",
-        "Hide feed follow button ",
-        "Hide feed save button ",
-        "Hide feed search button ",
-        "Hide floating promotions ",
-        "Hide quick comment reactions ",
-        "Hide suggested accounts ",
-        "Hold-and-slide 2x lock ",
-        "Open external links directly ",
-        "Playback speed ",
-        "Region spoof ",
-        "Remember clear display ",
-        "Resume videos after scrolling ",
-        "Sanitize sharing links ",
-        "Settings ",
-        "Share sheet modification ",
-        "Show seekbar ",
-        "Show seekbar thumbnail ",
-        "Stop video looping ",
-        "Translate comments ",
-        "Disable screen capture detection "
+        "Always show publish date",
+        "Comment sort controls",
+        "Copy comments without username",
+        "Custom offline videos limit",
+        "Disable login requirement",
+        "Disable long-press quick share",
+        "Disable long-press repost",
+        "Downloads",
+        "Enable Live search",
+        "Enable non-personalized search",
+        "Enable voice comments",
+        "Feature Gate Lab",
+        "Feed filter",
+        "Feed tab navigation",
+        "Fix Google login",
+        "Foldable split comment view",
+        "Force show Auto scroll",
+        "Hide AI content",
+        "Hide CAPTCHA popups",
+        "Hide FYP unpersonalized slop videos",
+        "Hide feed LIVE button",
+        "Hide feed follow button",
+        "Hide feed save button",
+        "Hide feed search button",
+        "Hide floating promotions",
+        "Hide quick comment reactions",
+        "Hide suggested accounts",
+        "Hold-and-slide 2x lock",
+        "Open external links directly",
+        "Playback speed",
+        "Region spoof",
+        "Remember clear display",
+        "Resume videos after scrolling",
+        "Sanitize sharing links",
+        "Settings",
+        "Share sheet modification",
+        "Show seekbar",
+        "Show seekbar thumbnail",
+        "Stop video looping",
+        "Translate comments",
+        "Disable screen capture detection"
       ],
-      "originBuild": "260054",
-      "publishedAt": "2026-09-14T21:36:32Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "showly-hxreborn-v3.70.0-arm64-v8a.apk": {
       "name": "showly-hxreborn",
@@ -2798,17 +2802,17 @@
       "subVariant": null,
       "packageName": "com.michaldrabik.showly2",
       "patchSources": [
-        "hxreborn/patches-1.30.0.mpp"
+        "hxreborn/patches-1.31.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.30.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.31.0"
       ],
       "appliedPatches": [
-        "AMOLED dark theme ",
-        "Unlock premium "
+        "AMOLED dark theme",
+        "Unlock premium"
       ],
-      "originBuild": "260124",
-      "publishedAt": "2026-09-25T21:33:57Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "showly-hxreborn-v3.70.0-arm-v7a.apk": {
       "name": "showly-hxreborn",
@@ -2823,17 +2827,17 @@
       "subVariant": null,
       "packageName": "com.michaldrabik.showly2",
       "patchSources": [
-        "hxreborn/patches-1.30.0.mpp"
+        "hxreborn/patches-1.31.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.30.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.31.0"
       ],
       "appliedPatches": [
-        "AMOLED dark theme ",
-        "Unlock premium "
+        "AMOLED dark theme",
+        "Unlock premium"
       ],
-      "originBuild": "260124",
-      "publishedAt": "2026-09-25T21:33:57Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "google-photos-devanced-module-v7.80.0.929302933-arm64-v8a.zip": {
       "name": "google-photos-devanced",
@@ -3780,17 +3784,17 @@
       "subVariant": null,
       "packageName": "com.wbd.hbomax",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "HBO Max - Disable Ads ",
-        "HBO Max - Prefer Ad-Free Stream "
+        "HBO Max - Disable Ads",
+        "HBO Max - Prefer Ad-Free Stream"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "disney-ajstrick81-android-tv-v26.16.0+rc2-2026.09.08-all.apk": {
       "name": "disney-ajstrick81-android-tv",
@@ -3805,16 +3809,16 @@
       "subVariant": null,
       "packageName": "com.disney.disneyplus",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Disney+ Android TV "
+        "Disney+ Android TV"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "netflix-ajstrick81-android-tv-v13.0.1build25028-arm-v7a.apk": {
       "name": "netflix-ajstrick81-android-tv",
@@ -3829,19 +3833,19 @@
       "subVariant": null,
       "packageName": "com.netflix.ninja.clone",
       "patchSources": [
-        "ajstrick81/patches-1.37.7.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.7"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Disable Netflix CertCheck ",
-        "Remove Netflix ads (bundle engine) ",
-        "Remove Netflix ads (loader) ",
-        "Clone Netflix "
+        "Disable Netflix CertCheck",
+        "Remove Netflix ads (bundle engine)",
+        "Remove Netflix ads (loader)",
+        "Clone Netflix"
       ],
-      "originBuild": "260126",
-      "publishedAt": "2026-09-26T05:21:30Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "prime-video-ajstrick81-android-tv-clone-v6.23.23+v15.5.0.70-armv7a-arm-v7a.apk": {
       "name": "prime-video-ajstrick81-android-tv-clone",
@@ -3856,22 +3860,21 @@
       "subVariant": "Clone",
       "packageName": "com.amazon.amazonvideo.livingroom.mod",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Bundle native ad-strip hook ",
-        "Disable auto-updates ",
-        "Load native ad-strip hook ",
-        "Override certificate pinning ",
-        "Prime Video extension ",
-        "Skip ads ",
-        "Clone Prime Video "
+        "Bundle native ad-strip hook",
+        "Disable auto-updates",
+        "Load native ad-strip hook",
+        "Prime Video extension",
+        "Skip ads",
+        "Clone Prime Video"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "prime-video-ajstrick81-android-tv-v6.23.23+v15.5.0.70-armv7a-arm-v7a.apk": {
       "name": "prime-video-ajstrick81-android-tv",
@@ -3886,21 +3889,20 @@
       "subVariant": null,
       "packageName": "com.amazon.amazonvideo.livingroom",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Bundle native ad-strip hook ",
-        "Disable auto-updates ",
-        "Load native ad-strip hook ",
-        "Override certificate pinning ",
-        "Prime Video extension ",
-        "Skip ads "
+        "Bundle native ad-strip hook",
+        "Disable auto-updates",
+        "Load native ad-strip hook",
+        "Prime Video extension",
+        "Skip ads"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "tiktok-kveld9-asia-v46.9.3-arm64-v8a.apk": {
       "name": "tiktok-kveld9-asia",
@@ -5845,17 +5847,17 @@
       "subVariant": null,
       "packageName": "com.peacocktv.peacockandroid",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Disable auto-updates ",
-        "Skip ads "
+        "Disable auto-updates",
+        "Skip ads"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "tubi-ajstrick81-android-tv-v10.28.5000-all.apk": {
       "name": "tubi-ajstrick81-android-tv",
@@ -5870,16 +5872,16 @@
       "subVariant": null,
       "packageName": "com.tubitv",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Skip ads "
+        "Skip ads"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "vix-ajstrick81-android-tv-v4.47.2_tv-all.apk": {
       "name": "vix-ajstrick81-android-tv",
@@ -5894,17 +5896,17 @@
       "subVariant": null,
       "packageName": "com.univision.prendetv",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Override certificate pinning ",
-        "Skip ads "
+        "Override certificate pinning",
+        "Skip ads"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "plutotv-ajstrick81-android-tv-v5.66.0-leanback-all.apk": {
       "name": "plutotv-ajstrick81-android-tv",
@@ -5919,19 +5921,18 @@
       "subVariant": null,
       "packageName": "tv.pluto.android",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Disable auto-updates ",
-        "Mask live ad breaks (black screen + mute) ",
-        "Override certificate pinning ",
-        "Skip ads "
+        "Disable auto-updates",
+        "Mask live ad breaks (black screen + mute)",
+        "Skip ads"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "twitch-ajstrick81-android-tv-v13.0.0.2-all.apk": {
       "name": "twitch-ajstrick81-android-tv",
@@ -5946,16 +5947,16 @@
       "subVariant": null,
       "packageName": "tv.twitch.android.app",
       "patchSources": [
-        "ajstrick81/patches-1.37.6.mpp"
+        "ajstrick81/patches-1.38.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.37.6"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
       ],
       "appliedPatches": [
-        "Block TV ads "
+        "Block TV ads"
       ],
-      "originBuild": "260123",
-      "publishedAt": "2026-09-25T20:26:58Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "facebook-andrewliang25-v577.0.0.50.72-arm-v7a.apk": {
       "name": "facebook-andrewliang25",
@@ -8101,18 +8102,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.31.1.mpp"
+        "byehi98/patches-1.32.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.31.1"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.32.0"
       ],
       "appliedPatches": [
-        "Swift Backup Premium Unlock ",
-        "Swift Backup Tamper Protection ",
-        "Swift Backup Web Login "
+        "Swift Backup Premium Unlock",
+        "Swift Backup Tamper Protection",
+        "Swift Backup Web Login"
       ],
-      "originBuild": "260126",
-      "publishedAt": "2026-09-26T05:21:30Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "swift-backup-byehi98-v5.1.0-arm-v7a.apk": {
       "name": "swift-backup-byehi98",
@@ -8127,18 +8128,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.31.1.mpp"
+        "byehi98/patches-1.32.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.31.1"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.32.0"
       ],
       "appliedPatches": [
-        "Swift Backup Premium Unlock ",
-        "Swift Backup Tamper Protection ",
-        "Swift Backup Web Login "
+        "Swift Backup Premium Unlock",
+        "Swift Backup Tamper Protection",
+        "Swift Backup Web Login"
       ],
-      "originBuild": "260126",
-      "publishedAt": "2026-09-26T05:21:30Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "google-photos-akashsriram-module-v7.92.0.977185651-arm-v7a.zip": {
       "name": "google-photos-akashsriram",
@@ -16551,16 +16552,16 @@
       "subVariant": null,
       "packageName": "dev.vodik7.atvtools",
       "patchSources": [
-        "hxreborn/patches-1.30.0.mpp"
+        "hxreborn/patches-1.31.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.30.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.31.0"
       ],
       "appliedPatches": [
         "Unlock premium"
       ],
-      "originBuild": "260127",
-      "publishedAt": "2026-09-27T01:26:05Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     },
     "atvtools-hxreborn-v1.3.2-arm64-v8a.apk": {
       "name": "atvtools-hxreborn",
@@ -16575,16 +16576,194 @@
       "subVariant": null,
       "packageName": "dev.vodik7.atvtools",
       "patchSources": [
-        "hxreborn/patches-1.30.0.mpp"
+        "hxreborn/patches-1.31.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.30.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.31.0"
       ],
       "appliedPatches": [
         "Unlock premium"
       ],
-      "originBuild": "260127",
-      "publishedAt": "2026-09-27T01:26:05Z"
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
+    },
+    "facebook-hushfacebook-v580.0.0.51.74-arm64-v8a.apk": {
+      "name": "facebook-hushfacebook",
+      "version": "580.0.0.51.74",
+      "appKey": "facebook",
+      "appName": "Facebook",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hushfacebook",
+      "brandName": "Hushfacebook",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.facebook.katana",
+      "patchSources": [
+        "SysAdminDoc/patches-0.2.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/SysAdminDoc/Hushfacebook/releases/tag/v0.2.0"
+      ],
+      "appliedPatches": [
+        "AMOLED black theme",
+        "Block ad telemetry",
+        "Block background ad prefetch",
+        "Block background-return feed refresh",
+        "Clean up Reels",
+        "Disable Audience Network",
+        "Don't send reel watch history",
+        "Download any reel",
+        "Download any story",
+        "Download any video",
+        "Hide AI-detected posts",
+        "Hide Reels in the feed",
+        "Hide Stories tray",
+        "Hide sponsored posts",
+        "Hide sponsored reels",
+        "Hide sponsored stories",
+        "Hide suggested and promoted posts",
+        "Hushfacebook settings",
+        "Install beside Meta's apps",
+        "Open links in external browser",
+        "Restore screens on re-signed builds",
+        "Sanitize sharing links",
+        "Stop Story auto-advance",
+        "Stop update prompts",
+        "Use the phone's emoji",
+        "Use the system font",
+        "Material You theme"
+      ],
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
+    },
+    "google-photos-akashsriram-v7.94.0.984908898-arm64-v8a.apk": {
+      "name": "google-photos-akashsriram",
+      "version": "7.94.0.984908898",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.12.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.12.2"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Account avatar",
+        "Enable DCIM folders backup control",
+        "Enable Phenotype flag manager",
+        "Fix memory style font loading",
+        "GmsCore support",
+        "Google One Bento Badge",
+        "Model Readiness Gates",
+        "Spoof features"
+      ],
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
+    },
+    "google-photos-akashsriram-module-v7.94.0.984908898-arm64-v8a.zip": {
+      "name": "google-photos-akashsriram",
+      "version": "7.94.0.984908898",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm64",
+      "fileType": "Module",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.12.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.12.2"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Account avatar",
+        "Enable DCIM folders backup control",
+        "Enable Phenotype flag manager",
+        "Fix memory style font loading",
+        "GmsCore support",
+        "Google One Bento Badge",
+        "Model Readiness Gates",
+        "Spoof features"
+      ],
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
+    },
+    "google-photos-akashsriram-v7.94.0.984908898-arm-v7a.apk": {
+      "name": "google-photos-akashsriram",
+      "version": "7.94.0.984908898",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.12.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.12.2"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Account avatar",
+        "Enable DCIM folders backup control",
+        "Enable Phenotype flag manager",
+        "Fix memory style font loading",
+        "GmsCore support",
+        "Google One Bento Badge",
+        "Model Readiness Gates",
+        "Spoof features"
+      ],
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
+    },
+    "google-photos-akashsriram-module-v7.94.0.984908898-arm-v7a.zip": {
+      "name": "google-photos-akashsriram",
+      "version": "7.94.0.984908898",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm",
+      "fileType": "Module",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.12.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.12.2"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Account avatar",
+        "Enable DCIM folders backup control",
+        "Enable Phenotype flag manager",
+        "Fix memory style font loading",
+        "GmsCore support",
+        "Google One Bento Badge",
+        "Model Readiness Gates",
+        "Spoof features"
+      ],
+      "originBuild": "260130",
+      "publishedAt": "2026-09-27T02:57:31Z"
     }
   }
 }
