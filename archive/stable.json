@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-09-27T23:05:26Z"
+    "publishedAt": "2026-09-28T05:12:05Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -3784,17 +3784,17 @@
       "subVariant": null,
       "packageName": "com.wbd.hbomax",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "HBO Max - Disable Ads",
         "HBO Max - Prefer Ad-Free Stream"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "disney-ajstrick81-android-tv-v26.16.0+rc2-2026.09.08-all.apk": {
       "name": "disney-ajstrick81-android-tv",
@@ -3809,16 +3809,16 @@
       "subVariant": null,
       "packageName": "com.disney.disneyplus",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Disney+ Android TV"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "netflix-ajstrick81-android-tv-v13.0.1build25028-arm-v7a.apk": {
       "name": "netflix-ajstrick81-android-tv",
@@ -3833,10 +3833,10 @@
       "subVariant": null,
       "packageName": "com.netflix.ninja.clone",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Disable Netflix CertCheck",
@@ -3844,8 +3844,8 @@
         "Remove Netflix ads (loader)",
         "Clone Netflix"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "prime-video-ajstrick81-android-tv-clone-v6.23.23+v15.5.0.70-armv7a-arm-v7a.apk": {
       "name": "prime-video-ajstrick81-android-tv-clone",
@@ -3860,10 +3860,10 @@
       "subVariant": "Clone",
       "packageName": "com.amazon.amazonvideo.livingroom.mod",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Bundle native ad-strip hook",
@@ -3873,8 +3873,8 @@
         "Skip ads",
         "Clone Prime Video"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "prime-video-ajstrick81-android-tv-v6.23.23+v15.5.0.70-armv7a-arm-v7a.apk": {
       "name": "prime-video-ajstrick81-android-tv",
@@ -3889,10 +3889,10 @@
       "subVariant": null,
       "packageName": "com.amazon.amazonvideo.livingroom",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Bundle native ad-strip hook",
@@ -3901,8 +3901,8 @@
         "Prime Video extension",
         "Skip ads"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "tiktok-kveld9-asia-v46.9.3-arm64-v8a.apk": {
       "name": "tiktok-kveld9-asia",
@@ -5847,17 +5847,17 @@
       "subVariant": null,
       "packageName": "com.peacocktv.peacockandroid",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Disable auto-updates",
         "Skip ads"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "tubi-ajstrick81-android-tv-v10.28.5000-all.apk": {
       "name": "tubi-ajstrick81-android-tv",
@@ -5872,16 +5872,16 @@
       "subVariant": null,
       "packageName": "com.tubitv",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Skip ads"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "vix-ajstrick81-android-tv-v4.47.2_tv-all.apk": {
       "name": "vix-ajstrick81-android-tv",
@@ -5896,17 +5896,17 @@
       "subVariant": null,
       "packageName": "com.univision.prendetv",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Override certificate pinning",
         "Skip ads"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "plutotv-ajstrick81-android-tv-v5.66.0-leanback-all.apk": {
       "name": "plutotv-ajstrick81-android-tv",
@@ -5921,18 +5921,18 @@
       "subVariant": null,
       "packageName": "tv.pluto.android",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Disable auto-updates",
         "Mask live ad breaks (black screen + mute)",
         "Skip ads"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "twitch-ajstrick81-android-tv-v13.0.0.2-all.apk": {
       "name": "twitch-ajstrick81-android-tv",
@@ -5947,16 +5947,16 @@
       "subVariant": null,
       "packageName": "tv.twitch.android.app",
       "patchSources": [
-        "ajstrick81/patches-1.38.0.mpp"
+        "ajstrick81/patches-1.40.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.38.0"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
       ],
       "appliedPatches": [
         "Block TV ads"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "facebook-andrewliang25-v577.0.0.50.72-arm-v7a.apk": {
       "name": "facebook-andrewliang25",
@@ -16482,42 +16482,58 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "SysAdminDoc/patches-0.2.0.mpp"
+        "SysAdminDoc/patches-0.3.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/Hushfacebook/releases/tag/v0.2.0"
+        "https://github.com/SysAdminDoc/Hushfacebook/releases/tag/v0.3.4"
       ],
       "appliedPatches": [
         "AMOLED black theme",
         "Block ad telemetry",
         "Block background ad prefetch",
         "Block background-return feed refresh",
+        "Block promotional notifications",
         "Clean up Reels",
+        "Default comment order",
         "Disable Audience Network",
         "Don't send reel watch history",
         "Download any reel",
         "Download any story",
         "Download any video",
         "Hide AI-detected posts",
+        "Hide Menu promotions",
+        "Hide Meta AI in search",
         "Hide Reels in the feed",
         "Hide Stories tray",
+        "Hide posts by words",
+        "Hide sponsored Marketplace listings",
         "Hide sponsored posts",
+        "Hide sponsored profile posts",
         "Hide sponsored reels",
+        "Hide sponsored search results",
         "Hide sponsored stories",
         "Hide suggested and promoted posts",
+        "Hide suggested stories",
+        "Hide the Get Messenger card",
+        "Hushfacebook in the Menu",
         "Hushfacebook settings",
         "Install beside Meta's apps",
+        "Marketplace only",
         "Open links in external browser",
+        "Open on a chosen tab",
         "Restore screens on re-signed builds",
+        "Resume long videos",
         "Sanitize sharing links",
         "Stop Story auto-advance",
         "Stop update prompts",
+        "Tag suggestions only after @",
+        "Tap to play",
         "Use the phone's emoji",
         "Use the system font",
         "Material You theme"
       ],
-      "originBuild": "260130",
-      "publishedAt": "2026-09-27T02:57:31Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "google-photos-akashsriram-v7.94.0.984908898-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -16704,10 +16720,10 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "SysAdminDoc/patches-0.61.0.mpp"
+        "SysAdminDoc/patches-0.63.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.61.0"
+        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.63.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -16773,6 +16789,7 @@
         "Limit background traffic",
         "Location access governor",
         "Long-press controls",
+        "Mute feed videos",
         "Network request report",
         "Not interested button",
         "Notification controls",
@@ -16798,6 +16815,7 @@
         "Skip content warnings",
         "Skip the splash ad",
         "Skip update checks",
+        "Stay on the video in full screen",
         "Stop on-device AI profiling",
         "Stop video looping",
         "Subtitle tools",
@@ -16806,8 +16824,8 @@
         "Use non-personalized search",
         "Use system font"
       ],
-      "originBuild": "260131",
-      "publishedAt": "2026-09-27T03:15:00Z"
+      "originBuild": "260137",
+      "publishedAt": "2026-09-28T05:11:27Z"
     },
     "byair-franticg33k-v2.39.2-arm64-v8a.apk": {
       "name": "byair-franticg33k",
