@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-09-27T11:55:05Z"
+    "publishedAt": "2026-09-28T17:07:57Z"
   },
   "files": {
     "gboard-jasonwu1994-clone-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
@@ -2544,10 +2544,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App refresh rate",
@@ -2579,6 +2579,7 @@
         "Miniplayer previous and next buttons",
         "Navigation bar",
         "Play albums songs",
+        "Playback speed",
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
@@ -2594,8 +2595,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-morphe-v9.15.51-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -2610,10 +2611,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App refresh rate",
@@ -2645,6 +2646,7 @@
         "Miniplayer previous and next buttons",
         "Navigation bar",
         "Play albums songs",
+        "Playback speed",
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
@@ -2660,8 +2662,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-morphe-module-v9.15.51-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -2676,10 +2678,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App refresh rate",
@@ -2711,6 +2713,7 @@
         "Miniplayer previous and next buttons",
         "Navigation bar",
         "Play albums songs",
+        "Playback speed",
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
@@ -2726,8 +2729,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-morphe-v9.15.51-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -2742,10 +2745,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App refresh rate",
@@ -2777,6 +2780,7 @@
         "Miniplayer previous and next buttons",
         "Navigation bar",
         "Play albums songs",
+        "Playback speed",
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
@@ -2792,8 +2796,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-anddea-module-v9.15.51-arm64-v8a.zip": {
       "name": "youtube-music-anddea",
@@ -2808,58 +2812,58 @@
       "subVariant": null,
       "packageName": "anddea.youtube.music",
       "patchSources": [
-        "anddea/patches-4.3.0-dev.8.mpp"
+        "anddea/patches-4.3.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.0-dev.8"
+        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.1-dev.1"
       ],
       "appliedPatches": [
-        "App refresh rate ",
-        "Bitrate default value ",
-        "Bypass image region restrictions ",
-        "Certificate spoof ",
-        "Change share sheet ",
-        "Change start page ",
-        "Disable Cairo splash animation ",
-        "Disable QUIC protocol ",
-        "Disable dislike redirection ",
-        "Disable forced auto captions ",
-        "Downloads ",
-        "Enable debug logging ",
-        "Enable landscape mode ",
-        "Flyout menu components ",
-        "Force original audio ",
-        "GmsCore support ",
-        "Hide account components ",
-        "Hide action bar components ",
-        "Hide ads ",
-        "Hide layout components ",
-        "Navigation bar components ",
-        "Player components ",
-        "PoToken provider ",
-        "Remove background playback restrictions ",
-        "Remove viewer discretion dialog ",
-        "Restore old style library shelf ",
-        "Return YouTube Dislike ",
-        "Return YouTube Username ",
-        "Sanitize sharing links ",
-        "Settings menu filter ",
-        "SponsorBlock ",
-        "Spoof app version ",
-        "Spoof app version for lyrics ",
-        "Spoof video streams ",
-        "Theme ",
-        "Third-party lyrics ",
-        "Track crossfade ",
-        "Translations for YouTube Music ",
-        "Video playback ",
-        "Watch history ",
-        "Visual preferences icons for YouTube Music ",
-        "Custom branding for YouTube Music ",
-        "Settings for YouTube Music "
+        "App refresh rate",
+        "Bitrate default value",
+        "Bypass image region restrictions",
+        "Certificate spoof",
+        "Change share sheet",
+        "Change start page",
+        "Disable Cairo splash animation",
+        "Disable QUIC protocol",
+        "Disable dislike redirection",
+        "Disable forced auto captions",
+        "Downloads",
+        "Enable debug logging",
+        "Enable landscape mode",
+        "Flyout menu components",
+        "Force original audio",
+        "GmsCore support",
+        "Hide account components",
+        "Hide action bar components",
+        "Hide ads",
+        "Hide layout components",
+        "Navigation bar components",
+        "Player components",
+        "PoToken provider",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Restore old style library shelf",
+        "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Sanitize sharing links",
+        "Settings menu filter",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof app version for lyrics",
+        "Spoof video streams",
+        "Theme",
+        "Third-party lyrics",
+        "Track crossfade",
+        "Translations for YouTube Music",
+        "Video playback",
+        "Watch history",
+        "Visual preferences icons for YouTube Music",
+        "Custom branding for YouTube Music",
+        "Settings for YouTube Music"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-09-25T18:22:18Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-anddea-v9.15.51-arm64-v8a.apk": {
       "name": "youtube-music-anddea",
@@ -2874,58 +2878,58 @@
       "subVariant": null,
       "packageName": "anddea.youtube.music",
       "patchSources": [
-        "anddea/patches-4.3.0-dev.8.mpp"
+        "anddea/patches-4.3.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.0-dev.8"
+        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.1-dev.1"
       ],
       "appliedPatches": [
-        "App refresh rate ",
-        "Bitrate default value ",
-        "Bypass image region restrictions ",
-        "Certificate spoof ",
-        "Change share sheet ",
-        "Change start page ",
-        "Disable Cairo splash animation ",
-        "Disable QUIC protocol ",
-        "Disable dislike redirection ",
-        "Disable forced auto captions ",
-        "Downloads ",
-        "Enable debug logging ",
-        "Enable landscape mode ",
-        "Flyout menu components ",
-        "Force original audio ",
-        "GmsCore support ",
-        "Hide account components ",
-        "Hide action bar components ",
-        "Hide ads ",
-        "Hide layout components ",
-        "Navigation bar components ",
-        "Player components ",
-        "PoToken provider ",
-        "Remove background playback restrictions ",
-        "Remove viewer discretion dialog ",
-        "Restore old style library shelf ",
-        "Return YouTube Dislike ",
-        "Return YouTube Username ",
-        "Sanitize sharing links ",
-        "Settings menu filter ",
-        "SponsorBlock ",
-        "Spoof app version ",
-        "Spoof app version for lyrics ",
-        "Spoof video streams ",
-        "Theme ",
-        "Third-party lyrics ",
-        "Track crossfade ",
-        "Translations for YouTube Music ",
-        "Video playback ",
-        "Watch history ",
-        "Visual preferences icons for YouTube Music ",
-        "Custom branding for YouTube Music ",
-        "Settings for YouTube Music "
+        "App refresh rate",
+        "Bitrate default value",
+        "Bypass image region restrictions",
+        "Certificate spoof",
+        "Change share sheet",
+        "Change start page",
+        "Disable Cairo splash animation",
+        "Disable QUIC protocol",
+        "Disable dislike redirection",
+        "Disable forced auto captions",
+        "Downloads",
+        "Enable debug logging",
+        "Enable landscape mode",
+        "Flyout menu components",
+        "Force original audio",
+        "GmsCore support",
+        "Hide account components",
+        "Hide action bar components",
+        "Hide ads",
+        "Hide layout components",
+        "Navigation bar components",
+        "Player components",
+        "PoToken provider",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Restore old style library shelf",
+        "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Sanitize sharing links",
+        "Settings menu filter",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof app version for lyrics",
+        "Spoof video streams",
+        "Theme",
+        "Third-party lyrics",
+        "Track crossfade",
+        "Translations for YouTube Music",
+        "Video playback",
+        "Watch history",
+        "Visual preferences icons for YouTube Music",
+        "Custom branding for YouTube Music",
+        "Settings for YouTube Music"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-09-25T18:22:18Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-anddea-module-v9.15.51-arm-v7a.zip": {
       "name": "youtube-music-anddea",
@@ -2940,58 +2944,58 @@
       "subVariant": null,
       "packageName": "anddea.youtube.music",
       "patchSources": [
-        "anddea/patches-4.3.0-dev.8.mpp"
+        "anddea/patches-4.3.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.0-dev.8"
+        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.1-dev.1"
       ],
       "appliedPatches": [
-        "App refresh rate ",
-        "Bitrate default value ",
-        "Bypass image region restrictions ",
-        "Certificate spoof ",
-        "Change share sheet ",
-        "Change start page ",
-        "Disable Cairo splash animation ",
-        "Disable QUIC protocol ",
-        "Disable dislike redirection ",
-        "Disable forced auto captions ",
-        "Downloads ",
-        "Enable debug logging ",
-        "Enable landscape mode ",
-        "Flyout menu components ",
-        "Force original audio ",
-        "GmsCore support ",
-        "Hide account components ",
-        "Hide action bar components ",
-        "Hide ads ",
-        "Hide layout components ",
-        "Navigation bar components ",
-        "Player components ",
-        "PoToken provider ",
-        "Remove background playback restrictions ",
-        "Remove viewer discretion dialog ",
-        "Restore old style library shelf ",
-        "Return YouTube Dislike ",
-        "Return YouTube Username ",
-        "Sanitize sharing links ",
-        "Settings menu filter ",
-        "SponsorBlock ",
-        "Spoof app version ",
-        "Spoof app version for lyrics ",
-        "Spoof video streams ",
-        "Theme ",
-        "Third-party lyrics ",
-        "Track crossfade ",
-        "Translations for YouTube Music ",
-        "Video playback ",
-        "Watch history ",
-        "Visual preferences icons for YouTube Music ",
-        "Custom branding for YouTube Music ",
-        "Settings for YouTube Music "
+        "App refresh rate",
+        "Bitrate default value",
+        "Bypass image region restrictions",
+        "Certificate spoof",
+        "Change share sheet",
+        "Change start page",
+        "Disable Cairo splash animation",
+        "Disable QUIC protocol",
+        "Disable dislike redirection",
+        "Disable forced auto captions",
+        "Downloads",
+        "Enable debug logging",
+        "Enable landscape mode",
+        "Flyout menu components",
+        "Force original audio",
+        "GmsCore support",
+        "Hide account components",
+        "Hide action bar components",
+        "Hide ads",
+        "Hide layout components",
+        "Navigation bar components",
+        "Player components",
+        "PoToken provider",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Restore old style library shelf",
+        "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Sanitize sharing links",
+        "Settings menu filter",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof app version for lyrics",
+        "Spoof video streams",
+        "Theme",
+        "Third-party lyrics",
+        "Track crossfade",
+        "Translations for YouTube Music",
+        "Video playback",
+        "Watch history",
+        "Visual preferences icons for YouTube Music",
+        "Custom branding for YouTube Music",
+        "Settings for YouTube Music"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-09-25T18:22:18Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-anddea-v9.15.51-arm-v7a.apk": {
       "name": "youtube-music-anddea",
@@ -3006,58 +3010,58 @@
       "subVariant": null,
       "packageName": "anddea.youtube.music",
       "patchSources": [
-        "anddea/patches-4.3.0-dev.8.mpp"
+        "anddea/patches-4.3.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.0-dev.8"
+        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.1-dev.1"
       ],
       "appliedPatches": [
-        "App refresh rate ",
-        "Bitrate default value ",
-        "Bypass image region restrictions ",
-        "Certificate spoof ",
-        "Change share sheet ",
-        "Change start page ",
-        "Disable Cairo splash animation ",
-        "Disable QUIC protocol ",
-        "Disable dislike redirection ",
-        "Disable forced auto captions ",
-        "Downloads ",
-        "Enable debug logging ",
-        "Enable landscape mode ",
-        "Flyout menu components ",
-        "Force original audio ",
-        "GmsCore support ",
-        "Hide account components ",
-        "Hide action bar components ",
-        "Hide ads ",
-        "Hide layout components ",
-        "Navigation bar components ",
-        "Player components ",
-        "PoToken provider ",
-        "Remove background playback restrictions ",
-        "Remove viewer discretion dialog ",
-        "Restore old style library shelf ",
-        "Return YouTube Dislike ",
-        "Return YouTube Username ",
-        "Sanitize sharing links ",
-        "Settings menu filter ",
-        "SponsorBlock ",
-        "Spoof app version ",
-        "Spoof app version for lyrics ",
-        "Spoof video streams ",
-        "Theme ",
-        "Third-party lyrics ",
-        "Track crossfade ",
-        "Translations for YouTube Music ",
-        "Video playback ",
-        "Watch history ",
-        "Visual preferences icons for YouTube Music ",
-        "Custom branding for YouTube Music ",
-        "Settings for YouTube Music "
+        "App refresh rate",
+        "Bitrate default value",
+        "Bypass image region restrictions",
+        "Certificate spoof",
+        "Change share sheet",
+        "Change start page",
+        "Disable Cairo splash animation",
+        "Disable QUIC protocol",
+        "Disable dislike redirection",
+        "Disable forced auto captions",
+        "Downloads",
+        "Enable debug logging",
+        "Enable landscape mode",
+        "Flyout menu components",
+        "Force original audio",
+        "GmsCore support",
+        "Hide account components",
+        "Hide action bar components",
+        "Hide ads",
+        "Hide layout components",
+        "Navigation bar components",
+        "Player components",
+        "PoToken provider",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Restore old style library shelf",
+        "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Sanitize sharing links",
+        "Settings menu filter",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof app version for lyrics",
+        "Spoof video streams",
+        "Theme",
+        "Third-party lyrics",
+        "Track crossfade",
+        "Translations for YouTube Music",
+        "Video playback",
+        "Watch history",
+        "Visual preferences icons for YouTube Music",
+        "Custom branding for YouTube Music",
+        "Settings for YouTube Music"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-09-25T18:22:18Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-module-v21.16.256-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -3072,10 +3076,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -3164,8 +3168,8 @@
         "Voice over translation",
         "Wide search bar"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-module-v21.16.256-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -3180,10 +3184,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -3272,8 +3276,8 @@
         "Voice over translation",
         "Wide search bar"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-v21.16.256-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -3288,10 +3292,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -3380,8 +3384,8 @@
         "Voice over translation",
         "Wide search bar"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -3396,10 +3400,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -3488,8 +3492,8 @@
         "Voice over translation",
         "Wide search bar"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-anddea-v21.13.164-arm-v7a.apk": {
       "name": "youtube-anddea",
@@ -3504,89 +3508,89 @@
       "subVariant": null,
       "packageName": "anddea.youtube",
       "patchSources": [
-        "anddea/patches-4.3.0-dev.8.mpp"
+        "anddea/patches-4.3.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.0-dev.8"
+        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.1-dev.1"
       ],
       "appliedPatches": [
-        "Alternative thumbnails ",
-        "Ambient mode control ",
-        "App refresh rate ",
-        "Bypass URL redirects ",
-        "Bypass image region restrictions ",
-        "Change form factor ",
-        "Change player flyout menu toggles ",
-        "Change share sheet ",
-        "Change start page ",
-        "Custom DPI ",
-        "Custom Shorts action buttons ",
-        "Custom double tap length ",
-        "Description components ",
-        "Disable QUIC protocol ",
-        "Disable forced auto captions ",
-        "Disable haptic feedback ",
-        "Disable layout updates ",
-        "Disable playlist autoplay ",
-        "Disable resuming Miniplayer on startup ",
-        "Disable resuming Shorts on startup ",
-        "Disable scrolling speed limit ",
-        "Disable sign in to TV popup ",
-        "Enable debug logging ",
-        "Enable gradient loading screen ",
-        "Force original audio ",
-        "Fullscreen components ",
-        "Fullscreen video scale ",
-        "Gemini ",
-        "GmsCore support ",
-        "Hide action buttons ",
-        "Hide ads ",
-        "Hide comments components ",
-        "Hide feed components ",
-        "Hide feed flyout menu ",
-        "Hide layout components ",
-        "Hide player buttons ",
-        "Hide player flyout menu ",
-        "Hook download actions ",
-        "Miniplayer ",
-        "Navigation bar components ",
-        "Open channel of live avatar ",
-        "Open links externally ",
-        "Overlay buttons ",
-        "Override YouTube Music buttons ",
-        "Playback in feeds ",
-        "Player components ",
-        "PoToken provider ",
-        "Remember livestream playback position ",
-        "Remove background playback restrictions ",
-        "Remove viewer discretion dialog ",
-        "Return YouTube Dislike ",
-        "Return YouTube Username ",
-        "Sanitize sharing links ",
-        "Save to Watch later ",
-        "Seekbar components ",
-        "Set transcript cookies ",
-        "Settings menu filter ",
-        "Shorts components ",
-        "Snack bar components ",
-        "SponsorBlock ",
-        "Spoof app version ",
-        "Spoof video streams ",
-        "Spoof watch history ",
-        "Swipe controls ",
-        "Theme ",
-        "Toolbar components ",
-        "Translations for YouTube ",
-        "Video playback ",
-        "Voice Over Translation ",
-        "Wide search bar ",
-        "Visual preferences icons for YouTube ",
-        "Reload video ",
-        "Custom branding for YouTube ",
-        "Settings for YouTube "
+        "Alternative thumbnails",
+        "Ambient mode control",
+        "App refresh rate",
+        "Bypass URL redirects",
+        "Bypass image region restrictions",
+        "Change form factor",
+        "Change player flyout menu toggles",
+        "Change share sheet",
+        "Change start page",
+        "Custom DPI",
+        "Custom Shorts action buttons",
+        "Custom double tap length",
+        "Description components",
+        "Disable QUIC protocol",
+        "Disable forced auto captions",
+        "Disable haptic feedback",
+        "Disable layout updates",
+        "Disable playlist autoplay",
+        "Disable resuming Miniplayer on startup",
+        "Disable resuming Shorts on startup",
+        "Disable scrolling speed limit",
+        "Disable sign in to TV popup",
+        "Enable debug logging",
+        "Enable gradient loading screen",
+        "Force original audio",
+        "Fullscreen components",
+        "Fullscreen video scale",
+        "Gemini",
+        "GmsCore support",
+        "Hide action buttons",
+        "Hide ads",
+        "Hide comments components",
+        "Hide feed components",
+        "Hide feed flyout menu",
+        "Hide layout components",
+        "Hide player buttons",
+        "Hide player flyout menu",
+        "Hook download actions",
+        "Miniplayer",
+        "Navigation bar components",
+        "Open channel of live avatar",
+        "Open links externally",
+        "Overlay buttons",
+        "Override YouTube Music buttons",
+        "Playback in feeds",
+        "Player components",
+        "PoToken provider",
+        "Remember livestream playback position",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Sanitize sharing links",
+        "Save to Watch later",
+        "Seekbar components",
+        "Set transcript cookies",
+        "Settings menu filter",
+        "Shorts components",
+        "Snack bar components",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof video streams",
+        "Spoof watch history",
+        "Swipe controls",
+        "Theme",
+        "Toolbar components",
+        "Translations for YouTube",
+        "Video playback",
+        "Voice Over Translation",
+        "Wide search bar",
+        "Visual preferences icons for YouTube",
+        "Reload video",
+        "Custom branding for YouTube",
+        "Settings for YouTube"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-09-25T18:22:18Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-anddea-v21.13.164-arm64-v8a.apk": {
       "name": "youtube-anddea",
@@ -3601,89 +3605,89 @@
       "subVariant": null,
       "packageName": "anddea.youtube",
       "patchSources": [
-        "anddea/patches-4.3.0-dev.8.mpp"
+        "anddea/patches-4.3.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.0-dev.8"
+        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.1-dev.1"
       ],
       "appliedPatches": [
-        "Alternative thumbnails ",
-        "Ambient mode control ",
-        "App refresh rate ",
-        "Bypass URL redirects ",
-        "Bypass image region restrictions ",
-        "Change form factor ",
-        "Change player flyout menu toggles ",
-        "Change share sheet ",
-        "Change start page ",
-        "Custom DPI ",
-        "Custom Shorts action buttons ",
-        "Custom double tap length ",
-        "Description components ",
-        "Disable QUIC protocol ",
-        "Disable forced auto captions ",
-        "Disable haptic feedback ",
-        "Disable layout updates ",
-        "Disable playlist autoplay ",
-        "Disable resuming Miniplayer on startup ",
-        "Disable resuming Shorts on startup ",
-        "Disable scrolling speed limit ",
-        "Disable sign in to TV popup ",
-        "Enable debug logging ",
-        "Enable gradient loading screen ",
-        "Force original audio ",
-        "Fullscreen components ",
-        "Fullscreen video scale ",
-        "Gemini ",
-        "GmsCore support ",
-        "Hide action buttons ",
-        "Hide ads ",
-        "Hide comments components ",
-        "Hide feed components ",
-        "Hide feed flyout menu ",
-        "Hide layout components ",
-        "Hide player buttons ",
-        "Hide player flyout menu ",
-        "Hook download actions ",
-        "Miniplayer ",
-        "Navigation bar components ",
-        "Open channel of live avatar ",
-        "Open links externally ",
-        "Overlay buttons ",
-        "Override YouTube Music buttons ",
-        "Playback in feeds ",
-        "Player components ",
-        "PoToken provider ",
-        "Remember livestream playback position ",
-        "Remove background playback restrictions ",
-        "Remove viewer discretion dialog ",
-        "Return YouTube Dislike ",
-        "Return YouTube Username ",
-        "Sanitize sharing links ",
-        "Save to Watch later ",
-        "Seekbar components ",
-        "Set transcript cookies ",
-        "Settings menu filter ",
-        "Shorts components ",
-        "Snack bar components ",
-        "SponsorBlock ",
-        "Spoof app version ",
-        "Spoof video streams ",
-        "Spoof watch history ",
-        "Swipe controls ",
-        "Theme ",
-        "Toolbar components ",
-        "Translations for YouTube ",
-        "Video playback ",
-        "Voice Over Translation ",
-        "Wide search bar ",
-        "Visual preferences icons for YouTube ",
-        "Reload video ",
-        "Custom branding for YouTube ",
-        "Settings for YouTube "
+        "Alternative thumbnails",
+        "Ambient mode control",
+        "App refresh rate",
+        "Bypass URL redirects",
+        "Bypass image region restrictions",
+        "Change form factor",
+        "Change player flyout menu toggles",
+        "Change share sheet",
+        "Change start page",
+        "Custom DPI",
+        "Custom Shorts action buttons",
+        "Custom double tap length",
+        "Description components",
+        "Disable QUIC protocol",
+        "Disable forced auto captions",
+        "Disable haptic feedback",
+        "Disable layout updates",
+        "Disable playlist autoplay",
+        "Disable resuming Miniplayer on startup",
+        "Disable resuming Shorts on startup",
+        "Disable scrolling speed limit",
+        "Disable sign in to TV popup",
+        "Enable debug logging",
+        "Enable gradient loading screen",
+        "Force original audio",
+        "Fullscreen components",
+        "Fullscreen video scale",
+        "Gemini",
+        "GmsCore support",
+        "Hide action buttons",
+        "Hide ads",
+        "Hide comments components",
+        "Hide feed components",
+        "Hide feed flyout menu",
+        "Hide layout components",
+        "Hide player buttons",
+        "Hide player flyout menu",
+        "Hook download actions",
+        "Miniplayer",
+        "Navigation bar components",
+        "Open channel of live avatar",
+        "Open links externally",
+        "Overlay buttons",
+        "Override YouTube Music buttons",
+        "Playback in feeds",
+        "Player components",
+        "PoToken provider",
+        "Remember livestream playback position",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Sanitize sharing links",
+        "Save to Watch later",
+        "Seekbar components",
+        "Set transcript cookies",
+        "Settings menu filter",
+        "Shorts components",
+        "Snack bar components",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof video streams",
+        "Spoof watch history",
+        "Swipe controls",
+        "Theme",
+        "Toolbar components",
+        "Translations for YouTube",
+        "Video playback",
+        "Voice Over Translation",
+        "Wide search bar",
+        "Visual preferences icons for YouTube",
+        "Reload video",
+        "Custom branding for YouTube",
+        "Settings for YouTube"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-09-25T18:22:18Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-anddea-module-v21.13.164-arm-v7a.zip": {
       "name": "youtube-anddea",
@@ -3698,89 +3702,89 @@
       "subVariant": null,
       "packageName": "anddea.youtube",
       "patchSources": [
-        "anddea/patches-4.3.0-dev.8.mpp"
+        "anddea/patches-4.3.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.0-dev.8"
+        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.1-dev.1"
       ],
       "appliedPatches": [
-        "Alternative thumbnails ",
-        "Ambient mode control ",
-        "App refresh rate ",
-        "Bypass URL redirects ",
-        "Bypass image region restrictions ",
-        "Change form factor ",
-        "Change player flyout menu toggles ",
-        "Change share sheet ",
-        "Change start page ",
-        "Custom DPI ",
-        "Custom Shorts action buttons ",
-        "Custom double tap length ",
-        "Description components ",
-        "Disable QUIC protocol ",
-        "Disable forced auto captions ",
-        "Disable haptic feedback ",
-        "Disable layout updates ",
-        "Disable playlist autoplay ",
-        "Disable resuming Miniplayer on startup ",
-        "Disable resuming Shorts on startup ",
-        "Disable scrolling speed limit ",
-        "Disable sign in to TV popup ",
-        "Enable debug logging ",
-        "Enable gradient loading screen ",
-        "Force original audio ",
-        "Fullscreen components ",
-        "Fullscreen video scale ",
-        "Gemini ",
-        "GmsCore support ",
-        "Hide action buttons ",
-        "Hide ads ",
-        "Hide comments components ",
-        "Hide feed components ",
-        "Hide feed flyout menu ",
-        "Hide layout components ",
-        "Hide player buttons ",
-        "Hide player flyout menu ",
-        "Hook download actions ",
-        "Miniplayer ",
-        "Navigation bar components ",
-        "Open channel of live avatar ",
-        "Open links externally ",
-        "Overlay buttons ",
-        "Override YouTube Music buttons ",
-        "Playback in feeds ",
-        "Player components ",
-        "PoToken provider ",
-        "Remember livestream playback position ",
-        "Remove background playback restrictions ",
-        "Remove viewer discretion dialog ",
-        "Return YouTube Dislike ",
-        "Return YouTube Username ",
-        "Sanitize sharing links ",
-        "Save to Watch later ",
-        "Seekbar components ",
-        "Set transcript cookies ",
-        "Settings menu filter ",
-        "Shorts components ",
-        "Snack bar components ",
-        "SponsorBlock ",
-        "Spoof app version ",
-        "Spoof video streams ",
-        "Spoof watch history ",
-        "Swipe controls ",
-        "Theme ",
-        "Toolbar components ",
-        "Translations for YouTube ",
-        "Video playback ",
-        "Voice Over Translation ",
-        "Wide search bar ",
-        "Visual preferences icons for YouTube ",
-        "Reload video ",
-        "Custom branding for YouTube ",
-        "Settings for YouTube "
+        "Alternative thumbnails",
+        "Ambient mode control",
+        "App refresh rate",
+        "Bypass URL redirects",
+        "Bypass image region restrictions",
+        "Change form factor",
+        "Change player flyout menu toggles",
+        "Change share sheet",
+        "Change start page",
+        "Custom DPI",
+        "Custom Shorts action buttons",
+        "Custom double tap length",
+        "Description components",
+        "Disable QUIC protocol",
+        "Disable forced auto captions",
+        "Disable haptic feedback",
+        "Disable layout updates",
+        "Disable playlist autoplay",
+        "Disable resuming Miniplayer on startup",
+        "Disable resuming Shorts on startup",
+        "Disable scrolling speed limit",
+        "Disable sign in to TV popup",
+        "Enable debug logging",
+        "Enable gradient loading screen",
+        "Force original audio",
+        "Fullscreen components",
+        "Fullscreen video scale",
+        "Gemini",
+        "GmsCore support",
+        "Hide action buttons",
+        "Hide ads",
+        "Hide comments components",
+        "Hide feed components",
+        "Hide feed flyout menu",
+        "Hide layout components",
+        "Hide player buttons",
+        "Hide player flyout menu",
+        "Hook download actions",
+        "Miniplayer",
+        "Navigation bar components",
+        "Open channel of live avatar",
+        "Open links externally",
+        "Overlay buttons",
+        "Override YouTube Music buttons",
+        "Playback in feeds",
+        "Player components",
+        "PoToken provider",
+        "Remember livestream playback position",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Sanitize sharing links",
+        "Save to Watch later",
+        "Seekbar components",
+        "Set transcript cookies",
+        "Settings menu filter",
+        "Shorts components",
+        "Snack bar components",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof video streams",
+        "Spoof watch history",
+        "Swipe controls",
+        "Theme",
+        "Toolbar components",
+        "Translations for YouTube",
+        "Video playback",
+        "Voice Over Translation",
+        "Wide search bar",
+        "Visual preferences icons for YouTube",
+        "Reload video",
+        "Custom branding for YouTube",
+        "Settings for YouTube"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-09-25T18:22:18Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-anddea-module-v21.13.164-arm64-v8a.zip": {
       "name": "youtube-anddea",
@@ -3795,89 +3799,89 @@
       "subVariant": null,
       "packageName": "anddea.youtube",
       "patchSources": [
-        "anddea/patches-4.3.0-dev.8.mpp"
+        "anddea/patches-4.3.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.0-dev.8"
+        "https://github.com/anddea/revanced-patches/releases/tag/v4.3.1-dev.1"
       ],
       "appliedPatches": [
-        "Alternative thumbnails ",
-        "Ambient mode control ",
-        "App refresh rate ",
-        "Bypass URL redirects ",
-        "Bypass image region restrictions ",
-        "Change form factor ",
-        "Change player flyout menu toggles ",
-        "Change share sheet ",
-        "Change start page ",
-        "Custom DPI ",
-        "Custom Shorts action buttons ",
-        "Custom double tap length ",
-        "Description components ",
-        "Disable QUIC protocol ",
-        "Disable forced auto captions ",
-        "Disable haptic feedback ",
-        "Disable layout updates ",
-        "Disable playlist autoplay ",
-        "Disable resuming Miniplayer on startup ",
-        "Disable resuming Shorts on startup ",
-        "Disable scrolling speed limit ",
-        "Disable sign in to TV popup ",
-        "Enable debug logging ",
-        "Enable gradient loading screen ",
-        "Force original audio ",
-        "Fullscreen components ",
-        "Fullscreen video scale ",
-        "Gemini ",
-        "GmsCore support ",
-        "Hide action buttons ",
-        "Hide ads ",
-        "Hide comments components ",
-        "Hide feed components ",
-        "Hide feed flyout menu ",
-        "Hide layout components ",
-        "Hide player buttons ",
-        "Hide player flyout menu ",
-        "Hook download actions ",
-        "Miniplayer ",
-        "Navigation bar components ",
-        "Open channel of live avatar ",
-        "Open links externally ",
-        "Overlay buttons ",
-        "Override YouTube Music buttons ",
-        "Playback in feeds ",
-        "Player components ",
-        "PoToken provider ",
-        "Remember livestream playback position ",
-        "Remove background playback restrictions ",
-        "Remove viewer discretion dialog ",
-        "Return YouTube Dislike ",
-        "Return YouTube Username ",
-        "Sanitize sharing links ",
-        "Save to Watch later ",
-        "Seekbar components ",
-        "Set transcript cookies ",
-        "Settings menu filter ",
-        "Shorts components ",
-        "Snack bar components ",
-        "SponsorBlock ",
-        "Spoof app version ",
-        "Spoof video streams ",
-        "Spoof watch history ",
-        "Swipe controls ",
-        "Theme ",
-        "Toolbar components ",
-        "Translations for YouTube ",
-        "Video playback ",
-        "Voice Over Translation ",
-        "Wide search bar ",
-        "Visual preferences icons for YouTube ",
-        "Reload video ",
-        "Custom branding for YouTube ",
-        "Settings for YouTube "
+        "Alternative thumbnails",
+        "Ambient mode control",
+        "App refresh rate",
+        "Bypass URL redirects",
+        "Bypass image region restrictions",
+        "Change form factor",
+        "Change player flyout menu toggles",
+        "Change share sheet",
+        "Change start page",
+        "Custom DPI",
+        "Custom Shorts action buttons",
+        "Custom double tap length",
+        "Description components",
+        "Disable QUIC protocol",
+        "Disable forced auto captions",
+        "Disable haptic feedback",
+        "Disable layout updates",
+        "Disable playlist autoplay",
+        "Disable resuming Miniplayer on startup",
+        "Disable resuming Shorts on startup",
+        "Disable scrolling speed limit",
+        "Disable sign in to TV popup",
+        "Enable debug logging",
+        "Enable gradient loading screen",
+        "Force original audio",
+        "Fullscreen components",
+        "Fullscreen video scale",
+        "Gemini",
+        "GmsCore support",
+        "Hide action buttons",
+        "Hide ads",
+        "Hide comments components",
+        "Hide feed components",
+        "Hide feed flyout menu",
+        "Hide layout components",
+        "Hide player buttons",
+        "Hide player flyout menu",
+        "Hook download actions",
+        "Miniplayer",
+        "Navigation bar components",
+        "Open channel of live avatar",
+        "Open links externally",
+        "Overlay buttons",
+        "Override YouTube Music buttons",
+        "Playback in feeds",
+        "Player components",
+        "PoToken provider",
+        "Remember livestream playback position",
+        "Remove background playback restrictions",
+        "Remove viewer discretion dialog",
+        "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Sanitize sharing links",
+        "Save to Watch later",
+        "Seekbar components",
+        "Set transcript cookies",
+        "Settings menu filter",
+        "Shorts components",
+        "Snack bar components",
+        "SponsorBlock",
+        "Spoof app version",
+        "Spoof video streams",
+        "Spoof watch history",
+        "Swipe controls",
+        "Theme",
+        "Toolbar components",
+        "Translations for YouTube",
+        "Video playback",
+        "Voice Over Translation",
+        "Wide search bar",
+        "Visual preferences icons for YouTube",
+        "Reload video",
+        "Custom branding for YouTube",
+        "Settings for YouTube"
       ],
-      "originBuild": "260122",
-      "publishedAt": "2026-09-25T18:22:18Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-experimental-module-v21.38.123-arm64-v8a.zip": {
       "name": "youtube-morphe-experimental",
@@ -4740,10 +4744,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App refresh rate",
@@ -4775,6 +4779,7 @@
         "Miniplayer previous and next buttons",
         "Navigation bar",
         "Play albums songs",
+        "Playback speed",
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
@@ -4790,8 +4795,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-morphe-experimental-v9.38.51-arm-v7a.apk": {
       "name": "youtube-music-morphe-experimental",
@@ -4806,10 +4811,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App refresh rate",
@@ -4841,6 +4846,7 @@
         "Miniplayer previous and next buttons",
         "Navigation bar",
         "Play albums songs",
+        "Playback speed",
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
@@ -4856,8 +4862,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-morphe-experimental-module-v9.38.51-arm-v7a.zip": {
       "name": "youtube-music-morphe-experimental",
@@ -4872,10 +4878,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App refresh rate",
@@ -4907,6 +4913,7 @@
         "Miniplayer previous and next buttons",
         "Navigation bar",
         "Play albums songs",
+        "Playback speed",
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
@@ -4922,8 +4929,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-music-morphe-experimental-v9.38.51-arm64-v8a.apk": {
       "name": "youtube-music-morphe-experimental",
@@ -4938,10 +4945,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App refresh rate",
@@ -4973,6 +4980,7 @@
         "Miniplayer previous and next buttons",
         "Navigation bar",
         "Play albums songs",
+        "Playback speed",
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
@@ -4988,8 +4996,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "reddit-morphe-experimental-v2026.39.0-arm64-v8a.apk": {
       "name": "reddit-morphe-experimental",
@@ -5004,10 +5012,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App icon",
@@ -5029,8 +5037,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "reddit-morphe-experimental-module-v2026.39.0-arm-v7a.zip": {
       "name": "reddit-morphe-experimental",
@@ -5045,10 +5053,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App icon",
@@ -5070,8 +5078,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "reddit-morphe-experimental-v2026.39.0-arm-v7a.apk": {
       "name": "reddit-morphe-experimental",
@@ -5086,10 +5094,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App icon",
@@ -5111,8 +5119,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "reddit-morphe-experimental-module-v2026.39.0-arm64-v8a.zip": {
       "name": "reddit-morphe-experimental",
@@ -5127,10 +5135,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App icon",
@@ -5152,8 +5160,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "reddit-morphe-v2026.24.0-arm-v7a.apk": {
       "name": "reddit-morphe",
@@ -5168,10 +5176,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App icon",
@@ -5193,8 +5201,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "reddit-morphe-module-v2026.24.0-arm64-v8a.zip": {
       "name": "reddit-morphe",
@@ -5209,10 +5217,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App icon",
@@ -5234,8 +5242,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "reddit-morphe-module-v2026.24.0-arm-v7a.zip": {
       "name": "reddit-morphe",
@@ -5250,10 +5258,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App icon",
@@ -5275,8 +5283,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "reddit-morphe-v2026.24.0-arm64-v8a.apk": {
       "name": "reddit-morphe",
@@ -5291,10 +5299,10 @@
       "subVariant": null,
       "packageName": "com.reddit.frontpage",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "App icon",
@@ -5316,8 +5324,8 @@
         "Spoof signature",
         "Start as guest"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-experimental-module-v21.39.522-arm-v7a.zip": {
       "name": "youtube-morphe-experimental",
@@ -5332,10 +5340,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -5424,8 +5432,8 @@
         "Voice over translation",
         "Wide search bar"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-experimental-v21.39.522-arm64-v8a.apk": {
       "name": "youtube-morphe-experimental",
@@ -5440,10 +5448,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -5532,8 +5540,8 @@
         "Voice over translation",
         "Wide search bar"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-experimental-module-v21.39.522-arm64-v8a.zip": {
       "name": "youtube-morphe-experimental",
@@ -5548,10 +5556,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -5640,8 +5648,8 @@
         "Voice over translation",
         "Wide search bar"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     },
     "youtube-morphe-experimental-v21.39.522-arm-v7a.apk": {
       "name": "youtube-morphe-experimental",
@@ -5656,10 +5664,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.18.mpp"
+        "MorpheApp/patches-1.45.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -5748,8 +5756,8 @@
         "Voice over translation",
         "Wide search bar"
       ],
-      "originBuild": "260133",
-      "publishedAt": "2026-09-27T11:54:31Z"
+      "originBuild": "260138",
+      "publishedAt": "2026-09-28T17:07:14Z"
     }
   }
 }
