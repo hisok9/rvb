@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-09-28T17:07:57Z"
+    "publishedAt": "2026-09-29T02:45:47Z"
   },
   "files": {
     "gboard-jasonwu1994-clone-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
@@ -216,18 +216,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.4.3-dev.2.mpp"
+        "RookieEnough/patches-1.5.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.4.3-dev.2"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0-dev.1"
       ],
       "appliedPatches": [
-        "Fix selected account persistence ",
-        "GmsCore support ",
-        "Spoof features "
+        "Fix selected account persistence",
+        "GmsCore support",
+        "Spoof features"
       ],
-      "originBuild": "260074",
-      "publishedAt": "2026-09-18T15:43:47Z"
+      "originBuild": "260140",
+      "publishedAt": "2026-09-29T02:45:27Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm64-v8a.apk": {
       "name": "google-photos-devanced",
@@ -242,18 +242,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.4.3-dev.2.mpp"
+        "RookieEnough/patches-1.5.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.4.3-dev.2"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0-dev.1"
       ],
       "appliedPatches": [
-        "Fix selected account persistence ",
-        "GmsCore support ",
-        "Spoof features "
+        "Fix selected account persistence",
+        "GmsCore support",
+        "Spoof features"
       ],
-      "originBuild": "260074",
-      "publishedAt": "2026-09-18T15:43:47Z"
+      "originBuild": "260140",
+      "publishedAt": "2026-09-29T02:45:27Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm-v7a.zip": {
       "name": "google-photos-devanced",
@@ -268,18 +268,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.4.3-dev.2.mpp"
+        "RookieEnough/patches-1.5.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.4.3-dev.2"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0-dev.1"
       ],
       "appliedPatches": [
-        "Fix selected account persistence ",
-        "GmsCore support ",
-        "Spoof features "
+        "Fix selected account persistence",
+        "GmsCore support",
+        "Spoof features"
       ],
-      "originBuild": "260074",
-      "publishedAt": "2026-09-18T15:43:47Z"
+      "originBuild": "260140",
+      "publishedAt": "2026-09-29T02:45:27Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
@@ -294,18 +294,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.4.3-dev.2.mpp"
+        "RookieEnough/patches-1.5.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.4.3-dev.2"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0-dev.1"
       ],
       "appliedPatches": [
-        "Fix selected account persistence ",
-        "GmsCore support ",
-        "Spoof features "
+        "Fix selected account persistence",
+        "GmsCore support",
+        "Spoof features"
       ],
-      "originBuild": "260074",
-      "publishedAt": "2026-09-18T15:43:47Z"
+      "originBuild": "260140",
+      "publishedAt": "2026-09-29T02:45:27Z"
     },
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
       "name": "instagram-piko-clone",
