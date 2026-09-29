@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-09-29T02:45:47Z"
+    "publishedAt": "2026-09-29T10:45:53Z"
   },
   "files": {
     "gboard-jasonwu1994-clone-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
@@ -3076,10 +3076,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.19.mpp"
+        "MorpheApp/patches-1.45.0-dev.20.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -3157,7 +3157,6 @@
         "Seekbar",
         "Settings menu filter",
         "Shorts autoplay",
-        "Shorts icon style",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
@@ -3166,10 +3165,12 @@
         "Theme",
         "Video quality",
         "Voice over translation",
-        "Wide search bar"
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-09-28T17:07:14Z"
+      "originBuild": "260142",
+      "publishedAt": "2026-09-29T10:45:28Z"
     },
     "youtube-morphe-module-v21.16.256-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -3184,10 +3185,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.19.mpp"
+        "MorpheApp/patches-1.45.0-dev.20.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -3265,7 +3266,6 @@
         "Seekbar",
         "Settings menu filter",
         "Shorts autoplay",
-        "Shorts icon style",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
@@ -3274,10 +3274,12 @@
         "Theme",
         "Video quality",
         "Voice over translation",
-        "Wide search bar"
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-09-28T17:07:14Z"
+      "originBuild": "260142",
+      "publishedAt": "2026-09-29T10:45:28Z"
     },
     "youtube-morphe-v21.16.256-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -3292,10 +3294,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.19.mpp"
+        "MorpheApp/patches-1.45.0-dev.20.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -3373,7 +3375,6 @@
         "Seekbar",
         "Settings menu filter",
         "Shorts autoplay",
-        "Shorts icon style",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
@@ -3382,10 +3383,12 @@
         "Theme",
         "Video quality",
         "Voice over translation",
-        "Wide search bar"
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-09-28T17:07:14Z"
+      "originBuild": "260142",
+      "publishedAt": "2026-09-29T10:45:28Z"
     },
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -3400,10 +3403,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.19.mpp"
+        "MorpheApp/patches-1.45.0-dev.20.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -3481,7 +3484,6 @@
         "Seekbar",
         "Settings menu filter",
         "Shorts autoplay",
-        "Shorts icon style",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
@@ -3490,10 +3492,12 @@
         "Theme",
         "Video quality",
         "Voice over translation",
-        "Wide search bar"
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-09-28T17:07:14Z"
+      "originBuild": "260142",
+      "publishedAt": "2026-09-29T10:45:28Z"
     },
     "youtube-anddea-v21.13.164-arm-v7a.apk": {
       "name": "youtube-anddea",
@@ -5340,10 +5344,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.19.mpp"
+        "MorpheApp/patches-1.45.0-dev.20.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -5421,7 +5425,6 @@
         "Seekbar",
         "Settings menu filter",
         "Shorts autoplay",
-        "Shorts icon style",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
@@ -5430,10 +5433,12 @@
         "Theme",
         "Video quality",
         "Voice over translation",
-        "Wide search bar"
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-09-28T17:07:14Z"
+      "originBuild": "260142",
+      "publishedAt": "2026-09-29T10:45:28Z"
     },
     "youtube-morphe-experimental-v21.39.522-arm64-v8a.apk": {
       "name": "youtube-morphe-experimental",
@@ -5448,10 +5453,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.19.mpp"
+        "MorpheApp/patches-1.45.0-dev.20.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -5529,7 +5534,6 @@
         "Seekbar",
         "Settings menu filter",
         "Shorts autoplay",
-        "Shorts icon style",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
@@ -5538,10 +5542,12 @@
         "Theme",
         "Video quality",
         "Voice over translation",
-        "Wide search bar"
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-09-28T17:07:14Z"
+      "originBuild": "260142",
+      "publishedAt": "2026-09-29T10:45:28Z"
     },
     "youtube-morphe-experimental-module-v21.39.522-arm64-v8a.zip": {
       "name": "youtube-morphe-experimental",
@@ -5556,10 +5562,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.19.mpp"
+        "MorpheApp/patches-1.45.0-dev.20.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -5637,7 +5643,6 @@
         "Seekbar",
         "Settings menu filter",
         "Shorts autoplay",
-        "Shorts icon style",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
@@ -5646,10 +5651,12 @@
         "Theme",
         "Video quality",
         "Voice over translation",
-        "Wide search bar"
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-09-28T17:07:14Z"
+      "originBuild": "260142",
+      "publishedAt": "2026-09-29T10:45:28Z"
     },
     "youtube-morphe-experimental-v21.39.522-arm-v7a.apk": {
       "name": "youtube-morphe-experimental",
@@ -5664,10 +5671,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.45.0-dev.19.mpp"
+        "MorpheApp/patches-1.45.0-dev.20.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20"
       ],
       "appliedPatches": [
         "Add to queue",
@@ -5745,7 +5752,6 @@
         "Seekbar",
         "Settings menu filter",
         "Shorts autoplay",
-        "Shorts icon style",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
@@ -5754,10 +5760,12 @@
         "Theme",
         "Video quality",
         "Voice over translation",
-        "Wide search bar"
+        "Wide search bar",
+        "Shorts icon style",
+        "Player icon style"
       ],
-      "originBuild": "260138",
-      "publishedAt": "2026-09-28T17:07:14Z"
+      "originBuild": "260142",
+      "publishedAt": "2026-09-29T10:45:28Z"
     }
   }
 }
