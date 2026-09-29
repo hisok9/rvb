@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-09-29T18:17:52Z"
+    "publishedAt": "2026-09-29T23:41:02Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -5959,10 +5959,10 @@
       "subVariant": null,
       "packageName": "jp.pxv.android",
       "patchSources": [
-        "Fripe070/patches-2.2.0.mpp"
+        "Fripe070/patches-2.2.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.2.0"
+        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.2.3"
       ],
       "appliedPatches": [
         "Pixiv AI Work Flagger",
@@ -5973,8 +5973,8 @@
         "Pixiv OLED Dark Theme",
         "Pixiv Premium Features"
       ],
-      "originBuild": "260145",
-      "publishedAt": "2026-09-29T18:17:44Z"
+      "originBuild": "260146",
+      "publishedAt": "2026-09-29T23:40:51Z"
     },
     "pixiv-fripe070-v6.196.0-arm64-v8a.apk": {
       "name": "pixiv-fripe070",
@@ -5989,10 +5989,10 @@
       "subVariant": null,
       "packageName": "jp.pxv.android",
       "patchSources": [
-        "Fripe070/patches-2.2.0.mpp"
+        "Fripe070/patches-2.2.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.2.0"
+        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.2.3"
       ],
       "appliedPatches": [
         "Pixiv AI Work Flagger",
@@ -6003,8 +6003,8 @@
         "Pixiv OLED Dark Theme",
         "Pixiv Premium Features"
       ],
-      "originBuild": "260145",
-      "publishedAt": "2026-09-29T18:17:44Z"
+      "originBuild": "260146",
+      "publishedAt": "2026-09-29T23:40:51Z"
     },
     "soundcloud-hoodles-v2026.08.26-release-arm64-v8a.apk": {
       "name": "soundcloud-hoodles",
