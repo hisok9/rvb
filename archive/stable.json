@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-09-29T03:20:44Z"
+    "publishedAt": "2026-09-29T10:50:23Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -4002,100 +4002,6 @@
       "originBuild": "260072",
       "publishedAt": "2026-09-18T05:25:09Z"
     },
-    "tiktok-kveld9-v46.9.3-arm64-v8a.apk": {
-      "name": "tiktok-kveld9",
-      "version": "46.9.3",
-      "appKey": "tiktok",
-      "appName": "TikTok",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "kveld9",
-      "brandName": "kveld9",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.zhiliaoapp.musically",
-      "patchSources": [
-        "kveld9/patches-1.41.1.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v1.41.1"
-      ],
-      "appliedPatches": [
-        "Always show publish date ",
-        "Bypass Mandatory Login ",
-        "Clean Share URL ",
-        "Client-Side AI & Behavioral Profiling Governor ",
-        "Copy comments without username ",
-        "Core Asset De-bloat ",
-        "Device Privacy Guard ",
-        "Disable Push Notifications ",
-        "Feed Ad Blocker ",
-        "Feed Bloat & Distraction Blocker ",
-        "Feed Live Stream Blocker ",
-        "Fix Google login ",
-        "Hide TikTok Shop & Mall ",
-        "In-App Browser Privacy Guard ",
-        "Instant Launch & Splash Blocker ",
-        "Language Pack Purger ",
-        "Media Usability & Watermark-Free Downloader ",
-        "P2P Video Relay & Mesh CDN Blocker ",
-        "Resource & Battery Governor ",
-        "Show seekbar ",
-        "Skip First-Launch Onboarding ",
-        "Studio & Creation De-bloat ",
-        "Unified Telemetry & Tracker Silencer ",
-        "Update Prompt Suppressor "
-      ],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
-    },
-    "tiktok-kveld9-v46.9.3-arm-v7a.apk": {
-      "name": "tiktok-kveld9",
-      "version": "46.9.3",
-      "appKey": "tiktok",
-      "appName": "TikTok",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "kveld9",
-      "brandName": "kveld9",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.zhiliaoapp.musically",
-      "patchSources": [
-        "kveld9/patches-1.41.1.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v1.41.1"
-      ],
-      "appliedPatches": [
-        "Always show publish date ",
-        "Bypass Mandatory Login ",
-        "Clean Share URL ",
-        "Client-Side AI & Behavioral Profiling Governor ",
-        "Copy comments without username ",
-        "Core Asset De-bloat ",
-        "Device Privacy Guard ",
-        "Disable Push Notifications ",
-        "Feed Ad Blocker ",
-        "Feed Bloat & Distraction Blocker ",
-        "Feed Live Stream Blocker ",
-        "Fix Google login ",
-        "Hide TikTok Shop & Mall ",
-        "In-App Browser Privacy Guard ",
-        "Instant Launch & Splash Blocker ",
-        "Language Pack Purger ",
-        "Media Usability & Watermark-Free Downloader ",
-        "P2P Video Relay & Mesh CDN Blocker ",
-        "Resource & Battery Governor ",
-        "Show seekbar ",
-        "Skip First-Launch Onboarding ",
-        "Studio & Creation De-bloat ",
-        "Unified Telemetry & Tracker Silencer ",
-        "Update Prompt Suppressor "
-      ],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
-    },
     "microsoft-edge-quantavil-v152.0.4191.65-arm64-v8a.apk": {
       "name": "microsoft-edge-quantavil",
       "version": "152.0.4191.65",
@@ -5975,19 +5881,19 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "andrewliang25/patches-3.3.1.mpp"
+        "andrewliang25/patches-3.3.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/andrewliang25/morphe-patches/releases/tag/v3.3.1"
+        "https://github.com/andrewliang25/morphe-patches/releases/tag/v3.3.2"
       ],
       "appliedPatches": [
         "[Ad] Block ad telemetry",
         "[Ad] Block background ad prefetch",
         "[Ad] Disable Audience Network",
         "[Feed] Block feed auto refresh",
+        "[Feed] Hide page suggestions and promo cards",
         "[Feed] Hide post prompts",
         "[Feed] Hide sponsored posts",
-        "[Feed] Hide suggested and promoted posts",
         "[Fix] Restore screens on re-signed builds",
         "[General] AMOLED black theme",
         "[General] Hide affiliate product links",
@@ -5998,8 +5904,8 @@
         "[Stories] Download any story",
         "[Stories] Hide sponsored stories"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260143",
+      "publishedAt": "2026-09-29T10:50:10Z"
     },
     "facebook-andrewliang25-v577.0.0.50.72-arm64-v8a.apk": {
       "name": "facebook-andrewliang25",
@@ -6014,19 +5920,19 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "andrewliang25/patches-3.3.1.mpp"
+        "andrewliang25/patches-3.3.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/andrewliang25/morphe-patches/releases/tag/v3.3.1"
+        "https://github.com/andrewliang25/morphe-patches/releases/tag/v3.3.2"
       ],
       "appliedPatches": [
         "[Ad] Block ad telemetry",
         "[Ad] Block background ad prefetch",
         "[Ad] Disable Audience Network",
         "[Feed] Block feed auto refresh",
+        "[Feed] Hide page suggestions and promo cards",
         "[Feed] Hide post prompts",
         "[Feed] Hide sponsored posts",
-        "[Feed] Hide suggested and promoted posts",
         "[Fix] Restore screens on re-signed builds",
         "[General] AMOLED black theme",
         "[General] Hide affiliate product links",
@@ -6037,8 +5943,8 @@
         "[Stories] Download any story",
         "[Stories] Hide sponsored stories"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260143",
+      "publishedAt": "2026-09-29T10:50:10Z"
     },
     "pixiv-fripe070-v6.196.0-arm-v7a.apk": {
       "name": "pixiv-fripe070",
@@ -6053,10 +5959,10 @@
       "subVariant": null,
       "packageName": "jp.pxv.android",
       "patchSources": [
-        "Fripe070/patches-1.4.1.mpp"
+        "Fripe070/patches-2.0.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/Fripe070/PixivPatches/releases/tag/v1.4.1"
+        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.0.0"
       ],
       "appliedPatches": [
         "Pixiv AI Work Flagger",
@@ -6064,13 +5970,11 @@
         "Pixiv Analytics Blocker",
         "Pixiv Downloader",
         "Pixiv Enhanced Viewer & Instant Zoom",
-        "Pixiv Export Activities",
         "Pixiv OLED Dark Theme",
-        "Pixiv Persistent Navigation",
         "Pixiv Premium Features"
       ],
-      "originBuild": "260141",
-      "publishedAt": "2026-09-29T03:19:45Z"
+      "originBuild": "260143",
+      "publishedAt": "2026-09-29T10:50:10Z"
     },
     "pixiv-fripe070-v6.196.0-arm64-v8a.apk": {
       "name": "pixiv-fripe070",
@@ -6085,10 +5989,10 @@
       "subVariant": null,
       "packageName": "jp.pxv.android",
       "patchSources": [
-        "Fripe070/patches-1.4.1.mpp"
+        "Fripe070/patches-2.0.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/Fripe070/PixivPatches/releases/tag/v1.4.1"
+        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.0.0"
       ],
       "appliedPatches": [
         "Pixiv AI Work Flagger",
@@ -6096,13 +6000,11 @@
         "Pixiv Analytics Blocker",
         "Pixiv Downloader",
         "Pixiv Enhanced Viewer & Instant Zoom",
-        "Pixiv Export Activities",
         "Pixiv OLED Dark Theme",
-        "Pixiv Persistent Navigation",
         "Pixiv Premium Features"
       ],
-      "originBuild": "260141",
-      "publishedAt": "2026-09-29T03:19:45Z"
+      "originBuild": "260143",
+      "publishedAt": "2026-09-29T10:50:10Z"
     },
     "soundcloud-hoodles-v2026.08.26-release-arm64-v8a.apk": {
       "name": "soundcloud-hoodles",
@@ -7115,138 +7017,6 @@
       ],
       "originBuild": "260071",
       "publishedAt": "2026-09-18T04:12:57Z"
-    },
-    "instagram-instafel-v447.0.0.55.81-arm-v7a.apk": {
-      "name": "instagram-instafel",
-      "version": "447.0.0.55.81",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.instagram.android",
-      "patchSources": [
-        "instafel/ifl-patcher-v4.7.0-release.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger"
-      ],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
-    },
-    "instagram-instafel-v447.0.0.55.81-arm64-v8a.apk": {
-      "name": "instagram-instafel",
-      "version": "447.0.0.55.81",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.instagram.android",
-      "patchSources": [
-        "instafel/ifl-patcher-v4.7.0-release.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger"
-      ],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
-    },
-    "instagram-instafel-clone-v447.0.0.55.81-arm-v7a.apk": {
-      "name": "instagram-instafel-clone",
-      "version": "447.0.0.55.81",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": "Clone",
-      "subVariant": null,
-      "packageName": "com.instafel.android",
-      "patchSources": [
-        "instafel/ifl-patcher-v4.7.0-release.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger",
-        "Clone General",
-        "Replace Instagram Strings"
-      ],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
-    },
-    "instagram-instafel-clone-v447.0.0.55.81-arm64-v8a.apk": {
-      "name": "instagram-instafel-clone",
-      "version": "447.0.0.55.81",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": "Clone",
-      "subVariant": null,
-      "packageName": "com.instafel.android",
-      "patchSources": [
-        "instafel/ifl-patcher-v4.7.0-release.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger",
-        "Clone General",
-        "Replace Instagram Strings"
-      ],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
     },
     "discord-revenge-v345.9-Stable-arm64-v8a.apk": {
       "name": "discord-revenge",
@@ -11981,30 +11751,6 @@
       "originBuild": null,
       "publishedAt": "2026-09-08T14:33:19Z"
     },
-    "adobe-lightroom-hoodles-v11.5.01-arm64-v8a.apk": {
-      "name": "adobe-lightroom-hoodles",
-      "version": "11.5.01",
-      "appKey": "adobelightroom",
-      "appName": "Adobe Lightroom",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "hoodles",
-      "brandName": "hoodles",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.adobe.lrmobile",
-      "patchSources": [
-        "hoo-dles/patches-1.44.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.44.0"
-      ],
-      "appliedPatches": [
-        "Unlock premium features "
-      ],
-      "originBuild": null,
-      "publishedAt": "2026-09-08T13:08:23Z"
-    },
     "aliexpress-quantro100-v8.162.8-arm-v7a.apk": {
       "name": "aliexpress-quantro100",
       "version": "8.162.8",
@@ -13573,56 +13319,6 @@
       "appliedPatches": [
         "Make UI look like Pro ",
         "Unlock Moon+ Reader Pro "
-      ],
-      "originBuild": null,
-      "publishedAt": "2026-09-08T13:08:23Z"
-    },
-    "pandora-hoodles-v2608.1-arm-v7a.apk": {
-      "name": "pandora-hoodles",
-      "version": "2608.1",
-      "appKey": "pandora",
-      "appName": "Pandora",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "hoodles",
-      "brandName": "hoodles",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.pandora.android",
-      "patchSources": [
-        "hoo-dles/patches-1.44.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.44.0"
-      ],
-      "appliedPatches": [
-        "Disable ads ",
-        "Unlimited skips "
-      ],
-      "originBuild": null,
-      "publishedAt": "2026-09-08T13:08:23Z"
-    },
-    "pandora-hoodles-v2608.1-arm64-v8a.apk": {
-      "name": "pandora-hoodles",
-      "version": "2608.1",
-      "appKey": "pandora",
-      "appName": "Pandora",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "hoodles",
-      "brandName": "hoodles",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.pandora.android",
-      "patchSources": [
-        "hoo-dles/patches-1.44.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.44.0"
-      ],
-      "appliedPatches": [
-        "Disable ads ",
-        "Unlimited skips "
       ],
       "originBuild": null,
       "publishedAt": "2026-09-08T13:08:23Z"
