@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-09-29T10:50:23Z"
+    "publishedAt": "2026-09-29T18:17:52Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -2802,17 +2802,17 @@
       "subVariant": null,
       "packageName": "com.michaldrabik.showly2",
       "patchSources": [
-        "hxreborn/patches-1.34.0.mpp"
+        "hxreborn/patches-1.36.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.34.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.36.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
         "Unlock premium"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260145",
+      "publishedAt": "2026-09-29T18:17:44Z"
     },
     "showly-hxreborn-v3.70.0-arm-v7a.apk": {
       "name": "showly-hxreborn",
@@ -2827,17 +2827,17 @@
       "subVariant": null,
       "packageName": "com.michaldrabik.showly2",
       "patchSources": [
-        "hxreborn/patches-1.34.0.mpp"
+        "hxreborn/patches-1.36.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.34.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.36.0"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
         "Unlock premium"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260145",
+      "publishedAt": "2026-09-29T18:17:44Z"
     },
     "google-photos-devanced-module-v7.80.0.929302933-arm64-v8a.zip": {
       "name": "google-photos-devanced",
@@ -5959,10 +5959,10 @@
       "subVariant": null,
       "packageName": "jp.pxv.android",
       "patchSources": [
-        "Fripe070/patches-2.0.0.mpp"
+        "Fripe070/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.0.0"
+        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "Pixiv AI Work Flagger",
@@ -5973,8 +5973,8 @@
         "Pixiv OLED Dark Theme",
         "Pixiv Premium Features"
       ],
-      "originBuild": "260143",
-      "publishedAt": "2026-09-29T10:50:10Z"
+      "originBuild": "260145",
+      "publishedAt": "2026-09-29T18:17:44Z"
     },
     "pixiv-fripe070-v6.196.0-arm64-v8a.apk": {
       "name": "pixiv-fripe070",
@@ -5989,10 +5989,10 @@
       "subVariant": null,
       "packageName": "jp.pxv.android",
       "patchSources": [
-        "Fripe070/patches-2.0.0.mpp"
+        "Fripe070/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.0.0"
+        "https://github.com/Fripe070/PixivPatches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "Pixiv AI Work Flagger",
@@ -6003,8 +6003,8 @@
         "Pixiv OLED Dark Theme",
         "Pixiv Premium Features"
       ],
-      "originBuild": "260143",
-      "publishedAt": "2026-09-29T10:50:10Z"
+      "originBuild": "260145",
+      "publishedAt": "2026-09-29T18:17:44Z"
     },
     "soundcloud-hoodles-v2026.08.26-release-arm64-v8a.apk": {
       "name": "soundcloud-hoodles",
@@ -7884,18 +7884,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.35.0.mpp"
+        "byehi98/patches-1.35.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.35.0"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.35.1"
       ],
       "appliedPatches": [
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260145",
+      "publishedAt": "2026-09-29T18:17:44Z"
     },
     "swift-backup-byehi98-v5.1.0-arm-v7a.apk": {
       "name": "swift-backup-byehi98",
@@ -7910,18 +7910,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.35.0.mpp"
+        "byehi98/patches-1.35.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.35.0"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.35.1"
       ],
       "appliedPatches": [
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260145",
+      "publishedAt": "2026-09-29T18:17:44Z"
     },
     "youtube-morphe-experimental-module-v21.38.123-arm64-v8a.zip": {
       "name": "youtube-morphe-experimental",
@@ -16184,16 +16184,16 @@
       "subVariant": null,
       "packageName": "dev.vodik7.atvtools",
       "patchSources": [
-        "hxreborn/patches-1.34.0.mpp"
+        "hxreborn/patches-1.36.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.34.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.36.0"
       ],
       "appliedPatches": [
         "Unlock premium"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260145",
+      "publishedAt": "2026-09-29T18:17:44Z"
     },
     "atvtools-hxreborn-v1.3.2-arm64-v8a.apk": {
       "name": "atvtools-hxreborn",
@@ -16208,16 +16208,16 @@
       "subVariant": null,
       "packageName": "dev.vodik7.atvtools",
       "patchSources": [
-        "hxreborn/patches-1.34.0.mpp"
+        "hxreborn/patches-1.36.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.34.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.36.0"
       ],
       "appliedPatches": [
         "Unlock premium"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260145",
+      "publishedAt": "2026-09-29T18:17:44Z"
     },
     "facebook-hushfacebook-v580.0.0.51.74-arm64-v8a.apk": {
       "name": "facebook-hushfacebook",
