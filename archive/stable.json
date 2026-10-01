@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-01T06:37:39Z"
+    "publishedAt": "2026-10-01T12:19:12Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -7018,50 +7018,6 @@
       "originBuild": "260071",
       "publishedAt": "2026-09-18T04:12:57Z"
     },
-    "discord-revenge-v345.9-Stable-arm64-v8a.apk": {
-      "name": "discord-revenge",
-      "version": "345.9-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "revenge",
-      "brandName": "revenge",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "revenge-mod/app-release.apk"
-      ],
-      "changelogs": [
-        "https://github.com/revenge-mod/revenge-xposed/releases/tag/1603"
-      ],
-      "appliedPatches": [],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
-    },
-    "discord-revenge-v345.9-Stable-arm-v7a.apk": {
-      "name": "discord-revenge",
-      "version": "345.9-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "revenge",
-      "brandName": "revenge",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "revenge-mod/app-release.apk"
-      ],
-      "changelogs": [
-        "https://github.com/revenge-mod/revenge-xposed/releases/tag/1603"
-      ],
-      "appliedPatches": [],
-      "originBuild": "260072",
-      "publishedAt": "2026-09-18T05:25:09Z"
-    },
     "gboard-jasonwu1994-clone-v18.0.3.954559732-release-arm64-v8a-arm64-v8a.apk": {
       "name": "gboard-jasonwu1994-clone",
       "version": "18.0.3.954559732-release-arm64-v8a",
@@ -9195,54 +9151,6 @@
       "variant": "Beta",
       "subVariant": null,
       "packageName": "com.brave.browser_beta",
-      "patchSources": [
-        "dh6k/patches-1.6.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/dh6k/morphe-patches/releases/tag/v1.6.0"
-      ],
-      "appliedPatches": [
-        "Brave Origin "
-      ],
-      "originBuild": "260091",
-      "publishedAt": "2026-09-20T15:27:20Z"
-    },
-    "brave-browser-dh6k-nightly-v1.98.12-arm-v7a.apk": {
-      "name": "brave-browser-dh6k-nightly",
-      "version": "1.98.12",
-      "appKey": "bravebrowser",
-      "appName": "Brave Browser",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "dh6k",
-      "brandName": "dh6k",
-      "variant": "Nightly",
-      "subVariant": null,
-      "packageName": "com.brave.browser_nightly",
-      "patchSources": [
-        "dh6k/patches-1.6.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/dh6k/morphe-patches/releases/tag/v1.6.0"
-      ],
-      "appliedPatches": [
-        "Brave Origin "
-      ],
-      "originBuild": "260091",
-      "publishedAt": "2026-09-20T15:27:20Z"
-    },
-    "brave-browser-dh6k-nightly-v1.98.12-arm64-v8a.apk": {
-      "name": "brave-browser-dh6k-nightly",
-      "version": "1.98.12",
-      "appKey": "bravebrowser",
-      "appName": "Brave Browser",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "dh6k",
-      "brandName": "dh6k",
-      "variant": "Nightly",
-      "subVariant": null,
-      "packageName": "com.brave.browser_nightly",
       "patchSources": [
         "dh6k/patches-1.6.0.mpp"
       ],
@@ -18815,6 +18723,56 @@
       ],
       "originBuild": "260152",
       "publishedAt": "2026-10-01T06:37:10Z"
+    },
+    "pocket-whip-hxreborn-v2.3-arm-v7a.apk": {
+      "name": "pocket-whip-hxreborn",
+      "version": "2.3",
+      "appKey": "pocketwhip",
+      "appName": "Pocket Whip",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.greenstone.pocketwhip",
+      "patchSources": [
+        "hxreborn/patches-1.37.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.37.0"
+      ],
+      "appliedPatches": [
+        "Hide ads",
+        "Unlock premium"
+      ],
+      "originBuild": "260153",
+      "publishedAt": "2026-10-01T12:19:01Z"
+    },
+    "pocket-whip-hxreborn-v2.3-arm64-v8a.apk": {
+      "name": "pocket-whip-hxreborn",
+      "version": "2.3",
+      "appKey": "pocketwhip",
+      "appName": "Pocket Whip",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hxreborn",
+      "brandName": "hxreborn",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.greenstone.pocketwhip",
+      "patchSources": [
+        "hxreborn/patches-1.37.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.37.0"
+      ],
+      "appliedPatches": [
+        "Hide ads",
+        "Unlock premium"
+      ],
+      "originBuild": "260153",
+      "publishedAt": "2026-10-01T12:19:01Z"
     }
   }
 }
