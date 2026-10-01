@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-09-30T19:48:45Z"
+    "publishedAt": "2026-10-01T05:17:15Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -11521,102 +11521,6 @@
       "originBuild": null,
       "publishedAt": "2026-09-08T13:08:23Z"
     },
-    "adguard-hoodles-module-v4.13.2-arm-v7a.zip": {
-      "name": "adguard-hoodles",
-      "version": "4.13.2",
-      "appKey": "adguard",
-      "appName": "AdGuard",
-      "arch": "arm",
-      "fileType": "Module",
-      "brandKey": "hoodles",
-      "brandName": "hoodles",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.adguard.android",
-      "patchSources": [
-        "hoo-dles/patches-1.44.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.44.0"
-      ],
-      "appliedPatches": [
-        "Enable Premium "
-      ],
-      "originBuild": null,
-      "publishedAt": "2026-09-08T13:08:23Z"
-    },
-    "adguard-hoodles-module-v4.13.2-arm64-v8a.zip": {
-      "name": "adguard-hoodles",
-      "version": "4.13.2",
-      "appKey": "adguard",
-      "appName": "AdGuard",
-      "arch": "arm64",
-      "fileType": "Module",
-      "brandKey": "hoodles",
-      "brandName": "hoodles",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.adguard.android",
-      "patchSources": [
-        "hoo-dles/patches-1.44.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.44.0"
-      ],
-      "appliedPatches": [
-        "Enable Premium "
-      ],
-      "originBuild": null,
-      "publishedAt": "2026-09-08T13:08:23Z"
-    },
-    "adguard-hoodles-v4.13.2-arm-v7a.apk": {
-      "name": "adguard-hoodles",
-      "version": "4.13.2",
-      "appKey": "adguard",
-      "appName": "AdGuard",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "hoodles",
-      "brandName": "hoodles",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.adguard.android",
-      "patchSources": [
-        "hoo-dles/patches-1.44.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.44.0"
-      ],
-      "appliedPatches": [
-        "Enable Premium "
-      ],
-      "originBuild": null,
-      "publishedAt": "2026-09-08T13:08:23Z"
-    },
-    "adguard-hoodles-v4.13.2-arm64-v8a.apk": {
-      "name": "adguard-hoodles",
-      "version": "4.13.2",
-      "appKey": "adguard",
-      "appName": "AdGuard",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "hoodles",
-      "brandName": "hoodles",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.adguard.android",
-      "patchSources": [
-        "hoo-dles/patches-1.44.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.44.0"
-      ],
-      "appliedPatches": [
-        "Enable Premium "
-      ],
-      "originBuild": null,
-      "publishedAt": "2026-09-08T13:08:23Z"
-    },
     "adobe-acrobat-hooman-v26.7.1.47181-arm64-v8a.apk": {
       "name": "adobe-acrobat-hooman",
       "version": "26.7.1.47181",
@@ -18503,34 +18407,32 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "kveld9/patches-2.2.0.mpp"
+        "kveld9/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "Always Show Publish Date",
         "Bypass Mandatory Login",
         "Bypass Screen Capture Detection",
+        "Clean Share Panel",
         "Clean Share URL",
         "Client-Side AI & Behavioral Profiling Governor",
-        "Comment Sort Controls",
-        "Copy Comments Without Username",
+        "Comment Customizer",
         "Core Asset De-bloat",
         "Custom Offline Videos Limit",
         "Custom Share Sheet",
         "Device Privacy Guard",
-        "Disable Comment Suggested Emojis",
+        "Disable Feed Long-Press Actions",
         "Disable Search Video Autoplay",
         "Disable Story Feed Indicators",
-        "Enable Voice Comments",
         "Feed Ad Blocker",
         "Feed Bloat & Distraction Blocker",
         "Fix Google Login",
         "Force Auto-Scroll",
-        "Hide Community Tab",
-        "Hide Feed Search Bar",
-        "Hide Nearby Feed Tab",
+        "Hide Inbox Promos & Alerts",
+        "Hide Inbox Story & Status Tray",
         "Hide Popular Lives In Search",
         "Hide Profile Photo Follow Button",
         "Hide Suggested Searches",
@@ -18538,6 +18440,7 @@
         "In-App Browser Privacy Guard",
         "Instant Launch & Splash Blocker",
         "Media Usability & Watermark-Free Downloader",
+        "Navigation & Header Declutter",
         "P2P Video Relay & Mesh CDN Blocker",
         "Resource & Battery Governor",
         "Show Seekbar",
@@ -18545,8 +18448,8 @@
         "Unified Telemetry & Tracker Silencer",
         "Update Prompt Suppressor"
       ],
-      "originBuild": "260147",
-      "publishedAt": "2026-09-30T05:30:07Z"
+      "originBuild": "260151",
+      "publishedAt": "2026-10-01T05:16:45Z"
     },
     "tiktok-kveld9-v47.1.4-arm-v7a.apk": {
       "name": "tiktok-kveld9",
@@ -18561,34 +18464,32 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "kveld9/patches-2.2.0.mpp"
+        "kveld9/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "Always Show Publish Date",
         "Bypass Mandatory Login",
         "Bypass Screen Capture Detection",
+        "Clean Share Panel",
         "Clean Share URL",
         "Client-Side AI & Behavioral Profiling Governor",
-        "Comment Sort Controls",
-        "Copy Comments Without Username",
+        "Comment Customizer",
         "Core Asset De-bloat",
         "Custom Offline Videos Limit",
         "Custom Share Sheet",
         "Device Privacy Guard",
-        "Disable Comment Suggested Emojis",
+        "Disable Feed Long-Press Actions",
         "Disable Search Video Autoplay",
         "Disable Story Feed Indicators",
-        "Enable Voice Comments",
         "Feed Ad Blocker",
         "Feed Bloat & Distraction Blocker",
         "Fix Google Login",
         "Force Auto-Scroll",
-        "Hide Community Tab",
-        "Hide Feed Search Bar",
-        "Hide Nearby Feed Tab",
+        "Hide Inbox Promos & Alerts",
+        "Hide Inbox Story & Status Tray",
         "Hide Popular Lives In Search",
         "Hide Profile Photo Follow Button",
         "Hide Suggested Searches",
@@ -18596,6 +18497,7 @@
         "In-App Browser Privacy Guard",
         "Instant Launch & Splash Blocker",
         "Media Usability & Watermark-Free Downloader",
+        "Navigation & Header Declutter",
         "P2P Video Relay & Mesh CDN Blocker",
         "Resource & Battery Governor",
         "Show Seekbar",
@@ -18603,8 +18505,8 @@
         "Unified Telemetry & Tracker Silencer",
         "Update Prompt Suppressor"
       ],
-      "originBuild": "260147",
-      "publishedAt": "2026-09-30T05:30:07Z"
+      "originBuild": "260151",
+      "publishedAt": "2026-10-01T05:16:45Z"
     },
     "tubi-ajstrick81-android-tv-v10.36.5000-all.apk": {
       "name": "tubi-ajstrick81-android-tv",
@@ -18725,6 +18627,74 @@
       ],
       "originBuild": "260150",
       "publishedAt": "2026-09-30T19:48:00Z"
+    },
+    "brave-browser-kveld9-v1.96.60-arm64-v8a.apk": {
+      "name": "brave-browser-kveld9",
+      "version": "1.96.60",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "kveld9",
+      "brandName": "kveld9",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.brave.browser",
+      "patchSources": [
+        "kveld9/patches-2.3.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.3.0"
+      ],
+      "appliedPatches": [
+        "Block Brave Telemetry",
+        "Brave In-Product & Commercial Notification Optimizer",
+        "Brave Origin",
+        "Brave Startup Performance Optimization",
+        "Clean New Tab Page",
+        "Clean Share URL",
+        "Disable Background Sync & Periodic Sync",
+        "Disable Battery Status API & OS Listener",
+        "Sensor Privacy Guard",
+        "Skip First Run",
+        "Suppress In-App Promos & Surveys"
+      ],
+      "originBuild": "260151",
+      "publishedAt": "2026-10-01T05:16:45Z"
+    },
+    "brave-browser-kveld9-v1.96.60-arm-v7a.apk": {
+      "name": "brave-browser-kveld9",
+      "version": "1.96.60",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "kveld9",
+      "brandName": "kveld9",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.brave.browser",
+      "patchSources": [
+        "kveld9/patches-2.3.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.3.0"
+      ],
+      "appliedPatches": [
+        "Block Brave Telemetry",
+        "Brave In-Product & Commercial Notification Optimizer",
+        "Brave Origin",
+        "Brave Startup Performance Optimization",
+        "Clean New Tab Page",
+        "Clean Share URL",
+        "Disable Background Sync & Periodic Sync",
+        "Disable Battery Status API & OS Listener",
+        "Sensor Privacy Guard",
+        "Skip First Run",
+        "Suppress In-App Promos & Surveys"
+      ],
+      "originBuild": "260151",
+      "publishedAt": "2026-10-01T05:16:45Z"
     }
   }
 }
