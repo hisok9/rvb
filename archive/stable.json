@@ -18724,31 +18724,6 @@
       "originBuild": "260152",
       "publishedAt": "2026-10-01T06:37:10Z"
     },
-    "pocket-whip-hxreborn-v2.3-arm-v7a.apk": {
-      "name": "pocket-whip-hxreborn",
-      "version": "2.3",
-      "appKey": "pocketwhip",
-      "appName": "Pocket Whip",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "hxreborn",
-      "brandName": "hxreborn",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.greenstone.pocketwhip",
-      "patchSources": [
-        "hxreborn/patches-1.37.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.37.0"
-      ],
-      "appliedPatches": [
-        "Hide ads",
-        "Unlock premium"
-      ],
-      "originBuild": "260153",
-      "publishedAt": "2026-10-01T12:19:01Z"
-    },
     "pocket-whip-hxreborn-v2.3-arm64-v8a.apk": {
       "name": "pocket-whip-hxreborn",
       "version": "2.3",
