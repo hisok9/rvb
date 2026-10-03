@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-03T10:27:12Z"
+    "publishedAt": "2026-10-03T13:21:55Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -6408,16 +6408,16 @@
       "subVariant": null,
       "packageName": "eu.faircode.email",
       "patchSources": [
-        "heval99/patches-1.6.0.mpp"
+        "heval99/patches-1.7.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.6.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.7.0"
       ],
       "appliedPatches": [
         "Enable Pro"
       ],
-      "originBuild": "260169",
-      "publishedAt": "2026-10-03T10:27:04Z"
+      "originBuild": "260170",
+      "publishedAt": "2026-10-03T13:21:46Z"
     },
     "fairemail-heval99-v1.2337-arm64-v8a.apk": {
       "name": "fairemail-heval99",
@@ -6432,16 +6432,16 @@
       "subVariant": null,
       "packageName": "eu.faircode.email",
       "patchSources": [
-        "heval99/patches-1.6.0.mpp"
+        "heval99/patches-1.7.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.6.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.7.0"
       ],
       "appliedPatches": [
         "Enable Pro"
       ],
-      "originBuild": "260169",
-      "publishedAt": "2026-10-03T10:27:04Z"
+      "originBuild": "260170",
+      "publishedAt": "2026-10-03T13:21:46Z"
     },
     "swift-backup-heval99-v5.1.0-arm64-v8a.apk": {
       "name": "swift-backup-heval99",
@@ -15536,18 +15536,18 @@
       "subVariant": null,
       "packageName": "ch.protonmail.android",
       "patchSources": [
-        "SatanMerde/patches-1.36.0.mpp"
+        "SatanMerde/patches-1.44.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/SatanMerde/D-moniakPatches/releases/tag/v1.36.0"
+        "https://github.com/SatanMerde/D-moniakPatches/releases/tag/v1.44.1"
       ],
       "appliedPatches": [
         "AMOLED Black Theme - Proton Mail (Experimental)",
         "Declutter UI & Hide Upsells - Proton Mail (Experimental)",
         "Enhanced Privacy & Tracker Blocker - Proton Mail (Experimental)"
       ],
-      "originBuild": "260163",
-      "publishedAt": "2026-10-02T22:36:02Z"
+      "originBuild": "260170",
+      "publishedAt": "2026-10-03T13:21:46Z"
     },
     "proton-mail-satanmerde-v7.11.6-arm-v7a.apk": {
       "name": "proton-mail-satanmerde",
@@ -15562,18 +15562,18 @@
       "subVariant": null,
       "packageName": "ch.protonmail.android",
       "patchSources": [
-        "SatanMerde/patches-1.36.0.mpp"
+        "SatanMerde/patches-1.44.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/SatanMerde/D-moniakPatches/releases/tag/v1.36.0"
+        "https://github.com/SatanMerde/D-moniakPatches/releases/tag/v1.44.1"
       ],
       "appliedPatches": [
         "AMOLED Black Theme - Proton Mail (Experimental)",
         "Declutter UI & Hide Upsells - Proton Mail (Experimental)",
         "Enhanced Privacy & Tracker Blocker - Proton Mail (Experimental)"
       ],
-      "originBuild": "260163",
-      "publishedAt": "2026-10-02T22:36:02Z"
+      "originBuild": "260170",
+      "publishedAt": "2026-10-03T13:21:46Z"
     },
     "ibis-paint-x-hoodles-v14.1.0-arm64-v8a.apk": {
       "name": "ibis-paint-x-hoodles",
