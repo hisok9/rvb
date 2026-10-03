@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-03T05:19:23Z"
+    "publishedAt": "2026-10-03T10:27:12Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -6408,16 +6408,16 @@
       "subVariant": null,
       "packageName": "eu.faircode.email",
       "patchSources": [
-        "heval99/patches-1.5.0.mpp"
+        "heval99/patches-1.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.5.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.6.0"
       ],
       "appliedPatches": [
         "Enable Pro"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260169",
+      "publishedAt": "2026-10-03T10:27:04Z"
     },
     "fairemail-heval99-v1.2337-arm64-v8a.apk": {
       "name": "fairemail-heval99",
@@ -6432,16 +6432,16 @@
       "subVariant": null,
       "packageName": "eu.faircode.email",
       "patchSources": [
-        "heval99/patches-1.5.0.mpp"
+        "heval99/patches-1.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.5.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.6.0"
       ],
       "appliedPatches": [
         "Enable Pro"
       ],
-      "originBuild": "260139",
-      "publishedAt": "2026-09-28T17:40:57Z"
+      "originBuild": "260169",
+      "publishedAt": "2026-10-03T10:27:04Z"
     },
     "swift-backup-heval99-v5.1.0-arm64-v8a.apk": {
       "name": "swift-backup-heval99",
