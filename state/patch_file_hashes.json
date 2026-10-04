@@ -180,30 +180,8 @@
       "videoeditor.videorecorder.screenrecorder": "04069957d64231075a2e166bc79b51e9"
     },
     "stable": {
-      "ch.protonvpn.android": "3bde6342c4e6c5ed9c3863225b59115e",
-      "cn.ommiao.iconpacker": "cfbb7dc4e49f66044b51dfaee3a82c9c",
-      "cn.wps.moffice_eng": "7614c2c49bd328dd8f7e0b04a9ba6a0f",
-      "com.adguard.android": "be77707039a8049f152940f7511d5828",
-      "com.adobe.lrmobile": "fb365879ed89ecfa7f9a1b1cbb4d15c1",
-      "com.amazon.avod.thirdpartyclient": "7614c2c49bd328dd8f7e0b04a9ba6a0f",
-      "com.bambuna.podcastaddict": "44e6352ab7db9cb6c95b498724c9e40c",
-      "com.duolingo": "c518cb5d42f33806e6c1c22e9a651d46",
-      "com.github.android": "44768c1746fea22519c8644bc5cbe289",
-      "com.goodreads": "e1760b56a1321562a6dd34606328ce6a",
-      "com.hellochinese": "b51f1f1033e2efbf71dae6084dd2975a",
-      "com.intsig.camscanner": "b675a981325693379f49ebf134ec9464",
-      "com.merriamwebster": "c8117d27961f482d6fcfd5c20356a84a",
-      "com.myfitnesspal.android": "7300336949e204cee476303f7de134ea",
-      "com.pandora.android": "80d5655e4169d77a88e1cc2026ece379",
-      "com.soundcloud.android": "2b77e9bea18a5e8f2e7cea8ff02a00ef",
-      "com.teslacoilsw.launcher": "3075d39ef40e638ace54f9f54151f5b7",
-      "com.wallpaperscraft.wallpaper": "554bcd7a888df9292842e5b8be3baa8c",
-      "com.xodo.pdf.reader": "86268a214ff0baecbeccc337139fba6c",
-      "cz.ackee.ventusky": "09deaf476cf4950d0127e6211d86803c",
-      "ginlemon.flowerfree": "4226a34f147213738edd6ca102c5cff6",
-      "pl.solidexplorer2": "7614c2c49bd328dd8f7e0b04a9ba6a0f",
-      "shared": "b8e9c2ea552b3ab6be1d146fea1be5e9",
-      "videoeditor.videorecorder.screenrecorder": "0bc775c3ea976d8c1e93fcc1ba82c67c"
+      "com.intsig.camscanner": "ba7b66fe03333f15d7c1417f44366fda",
+      "shared": "7e4de8308e1104b536d7f1c67d397f86"
     }
   },
   "hxreborn/hxreborn-tiktok-patches": {
@@ -295,10 +273,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "203f70c3d0e73804875c951c88ac4fbe",
-      "com.google.android.youtube": "6ac7e435766e094dcf0ae4007e781fd5",
-      "com.reddit.frontpage": "6e2326a680fae25c1a8c836e848567a3",
-      "shared": "b3107d2812accb0de4a9ece755172e69"
+      "com.google.android.apps.youtube.music": "491dfa4e93bb7c2a131865d4a6469944",
+      "com.google.android.youtube": "354168e71493af2090ead8f5d360f3fe",
+      "shared": "1706e9419987502f3a9a0b8163f8a97a"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "d913b50d8f4a9ce0734ef1d1b3764a9f",
@@ -374,17 +351,11 @@
   "rookieenough/de-vanced": {
     "beta": {
       "com.google.android.apps.photos": "af2e73af0995a512d84ea8d150c75cb5",
-      "shared": "47aeb6555648cdf0a98d5bbc5d216fd3"
+      "shared": "53bc29bd97211283f3f3a9270f0e64bb"
     },
     "stable": {
       "com.google.android.apps.photos": "af2e73af0995a512d84ea8d150c75cb5",
-      "com.google.android.apps.recorder": "5f3ea6719c4c620dea68bb1bae6f7f42",
-      "com.microblink.photomath": "aa058c73c74e6518c75b45991983219d",
-      "com.microsoft.office.officelens": "1bd729f1a8e6b4cd05412c5d43c0e0d8",
-      "com.strava": "6edd33fa1cf10f9cf7db757b45caf425",
-      "com.viber.voip": "e45a14137e2467cc36f8d788c1230bc4",
-      "jp.pxv.android": "3b802125208bc875cd66ea9b7da6e004",
-      "shared": "47aeb6555648cdf0a98d5bbc5d216fd3"
+      "shared": "53bc29bd97211283f3f3a9270f0e64bb"
     }
   },
   "rushiranpise/morphe-patches": {
