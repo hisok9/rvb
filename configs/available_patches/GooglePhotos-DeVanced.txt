@@ -1,0 +1,55 @@
+==========================================================================
+GooglePhotos-DeVanced
+  patches-source : RookieEnough/De-Vanced v1.5.0
+  pkg-name       : com.google.android.apps.photos
+  bundle         : patches-1.5.0.mpp
+  generated      : 2026-10-04 via morphe-desktop list-patches
+                   (-f com.google.android.apps.photos --with-versions --with-packages -x)
+  totals         : 5 patches — 3 default-ON, 2 default-OFF
+==========================================================================
+
+HOW TO USE  (names must be single-quoted inside a double-quoted TOML string)
+
+  included-patches  = add a NON-default patch        build.sh:252 requires quotes
+  excluded-patches  = drop a default patch
+  exclusive-patches = true  -> start from nothing, included-patches is your whole set
+  inclusive-patches = true  -> start from everything, prune with excluded-patches
+
+  Only the 2 DEFAULT-OFF names below can be added. The 3 DEFAULT-ON
+  ones are already applied — to change those, use excluded-patches.
+
+COPY-PASTE STARTER (delete what you don't want)
+  included-patches = "'Clone app' 'Enable DCIM folders backup control'"
+
+--------------------------------------------------------------------------
+DEFAULT-OFF (2)  <- eligible for included-patches
+--------------------------------------------------------------------------
+
+'Clone app'
+    Changes the app package name to allow installing the same app multiple times. By default
+    ".morphe" is appended to the package name. Each cloned install must use a unique package name.
+    Cloning does not work with all apps and using this patch may cause app crashes or other
+    unexpected behavior.
+    versions: any (unpinned)
+
+'Enable DCIM folders backup control'
+    Disables always on backup for the Camera and other DCIM folders, allowing you to control backup
+    for each folder individually. This will make the app default to having no folders backed up.
+    versions: 7.92.0.977185651, 7.80.0.929302933
+
+--------------------------------------------------------------------------
+DEFAULT-ON (3)  <- applied automatically; drop with excluded-patches
+--------------------------------------------------------------------------
+
+'Spoof features'
+    Spoofs the device to enable Google Pixel exclusive features, including unlimited storage.
+    versions: 7.92.0.977185651, 7.80.0.929302933
+
+'GmsCore support'
+    Allows the app to work without root by using a different package name when patched using a
+    GmsCore instead of Google Play Services.
+    versions: 7.92.0.977185651, 7.80.0.929302933
+
+'Fix selected account persistence'
+    Prevents Google Photos from clearing the selected account after cold start when using MicroG.
+    versions: 7.92.0.977185651

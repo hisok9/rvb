@@ -1,0 +1,61 @@
+==========================================================================
+CamScanner-hoodles
+  patches-source : hoo-dles/morphe-patches v1.46.0
+  pkg-name       : com.intsig.camscanner
+  bundle         : patches-1.46.0.mpp
+  generated      : 2026-10-04 via morphe-desktop list-patches
+                   (-f com.intsig.camscanner --with-versions --with-packages -x)
+  totals         : 7 patches — 2 default-ON, 5 default-OFF
+==========================================================================
+
+HOW TO USE  (names must be single-quoted inside a double-quoted TOML string)
+
+  included-patches  = add a NON-default patch        build.sh:252 requires quotes
+  excluded-patches  = drop a default patch
+  exclusive-patches = true  -> start from nothing, included-patches is your whole set
+  inclusive-patches = true  -> start from everything, prune with excluded-patches
+
+  Only the 5 DEFAULT-OFF names below can be added. The 2 DEFAULT-ON
+  ones are already applied — to change those, use excluded-patches.
+
+COPY-PASTE STARTER (delete what you don't want)
+  included-patches = "'Hide app icon' 'Enable debug' 'Change package name' 'MicroG integration' 'Disable Pairip license check'"
+
+--------------------------------------------------------------------------
+DEFAULT-OFF (5)  <- eligible for included-patches
+--------------------------------------------------------------------------
+
+'Hide app icon'
+    Hides the app icon from the Android launcher.
+    versions: any (unpinned)
+
+'Enable debug'
+    Enables debugging on the app by setting android:debuggable="true".
+    versions: any (unpinned)
+
+'Change package name'
+    Appends ".morphe" to the package name by default. Changing the package name of the app can lead
+    to unexpected issues.
+    versions: any (unpinned)
+
+'MicroG integration'
+    Allows the app to work without root by using MicroG instead of Google Play Services.
+    versions: any (unpinned)
+
+'Disable Pairip license check'
+    Disables Play Integrity API (pairip) client-side license check. This patch does not bypass Play
+    Integrity attestation or pairipcore virtualization.
+    versions: any (unpinned)
+
+--------------------------------------------------------------------------
+DEFAULT-ON (2)  <- applied automatically; drop with excluded-patches
+--------------------------------------------------------------------------
+
+'Disable telemetry'
+    Disables CamScanner's custom telemetry system.
+    versions: 7.20.0.2606230000
+
+'Enable Premium'
+    Enables some app features locked behind the subscription paywall. Certain server-side
+    functionality may be unavailable.
+    versions: any (unpinned)

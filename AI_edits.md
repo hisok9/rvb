@@ -1,347 +1,188 @@
 # AI edit log
 
-Working plan for the build-pruning effort. Append new entries as the work
-proceeds; do not rewrite history in this file.
-
-- **Repo/branch:** fork `hisok9/rvb`, local checkout on `data`.
-- **Status:** Edit 1 applied and committed (`a28dc433`), **not pushed**.
-  Edit 2 (site URL + tokens) is research only — nothing changed.
+Build-pruning + fork setup. Local checkout: `data`.
 
 ---
 
-## Edit 1 — Disable every app except four
+## Scope
 
-### Goal
+- **8 keepers** in `configs/patches/*.toml` (43 files, 183 tables → 175 flips):
 
-Stop building everything except Truecaller, YouTube (Morphe), Google Photos and
-CamScanner, **without removing any config**. Disabled apps keep their full
-definition — download URLs, patch lists, brands, `patches-version` — so each one
-returns with a single flip back.
+  | File | Keep |
+  |---|---|
+  | `photos.toml` | `GooglePhotos-DeVanced`, `GooglePhotos-rushiranpise`, `GooglePhotos-AkashSriram` |
+  | `morphe.toml` | `YouTube-Morphe`, `YouTubeMusic-Morphe` |
+  | `bufferk.toml` | `Truecaller-bufferk` |
+  | `paresh.toml` | `Truecaller-Paresh` |
+  | `hoodles.toml` | `CamScanner-hoodles` |
 
-### Mechanism: per-table `enabled = false`
+- **Mechanism:** `enabled = false` **on each table**, never file-level —
+  `build.sh:168` does `toml_get "$t" enabled) || enabled=true` (table only, falls
+  back to *true*). Deleting the line re-enables. Config was never deleted.
+- **Pools:** `compile_patch_configs.py` → stable = 8, beta = 4
+  (beta = the 4 keepers with `patches-version = "both"`).
+- **Never touched:** `TG_TOKEN` (unset → notify skips), `APKS_REPO` (unset).
 
-`enabled = false` is the documented switch
-([CONFIG.md:288](CONFIG.md), [docs/contributing.md:30](docs/contributing.md)).
-**It must be written on each table, not as a file-level default.** Verified
-consumers:
+---
 
-| Consumer | How it reads `enabled` |
+## Publish & triggers
+
+- Publish = `git push origin data`. Nothing else.
+- **No `push:` trigger** — `ci.yml` is schedule + dispatch only; `trace-verify.yml`
+  matches only `scripts/`, `.github/traces/**`. A `configs/**` push runs nothing.
+- Crons UTC: `00:11 04:46 08:08 12:52 16:29 20:03`. Or Actions → CI → Run workflow.
+- **Manual CI:** `manual-ci.yml` never recompiles — `build_resolve_context.sh` only
+  reads `patches-version`. Use `config_file=configs/config.manual.toml`
+  (deterministic hand-written TOML). The `*_build.json` choices were upstream-stale.
+- **Repo setting: Workflow permissions → Read and write.** `manual-ci.yml` declares
+  **no `permissions:` block**, and `ci.yml`'s `build_beta`/`build_stable` don't
+  either, while the nested `build.yml` requests `contents: write`.
+
+### Fork traps
+
+| Trap | Resolution |
 |---|---|
-| `scripts/build.sh:168` | `toml_get "$t" enabled) \|\| enabled=true` — table only, falls back to **true** |
-| `compile_patch_configs.py:95` | `merged = file_defaults; merged.update(app_table)` — table wins |
-| `sync_patch_sources.py:81` | same merge — table wins |
-| `ci_fetch_app_versions.sh:30`, `ci_check_app_patches.py:41` | compiled JSON derived from the above |
+| Fork inherits upstream's *generated* `configs/*_build.json` (17 apps), not your TOMLs | self-corrects on the first `ANYTHING_CHANGED=1` run (steps 7→8 order guarantees it) |
+| `ANYTHING_CHANGED` never looks at TOMLs — flipping `enabled` sets no trigger | step 3 (base compile) always runs; steps 7 & 12 wait for an upstream signal |
+| inherited `archive/beta.json` on `website` | **deleted** — `merge_archive_branch.sh:47` has an absent-case `else`; no `beta` release exists so it was never read |
+| `config.manual.toml` | now the `GooglePhotos-AkashSriram` fixture |
+| `data` branch has **no `.gitignore`** | keep scratch files outside the repo |
 
-All 183 tables carry an explicit `enabled = true`, so a file-level
-`enabled = false` is overridden everywhere, and *deleting* the lines re-enables
-everything via the `|| enabled=true` fallback. **Per-table flip is the only form
-all consumers agree on.**
+---
 
-### Scope — 8 keepers, 175 flips, 43 files
+## Site — `hisok9.github.io`
 
-| File | Keep | Flip |
-|---|---|---|
-| `photos.toml` | `GooglePhotos-DeVanced`, `GooglePhotos-rushiranpise`, `GooglePhotos-AkashSriram` (3/3) | 0 — **untouched** |
-| `morphe.toml` | `YouTube-Morphe`, `YouTubeMusic-Morphe` (2/8) | 6 |
-| `bufferk.toml` | `Truecaller-bufferk` (1/2) | 1 |
-| `paresh.toml` | `Truecaller-Paresh` (1/9) | 8 |
-| `hoodles.toml` | `CamScanner-hoodles` (1/23) | 22 |
-| 38 other files | — | 138 |
+- Created by **fork + rename** `nullcpy/nullcpy.github.io` → `hisok9/hisok9.github.io`
+  (the `owner.github.io` name is what makes the default Pages URL resolve).
+- Retarget: `rebuild-catalog.yml:41,56,60` `RVB_REPO: hisok9/rvb`; `script.js:8`
+  `"owner"` (builds every download URL); `index.html` ×6; `_config.yml`;
+  `rebuild_catalog.py` default.
+- Rebrand **NullStore → My Store** (11 hits) + all `nullcpy` → `hisok9`.
+- Rebuild gates cleared **via env only** — `rebuild_catalog.py` untouched:
+  `MIN_RELEASES_THRESHOLD="1"` (default 10 vs 2 releases); `FORCE` exposed as a
+  `force` dispatch input **defaulting false**, so the `MIN_RATIO 0.6` shrink breaker
+  still protects scheduled runs.
+- Result: 122 → **1 app**, 718 → **2 builds**, 2500 → **0** `nullcpy`.
+- Workflows active: `rebuild-catalog`, `deploy-pages`, `notify`.
 
-Totals: **183 tables → 8 keepers, 175 flips**; 38 files fully disabled, 4
-partial, 1 untouched.
+---
 
-Explicitly excluded from keepers: the `YouTube-Morphe-{NordTheme,MochaTheme,
-Experimental}` and `YouTubeMusic-Morphe-Experimental` variants, both
-`Reddit-Morphe` tables, all 6 `anddea` YouTube tables (different patch source),
-and `configs/config.manual.toml` (**left exactly as-is** — it is a Manual CI
-test fixture, never part of the pools).
+## Signing key
 
-### Steps
+### The default is public
+
+| Piece | Where |
+|---|---|
+| `ks.keystore` (BKS, 3708 B), `ks-p12.keystore` (PKCS12, 4178 B) | committed on `origin/main` |
+| password `123456789` | `scripts/utils.sh:24` |
+| alias `jhc` | `scripts/utils.sh:25` |
+| fallback | `install_keystore.sh:13-16` → *"using repo keystores"* when both B64 secrets absent (always, on a fork — secrets aren't inherited) |
+
+Opens with that password: `CN=ReVanced`, RSA-4096, 2023→2047,
+SHA-256 `63:7C:22:6C:67:AE:C0:CD:BC:6F:49:CD:47:6D:52:47:F9:99:12:26:06:28:62:73:E1:62:33:A9:13:A0:88:B4`.
+Blob `609170a1…` is byte-identical to `nullcpy/rvb`. Anyone can sign an update your
+phone accepts as legitimate — hence replacing it.
+
+### What signs what
+
+| File | Format | Consumer | Lands on |
+|---|---|---|---|
+| `ks.keystore` | **BKS** (`00000002 00000014`) | patch CLI `--keystore=` (`utils.sh:3243`) | **the final APK** |
+| `ks-p12.keystore` | PKCS12 (`30 82…`) | `apksigner sign` (`utils.sh:1444`) | merged-stock intermediate |
+
+Same key pair, two formats. Plain `keytool` rejects `ks.keystore` until the BC
+provider is loaded — the build does that in `build_install_bouncy_castle.sh`.
+`check_sig` (`utils.sh:3326`) only validates *stock* downloads against `sig.txt`,
+which is empty → never sees your key.
+
+### Generate — **alphanumeric password only** (`utils.sh:1444`/`:3245` interpolate it unquoted)
 
 ```bash
-# 1. flip enabled = true -> false on the 175 table lines in configs/patches/*.toml
+mkdir -p ~/keys/my-store && cd ~/keys/my-store   # outside the repo, never commit
+PASS='<strong-alphanumeric-password>'
+ALIAS='mystore'
 
-# 2. verify pool membership. Run from a temp dir: the data branch has NO
-#    .gitignore, so config.stable.json / config.beta.json written into the repo
-#    would be committable.
-cd "$(mktemp -d)" && git -C /Users/me/Developer/git/secondary/rvb \
-  show origin/main:.github/scripts/compile_patch_configs.py > c.py
-python3 c.py /Users/me/Developer/git/secondary/rvb/configs/patches
-jq 'keys | length' config.stable.json config.beta.json   # expect ~8, not 183
+# 1. PKCS12 -> ks-p12.keystore (apksigner)
+keytool -genkeypair -alias "$ALIAS" -keyalg RSA -keysize 4096 -validity 10000 \
+  -dname "CN=My Store, OU=hisok9" \
+  -keystore ks-p12.keystore -storetype PKCS12 -storepass "$PASS" -keypass "$PASS"
 
-# 3. confirm blast radius — only patch TOMLs, no code/docs
-git diff --stat
+# 2. BKS -> ks.keystore (patch CLI — signs the final APK)
+curl -sL -o bcprov.jar \
+  https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.81/bcprov-jdk18on-1.81.jar
+keytool -importkeystore \
+  -srckeystore ks-p12.keystore -srcstoretype PKCS12 \
+  -srcstorepass "$PASS" -srckeypass "$PASS" -srcalias "$ALIAS" \
+  -destkeystore ks.keystore -deststoretype BKS \
+  -deststorepass "$PASS" -destkeypass "$PASS" \
+  -providerclass org.bouncycastle.jce.provider.BouncyCastleProvider \
+  -providerpath ./bcprov.jar
 
-# 4. publish. The script lives on main, not data; it reads working-tree TOMLs
-#    and builds the commit on a temp index (never touches HEAD/worktree), so it
-#    can be materialised and run from this checkout. It globs only
-#    configs/**/*.toml, so stray root files cannot leak in.
-git show origin/main:.github/scripts/push_data_configs.sh > /tmp/push.sh
-bash /tmp/push.sh "feat(config): disable all apps except Truecaller, YouTube/YouTube Music Morphe, Google Photos, CamScanner"
+# 3. both must report the SAME fingerprint
+keytool -list -keystore ks-p12.keystore -storetype PKCS12 -storepass "$PASS"
+keytool -list -keystore ks.keystore -storetype BKS \
+  -providerclass org.bouncycastle.jce.provider.BouncyCastleProvider \
+  -providerpath ./bcprov.jar -storepass "$PASS"
 
-# 5. optional: bash .github/scripts/fetch_data_branch.sh to pull canonical copies back
+# 4. secrets, without printing key material
+base64 < ks-p12.keystore | tr -d '\n' | pbcopy   # -> KEYSTORE_P12_B64
+base64 < ks.keystore     | tr -d '\n' | pbcopy   # -> KEYSTORE_B64
 ```
 
-### Verification
+**Back up both files + password offline first** — no escrow; lose them and no
+installed app can ever be updated again.
 
-No code verification applies: `scripts/`, `.github/workflows/` and `docs/` are
-untouched, so `bash .github/traces/trace_runner.sh verify` has nothing to say
-about this change. The pool compile in step 2 is the gate.
+### Four secrets on `hisok9/rvb`
 
-### Consequences (checked)
+`KEYSTORE_B64`, `KEYSTORE_P12_B64`, `KEYSTORE_PASSWORD`, `KEY_ALIAS`
+→ `install_keystore.sh:23-34` overwrites the repo files and exports
+`RVB_KEYSTORE_PASS`/`RVB_KEY_ALIAS`. Upstream's keystores stay committed, inert.
 
-- **Existing downloads survive.** `cleanup-archive-assets.py` keeps the 2 newest
-  per app+arch; `releases_keep_keyword: stable/beta` protects archives;
-  `releases_keep_latest: 98`. A stopped app keeps its last artifacts until they
-  age out of that window.
-- **Watcher state shrinks.** `sync_patch_sources.py` only discovers sources with
-  a live app, so `state/patch_sources.json` (53 sources) prunes itself on the
-  next run. Re-enabling later re-adds and re-triggers naturally.
-- **Generated JSON is writer-owned.** `configs/stable_build.json`,
-  `configs/beta_build.json` and `state/*.json` are regenerated by CI — never
-  hand-edit them.
-- **Watch the first site rebuild.** `MIN_RATIO 0.6` aborts a catalogue rebuild
-  retaining under 60% of the previous apps. Archive manifest entries persist
-  with their assets so it should hold, but confirm via `rebuild-catalog.yml`
-  with `dry_run: true` after publishing.
+### Verified — Manual CI run #3, release `260177`
+
+```
+Installed custom ks.keystore (3783 bytes).
+Installed custom ks-p12.keystore (4266 bytes).
+Signing identity exported (alias: ***).      <- masked = registered secret
+```
+
+Both APKs, `apksigner verify --print-certs`:
+
+```
+CN=My Store, OU=hisok9
+3549720878d33cc24562d81c9c3117cf08d1e031bf01c9d46ca497b00a68f70b
+```
+
+old `63:7C:22:6C…` absent; control (truncated APK) → `exit=1`, so `exit=0` is real.
+`stable` release assets overwritten → site links serve the new build.
+**All installed apps must be uninstalled + reinstalled** (signature changed).
 
 ---
 
-## Edit 1 — result (applied)
+## Build numbering — left alone
 
-Committed `a28dc433` on `data` — `feat(config): disable all apps except
-Truecaller, YouTube, Photos, CamScanner`. 42 files, 175 insertions/deletions,
-every changed line exactly `enabled = true` → `enabled = false`. `photos.toml`
-untouched. Scratch script removed; tree clean.
+`build_resolve_version.sh`: `YY` + max(`26NNNN` release **or** git tag) + 1.
+100 tags `260077`–`260177` + releases `260176`/`260177` → next is `260178`.
+Resetting needs both sources cleared *or* a script edit. Decided against.
 
-**Verification actually run:**
+`NEXT_VER_CODE` feeds only the release tag, changelog/manifest, Telegram message
+and the **Magisk module** `versionCode` (`utils.sh:4818`). The APK's Android
+`versionCode` is the per-app `version-code` key (`build.sh:267`) — unaffected.
 
-| Check | Result |
+---
+
+## State & outstanding
+
+| | |
 |---|---|
-| line totals | 8 `true` / 175 `false` / 183 tables |
-| enabled tables are exactly the keepers | ✅ 8 named tables |
-| diff confined to `configs/patches/` | ✅ no code/docs/workflow touched |
-| `compile_patch_configs.py` pools | **stable = 8**, **beta = 4** |
-| `build.sh:168` table-level read | ✅ local builds agree |
+| `hisok9/rvb` `data` | `8fdf75d9`, clean, 0 unpushed |
+| `hisok9/rvb` `website` | `d4f394a7` — manifests `260176`+`260177`, `beta.json` removed |
+| `hisok9/hisok9.github.io` | `9edf048` — retargeted, rebranded, catalog rebuilt; live as **My Store** |
+| signing | own key from `260177` on — keep `35497208…` stable forever |
 
-Beta = `YouTube-Morphe`, `YouTubeMusic-Morphe`, `GooglePhotos-DeVanced`,
-`Truecaller-bufferk` — the keepers whose `patches-version = "both"`
-(`morphe.toml:2`, `bufferk.toml:9`, `photos.toml:7`) route to both pools. Not a
-bug, the other 4 keepers default to stable only.
+**TODO**
 
-**Still to do:** `git push origin data` when asked. Then the next scheduled
-watcher run (≤4h) regenerates `configs/*_build.json` and prunes
-`state/patch_sources.json`; only Trace Verify runs on push, so nothing builds
-until a trigger fires.
-
----
-
-## Edit 2 — pointing the site at your own (research only, nothing changed)
-
-The builder never writes into the site repo; the site clones rvb's `website`
-branch and queries the Releases API ([docs/website-contract.md](docs/website-contract.md)).
-So "your own site" = a second repo you own, plus a handful of repo **variables**.
-
-### Variables (Settings → Variables) — no code edit needed
-
-| Variable | Default to override | Purpose |
-|---|---|---|
-| `WEBSITE_REPO` | `nullcpy/nullcpy.github.io` | target of the `catalog-updated` dispatch (`cleanup.yml:52`) |
-| `RELEASE_NOTES_WEBSITE_LINK` | `https://nullcpy.github.io` | link printed in release notes (`build.yml:143`) |
-| `APKS_REPO` | `nullcpy/apks` | stock-APK cache — also synthesises download source #1 (`build.yml:136`) |
-
-`Forking is a variable change (vars.APKS_REPO), not a config edit` — stated
-explicitly in `docs/cache-repo.md`.
-
-### Hardcoded `nullcpy` fallbacks (would need a code edit)
-
-`build.sh:49-50` `author` / `author-page` defaults, `module/customize.sh:190`
-`MAINTAINER`, and README badge URLs. Only cosmetic *except* `author`, which feeds
-`update_json_path` — and `utils.sh:4687` builds the module's `updateJson` from
-`${GITHUB_REPOSITORY}` (auto-set by Actions to `hisok9/rvb`), so **modules built
-on your fork already update from your fork with zero config.**
-
-### Do you need a PAT? — one optional, rest no
-
-| Secret | Required? | Behaviour if absent |
-|---|---|---|
-| `GITHUB_TOKEN` | **automatic**, never create it | `build.yml:36` grants `contents: write`; uploads + branch merges work out of the box |
-| `APKS_REPO_TOKEN` | **only if** you set `APKS_REPO` to a repo you don't own, *and* want cache writes | upload degrades to a warning (`wpr`, 3 attempts); `update_usage_tracker.py` prints "not set. Skipping" and is invoked `|| true`. **No build failure.** |
-| `WEBSITE_DISPATCH_TOKEN` | only to dispatch to a site repo you don't own | `continue-on-error: true` + `::warning::… the scheduled rebuild will converge` — the site's own cron (`23 */6 * * *`) recovers. **No failure.** |
-| `TG_TOKEN` | no | `ci_notify_telegram.sh:4` → "TG_TOKEN is not set. Skipping". |
-| `CODEBERG_TOKEN` | only for Codeberg-hosted patch sources | not used by any of the 8 keepers |
-
-**Bottom line:** as long as `APKS_REPO` points at a repo in *your* account (or
-you leave the cache out), **no PAT is needed at all** — the built-in
-`GITHUB_TOKEN` covers releases, manifests and branch pushes. Add
-`APKS_REPO_TOKEN` only if you want the shared cross-fork cache, and
-`WEBSITE_DISPATCH_TOKEN` only if you want instant site rebuilds instead of the
-6-hourly cron convergence.
-
----
-
-## Fork isolation & publish propagation (explainer — no edits)
-
-Answers two questions that decide whether a fork is safe and when its config
-actually goes live. Every claim below was grepped or run against `origin/main`.
-
-### Why a fork can never write to `nullcpy/rvb`
-
-Three independent barriers, all of which you get by forking — no setup needed.
-
-**1. Every push targets `origin`, and `origin` is your fork.**
-
-`git remote -v` → `https://github.com/hisok9/rvb.git`. The complete set of push
-sites in `scripts/` + `.github/`:
-
-| Site | Command |
-|---|---|
-| `push_data_configs.sh:63` | `git push -q origin "$new:refs/heads/data"` |
-| `commit_data_branch.sh:68` | `git push -q origin "$new:refs/heads/$BRANCH"` |
-| `merge_archive_branch.sh:95` | `git push -q origin "$BRANCH"` |
-| `cleanup_update_branch.sh:111` | `git push origin update` |
-| `cleanup_website_branch.sh:59` | `git push origin website` |
-| `build.yml:215` | `git push origin update` |
-| `update_usage_tracker.py:74` | `git push origin main`¹ |
-
-**No push anywhere targets a literal `nullcpy/…`** — `git grep -nE "push.{0,40}nullcpy"`
-returns no matches.
-
-¹ That one's `origin` is the *cloned* `temp/apks_repo`, not rvb, and the script
-returns early when `APKS_REPO_TOKEN` is unset.
-
-**2. `nullcpy/rvb` exists only as a *read* fallback, never as a write target.**
-
-| Location | Form | Why it never fires |
-|---|---|---|
-| `cleanup_update_branch.sh:19` | `${GITHUB_REPOSITORY:-nullcpy/rvb}` | Actions always sets `GITHUB_REPOSITORY` |
-| `generate_release_notes.py:225` | `os.environ.get("GITHUB_REPOSITORY") or "nullcpy/rvb"` | same |
-| `backfill_manifests.py:94` | `--repo` default | offline tool, not run in CI |
-| `repair_archive_manifest.py:146` | `--repo` default | offline tool |
-| `seed_website_branch.py:38` | `--repo` default | offline tool |
-| `build.sh:50` | `DEF_AUTHOR_PAGE="github.com/nullcpy/rvb"` | cosmetic author string |
-
-**3. Fork refs are independent, and fork secrets aren't inherited.**
-
-A push to `hisok9/rvb:data` cannot alter `nullcpy/rvb:data` — separate
-repositories, separate ref stores. GitHub also does not copy Actions secrets into
-a fork, so nothing could authenticate as `nullcpy` even if a path existed.
-
-**Where nullcpy is still contacted** — reads and fail-soft attempts only:
-
-| Variable | Default target | Effect on your fork |
-|---|---|---|
-| `APKS_REPO \|\| 'nullcpy/apks'` | stock-APK cache | reads succeed (public repo); writes → warning after 3 attempts, swallowed by `\|\| true` |
-| `WEBSITE_REPO \|\| 'nullcpy/nullcpy.github.io'` | catalog dispatch | 401, no token → `continue-on-error: true` |
-
-Neither one writes to `nullcpy/rvb`.
-
-### How your changes start occurring after a push
-
-**Nothing runs on push.** This is the counter-intuitive part:
-
-- `ci.yml` has **no `push:` block** — only `schedule` (6 crons) + `workflow_dispatch`.
-- `trace-verify.yml` is the sole push-triggered workflow, filtered to
-  `scripts/build.sh`, `scripts/utils.sh`, `.github/traces/**`. A `configs/**` push
-  matches none of those paths.
-
-So `git push` updates `origin/data` and stops. It becomes live at the next
-scheduled `ci.yml`, all times UTC:
-
-```
-00:11   04:46   08:08   12:52   16:29   20:03
-```
-
-Typical wait ≤ 4h, worst case 24h. Or trigger it immediately via
-**Actions → CI → Run workflow**.
-
-**The chain once it runs:**
-
-1. `ci.yml` checks out **`main`** (`ref: main`), not `data`.
-2. `ci.yml:43` → `fetch_data_branch.sh` → `git fetch origin data` → materialises
-   `configs/` + `state/` into the worktree. `origin` is your fork, so the TOMLs are
-   **yours**. `.gitignore:20-21` keeps them untracked on `main` — the `data` branch
-   is the canonical copy (AGENTS.md rule 1). This also drags over the *generated*
-   `configs/*_build.json`, which is a separate matter — see the gate below.
-3. `ci.yml:46` → `ci_compile_base_configs.sh` → writes the **base** configs
-   `config.stable.json` / `config.beta.json` straight from the TOMLs. Only
-   `enabled = true` tables survive → **your 8**. This step has **no `if:` guard**,
-   so it runs every time — log line `Stable pool apps: 8`.
-4. `ci.yml:48` → `sync_patch_sources.py` → `TRIGGER_STABLE` / `TRIGGER_BETA`
-   (did an upstream patch version move?).
-5. `ci.yml:62` → `compare_apps` → `TRIGGER_APP_UPDATE` (did an app version move?).
-6. `ci.yml:68` → `ci_trigger_flags.sh` → `SOURCES_CHANGED` and **`ANYTHING_CHANGED`**.
-7. `ci.yml:84` → `ci_generate_configs.sh`, gated on **`if: ANYTHING_CHANGED == '1'`**
-   → projects the base config (your 8) onto the active-source lists and writes the
-   **generated** `configs/stable_build.json`.
-8. `ci.yml:93` → `ci_resolve_triggers.sh` reads **`configs/stable_build.json`** —
-   the *generated* file from step 7, **not** the base from step 3 — counts
-   `[.[] | objects | select(.enabled != false)]`, and emits
-   `::notice::… no enabled apps` when zero.
-9. `build_beta` → `build.yml` with `configs/beta_build.json`.
-10. `build_stable` → `build.yml` with `configs/stable_build.json`.
-11. `trigger_cleanup` → prunes releases, then dispatches to `WEBSITE_REPO`.
-12. `ci.yml:118` → `commit_data_branch.sh`, gated on **`if: ANYTHING_CHANGED == '1'`**
-    → writes `state/*.json` + `configs/*_build.json` back onto `data`.
-
-`build.yml` materialises independently (`:61` `ref: main`, `:70`
-`fetch_data_branch.sh`), so every build reads canonical `data` regardless of what
-is checked out.
-
-### The gate: why your config may not reach a build
-
-**`ANYTHING_CHANGED` never looks at your TOMLs.** It is computed only from
-upstream signals (`ci_trigger_flags.sh`):
-
-```bash
-SOURCES_CHANGED  = TRIGGER_STABLE || TRIGGER_BETA        # a patch source released
-ANYTHING_CHANGED = SOURCES_CHANGED || TRIGGER_BLOCKED || TRIGGER_APP_UPDATE
-```
-
-Flipping `enabled = true → false` sets **none** of them. Consequences:
-
-- **Step 3 always runs** → your TOMLs are verified fresh on every run.
-- **Steps 7 and 12 are skipped** when the gate is 0 → the *generated*
-  `configs/*_build.json` — the file builds actually consume — keeps its previous
-  contents, and nothing is written back to `data`.
-
-Ordering is what makes it self-correcting: step 7 regenerates *before* step 8
-decides, so the first run with any upstream activity rewrites the generated JSON
-from your TOMLs before the trigger decision is made. Nothing to fix by hand — it
-just needs a signal.
-
-> **Fork-specific trap.** A fresh fork inherits upstream's *generated* JSON, not
-> its TOMLs. At `77632e6b` this fork had:
->
-> | file | contents |
-> |---|---|
-> | `configs/stable_build.json` | 183 apps, `enabled=True` for **17** — byte-identical to `nullcpy/rvb`, none of them your keepers |
-> | `configs/beta_build.json` | 23 apps, `enabled=True` for **0** |
->
-> The TOMLs are yours; the generated JSON is upstream's. They converge on the
-> first `ANYTHING_CHANGED=1` run.
-
-### Forcing a build — Manual CI
-
-`manual-ci.yml` → `build.yml` **never recompiles**: `build_resolve_context.sh`
-only extracts `patches-version`, then builds the file as given. So the
-`config_file` choice alone decides what you build:
-
-| `config_file` | Result as of `77632e6b` |
-|---|---|
-| `configs/stable_build.json` | **upstream's 17 apps** — stale, not yours |
-| `configs/beta_build.json` | **0 apps** — nothing to build |
-| `configs/config.manual.toml` | ✅ **deterministic** — a hand-written TOML that `build.sh` reads directly, bypassing the generated JSON entirely |
-
-Use `config.manual.toml` to exercise your config without waiting on an upstream
-signal. It has **no file-level preamble**, so `build_resolve_context.sh`'s
-`awk '/^\[/ {exit}'` reads nothing before the first `[` and classifies it as
-stable/non-prerelease — a table-level `patches-version` *inside* a `[...]` block
-does not affect that classification.
-
----
-
-## Planned follow-up edits
-
-_Recording site/variable setup when it happens — append below._
+- Catalog sizes stale by 4–8 B (`data.json` predates run #3) — URLs fine, self-heals
+  at `Rebuild Catalog` (`23 */6 * * *`). Dispatch needs **admin**
+- 7 of 8 keepers have never built — next `ci.yml` cron.
+- Release `260176` still holds old-key APKs; nothing links to it, safe to delete.

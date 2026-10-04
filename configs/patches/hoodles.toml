@@ -141,6 +141,8 @@ archive-dlurl = "https://archive.org/download/geologically/apks/cz.ackee.ventusk
 enabled = true
 pkg-name = "com.intsig.camscanner"
 app-name = "CamScanner"
+# base APK pinned — the only version hoo-dles/morphe-patches v1.46.0 declares support for
+version = "7.20.0.2606230000"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator"
 uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"

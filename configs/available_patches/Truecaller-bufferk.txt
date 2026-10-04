@@ -1,0 +1,59 @@
+==========================================================================
+Truecaller-bufferk
+  patches-source : bufferk/morphe-patches v1.8.0
+  pkg-name       : com.truecaller
+  bundle         : patches-1.8.0.mpp
+  generated      : 2026-10-04 via morphe-desktop list-patches
+                   (-f com.truecaller --with-versions --with-packages -x)
+  totals         : 7 patches — 7 default-ON, 0 default-OFF
+==========================================================================
+
+HOW TO USE  (names must be single-quoted inside a double-quoted TOML string)
+
+  included-patches  = add a NON-default patch        build.sh:252 requires quotes
+  excluded-patches  = drop a default patch
+  exclusive-patches = true  -> start from nothing, included-patches is your whole set
+  inclusive-patches = true  -> start from everything, prune with excluded-patches
+
+  Only the 0 DEFAULT-OFF names below can be added. The 7 DEFAULT-ON
+  ones are already applied — to change those, use excluded-patches.
+
+COPY-PASTE STARTER (delete what you don't want)
+  included-patches = ""
+
+--------------------------------------------------------------------------
+DEFAULT-OFF (0)  <- eligible for included-patches
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+DEFAULT-ON (7)  <- applied automatically; drop with excluded-patches
+--------------------------------------------------------------------------
+
+'Hide ads'
+    Removes ads from the after-call screen and caller-ID overlay.
+    versions: 26.10.6
+
+'Disable analytics'
+    Suppresses Truecaller's CleverTap behavioural event tracking to prevent user-activity telemetry.
+    versions: 26.10.6
+
+'Enable premium features'
+    Unlocks all client-side premium features by bypassing the feature-availability gate.
+    versions: 26.10.6
+
+'Hide 'Get Premium' banners'
+    Dismisses premium upgrade prompts and paywall screens automatically.
+    versions: 26.10.6
+
+'Hide premium upgrade prompts'
+    Removes 'Get Premium' and 'Switch to Premium' buttons from the nav bar, settings, and profile.
+    versions: 26.10.6
+
+'Mock premium'
+    Always shows the premium/gold badge and unlocks premium UI features.
+    versions: 26.10.6
+
+'Remove Premium UI'
+    Removes the Premium tab from the bottom navigation bar and the Premium row in the profile
+    section.
+    versions: any (unpinned)

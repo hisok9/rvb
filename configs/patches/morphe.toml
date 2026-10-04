@@ -8,6 +8,7 @@ enabled = true
 pkg-name = "com.google.android.youtube"
 app-name = "YouTube"
 patch-folder = "youtube"
+excluded-patches = "'Custom branding'"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/youtube-app/com.google.android.youtube"
