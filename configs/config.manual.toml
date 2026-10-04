@@ -1,34 +1,24 @@
-[Messenger-DeVanced]
-enabled = true
-pkg-name = "com.facebook.orca"
-app-name = "Messenger"
-patches-source = "RookieEnough/De-Vanced"
-brand = "DeVanced"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger"
-uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/facebook-messenger/com.facebook.orca"
-apkcombo-dlurl = "https://apkcombo.com/facebook-messenger/com.facebook.orca"
+# Manual CI test fixture — currently the Google Photos / AkashSriram keeper.
+#
+# Why this file exists separately from configs/patches/*.toml: manual-ci.yml
+# hands its config_file straight to build.yml, which never recompiles TOMLs
+# (build_resolve_context.sh only reads patches-version). So this file is the
+# one deterministic way to exercise the real build.sh path against a chosen
+# config without waiting for an upstream signal to regenerate
+# configs/stable_build.json.
+#
+# No file-level preamble on purpose: build_resolve_context.sh runs
+# `awk '/^\[/ {exit}'` and treats an empty preamble as stable / non-prerelease.
+#
+# The original fixture (Messenger-DeVanced, Facebook-HushFacebook,
+# Facebook-DeVanced) is preserved in git history on the `data` branch.
 
-[Facebook-HushFacebook]
+[GooglePhotos-AkashSriram]
 enabled = true
-pkg-name = "com.facebook.katana"
-app-name = "Facebook"
-patches-source = "SysAdminDoc/HushFacebook"
-brand = "HushFacebook"
-arch = "arm64-v8a"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/facebook"
-uptodown-dlurl = "https://facebook.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/facebook-app/com.facebook.katana"
-apkcombo-dlurl = "https://apkcombo.com/facebook/com.facebook.katana"
-
-[Facebook-DeVanced]
-enabled = true
-pkg-name = "com.facebook.katana"
-app-name = "Facebook"
-patches-source = "RookieEnough/De-Vanced"
-brand = "DeVanced"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/facebook"
-uptodown-dlurl = "https://facebook.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/facebook-app/com.facebook.katana"
-apkcombo-dlurl = "https://apkcombo.com/facebook/com.facebook.katana"
-
+pkg-name = "com.google.android.apps.photos"
+app-name = "Google Photos"
+brand = "AkashSriram"
+build-mode = "both"
+patches-source = "Akash-Sriram/morphe-google-photos"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
