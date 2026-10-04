@@ -6,6 +6,11 @@ on:
       config_file:
         required: true
         type: string
+      compile:
+        description: "Compile configs/patches/*.toml first; the result (config.stable.json) then takes precedence over config_file."
+        required: false
+        type: boolean
+        default: false
       remove_apks:
         required: false
         type: string
@@ -21,6 +26,11 @@ on:
           - "configs/config.manual.toml"
           - "configs/beta_build.json"
           - "configs/stable_build.json"
+      compile:
+        description: "Compile configs/patches/*.toml first; the result (config.stable.json) then takes precedence over config_file."
+        required: false
+        type: boolean
+        default: false
       remove_apks:
         description: "Optional: APKs to remove from cache (space-separated, e.g., com.brave.browser-1.93.138-*.apk)"
         required: false
@@ -69,12 +79,23 @@ jobs:
         # state/ (watcher JSONs) — the data branch is their canonical home.
         run: bash .github/scripts/fetch_data_branch.sh
 
+      - name: Compile patch configs
+        # Opt-in (inputs.compile): flattens configs/patches/*.toml into
+        # config.stable.json — the live enabled set — so a run built this way
+        # always matches the TOMLs instead of a *_build.json frozen at the last
+        # upstream trigger. The cron path compiles for itself and leaves this off.
+        id: compile
+        if: ${{ inputs.compile }}
+        run: |
+          python3 .github/scripts/compile_patch_configs.py
+          echo "config=config.stable.json" >> "$GITHUB_OUTPUT"
+
       - name: Resolve build context
         id: context
         env:
           TG_THREAD_STABLE: ${{ vars.TG_THREAD_STABLE }}
           TG_THREAD_BETA: ${{ vars.TG_THREAD_BETA }}
-        run: bash .github/scripts/build_resolve_context.sh "${{ inputs.config_file }}"
+        run: bash .github/scripts/build_resolve_context.sh "${{ steps.compile.outputs.config || inputs.config_file }}"
 
       - name: Install Bouncy Castle for BKS Keystore
         run: |

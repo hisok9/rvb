@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       config_file:
-        description: "Select the config file to use"
+        description: "'auto' compiles configs/patches/*.toml first, then builds every enabled app"
         required: true
         type: choice
-        default: "configs/config.manual.toml"
+        default: "auto"
         options:
+          - "auto"
           - "configs/config.manual.toml"
           - "configs/beta_build.json"
           - "configs/stable_build.json"
@@ -27,6 +28,7 @@ jobs:
     uses: ./.github/workflows/build.yml
     with:
       config_file: ${{ inputs.config_file }}
+      compile: ${{ inputs.config_file == 'auto' }}
       remove_apks: ${{ inputs.remove_apks }}
     secrets: inherit
 
