@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-04T16:48:59Z"
+    "publishedAt": "2026-10-04T21:12:46Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -152,17 +152,17 @@
       "subVariant": null,
       "packageName": "com.intsig.camscanner",
       "patchSources": [
-        "hoo-dles/patches-1.46.0.mpp"
+        "hoo-dles/patches-1.47.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.46.0"
+        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0"
       ],
       "appliedPatches": [
         "Disable telemetry",
         "Enable Premium"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260180",
+      "publishedAt": "2026-10-04T21:12:20Z"
     },
     "camscanner-hoodles-v7.20.0.2606230000-arm64-v8a.apk": {
       "name": "camscanner-hoodles",
@@ -177,17 +177,17 @@
       "subVariant": null,
       "packageName": "com.intsig.camscanner",
       "patchSources": [
-        "hoo-dles/patches-1.46.0.mpp"
+        "hoo-dles/patches-1.47.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.46.0"
+        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0"
       ],
       "appliedPatches": [
         "Disable telemetry",
         "Enable Premium"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260180",
+      "publishedAt": "2026-10-04T21:12:20Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm-v7a.zip": {
       "name": "google-photos-devanced",
@@ -202,18 +202,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.5.0.mpp"
+        "RookieEnough/patches-1.5.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.1"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260180",
+      "publishedAt": "2026-10-04T21:12:20Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm64-v8a.zip": {
       "name": "google-photos-devanced",
@@ -228,18 +228,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.5.0.mpp"
+        "RookieEnough/patches-1.5.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.1"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260180",
+      "publishedAt": "2026-10-04T21:12:20Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm64-v8a.apk": {
       "name": "google-photos-devanced",
@@ -254,18 +254,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.5.0.mpp"
+        "RookieEnough/patches-1.5.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.1"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260180",
+      "publishedAt": "2026-10-04T21:12:20Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
@@ -280,18 +280,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.5.0.mpp"
+        "RookieEnough/patches-1.5.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.1"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260180",
+      "publishedAt": "2026-10-04T21:12:20Z"
     },
     "google-photos-rushiranpise-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-rushiranpise",
