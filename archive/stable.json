@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-03T22:51:03Z"
+    "publishedAt": "2026-10-04T04:48:34Z"
   },
   "files": {
     "instagram-piko-clone-v439.0.0.37.89-arm64-v8a.apk": {
@@ -2972,17 +2972,17 @@
       "subVariant": null,
       "packageName": "com.wbd.hbomax",
       "patchSources": [
-        "ajstrick81/patches-1.40.1.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "HBO Max - Disable Ads",
         "HBO Max - Prefer Ad-Free Stream"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-09-28T05:11:27Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "disney-ajstrick81-android-tv-v26.16.0+rc2-2026.09.08-all.apk": {
       "name": "disney-ajstrick81-android-tv",
@@ -2997,16 +2997,16 @@
       "subVariant": null,
       "packageName": "com.disney.disneyplus",
       "patchSources": [
-        "ajstrick81/patches-1.40.1.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Disney+ Android TV"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-09-28T05:11:27Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "netflix-ajstrick81-android-tv-v13.0.1build25028-arm-v7a.apk": {
       "name": "netflix-ajstrick81-android-tv",
@@ -3021,10 +3021,10 @@
       "subVariant": null,
       "packageName": "com.netflix.ninja.clone",
       "patchSources": [
-        "ajstrick81/patches-1.40.1.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Disable Netflix CertCheck",
@@ -3032,8 +3032,8 @@
         "Remove Netflix ads (loader)",
         "Clone Netflix"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-09-28T05:11:27Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "prime-video-ajstrick81-android-tv-clone-v6.23.23+v15.5.0.70-armv7a-arm-v7a.apk": {
       "name": "prime-video-ajstrick81-android-tv-clone",
@@ -3048,10 +3048,10 @@
       "subVariant": "Clone",
       "packageName": "com.amazon.amazonvideo.livingroom.mod",
       "patchSources": [
-        "ajstrick81/patches-1.40.1.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Bundle native ad-strip hook",
@@ -3061,8 +3061,8 @@
         "Skip ads",
         "Clone Prime Video"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-09-28T05:11:27Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "prime-video-ajstrick81-android-tv-v6.23.23+v15.5.0.70-armv7a-arm-v7a.apk": {
       "name": "prime-video-ajstrick81-android-tv",
@@ -3077,10 +3077,10 @@
       "subVariant": null,
       "packageName": "com.amazon.amazonvideo.livingroom",
       "patchSources": [
-        "ajstrick81/patches-1.40.1.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Bundle native ad-strip hook",
@@ -3089,8 +3089,8 @@
         "Prime Video extension",
         "Skip ads"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-09-28T05:11:27Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "tiktok-kveld9-asia-v46.9.3-arm64-v8a.apk": {
       "name": "tiktok-kveld9-asia",
@@ -4990,17 +4990,17 @@
       "subVariant": null,
       "packageName": "com.univision.prendetv",
       "patchSources": [
-        "ajstrick81/patches-1.40.1.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Override certificate pinning",
         "Skip ads"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-09-28T05:11:27Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "plutotv-ajstrick81-android-tv-v5.66.0-leanback-all.apk": {
       "name": "plutotv-ajstrick81-android-tv",
@@ -5015,18 +5015,18 @@
       "subVariant": null,
       "packageName": "tv.pluto.android",
       "patchSources": [
-        "ajstrick81/patches-1.40.1.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Disable auto-updates",
         "Mask live ad breaks (black screen + mute)",
         "Skip ads"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-09-28T05:11:27Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "twitch-ajstrick81-android-tv-v13.0.0.2-all.apk": {
       "name": "twitch-ajstrick81-android-tv",
@@ -5041,16 +5041,16 @@
       "subVariant": null,
       "packageName": "tv.twitch.android.app",
       "patchSources": [
-        "ajstrick81/patches-1.40.1.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.1"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Block TV ads"
       ],
-      "originBuild": "260137",
-      "publishedAt": "2026-09-28T05:11:27Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "facebook-andrewliang25-v577.0.0.50.72-arm-v7a.apk": {
       "name": "facebook-andrewliang25",
@@ -7052,18 +7052,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.36.2.mpp"
+        "byehi98/patches-1.37.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.36.2"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.37.0"
       ],
       "appliedPatches": [
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260158",
-      "publishedAt": "2026-10-02T05:29:00Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "swift-backup-byehi98-v5.1.0-arm-v7a.apk": {
       "name": "swift-backup-byehi98",
@@ -7078,18 +7078,18 @@
       "subVariant": null,
       "packageName": "org.swiftapps.swiftbackup",
       "patchSources": [
-        "byehi98/patches-1.36.2.mpp"
+        "byehi98/patches-1.37.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.36.2"
+        "https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.37.0"
       ],
       "appliedPatches": [
         "Swift Backup Premium Unlock",
         "Swift Backup Tamper Protection",
         "Swift Backup Web Login"
       ],
-      "originBuild": "260158",
-      "publishedAt": "2026-10-02T05:29:00Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "youtube-morphe-experimental-module-v21.38.123-arm64-v8a.zip": {
       "name": "youtube-morphe-experimental",
@@ -10296,40 +10296,6 @@
       ],
       "originBuild": "260115",
       "publishedAt": "2026-09-24T11:18:56Z"
-    },
-    "brave-browser-kveld9-v1.96.59-arm64-v8a.apk": {
-      "name": "brave-browser-kveld9",
-      "version": "1.96.59",
-      "appKey": "bravebrowser",
-      "appName": "Brave Browser",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "kveld9",
-      "brandName": "kveld9",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.brave.browser",
-      "patchSources": [
-        "kveld9/patches-2.2.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.2.0"
-      ],
-      "appliedPatches": [
-        "Block Brave Telemetry",
-        "Brave In-Product & Commercial Notification Optimizer",
-        "Brave Origin",
-        "Brave Startup Performance Optimization",
-        "Clean New Tab Page",
-        "Clean Share URL",
-        "Disable Background Sync & Periodic Sync",
-        "Disable Battery Status API & OS Listener",
-        "Sensor Privacy Guard",
-        "Skip First Run",
-        "Suppress In-App Promos & Surveys"
-      ],
-      "originBuild": "260147",
-      "publishedAt": "2026-09-30T05:30:07Z"
     },
     "photomath-devanced-v8.48.0-arm-v7a.apk": {
       "name": "photomath-devanced",
@@ -14915,40 +14881,6 @@
       "originBuild": "260139",
       "publishedAt": "2026-09-28T17:40:57Z"
     },
-    "brave-browser-kveld9-v1.96.59-arm-v7a.apk": {
-      "name": "brave-browser-kveld9",
-      "version": "1.96.59",
-      "appKey": "bravebrowser",
-      "appName": "Brave Browser",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "kveld9",
-      "brandName": "kveld9",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.brave.browser",
-      "patchSources": [
-        "kveld9/patches-2.2.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.2.0"
-      ],
-      "appliedPatches": [
-        "Block Brave Telemetry",
-        "Brave In-Product & Commercial Notification Optimizer",
-        "Brave Origin",
-        "Brave Startup Performance Optimization",
-        "Clean New Tab Page",
-        "Clean Share URL",
-        "Disable Background Sync & Periodic Sync",
-        "Disable Battery Status API & OS Listener",
-        "Sensor Privacy Guard",
-        "Skip First Run",
-        "Suppress In-App Promos & Surveys"
-      ],
-      "originBuild": "260147",
-      "publishedAt": "2026-09-30T05:30:07Z"
-    },
     "atvtools-hxreborn-v1.3.2-arm-v7a.apk": {
       "name": "atvtools-hxreborn",
       "version": "1.3.2",
@@ -17362,17 +17294,17 @@
       "subVariant": null,
       "packageName": "com.peacocktv.peacockandroid",
       "patchSources": [
-        "ajstrick81/patches-1.40.3.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.3"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Disable auto-updates",
         "Skip ads"
       ],
-      "originBuild": "260147",
-      "publishedAt": "2026-09-30T05:30:07Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "tiktok-kveld9-v47.1.4-arm64-v8a.apk": {
       "name": "tiktok-kveld9",
@@ -17501,16 +17433,16 @@
       "subVariant": null,
       "packageName": "com.tubitv",
       "patchSources": [
-        "ajstrick81/patches-1.40.3.mpp"
+        "ajstrick81/patches-1.40.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.3"
+        "https://github.com/ajstrick81/morphe-androidtv-patches/releases/tag/v1.40.4"
       ],
       "appliedPatches": [
         "Skip ads"
       ],
-      "originBuild": "260147",
-      "publishedAt": "2026-09-30T05:30:07Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "adguard-hoodles-module-v4.14.2-arm64-v8a.zip": {
       "name": "adguard-hoodles",
@@ -19127,10 +19059,10 @@
       "subVariant": null,
       "packageName": "com.facebook.katana",
       "patchSources": [
-        "SysAdminDoc/patches-0.7.0.mpp"
+        "SysAdminDoc/patches-0.7.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.7.0"
+        "https://github.com/SysAdminDoc/HushFacebook/releases/tag/v0.7.1"
       ],
       "appliedPatches": [
         "Block ad telemetry",
@@ -19174,8 +19106,8 @@
         "Stop update prompts",
         "Tab bar at the bottom"
       ],
-      "originBuild": "260167",
-      "publishedAt": "2026-10-03T05:18:57Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "tiktok-hushfeed-v47.1.4-arm64-v8a.apk": {
       "name": "tiktok-hushfeed",
@@ -19190,10 +19122,10 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "SysAdminDoc/patches-0.67.0.mpp"
+        "SysAdminDoc/patches-0.67.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.67.0"
+        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.67.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -19302,8 +19234,8 @@
         "Use non-personalized search",
         "Use system font"
       ],
-      "originBuild": "260167",
-      "publishedAt": "2026-10-03T05:18:57Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "tiktok-hushfeed-v47.1.4-arm-v7a.apk": {
       "name": "tiktok-hushfeed",
@@ -19318,10 +19250,10 @@
       "subVariant": null,
       "packageName": "com.zhiliaoapp.musically",
       "patchSources": [
-        "SysAdminDoc/patches-0.67.0.mpp"
+        "SysAdminDoc/patches-0.67.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.67.0"
+        "https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.67.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -19430,8 +19362,8 @@
         "Use non-personalized search",
         "Use system font"
       ],
-      "originBuild": "260167",
-      "publishedAt": "2026-10-03T05:18:57Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
       "name": "google-photos-akashsriram",
@@ -19446,10 +19378,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.13.1.mpp"
+        "Akash-Sriram/patches-1.13.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -19459,11 +19391,12 @@
         "Fix memory style font loading",
         "GmsCore support",
         "Google One Bento Badge",
+        "Local creation downloader",
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260171",
-      "publishedAt": "2026-10-03T16:53:44Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "google-photos-akashsriram-v7.95.0.989626323-arm-v7a.apk": {
       "name": "google-photos-akashsriram",
@@ -19478,10 +19411,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.13.1.mpp"
+        "Akash-Sriram/patches-1.13.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -19491,11 +19424,12 @@
         "Fix memory style font loading",
         "GmsCore support",
         "Google One Bento Badge",
+        "Local creation downloader",
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260171",
-      "publishedAt": "2026-10-03T16:53:44Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "google-photos-akashsriram-v7.95.0.989626323-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -19510,10 +19444,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.13.1.mpp"
+        "Akash-Sriram/patches-1.13.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -19523,11 +19457,12 @@
         "Fix memory style font loading",
         "GmsCore support",
         "Google One Bento Badge",
+        "Local creation downloader",
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260171",
-      "publishedAt": "2026-10-03T16:53:44Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "google-photos-akashsriram-module-v7.95.0.989626323-arm-v7a.zip": {
       "name": "google-photos-akashsriram",
@@ -19542,10 +19477,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.13.1.mpp"
+        "Akash-Sriram/patches-1.13.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -19555,11 +19490,12 @@
         "Fix memory style font loading",
         "GmsCore support",
         "Google One Bento Badge",
+        "Local creation downloader",
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260171",
-      "publishedAt": "2026-10-03T16:53:44Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "instagram-hushgram-v449.0.0.52.84-arm64-v8a.apk": {
       "name": "instagram-hushgram",
@@ -19574,10 +19510,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.4.mpp"
+        "SysAdminDoc/patches-0.0.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.4"
+        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.5"
       ],
       "appliedPatches": [
         "Clean up Reels",
@@ -19600,6 +19536,7 @@
         "Hide the Explore grid",
         "Hide the Reels tab",
         "Hide the Repost button",
+        "Hide the notes row",
         "HushGram settings",
         "Keep Reels auto scroll on",
         "Keep a seek bar on Reels",
@@ -19625,10 +19562,11 @@
         "Story ring size",
         "Tap to play",
         "Turn off double tap to like",
+        "View DM photos and videos anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-10-03T17:53:24Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "messenger-hushmessenger-material-you-v580.0.0.49.91-arm64-v8a.apk": {
       "name": "messenger-hushmessenger-material-you",
@@ -19752,16 +19690,17 @@
       "subVariant": null,
       "packageName": "org.telegram.messenger.web",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.6.mpp"
+        "SysAdminDoc/patches-0.0.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.6"
+        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.8"
       ],
       "appliedPatches": [
         "Disable analytics",
         "Disable call debug upload",
         "Disable chat swipe actions",
         "Disable draft link previews",
+        "Disable pull to next channel",
         "Disable update checks",
         "Gallery camera on tap",
         "Hide Premium, gifts and Stars",
@@ -19775,10 +19714,11 @@
         "HushTelegram settings",
         "Open links externally",
         "Quiet contacts nag",
+        "Repair Firebase push registration",
         "Strip link tracking"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-10-03T17:53:24Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "telegram-hushtelegram-foss-v12.10.6-arm64-v8a.apk": {
       "name": "telegram-hushtelegram-foss",
@@ -19793,16 +19733,17 @@
       "subVariant": null,
       "packageName": "org.telegram.messenger.web",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.6.mpp"
+        "SysAdminDoc/patches-0.0.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.6"
+        "https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.8"
       ],
       "appliedPatches": [
         "Disable analytics",
         "Disable call debug upload",
         "Disable chat swipe actions",
         "Disable draft link previews",
+        "Disable pull to next channel",
         "Disable update checks",
         "Gallery camera on tap",
         "Hide Premium, gifts and Stars",
@@ -19816,10 +19757,11 @@
         "HushTelegram settings",
         "Open links externally",
         "Quiet contacts nag",
+        "Repair Firebase push registration",
         "Strip link tracking"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-10-03T17:53:24Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "threads-hushthreads-v449.0.0.54.82-arm64-v8a.apk": {
       "name": "threads-hushthreads",
@@ -19834,10 +19776,10 @@
       "subVariant": null,
       "packageName": "com.instagram.barcelona",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.4.mpp"
+        "SysAdminDoc/patches-0.0.10.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushThreads/releases/tag/v0.0.4"
+        "https://github.com/SysAdminDoc/HushThreads/releases/tag/v0.0.10"
       ],
       "appliedPatches": [
         "Block background-return feed refresh",
@@ -19851,8 +19793,8 @@
         "Restore screens on re-signed builds",
         "Sanitize sharing links"
       ],
-      "originBuild": "260172",
-      "publishedAt": "2026-10-03T17:53:24Z"
+      "originBuild": "260175",
+      "publishedAt": "2026-10-04T04:48:03Z"
     },
     "brave-browser-kveld9-v1.96.61-arm64-v8a.apk": {
       "name": "brave-browser-kveld9",
