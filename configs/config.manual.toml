@@ -1,17 +1,106 @@
-# Manual CI test fixture — currently the Google Photos / AkashSriram keeper.
+# Manual CI fixture — the 8 keeper apps.
+#
+# Dispatch `Manual CI` with config_file = configs/config.manual.toml to build all
+# eight on demand: no upstream trigger, no regeneration, fully deterministic.
+# (The cron in ci.yml only fires when a patch source or an app APK upstream
+# changes — editing a TOML is not a trigger.)
 #
 # Why this file exists separately from configs/patches/*.toml: manual-ci.yml
 # hands its config_file straight to build.yml, which never recompiles TOMLs
-# (build_resolve_context.sh only reads patches-version). So this file is the
-# one deterministic way to exercise the real build.sh path against a chosen
-# config without waiting for an upstream signal to regenerate
-# configs/stable_build.json.
+# (build_resolve_context.sh only reads patches-version). build.yml does
+# materialise configs/ from the `data` branch, so edits here ship on push.
 #
 # No file-level preamble on purpose: build_resolve_context.sh runs
 # `awk '/^\[/ {exit}'` and treats an empty preamble as stable / non-prerelease.
+# Every file-level default from the source TOML is therefore inlined per table,
+# and `patches-version` falls back to the stable channel.
 #
-# The original fixture (Messenger-DeVanced, Facebook-HushFacebook,
-# Facebook-DeVanced) is preserved in git history on the `data` branch.
+# HAND-MAINTAINED: when you change an app in configs/patches/*.toml, mirror it here.
+
+[YouTube-Morphe]
+enabled = true
+pkg-name = "com.google.android.youtube"
+app-name = "YouTube"
+brand = "Morphe"
+build-mode = "both"
+patch-folder = "youtube"
+patches-source = "MorpheApp/morphe-patches"
+excluded-patches = "'Custom branding'"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/youtube-app/com.google.android.youtube"
+apkcombo-dlurl = "https://apkcombo.com/youtube/com.google.android.youtube"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
+
+[YouTubeMusic-Morphe]
+enabled = true
+pkg-name = "com.google.android.apps.youtube.music"
+app-name = "YouTube Music"
+brand = "Morphe"
+build-mode = "both"
+patch-folder = "music"
+patches-source = "MorpheApp/morphe-patches"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/youtube-music/com.google.android.apps.youtube.music"
+apkcombo-dlurl = "https://apkcombo.com/youtube-music/com.google.android.apps.youtube.music"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
+
+[Truecaller-bufferk]
+enabled = true
+pkg-name = "com.truecaller"
+app-name = "Truecaller"
+brand = "bufferk"
+build-mode = "both"
+patches-source = "bufferk/morphe-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
+uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
+
+[Truecaller-Paresh]
+enabled = true
+pkg-name = "com.truecaller"
+app-name = "Truecaller"
+brand = "Paresh"
+build-mode = "both"
+patches-source = "Paresh-Maheshwari/paresh-patches"
+patches-source-host = "gitlab"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
+uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
+
+[CamScanner-hoodles]
+enabled = true
+pkg-name = "com.intsig.camscanner"
+app-name = "CamScanner"
+brand = "hoodles"
+patches-source = "hoo-dles/morphe-patches"
+# base APK pinned — the only version hoo-dles/morphe-patches v1.46.0 declares support for
+version = "7.20.0.2606230000"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator"
+uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"
+apkcombo-dlurl = "https://apkcombo.com/camscanner/com.intsig.camscanner"
+
+[GooglePhotos-DeVanced]
+enabled = true
+pkg-name = "com.google.android.apps.photos"
+app-name = "Google Photos"
+brand = "DeVanced"
+build-mode = "both"
+patches-source = "RookieEnough/De-Vanced"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+
+[GooglePhotos-rushiranpise]
+enabled = true
+pkg-name = "com.google.android.apps.photos"
+app-name = "Google Photos"
+brand = "rushiranpise"
+patches-source = "rushiranpise/morphe-patches"
+included-patches = "'AMOLED dark theme' 'Change package name' 'Enable DCIM folders backup control' 'Fix DCIM folder classification'"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 
 [GooglePhotos-AkashSriram]
 enabled = true
