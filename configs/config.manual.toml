@@ -1,7 +1,11 @@
-# Manual CI fixture — the 8 keeper apps.
+# Manual CI fixture — the 8 keeper apps, as a frozen snapshot.
 #
-# Dispatch `Manual CI` with config_file = configs/config.manual.toml to build all
-# eight on demand: no upstream trigger, no regeneration, fully deterministic.
+# PREFER `auto` (Manual CI's default): build.yml now runs
+# compile_patch_configs.py first and builds the live enabled set straight from
+# configs/patches/*.toml, so it can never drift. Pick THIS file instead when you
+# want a fixed, hand-controlled set of apps.
+#
+# Dispatch: Actions -> Manual CI -> Run workflow.
 # (The cron in ci.yml only fires when a patch source or an app APK upstream
 # changes — editing a TOML is not a trigger.)
 #
