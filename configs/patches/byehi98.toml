@@ -1,5 +1,5 @@
 [SwiftBackup-byehi98]
-enabled = true
+enabled = false
 pkg-name = "org.swiftapps.swiftbackup"
 app-name = "Swift Backup"
 patches-source = "byehi98/okish-morphe-patches"

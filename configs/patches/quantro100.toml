@@ -2,7 +2,7 @@ patches-source = "Quantro100/Morphe-patches"
 brand = "Quantro100"
 
 [AliExpress-Quantro100]
-enabled = true
+enabled = false
 pkg-name = "com.alibaba.aliexpresshd"
 app-name = "AliExpress"
 included-patches = "'Enable image saving' 'Disable splash screen'"

@@ -2,7 +2,7 @@ patches-source = "brosssh/morphe-patches"
 brand = "brosssh"
 
 [komoot-brosssh]
-enabled = true
+enabled = false
 pkg-name = "de.komoot.android"
 app-name = "Komoot"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/komoot-gmbh/komoot-cycling-hiking-mountain-biking-maps"

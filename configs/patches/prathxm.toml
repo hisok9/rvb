@@ -2,7 +2,7 @@ patches-source = "PrathxmOp/Prathxm-Patches"
 brand = "Prathxm"
 
 [ChessDotCom-Prathxm]
-enabled = true
+enabled = false
 pkg-name = "com.chess"
 app-name = "Chess.com"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/chess-com/chess-play-learn"

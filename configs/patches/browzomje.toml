@@ -2,7 +2,7 @@ patches-source = "browzomje/browzomje-patches"
 brand = "browzomje"
 
 [Pinterest-browzomje]
-enabled = true
+enabled = false
 pkg-name = "com.pinterest"
 app-name = "Pinterest"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/pinterest/pinterest-one-destination-for-a-world-of-inspiration"

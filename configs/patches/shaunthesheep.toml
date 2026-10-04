@@ -2,7 +2,7 @@ patches-source = "shaun-the-sheep-patches/morphe-patches"
 brand = "ShaunTheSheep"
 
 [KineStop-ShaunTheSheep]
-enabled = true
+enabled = false
 pkg-name = "com.urbandroid.kinestop"
 app-name = "KineStop"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/urbandroid-team/kinestop-car-sickness-aid"

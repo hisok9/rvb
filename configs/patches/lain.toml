@@ -2,7 +2,7 @@ patches-source = "kiraio-moe/Lain-Patches"
 brand = "Lain"
 
 [Hermit-Lain]
-enabled = true
+enabled = false
 pkg-name = "com.chimbori.hermitcrab"
 app-name = "Hermit"
 patch-folder = "hermit"

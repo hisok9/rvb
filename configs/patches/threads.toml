@@ -1,5 +1,5 @@
 [Threads-chiggi]
-enabled = true
+enabled = false
 pkg-name = "com.instagram.barcelona"
 app-name = "Threads"
 patch-folder = "threads"
@@ -12,7 +12,7 @@ uptodown-dlurl = "https://threads.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/threads-app/com.instagram.barcelona"
 
 [Threads-chiggi-Clone]
-enabled = true
+enabled = false
 pkg-name = "com.instagram.barcelona"
 app-name = "Threads"
 patch-folder = "threads"
@@ -25,7 +25,7 @@ uptodown-dlurl = "https://threads.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/threads-app/com.instagram.barcelona"
 
 [Threads-HushThreads]
-enabled = true
+enabled = false
 pkg-name = "com.instagram.barcelona"
 app-name = "Threads"
 patch-folder = "threads"

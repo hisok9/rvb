@@ -1,5 +1,5 @@
 [Facebook-Froggo]
-enabled = true
+enabled = false
 pkg-name = "com.facebook.katana"
 app-name = "Facebook"
 patches-source = "SapitoSucio/FroggoMorphePatches"
@@ -11,7 +11,7 @@ apkpure-dlurl = "https://apkpure.com/facebook-app/com.facebook.katana"
 apkcombo-dlurl = "https://apkcombo.com/facebook/com.facebook.katana"
 
 [Facebook-andrewliang25]
-enabled = true
+enabled = false
 pkg-name = "com.facebook.katana"
 app-name = "Facebook"
 patches-source = "andrewliang25/morphe-patches"
@@ -23,7 +23,7 @@ apkpure-dlurl = "https://apkpure.com/facebook-app/com.facebook.katana"
 apkcombo-dlurl = "https://apkcombo.com/facebook/com.facebook.katana"
 
 [Facebook-HushFacebook]
-enabled = true
+enabled = false
 pkg-name = "com.facebook.katana"
 app-name = "Facebook"
 patches-source = "SysAdminDoc/HushFacebook"
@@ -35,7 +35,7 @@ apkpure-dlurl = "https://apkpure.com/facebook-app/com.facebook.katana"
 apkcombo-dlurl = "https://apkcombo.com/facebook/com.facebook.katana"
 
 [Facebook-DeVanced]
-enabled = true
+enabled = false
 pkg-name = "com.facebook.katana"
 app-name = "Facebook"
 patches-source = "RookieEnough/De-Vanced"

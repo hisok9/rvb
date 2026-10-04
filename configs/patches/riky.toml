@@ -2,7 +2,7 @@ patches-source = "riky-dev/morphe-patches"
 brand = "riky"
 
 [CapCut-riky]
-enabled = true
+enabled = false
 pkg-name = "com.lemon.lvoverseas"
 app-name = "CapCut"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/bytedance-pte-ltd/capcut"

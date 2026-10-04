@@ -1,5 +1,5 @@
 [ProtonMail-hxreborn]
-enabled = true
+enabled = false
 pkg-name = "ch.protonmail.android"
 app-name = "Proton Mail"
 patches-source = "hxreborn/morphe-patches"
@@ -11,7 +11,7 @@ apkcombo-dlurl = "https://apkcombo.com/proton-mail/ch.protonmail.android"
 archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonmail.android"
 
 [ProtonMail-SatanMerde]
-enabled = true
+enabled = false
 pkg-name = "ch.protonmail.android"
 app-name = "Proton Mail"
 patches-source = "SatanMerde/D-moniakPatches"
@@ -23,7 +23,7 @@ apkcombo-dlurl = "https://apkcombo.com/proton-mail/ch.protonmail.android"
 archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonmail.android"
 
 [ProtonMail-dhrubonai]
-enabled = true
+enabled = false
 pkg-name = "ch.protonmail.android"
 app-name = "Proton Mail"
 patches-source = "dhrubonai/morphe-patches"

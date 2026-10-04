@@ -3,7 +3,7 @@ patches-source-host = "gitlab"
 brand = "IMXEren"
 
 [TraktTV-IMXEren]
-enabled = true
+enabled = false
 pkg-name = "tv.trakt.trakt"
 app-name = "trakt.TV"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/trakt/trakt"

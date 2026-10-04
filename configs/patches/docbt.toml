@@ -2,7 +2,7 @@ patches-source = "docbt/patched-up"
 brand = "docbt"
 
 [GoogleNews-docbt]
-enabled = true
+enabled = false
 pkg-name = "com.google.android.apps.magazines"
 app-name = "Google News"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/google-news/"

@@ -3,7 +3,7 @@ patches-source-host = "gitlab"
 brand = "Paresh"
 
 [Cricbuzz-Paresh]
-enabled = true
+enabled = false
 pkg-name = "com.cricbuzz.android"
 app-name = "Cricbuzz"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/cricbuzz-com/cricbuzz-live-cricket-scores-news"
@@ -12,7 +12,7 @@ apkpure-dlurl = "https://apkpure.com/cricbuzz-live-cricket-scores/com.cricbuzz.a
 apkcombo-dlurl = "https://apkcombo.com/cricbuzz/com.cricbuzz.android"
 
 [LuminaWallpapers-Paresh]
-enabled = true
+enabled = false
 pkg-name = "com.lumina.wallpapers"
 app-name = "Lumina Wallpapers"
 uptodown-dlurl = "https://lumina-walls.en.uptodown.com/android"
@@ -20,7 +20,7 @@ apkpure-dlurl = "https://apkpure.com/lumina-wallpapers/com.lumina.wallpapers"
 apkcombo-dlurl = "https://apkcombo.com/lumina-wallpapers/com.lumina.wallpapers"
 
 [Eyecon-Paresh]
-enabled = true
+enabled = false
 pkg-name = "com.eyecon.global"
 app-name = "Eyecon"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/eyecon-phone-dialer-contacts/eyecon-caller-id-spam-block"
@@ -29,7 +29,7 @@ apkpure-dlurl = "https://apkpure.com/eyecon-caller-id-spam-block/com.eyecon.glob
 apkcombo-dlurl = "https://apkcombo.com/eyecon/com.eyecon.global"
 
 [TickTick-Paresh]
-enabled = true
+enabled = false
 pkg-name = "com.ticktick.task"
 app-name = "TickTick"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/ticktick-limited/ticktick-to-do-list-with-reminder-day-planner"
@@ -38,7 +38,7 @@ apkpure-dlurl = "https://apkpure.com/ticktick-to-do-list-calendar/com.ticktick.t
 apkcombo-dlurl = "https://apkcombo.com/ticktick/com.ticktick.task"
 
 [SDMaid-Paresh]
-enabled = true
+enabled = false
 pkg-name = "eu.darken.sdmse"
 app-name = "SD Maid 2/SE"
 patch-folder = "sdmaidse"
@@ -48,7 +48,7 @@ apkpure-dlurl = "https://apkpure.com/sd-maid-2-se-system-cleaner/eu.darken.sdmse
 apkcombo-dlurl = "https://apkcombo.com/sd-maid-2-se-system-cleaner/eu.darken.sdmse"
 
 [ProtonVPN-Paresh]
-enabled = true
+enabled = false
 pkg-name = "ch.protonvpn.android"
 app-name = "Proton VPN"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"
@@ -65,14 +65,14 @@ uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
 
 [Fing-Paresh]
-enabled = true
+enabled = false
 pkg-name = "com.overlook.android.fing"
 app-name = "Fing"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/fing-limited/fing-network-tools"
 uptodown-dlurl = "https://fing-network-tools.en.uptodown.com/android"
 
 [MacroDroid-Paresh]
-enabled = true
+enabled = false
 pkg-name = "com.arlosoft.macrodroid"
 app-name = "MacroDroid"
 build-mode = "both"

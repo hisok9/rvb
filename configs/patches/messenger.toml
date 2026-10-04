@@ -1,5 +1,5 @@
 [Messenger-DeVanced]
-enabled = true
+enabled = false
 pkg-name = "com.facebook.orca"
 app-name = "Messenger"
 patches-source = "RookieEnough/De-Vanced"
@@ -10,7 +10,7 @@ apkpure-dlurl = "https://apkpure.com/facebook-messenger/com.facebook.orca"
 apkcombo-dlurl = "https://apkcombo.com/facebook-messenger/com.facebook.orca"
 
 [Messenger-rushiranpise]
-enabled = true
+enabled = false
 pkg-name = "com.facebook.orca"
 app-name = "Messenger"
 patches-source = "rushiranpise/morphe-patches"
@@ -22,7 +22,7 @@ apkpure-dlurl = "https://apkpure.com/facebook-messenger/com.facebook.orca"
 apkcombo-dlurl = "https://apkcombo.com/facebook-messenger/com.facebook.orca"
 
 [Messenger-HushMessenger]
-enabled = true
+enabled = false
 pkg-name = "com.facebook.orca"
 app-name = "Messenger"
 patches-source = "SysAdminDoc/HushMessenger"
@@ -34,7 +34,7 @@ apkpure-dlurl = "https://apkpure.com/facebook-messenger/com.facebook.orca"
 apkcombo-dlurl = "https://apkcombo.com/facebook-messenger/com.facebook.orca"
 
 [Messenger-HushMessenger-MaterialYou]
-enabled = true
+enabled = false
 pkg-name = "com.facebook.orca"
 app-name = "Messenger"
 patches-source = "SysAdminDoc/HushMessenger"

@@ -2,7 +2,7 @@ patches-source = "dh6k/morphe-patches"
 brand = "dh6k"
 
 [BraveBrowser-dh6k-Beta]
-enabled = true
+enabled = false
 pkg-name = "com.brave.browser_beta"
 app-name = "Brave Browser"
 variant = "Beta"
@@ -14,7 +14,7 @@ github-dlurl = "https://github.com/brave/brave-browser"
 github-regex = 'arm64-v8a: BraveMonoarm64\.apk | arm-v7a: BraveMonoarm\.apk'
 
 [BraveBrowser-dh6k-Nightly]
-enabled = true
+enabled = false
 pkg-name = "com.brave.browser_nightly"
 app-name = "Brave Browser"
 variant = "Nightly"
@@ -26,7 +26,7 @@ github-dlurl = "https://github.com/brave/brave-browser"
 github-regex = 'arm64-v8a: BraveMonoarm64\.apk | arm-v7a: BraveMonoarm\.apk'
 
 [TitaniumBrowser-dh6k]
-enabled = true
+enabled = false
 pkg-name = "io.github.jqssun.helium"
 app-name = "Titanium Browser"
 included-patches = "'Keep Titanium Extensions Child Processes Alive' 'Force highest refresh rate'"

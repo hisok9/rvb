@@ -2,35 +2,35 @@ patches-source = "arandomhooman/hoomans-morphe-patches"
 brand = "hooman"
 
 [Rumble-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.rumble.battles"
 app-name = "Rumble"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/rumble-inc/rumble"
 uptodown-dlurl = "https://rumble.en.uptodown.com/android"
 
 [Twitch-hooman]
-enabled = true
+enabled = false
 pkg-name = "tv.twitch.android.app"
 app-name = "Twitch"
 apkmirror-dlurl = "https://apkmirror.com/apk/twitch-interactive-inc/twitch"
 uptodown-dlurl = "https://twitch.en.uptodown.com/android"
 
 [BatteryGuru-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.paget96.batteryguru"
 app-name = "Battery Guru"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/paget96/battery-guru-health-saver/"
 uptodown-dlurl = "https://battery-guru.en.uptodown.com/android"
 
 [MoneyManager-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.realbyteapps.moneymanagerfree"
 app-name = "Money Manager"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/realbyte-inc/money-manager-expense-budget"
 uptodown-dlurl = "https://money-manager.en.uptodown.com/android"
 
 [Poweramp-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.maxmpz.audioplayer"
 app-name = "Poweramp"
 arch = "all"
@@ -40,7 +40,7 @@ apkpure-dlurl = "https://apkpure.com/poweramp-music-player-trial-app/com.maxmpz.
 apkcombo-dlurl = "https://apkcombo.com/poweramp/com.maxmpz.audioplayer"
 
 [AT4KLauncher-hooman-AndroidTV]
-enabled = true
+enabled = false
 pkg-name = "com.overdevs.at4k"
 app-name = "AT4K Launcher"
 variant = "Android TV"
@@ -49,7 +49,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/cute-little-apps/at4k-launcher-
 apkpure-dlurl = "https://apkpure.com/at4k-launcher/com.overdevs.at4k"
 
 [ProjectivyLauncher-hooman-AndroidTV]
-enabled = true
+enabled = false
 pkg-name = "com.spocky.projengmenu"
 app-name = "Projectivy Launcher"
 variant = "Android TV"
@@ -58,7 +58,7 @@ apkpure-dlurl = "https://apkpure.com/projectivy-launcher/com.spocky.projengmenu"
 apkcombo-dlurl = "https://apkcombo.com/projectivy-launcher/com.spocky.projengmenu/"
 
 [AdobeAcrobat-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.adobe.reader"
 app-name = "Adobe Acrobat"
 patch-folder = "acrobat"
@@ -67,14 +67,14 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/adobe-acrobat"
 uptodown-dlurl = "https://adobe-reader.en.uptodown.com/android"
 
 [InShot-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.camerasideas.instashot"
 app-name = "InShot"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/inshot-inc/inshot-video-editor-photo-editor"
 uptodown-dlurl = "https://inshot-editor.en.uptodown.com/android"
 
 [Todoist-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.todoist"
 app-name = "Todoist"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/doist/todoist"
@@ -82,7 +82,7 @@ apkpure-dlurl = "https://apkpure.com/todoist-to-do-list-planner/com.todoist"
 apkcombo-dlurl = "https://apkcombo.com/todoist/com.todoist"
 
 [Tumblr-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.tumblr"
 app-name = "Tumblr"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr"
@@ -91,7 +91,7 @@ apkpure-dlurl = "https://apkpure.com/tumblr-1-for-android-app/com.tumblr"
 apkcombo-dlurl = "https://apkcombo.com/tumblr/com.tumblr"
 
 [GooglePhone-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.google.android.dialer"
 app-name = "Google Phone"
 build-mode = "both"
@@ -101,7 +101,7 @@ apkpure-dlurl = "https://apkpure.com/phone-by-google-app/com.google.android.dial
 apkcombo-dlurl = "https://apkcombo.com/google-phone/com.google.android.dialer"
 
 [MicrosoftSwiftKey-hooman]
-enabled = true
+enabled = false
 pkg-name = "com.touchtype.swiftkey"
 app-name = "Microsoft Swiftkey"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/swiftkey/swiftkey-keyboard"
@@ -110,7 +110,7 @@ apkpure-dlurl = "https://apkpure.com/microsoft-swiftkey-keyboard/com.touchtype.s
 apkcombo-dlurl = "https://apkcombo.com/microsoft-swiftkey-ai-keyboard/com.touchtype.swiftkey"
 
 [FolderSync-hooman]
-enabled = true
+enabled = false
 pkg-name = "dk.tacit.android.foldersync.lite"
 app-name = "FolderSync"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tacit-dynamics/foldersync"

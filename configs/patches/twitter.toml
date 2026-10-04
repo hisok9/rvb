@@ -1,5 +1,5 @@
 [Twitter-Piko]
-enabled = true
+enabled = false
 pkg-name = "com.twitter.android"
 app-name = "Twitter"
 patches-source = "crimera/piko"
@@ -11,7 +11,7 @@ uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/x-formerly-twitter/com.twitter.android"
 
 [Twitter-Piko-MaterialYou]
-enabled = true
+enabled = false
 pkg-name = "com.twitter.android"
 app-name = "Twitter"
 variant = "Material You"

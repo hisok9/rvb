@@ -3,7 +3,7 @@ patches-version = "both"
 brand = "liongalahad"
 
 [Nuvio-liongalahad-AndroidTV]
-enabled = true
+enabled = false
 pkg-name = "com.nuvio.tv"
 app-name = "Nuvio"
 variant = "Android TV"
@@ -13,7 +13,7 @@ github-dlurl = "https://github.com/NuvioMedia/NuvioTV"
 github-regex = 'app-full-universal-release\.apk'
 
 [Nuvio-liongalahad-AndroidTV-Clone]
-enabled = true
+enabled = false
 pkg-name = "com.nuvio.tv"
 app-name = "Nuvio"
 variant = "Android TV"

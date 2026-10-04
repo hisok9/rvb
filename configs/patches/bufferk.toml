@@ -13,7 +13,7 @@ apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024
 archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
 
 [Medium-bufferk]
-enabled = true
+enabled = false
 pkg-name = "com.medium.reader"
 app-name = "Medium"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/a-medium-corporation/medium"

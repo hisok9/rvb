@@ -1,5 +1,5 @@
 [FairEmail-heval99]
-enabled = true
+enabled = false
 pkg-name = "eu.faircode.email"
 app-name = "FairEmail"
 brand = "heval99"

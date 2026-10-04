@@ -3,7 +3,7 @@ build-mode = "both"
 brand = "anddea"
 
 [youtube-anddea-nord]
-enabled = true
+enabled = false
 pkg-name = "com.google.android.youtube"
 app-name = "YouTube"
 patch-folder = "youtube"
@@ -15,7 +15,7 @@ apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
 
 [youtube-music-anddea-nord]
-enabled = true
+enabled = false
 pkg-name = "com.google.android.apps.youtube.music"
 app-name = "YouTube Music"
 patch-folder = "music"
@@ -26,7 +26,7 @@ apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
 
 [youtube-anddea-mocha]
-enabled = true
+enabled = false
 pkg-name = "com.google.android.youtube"
 app-name = "YouTube"
 patch-folder = "youtube"
@@ -38,7 +38,7 @@ apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
 
 [youtube-music-anddea-mocha]
-enabled = true
+enabled = false
 pkg-name = "com.google.android.apps.youtube.music"
 app-name = "YouTube Music"
 patch-folder = "music"
@@ -49,7 +49,7 @@ apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
 
 [youtube-anddea]
-enabled = true
+enabled = false
 pkg-name = "com.google.android.youtube"
 app-name = "YouTube"
 patch-folder = "youtube"
@@ -60,7 +60,7 @@ apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
 
 [youtube-music-anddea]
-enabled = true
+enabled = false
 pkg-name = "com.google.android.apps.youtube.music"
 app-name = "YouTube Music"
 patch-folder = "music"
