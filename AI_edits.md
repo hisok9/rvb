@@ -181,6 +181,118 @@ you leave the cache out), **no PAT is needed at all** — the built-in
 
 ---
 
+## Fork isolation & publish propagation (explainer — no edits)
+
+Answers two questions that decide whether a fork is safe and when its config
+actually goes live. Every claim below was grepped or run against `origin/main`.
+
+### Why a fork can never write to `nullcpy/rvb`
+
+Three independent barriers, all of which you get by forking — no setup needed.
+
+**1. Every push targets `origin`, and `origin` is your fork.**
+
+`git remote -v` → `https://github.com/hisok9/rvb.git`. The complete set of push
+sites in `scripts/` + `.github/`:
+
+| Site | Command |
+|---|---|
+| `push_data_configs.sh:63` | `git push -q origin "$new:refs/heads/data"` |
+| `commit_data_branch.sh:68` | `git push -q origin "$new:refs/heads/$BRANCH"` |
+| `merge_archive_branch.sh:95` | `git push -q origin "$BRANCH"` |
+| `cleanup_update_branch.sh:111` | `git push origin update` |
+| `cleanup_website_branch.sh:59` | `git push origin website` |
+| `build.yml:215` | `git push origin update` |
+| `update_usage_tracker.py:74` | `git push origin main`¹ |
+
+**No push anywhere targets a literal `nullcpy/…`** — `git grep -nE "push.{0,40}nullcpy"`
+returns no matches.
+
+¹ That one's `origin` is the *cloned* `temp/apks_repo`, not rvb, and the script
+returns early when `APKS_REPO_TOKEN` is unset.
+
+**2. `nullcpy/rvb` exists only as a *read* fallback, never as a write target.**
+
+| Location | Form | Why it never fires |
+|---|---|---|
+| `cleanup_update_branch.sh:19` | `${GITHUB_REPOSITORY:-nullcpy/rvb}` | Actions always sets `GITHUB_REPOSITORY` |
+| `generate_release_notes.py:225` | `os.environ.get("GITHUB_REPOSITORY") or "nullcpy/rvb"` | same |
+| `backfill_manifests.py:94` | `--repo` default | offline tool, not run in CI |
+| `repair_archive_manifest.py:146` | `--repo` default | offline tool |
+| `seed_website_branch.py:38` | `--repo` default | offline tool |
+| `build.sh:50` | `DEF_AUTHOR_PAGE="github.com/nullcpy/rvb"` | cosmetic author string |
+
+**3. Fork refs are independent, and fork secrets aren't inherited.**
+
+A push to `hisok9/rvb:data` cannot alter `nullcpy/rvb:data` — separate
+repositories, separate ref stores. GitHub also does not copy Actions secrets into
+a fork, so nothing could authenticate as `nullcpy` even if a path existed.
+
+**Where nullcpy is still contacted** — reads and fail-soft attempts only:
+
+| Variable | Default target | Effect on your fork |
+|---|---|---|
+| `APKS_REPO \|\| 'nullcpy/apks'` | stock-APK cache | reads succeed (public repo); writes → warning after 3 attempts, swallowed by `\|\| true` |
+| `WEBSITE_REPO \|\| 'nullcpy/nullcpy.github.io'` | catalog dispatch | 401, no token → `continue-on-error: true` |
+
+Neither one writes to `nullcpy/rvb`.
+
+### How your changes start occurring after a push
+
+**Nothing runs on push.** This is the counter-intuitive part:
+
+- `ci.yml` has **no `push:` block** — only `schedule` (6 crons) + `workflow_dispatch`.
+- `trace-verify.yml` is the sole push-triggered workflow, filtered to
+  `scripts/build.sh`, `scripts/utils.sh`, `.github/traces/**`. A `configs/**` push
+  matches none of those paths.
+
+So `git push` updates `origin/data` and stops. It becomes live at the next
+scheduled `ci.yml`, all times UTC:
+
+```
+00:11   04:46   08:08   12:52   16:29   20:03
+```
+
+Typical wait ≤ 4h, worst case 24h. Or trigger it immediately via
+**Actions → CI → Run workflow**.
+
+**The chain once it runs:**
+
+1. `ci.yml` checks out **`main`** (`ref: main`), not `data`.
+2. `ci.yml:43` → `fetch_data_branch.sh` → `git fetch origin data` → materialises
+   `configs/` + `state/` into the worktree. `origin` is your fork, so these are
+   **your** TOMLs. `.gitignore:20-21` keeps them untracked on `main` — the `data`
+   branch is the canonical copy (AGENTS.md rule 1).
+3. `ci.yml:46` → `ci_compile_base_configs.sh` → compiles `config.stable.json` /
+   `config.beta.json`. Only `enabled = true` tables survive → **your 8**.
+4. `ci.yml:48` → `sync_patch_sources.py` → `TRIGGER_STABLE` / `TRIGGER_BETA`
+   (did an upstream patch version move?).
+5. `ci.yml:62` → `compare_apps` → `TRIGGER_APP_UPDATE` (did an app version move?).
+6. `ci.yml:93` → `ci_resolve_triggers.sh` gates both: counts
+   `[.[] | objects | select(.enabled != false)]` in the compiled JSON, and emits
+   `::notice::… no enabled apps` when zero. Your 8 pass.
+7. `build_beta` → `build.yml` with `configs/beta_build.json` (4 apps).
+8. `build_stable` → `build.yml` with `configs/stable_build.json` (8 apps).
+9. `trigger_cleanup` → prunes releases, then dispatches to `WEBSITE_REPO`.
+10. `ci.yml:118` → `commit_data_branch.sh` → writes `state/*.json` +
+    `configs/*_build.json` back onto `data`.
+
+`build.yml` materialises independently (`:61` `ref: main`, `:70`
+`fetch_data_branch.sh`), so every build reads canonical `data` regardless of what
+is checked out.
+
+**Pushing configs ≠ building.** Steps 4–6 are the gate: a build fires only on an
+upstream *signal* — a new patch version or a new app version. A scheduled run
+with no signal compiles, refreshes `state/`, and stops.
+
+**To force a build immediately:** **Actions → Manual CI → Run workflow**, choosing
+`configs/stable_build.json` or `configs/beta_build.json`. The default
+`configs/config.manual.toml` is the untouched Manual-CI fixture, *not* your pruned
+set. Both `*_build.json` already exist on `data`, and `manual-ci.yml` → `build.yml`
+re-materialises them, so the flips apply without waiting for a cron.
+
+---
+
 ## Planned follow-up edits
 
 _Recording site/variable setup when it happens — append below._
