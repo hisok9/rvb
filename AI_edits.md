@@ -3,9 +3,9 @@
 Working plan for the build-pruning effort. Append new entries as the work
 proceeds; do not rewrite history in this file.
 
-- **Repo/branch:** `nullcpy/rvb`, local checkout on `data` @ `fea070a2` (clean
-  except untracked `temp/`).
-- **Status:** planned — no edits applied yet.
+- **Repo/branch:** fork `hisok9/rvb`, local checkout on `data`.
+- **Status:** Edit 1 applied and committed (`a28dc433`), **not pushed**.
+  Edit 2 (site URL + tokens) is research only — nothing changed.
 
 ---
 
@@ -108,6 +108,79 @@ about this change. The pool compile in step 2 is the gate.
 
 ---
 
+## Edit 1 — result (applied)
+
+Committed `a28dc433` on `data` — `feat(config): disable all apps except
+Truecaller, YouTube, Photos, CamScanner`. 42 files, 175 insertions/deletions,
+every changed line exactly `enabled = true` → `enabled = false`. `photos.toml`
+untouched. Scratch script removed; tree clean.
+
+**Verification actually run:**
+
+| Check | Result |
+|---|---|
+| line totals | 8 `true` / 175 `false` / 183 tables |
+| enabled tables are exactly the keepers | ✅ 8 named tables |
+| diff confined to `configs/patches/` | ✅ no code/docs/workflow touched |
+| `compile_patch_configs.py` pools | **stable = 8**, **beta = 4** |
+| `build.sh:168` table-level read | ✅ local builds agree |
+
+Beta = `YouTube-Morphe`, `YouTubeMusic-Morphe`, `GooglePhotos-DeVanced`,
+`Truecaller-bufferk` — the keepers whose `patches-version = "both"`
+(`morphe.toml:2`, `bufferk.toml:9`, `photos.toml:7`) route to both pools. Not a
+bug, the other 4 keepers default to stable only.
+
+**Still to do:** `git push origin data` when asked. Then the next scheduled
+watcher run (≤4h) regenerates `configs/*_build.json` and prunes
+`state/patch_sources.json`; only Trace Verify runs on push, so nothing builds
+until a trigger fires.
+
+---
+
+## Edit 2 — pointing the site at your own (research only, nothing changed)
+
+The builder never writes into the site repo; the site clones rvb's `website`
+branch and queries the Releases API ([docs/website-contract.md](docs/website-contract.md)).
+So "your own site" = a second repo you own, plus a handful of repo **variables**.
+
+### Variables (Settings → Variables) — no code edit needed
+
+| Variable | Default to override | Purpose |
+|---|---|---|
+| `WEBSITE_REPO` | `nullcpy/nullcpy.github.io` | target of the `catalog-updated` dispatch (`cleanup.yml:52`) |
+| `RELEASE_NOTES_WEBSITE_LINK` | `https://nullcpy.github.io` | link printed in release notes (`build.yml:143`) |
+| `APKS_REPO` | `nullcpy/apks` | stock-APK cache — also synthesises download source #1 (`build.yml:136`) |
+
+`Forking is a variable change (vars.APKS_REPO), not a config edit` — stated
+explicitly in `docs/cache-repo.md`.
+
+### Hardcoded `nullcpy` fallbacks (would need a code edit)
+
+`build.sh:49-50` `author` / `author-page` defaults, `module/customize.sh:190`
+`MAINTAINER`, and README badge URLs. Only cosmetic *except* `author`, which feeds
+`update_json_path` — and `utils.sh:4687` builds the module's `updateJson` from
+`${GITHUB_REPOSITORY}` (auto-set by Actions to `hisok9/rvb`), so **modules built
+on your fork already update from your fork with zero config.**
+
+### Do you need a PAT? — one optional, rest no
+
+| Secret | Required? | Behaviour if absent |
+|---|---|---|
+| `GITHUB_TOKEN` | **automatic**, never create it | `build.yml:36` grants `contents: write`; uploads + branch merges work out of the box |
+| `APKS_REPO_TOKEN` | **only if** you set `APKS_REPO` to a repo you don't own, *and* want cache writes | upload degrades to a warning (`wpr`, 3 attempts); `update_usage_tracker.py` prints "not set. Skipping" and is invoked `|| true`. **No build failure.** |
+| `WEBSITE_DISPATCH_TOKEN` | only to dispatch to a site repo you don't own | `continue-on-error: true` + `::warning::… the scheduled rebuild will converge` — the site's own cron (`23 */6 * * *`) recovers. **No failure.** |
+| `TG_TOKEN` | no | `ci_notify_telegram.sh:4` → "TG_TOKEN is not set. Skipping". |
+| `CODEBERG_TOKEN` | only for Codeberg-hosted patch sources | not used by any of the 8 keepers |
+
+**Bottom line:** as long as `APKS_REPO` points at a repo in *your* account (or
+you leave the cache out), **no PAT is needed at all** — the built-in
+`GITHUB_TOKEN` covers releases, manifests and branch pushes. Add
+`APKS_REPO_TOKEN` only if you want the shared cross-fork cache, and
+`WEBSITE_DISPATCH_TOKEN` only if you want instant site rebuilds instead of the
+6-hourly cron convergence.
+
+---
+
 ## Planned follow-up edits
 
-_None yet — append below._
+_Recording site/variable setup when it happens — append below._
