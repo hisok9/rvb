@@ -260,36 +260,85 @@ Typical wait ≤ 4h, worst case 24h. Or trigger it immediately via
 
 1. `ci.yml` checks out **`main`** (`ref: main`), not `data`.
 2. `ci.yml:43` → `fetch_data_branch.sh` → `git fetch origin data` → materialises
-   `configs/` + `state/` into the worktree. `origin` is your fork, so these are
-   **your** TOMLs. `.gitignore:20-21` keeps them untracked on `main` — the `data`
-   branch is the canonical copy (AGENTS.md rule 1).
-3. `ci.yml:46` → `ci_compile_base_configs.sh` → compiles `config.stable.json` /
-   `config.beta.json`. Only `enabled = true` tables survive → **your 8**.
+   `configs/` + `state/` into the worktree. `origin` is your fork, so the TOMLs are
+   **yours**. `.gitignore:20-21` keeps them untracked on `main` — the `data` branch
+   is the canonical copy (AGENTS.md rule 1). This also drags over the *generated*
+   `configs/*_build.json`, which is a separate matter — see the gate below.
+3. `ci.yml:46` → `ci_compile_base_configs.sh` → writes the **base** configs
+   `config.stable.json` / `config.beta.json` straight from the TOMLs. Only
+   `enabled = true` tables survive → **your 8**. This step has **no `if:` guard**,
+   so it runs every time — log line `Stable pool apps: 8`.
 4. `ci.yml:48` → `sync_patch_sources.py` → `TRIGGER_STABLE` / `TRIGGER_BETA`
    (did an upstream patch version move?).
 5. `ci.yml:62` → `compare_apps` → `TRIGGER_APP_UPDATE` (did an app version move?).
-6. `ci.yml:93` → `ci_resolve_triggers.sh` gates both: counts
-   `[.[] | objects | select(.enabled != false)]` in the compiled JSON, and emits
-   `::notice::… no enabled apps` when zero. Your 8 pass.
-7. `build_beta` → `build.yml` with `configs/beta_build.json` (4 apps).
-8. `build_stable` → `build.yml` with `configs/stable_build.json` (8 apps).
-9. `trigger_cleanup` → prunes releases, then dispatches to `WEBSITE_REPO`.
-10. `ci.yml:118` → `commit_data_branch.sh` → writes `state/*.json` +
-    `configs/*_build.json` back onto `data`.
+6. `ci.yml:68` → `ci_trigger_flags.sh` → `SOURCES_CHANGED` and **`ANYTHING_CHANGED`**.
+7. `ci.yml:84` → `ci_generate_configs.sh`, gated on **`if: ANYTHING_CHANGED == '1'`**
+   → projects the base config (your 8) onto the active-source lists and writes the
+   **generated** `configs/stable_build.json`.
+8. `ci.yml:93` → `ci_resolve_triggers.sh` reads **`configs/stable_build.json`** —
+   the *generated* file from step 7, **not** the base from step 3 — counts
+   `[.[] | objects | select(.enabled != false)]`, and emits
+   `::notice::… no enabled apps` when zero.
+9. `build_beta` → `build.yml` with `configs/beta_build.json`.
+10. `build_stable` → `build.yml` with `configs/stable_build.json`.
+11. `trigger_cleanup` → prunes releases, then dispatches to `WEBSITE_REPO`.
+12. `ci.yml:118` → `commit_data_branch.sh`, gated on **`if: ANYTHING_CHANGED == '1'`**
+    → writes `state/*.json` + `configs/*_build.json` back onto `data`.
 
 `build.yml` materialises independently (`:61` `ref: main`, `:70`
 `fetch_data_branch.sh`), so every build reads canonical `data` regardless of what
 is checked out.
 
-**Pushing configs ≠ building.** Steps 4–6 are the gate: a build fires only on an
-upstream *signal* — a new patch version or a new app version. A scheduled run
-with no signal compiles, refreshes `state/`, and stops.
+### The gate: why your config may not reach a build
 
-**To force a build immediately:** **Actions → Manual CI → Run workflow**, choosing
-`configs/stable_build.json` or `configs/beta_build.json`. The default
-`configs/config.manual.toml` is the untouched Manual-CI fixture, *not* your pruned
-set. Both `*_build.json` already exist on `data`, and `manual-ci.yml` → `build.yml`
-re-materialises them, so the flips apply without waiting for a cron.
+**`ANYTHING_CHANGED` never looks at your TOMLs.** It is computed only from
+upstream signals (`ci_trigger_flags.sh`):
+
+```bash
+SOURCES_CHANGED  = TRIGGER_STABLE || TRIGGER_BETA        # a patch source released
+ANYTHING_CHANGED = SOURCES_CHANGED || TRIGGER_BLOCKED || TRIGGER_APP_UPDATE
+```
+
+Flipping `enabled = true → false` sets **none** of them. Consequences:
+
+- **Step 3 always runs** → your TOMLs are verified fresh on every run.
+- **Steps 7 and 12 are skipped** when the gate is 0 → the *generated*
+  `configs/*_build.json` — the file builds actually consume — keeps its previous
+  contents, and nothing is written back to `data`.
+
+Ordering is what makes it self-correcting: step 7 regenerates *before* step 8
+decides, so the first run with any upstream activity rewrites the generated JSON
+from your TOMLs before the trigger decision is made. Nothing to fix by hand — it
+just needs a signal.
+
+> **Fork-specific trap.** A fresh fork inherits upstream's *generated* JSON, not
+> its TOMLs. At `77632e6b` this fork had:
+>
+> | file | contents |
+> |---|---|
+> | `configs/stable_build.json` | 183 apps, `enabled=True` for **17** — byte-identical to `nullcpy/rvb`, none of them your keepers |
+> | `configs/beta_build.json` | 23 apps, `enabled=True` for **0** |
+>
+> The TOMLs are yours; the generated JSON is upstream's. They converge on the
+> first `ANYTHING_CHANGED=1` run.
+
+### Forcing a build — Manual CI
+
+`manual-ci.yml` → `build.yml` **never recompiles**: `build_resolve_context.sh`
+only extracts `patches-version`, then builds the file as given. So the
+`config_file` choice alone decides what you build:
+
+| `config_file` | Result as of `77632e6b` |
+|---|---|
+| `configs/stable_build.json` | **upstream's 17 apps** — stale, not yours |
+| `configs/beta_build.json` | **0 apps** — nothing to build |
+| `configs/config.manual.toml` | ✅ **deterministic** — a hand-written TOML that `build.sh` reads directly, bypassing the generated JSON entirely |
+
+Use `config.manual.toml` to exercise your config without waiting on an upstream
+signal. It has **no file-level preamble**, so `build_resolve_context.sh`'s
+`awk '/^\[/ {exit}'` reads nothing before the first `[` and classifies it as
+stable/non-prerelease — a table-level `patches-version` *inside* a `[...]` block
+does not affect that classification.
 
 ---
 
