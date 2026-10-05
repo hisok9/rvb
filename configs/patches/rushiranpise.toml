@@ -175,3 +175,14 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-shoppi
 uptodown-dlurl = "https://amazon-shopping.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/amazon-shopping/com.amazon.mShop.android.shopping"
 apkcombo-dlurl = "https://apkcombo.com/amazon-shopping/com.amazon.mShop.android.shopping"
+
+[CamScanner-rushiranpise]
+enabled = true
+pkg-name = "com.intsig.camscanner"
+app-name = "CamScanner"
+# base APK pinned — the only version rushiranpise/morphe-patches v1.22.0 declares support for
+version = "7.24.5.2608200000"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator"
+uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"
+apkcombo-dlurl = "https://apkcombo.com/camscanner/com.intsig.camscanner"

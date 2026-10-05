@@ -1,4 +1,4 @@
-# Manual CI fixture — the 8 keeper apps, as a frozen snapshot.
+# Manual CI fixture — the 9 keeper apps, as a frozen snapshot.
 #
 # PREFER `auto` (Manual CI's default): build.yml now runs
 # compile_patch_configs.py first and builds the live enabled set straight from
@@ -82,8 +82,19 @@ brand = "hoodles"
 patches-source = "hoo-dles/morphe-patches"
 # base APK pinned — the only version hoo-dles/morphe-patches v1.46.0 declares support for
 version = "7.20.0.2606230000"
-# default-off; appends .morphe to the pkg (same patch rushiranpise's config enables)
-included-patches = "'Change package name'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator"
+uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"
+apkcombo-dlurl = "https://apkcombo.com/camscanner/com.intsig.camscanner"
+
+[CamScanner-rushiranpise]
+enabled = true
+pkg-name = "com.intsig.camscanner"
+app-name = "CamScanner"
+brand = "rushiranpise"
+patches-source = "rushiranpise/morphe-patches"
+# base APK pinned — the only version rushiranpise/morphe-patches v1.22.0 declares support for
+version = "7.24.5.2608200000"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator"
 uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"

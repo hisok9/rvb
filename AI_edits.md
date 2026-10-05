@@ -6,7 +6,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 
 ## Scope
 
-- **8 keepers** in `configs/patches/*.toml` (43 files, 183 tables → 175 flips):
+- **9 keepers** in `configs/patches/*.toml` (43 files, 184 tables → 175 flips):
 
   | File | Keep |
   |---|---|
@@ -15,11 +15,16 @@ Build-pruning + fork setup. Local checkout: `data`.
   | `bufferk.toml` | `Truecaller-bufferk` |
   | `paresh.toml` | `Truecaller-Paresh` |
   | `hoodles.toml` | `CamScanner-hoodles` |
+  | `rushiranpise.toml` | `CamScanner-rushiranpise` |
+
+  The two CamScanner keepers share `pkg-name = com.intsig.camscanner` and our key,
+  so only one installs at a time — rushiranpise (`7.24.5`) upgrades over hoodles
+  (`7.20.0`); going back needs an uninstall first.
 
 - **Mechanism:** `enabled = false` **on each table**, never file-level —
   `build.sh:168` does `toml_get "$t" enabled) || enabled=true` (table only, falls
   back to *true*). Deleting the line re-enables. Config was never deleted.
-- **Pools:** `compile_patch_configs.py` → stable = 8, beta = 4
+- **Pools:** `compile_patch_configs.py` → stable = 9, beta = 4
   (beta = the 4 keepers with `patches-version = "both"`).
 - **Never touched:** `TG_TOKEN` (unset → notify skips), `APKS_REPO` (unset).
 
@@ -184,5 +189,5 @@ and the **Magisk module** `versionCode` (`utils.sh:4818`). The APK's Android
 
 - Catalog sizes stale by 4–8 B (`data.json` predates run #3) — URLs fine, self-heals
   at `Rebuild Catalog` (`23 */6 * * *`). Dispatch needs **admin**
-- 7 of 8 keepers have never built — next `ci.yml` cron.
+- `CamScanner-rushiranpise` (9th keeper) has never built — next Manual CI or cron.
 - Release `260176` still holds old-key APKs; nothing links to it, safe to delete.
