@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-04T21:12:46Z"
+    "publishedAt": "2026-10-05T16:33:35Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -37,8 +37,8 @@
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-akashsriram-v7.95.0.989626323-arm-v7a.apk": {
       "name": "google-photos-akashsriram",
@@ -70,8 +70,8 @@
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-akashsriram-v7.95.0.989626323-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -103,8 +103,8 @@
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-akashsriram-module-v7.95.0.989626323-arm-v7a.zip": {
       "name": "google-photos-akashsriram",
@@ -136,8 +136,8 @@
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
       "name": "camscanner-hoodles",
@@ -161,8 +161,8 @@
         "Disable telemetry",
         "Enable Premium"
       ],
-      "originBuild": "260180",
-      "publishedAt": "2026-10-04T21:12:20Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "camscanner-hoodles-v7.20.0.2606230000-arm64-v8a.apk": {
       "name": "camscanner-hoodles",
@@ -186,8 +186,8 @@
         "Disable telemetry",
         "Enable Premium"
       ],
-      "originBuild": "260180",
-      "publishedAt": "2026-10-04T21:12:20Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm-v7a.zip": {
       "name": "google-photos-devanced",
@@ -212,8 +212,8 @@
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260180",
-      "publishedAt": "2026-10-04T21:12:20Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm64-v8a.zip": {
       "name": "google-photos-devanced",
@@ -238,8 +238,8 @@
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260180",
-      "publishedAt": "2026-10-04T21:12:20Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm64-v8a.apk": {
       "name": "google-photos-devanced",
@@ -264,8 +264,8 @@
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260180",
-      "publishedAt": "2026-10-04T21:12:20Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
@@ -290,8 +290,8 @@
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260180",
-      "publishedAt": "2026-10-04T21:12:20Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-rushiranpise-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-rushiranpise",
@@ -319,8 +319,8 @@
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "google-photos-rushiranpise-v7.92.0.977185651-arm64-v8a.apk": {
       "name": "google-photos-rushiranpise",
@@ -348,8 +348,8 @@
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "truecaller-paresh-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-paresh",
@@ -381,8 +381,8 @@
         "Neutralize third-party SDKs",
         "Truecaller Premium"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "truecaller-paresh-module-v26.10.6-arm-v7a.zip": {
       "name": "truecaller-paresh",
@@ -414,8 +414,8 @@
         "Neutralize third-party SDKs",
         "Truecaller Premium"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "truecaller-paresh-module-v26.10.6-arm64-v8a.zip": {
       "name": "truecaller-paresh",
@@ -447,8 +447,8 @@
         "Neutralize third-party SDKs",
         "Truecaller Premium"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "truecaller-paresh-v26.10.6-arm-v7a.apk": {
       "name": "truecaller-paresh",
@@ -480,8 +480,8 @@
         "Neutralize third-party SDKs",
         "Truecaller Premium"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "truecaller-bufferk-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-bufferk",
@@ -510,8 +510,8 @@
         "Mock premium",
         "Remove Premium UI"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "truecaller-bufferk-module-v26.10.6-arm64-v8a.zip": {
       "name": "truecaller-bufferk",
@@ -540,8 +540,8 @@
         "Mock premium",
         "Remove Premium UI"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "truecaller-bufferk-v26.10.6-arm-v7a.apk": {
       "name": "truecaller-bufferk",
@@ -570,8 +570,8 @@
         "Mock premium",
         "Remove Premium UI"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "truecaller-bufferk-module-v26.10.6-arm-v7a.zip": {
       "name": "truecaller-bufferk",
@@ -600,8 +600,8 @@
         "Mock premium",
         "Remove Premium UI"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -712,8 +712,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "youtube-morphe-module-v21.16.256-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -824,8 +824,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "youtube-morphe-module-v21.16.256-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -936,8 +936,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "youtube-morphe-v21.16.256-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1048,8 +1048,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "youtube-music-morphe-module-v9.15.51-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -1116,8 +1116,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "youtube-music-morphe-v9.15.51-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -1184,8 +1184,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "youtube-music-morphe-module-v9.15.51-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -1252,8 +1252,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     },
     "youtube-music-morphe-v9.15.51-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -1320,8 +1320,58 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260178",
-      "publishedAt": "2026-10-04T16:48:22Z"
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
+    },
+    "camscanner-rushiranpise-v7.24.5.2608200000-arm-v7a.apk": {
+      "name": "camscanner-rushiranpise",
+      "version": "7.24.5.2608200000",
+      "appKey": "camscanner",
+      "appName": "CamScanner",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "rushiranpise",
+      "brandName": "rushiranpise",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.intsig.camscanner",
+      "patchSources": [
+        "rushiranpise/patches-1.22.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.22.0"
+      ],
+      "appliedPatches": [
+        "Disable telemetry",
+        "Unlock Yearly"
+      ],
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
+    },
+    "camscanner-rushiranpise-v7.24.5.2608200000-arm64-v8a.apk": {
+      "name": "camscanner-rushiranpise",
+      "version": "7.24.5.2608200000",
+      "appKey": "camscanner",
+      "appName": "CamScanner",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushiranpise",
+      "brandName": "rushiranpise",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.intsig.camscanner",
+      "patchSources": [
+        "rushiranpise/patches-1.22.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.22.0"
+      ],
+      "appliedPatches": [
+        "Disable telemetry",
+        "Unlock Yearly"
+      ],
+      "originBuild": "260182",
+      "publishedAt": "2026-10-05T16:32:39Z"
     }
   }
 }
