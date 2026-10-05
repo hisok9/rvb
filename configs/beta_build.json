@@ -31,7 +31,7 @@
     "patches-source": "MorpheApp/morphe-patches",
     "build-mode": "both",
     "brand": "Morphe",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.youtube.music",
     "app-name": "YouTube Music",
     "patch-folder": "music",
