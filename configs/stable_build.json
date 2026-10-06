@@ -15,7 +15,7 @@
   "CamScanner-hoodles": {
     "patches-source": "hoo-dles/morphe-patches",
     "brand": "hoodles",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.intsig.camscanner",
     "app-name": "CamScanner",
     "version": "7.20.0.2606230000",
@@ -28,7 +28,7 @@
     "patches-source": "MorpheApp/morphe-patches",
     "build-mode": "both",
     "brand": "Morphe",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.youtube",
     "app-name": "YouTube",
     "patch-folder": "youtube",
@@ -43,7 +43,7 @@
     "patches-source": "MorpheApp/morphe-patches",
     "build-mode": "both",
     "brand": "Morphe",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.youtube.music",
     "app-name": "YouTube Music",
     "patch-folder": "music",
@@ -66,7 +66,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.truecaller"
   },
   "GooglePhotos-DeVanced": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "DeVanced",
@@ -93,5 +93,17 @@
     "patches-source": "Akash-Sriram/morphe-google-photos",
     "apkmirror-dlurl": "https://apkmirror.com/apk/google-inc/photos",
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
+  },
+  "CamScanner-rushiranpise": {
+    "patches-source": "rushiranpise/morphe-patches",
+    "brand": "rushiranpise",
+    "enabled": false,
+    "pkg-name": "com.intsig.camscanner",
+    "app-name": "CamScanner",
+    "version": "7.24.5.2608200000",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator",
+    "uptodown-dlurl": "https://camscanner-pdf-creator.en.uptodown.com/android",
+    "apkpure-dlurl": "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner",
+    "apkcombo-dlurl": "https://apkcombo.com/camscanner/com.intsig.camscanner"
   }
 }
