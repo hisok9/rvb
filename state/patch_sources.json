@@ -36,8 +36,8 @@
     "stable_date": "2026-10-04T10:21:11Z"
   },
   "bufferk/morphe-patches": {
-    "beta": "v1.8.0-dev.1",
-    "beta_date": "2026-07-18T11:46:49Z",
+    "beta": "v1.9.0-dev.1",
+    "beta_date": "2026-10-07T04:52:47Z",
     "blocked": false,
     "host": "github",
     "repo": "bufferk/morphe-patches",

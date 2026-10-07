@@ -78,6 +78,13 @@
       "shared": "ec5f048a8a5ad03aa9307ed5590d13e8"
     }
   },
+  "bufferk/morphe-patches": {
+    "beta": {
+      "com.truecaller": "489986318f92ef172605b81e181fc5e4",
+      "shared": "6162a6fd363e6dd0b9320fd151ad11df"
+    },
+    "stable": {}
+  },
   "byehi98/okish-morphe-patches": {
     "beta": {},
     "stable": {
