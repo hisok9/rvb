@@ -215,21 +215,34 @@ question `needs-bks` (does this config contain an app whose patcher asks JCA for
 BKS keystore?). Only NPatch does — it calls `KeyStore.getInstance("BKS")` and ships
 its built-in keystores as BKS files — so `PATCHER_NEEDS_BKS` is set for the npatch
 flavour of the xposed flow and cleared for LSPatch, which loads a bundled JKS
-through `KeyStore.getDefaultType()` and runs on a stock JDK. Adding a tool means
-editing the registry, not `build_rv`.
+through `KeyStore.getDefaultType()` and runs on a stock JDK. The same split decides
+`PATCHER_KEYSTORE_FORMAT`: the xposed tools sign their own output, so the identity
+reaches them as `-k <store> <pass> <alias> <pass>` and the flag names which of the
+two stores that tool can actually read. Adding a tool means editing the registry,
+not `build_rv`.
 
 ## Signing and identity
 
 | Env var | Default | Purpose |
 |---|---|---|
-| `RVB_KEYSTORE` / `RVB_KEYSTORE_P12` | `ks.keystore` / `ks-p12.keystore` | signing identity; CI writes them from `KEYSTORE_B64` / `KEYSTORE_P12_B64` via `install_keystore.sh` |
-| `RVB_KEYSTORE_PASS` / `RVB_KEY_ALIAS` | upstream defaults | overridden by secrets in CI |
+| `RVB_KEYSTORE` / `RVB_KEYSTORE_P12` | none | the BKS store handed to the patch CLIs and to NPatch, and the PKCS12 store used by apksigner and LSPatch; `install_keystore.sh` writes both from `KEYSTORE_B64` / `KEYSTORE_P12_B64` and exports the two paths |
+| `RVB_KEYSTORE_PASS` / `RVB_KEY_ALIAS` | none | one password, passed as both store and key password, and one alias present in both stores. Alphanumeric only: both are interpolated into `eval`'d CLI arguments, and `require_signing_identity` rejects anything else |
 | `RVB_MORPHE_PASSTHROUGH` | `true` | keep bundles whole for morphe instead of merging at download time |
 | `RVB_INSTAFEL_FALLBACK_COMMIT`, `RVB_INSTAFEL_DEFAULT_PATCHES` | see source | used when the InstaFel CLI manifest has no commit hash or a config omits `included-patches` |
 
 Signature identity is not cosmetic: patched apps that lose the expected signer
-cannot update in place, so `check_sig` exists and the keystore is a CI secret
-rather than a repository default.
+cannot update in place, which is why `check_sig` exists. It therefore has no
+default in `utils.sh` and no keystore ships in this repository — the two files
+inherited from the template this was forked from came with a public private key, so
+a missing secret meant every build here was signable by anyone holding the same
+template. `build.sh` calls `require_signing_identity` before the first download,
+and `install_keystore.sh` fails the run when any of the four secrets is absent
+instead of falling back; it also checks the BKS magic and that the alias really is
+readable in the PKCS12 store, so a wrong secret stops the job in seconds rather
+than at the first patch of every app. A local build must export all four itself,
+pointing at one key pair held in both BKS and PKCS12 form (same alias, same
+password). The price of adopting a fresh identity is paid once: every previously
+installed patched app has to be uninstalled, because its signer changed.
 
 ## Guardrails
 

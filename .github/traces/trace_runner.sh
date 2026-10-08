@@ -63,6 +63,15 @@ for fx in "${FIXTURES[@]}"; do
 		export HOME="$run_dir"
 		: > "$TRACE_OUT"
 		printf 'FAKE-STOCK\n' > "$run_dir/stock.apk"
+		# Signing identity: the engine refuses to build without one now (there is no
+		# committed keystore to fall back on), so the harness provides a fixed fake.
+		# These values are recorded in the goldens - keep them stable and obviously
+		# not a real key, and alphanumeric because the engine rejects a password it
+		# has to embed in an eval'd command line.
+		export RVB_KEYSTORE=trace-ks.keystore RVB_KEYSTORE_P12=trace-ks-p12.keystore
+		export RVB_KEYSTORE_PASS=tracepass RVB_KEY_ALIAS=tracealias
+		printf 'FAKE-KEYSTORE-BKS\n' > trace-ks.keystore
+		printf 'FAKE-KEYSTORE-PKCS12\n' > trace-ks-p12.keystore
 
 		echo "=== FIXTURE: $name ==="
 		toml_prep "$fx" || { echo "RESULT: toml_prep failed"; exit 0; }

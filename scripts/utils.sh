@@ -17,12 +17,51 @@ NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 OS=$(uname -o)
 DEFAULT_UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
 
-# Signing identity — overridable from CI (secrets written to these files/vars
-# by build.yml); defaults preserve the upstream keystore in the repo.
-RVB_KEYSTORE="${RVB_KEYSTORE:-ks.keystore}"
-RVB_KEYSTORE_P12="${RVB_KEYSTORE_P12:-ks-p12.keystore}"
-RVB_KEYSTORE_PASS="${RVB_KEYSTORE_PASS:-123456789}"
-RVB_KEY_ALIAS="${RVB_KEY_ALIAS:-jhc}"
+# Signing identity. There is deliberately no default here. CI supplies it: build.yml
+# passes the KEYSTORE_* secrets to install_keystore.sh, which writes the two store
+# files and exports RVB_KEYSTORE_PASS / RVB_KEY_ALIAS. A local build must set all
+# four itself (see require_signing_identity below and the table in
+# docs/build-engine.md#signing-and-identity).
+#
+# Two stores because the consumers ask JCA for different types: RVB_KEYSTORE is a
+# BKS file (patch CLIs and NPatch), RVB_KEYSTORE_P12 a PKCS12 one (apksigner and
+# LSPatch). They must hold the SAME key under the SAME alias, and the engine has
+# one password var, which it passes as both store and key password.
+RVB_KEYSTORE="${RVB_KEYSTORE-}"
+RVB_KEYSTORE_P12="${RVB_KEYSTORE_P12-}"
+RVB_KEYSTORE_PASS="${RVB_KEYSTORE_PASS-}"
+RVB_KEY_ALIAS="${RVB_KEY_ALIAS-}"
+
+# Refuse before the first download instead of after patching: every build path
+# signs (the CLI --keystore flags, apksigner on merged bundles, -k for the xposed
+# flows), so a missing identity is a whole-run problem, not a per-app one. It used
+# to fall back to the keystore committed by the repo template, whose private key is
+# public - any fork could then produce signature-compatible "updates" for builds
+# published here. Signing with someone else's key is not a default to keep.
+require_signing_identity() {
+	local bad=0 v
+	for v in RVB_KEYSTORE RVB_KEYSTORE_P12 RVB_KEYSTORE_PASS RVB_KEY_ALIAS; do
+		if [ -z "${!v-}" ]; then epr "$v is not set"; bad=1; fi
+	done
+	if [ -n "${RVB_KEYSTORE-}" ] && [ ! -f "$RVB_KEYSTORE" ]; then epr "keystore not found: $RVB_KEYSTORE"; bad=1; fi
+	if [ -n "${RVB_KEYSTORE_P12-}" ] && [ ! -f "$RVB_KEYSTORE_P12" ]; then epr "keystore not found: $RVB_KEYSTORE_P12"; bad=1; fi
+	# The password is interpolated into an eval'd command line (and into single
+	# quotes for the -k arguments), so anything outside [0-9A-Za-z] would either
+	# split the argument or terminate it early.
+	if [ -n "${RVB_KEYSTORE_PASS-}" ] && [[ "$RVB_KEYSTORE_PASS" =~ [^0-9A-Za-z] ]]; then
+		epr "RVB_KEYSTORE_PASS must be alphanumeric: it is embedded in eval'd CLI arguments"
+		bad=1
+	fi
+	if [ -n "${RVB_KEY_ALIAS-}" ] && [[ "$RVB_KEY_ALIAS" =~ [^0-9A-Za-z_.-] ]]; then
+		epr "RVB_KEY_ALIAS must not contain characters that break eval'd CLI arguments"
+		bad=1
+	fi
+	if [ "$bad" -ne 0 ]; then
+		epr "no usable signing identity - in CI set KEYSTORE_B64, KEYSTORE_P12_B64, KEYSTORE_PASSWORD and KEY_ALIAS; locally export RVB_KEYSTORE, RVB_KEYSTORE_P12, RVB_KEYSTORE_PASS and RVB_KEY_ALIAS"
+		return 1
+	fi
+	return 0
+}
 
 # Instafel fallbacks (used when the CLI manifest lacks a commit hash, and
 # when a config omits included-patches). Overridable without code edits.
@@ -3163,8 +3202,24 @@ patch_apk() {
 		for j in "${p_jars[@]}"; do
 			p_args_modules+=" -m '$j'"
 		done
+		# Both tools sign the output themselves, so the identity has to reach them as
+		# arguments: -k <path> <storePass> <alias> <aliasPass>, same order in LSPatch
+		# (KeystoreSpec.of) and NPatch. Which store each can read is a per-tool fact -
+		# NPatch asks JCA for a BKS type, LSPatch for the JDK default (PKCS12) - so the
+		# registry names it. Placed before $patcher_args so a config can still override.
+		local ks_args="" ks_file="$RVB_KEYSTORE_P12"
+		if [ "${PATCHER_SIGNING:-false}" = true ]; then
+			if [ "${PATCHER_KEYSTORE_FORMAT:-pkcs12}" = bks ]; then
+				ks_file="$RVB_KEYSTORE"
+			fi
+			if [ -z "$ks_file" ] || [ ! -f "$ks_file" ]; then
+				epr "No signing keystore for '$cli_source' (want a $PATCHER_KEYSTORE_FORMAT store; have RVB_KEYSTORE='$RVB_KEYSTORE' RVB_KEYSTORE_P12='$RVB_KEYSTORE_P12')"
+				return 1
+			fi
+			ks_args=" -k '$ks_file' '$RVB_KEYSTORE_PASS' '$RVB_KEY_ALIAS' '$RVB_KEYSTORE_PASS'"
+		fi
 		mkdir -p "$tmp_dir"
-		local cmd="java -jar '$cli_jar' -o '$tmp_dir' $p_args_modules $patcher_args '$stock_input'"
+		local cmd="java -jar '$cli_jar' -o '$tmp_dir'$p_args_modules$ks_args $patcher_args '$stock_input'"
 		pr "$cmd"
 		PATCH_OUTPUT=$(eval "$cmd" 2>&1)
 		local ret=$?

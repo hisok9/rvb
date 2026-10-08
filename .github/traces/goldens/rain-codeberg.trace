@@ -13,4 +13,4 @@ PATCHES_LIST:
   Name: xposed-module-dummy
 PATCH_APK:
   rc=0 patched_exists=yes
-ARGS: [--enable-native-access=ALL-UNNAMED] [-jar] [temp/github__7723mod__npatch-rv/NPatch-1.5.0.jar] [-o] [<RUN>/build/out-Discord-Rain.apk-temporary-files] [-m] [temp/codeberg__raincord__rainxposed-rv/app-release.apk] [-l] [0] [stock.apk]
+ARGS: [--enable-native-access=ALL-UNNAMED] [-jar] [temp/github__7723mod__npatch-rv/NPatch-1.5.0.jar] [-o] [<RUN>/build/out-Discord-Rain.apk-temporary-files] [-m] [temp/codeberg__raincord__rainxposed-rv/app-release.apk] [-k] [trace-ks.keystore] [tracepass] [tracealias] [tracepass] [-l] [0] [stock.apk]

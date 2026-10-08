@@ -111,7 +111,13 @@ Step order, with the reason each is where it is:
    LSPatch apps do not trigger it, and a stock Temurin JDK has no BKS type, so
    getting this gate wrong either way is visible: skip it for an NPatch config and
    patching dies on `KeyStoreException: BKS not found`.
-4. `install_keystore.sh` writes the signing identity from secrets.
+4. `install_keystore.sh` writes the signing identity from the four `KEYSTORE_*`
+   secrets and **fails the run** if any of them is absent: there is no keystore in
+   the repository to fall back on (the template's shipped a public private key), and
+   silently signing with it would make every build here updatable by anyone holding
+   the same template. It also checks the BKS magic and that `KEY_ALIAS` is readable
+   with `KEYSTORE_PASSWORD`, so a wrong secret stops the job here rather than at the
+   first patch. `build.sh` then re-checks the identity before any download.
 5. `build_resolve_version.sh` computes `NEXT_VER_CODE` (`YY` + the next 4-digit
    sequence above the highest existing tag/release, e.g. `260141`).
 6. Restore the Actions APK cache (`temp/apks`), optionally drop named APKs, then
