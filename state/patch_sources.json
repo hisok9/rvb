@@ -5,12 +5,12 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.13.4",
-    "stable_date": "2026-10-04T03:56:39Z"
+    "stable": "v1.14.0",
+    "stable_date": "2026-10-08T11:11:33Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.47.0-dev.1",
-    "beta_date": "2026-10-06T22:59:43Z",
+    "beta": "v1.47.0-dev.4",
+    "beta_date": "2026-10-08T12:12:41Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
