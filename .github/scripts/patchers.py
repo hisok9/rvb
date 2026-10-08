@@ -61,10 +61,21 @@ def ci_bundle_diffable(cli_sources) -> bool:
 def config_needs_bks(config_path: str) -> bool:
     with open(config_path, encoding="utf-8") as f:
         data = json.load(f)
+    # Keys written before the first table header are file-level defaults, and the
+    # engine inherits them into every table (build.sh DEF_CLI_SRC, then
+    # `toml_get "$t" cli-source`). yq renders them as top-level *scalar* entries
+    # sitting beside the tables, so a check that only reads a table's own
+    # cli-source sees an Xposed app as `generic` and skips the BouncyCastle
+    # install the app then dies on (`BKS not found`). Read the defaults here the
+    # same way the engine does.
+    defaults = {k: v for k, v in data.items() if not isinstance(v, dict)}
     for entry in data.values():
-        if not isinstance(entry, dict) or entry.get("enabled") is not True:
+        # A table with no `enabled` key is enabled: build.sh does
+        # `enabled=$(toml_get "$t" enabled) || enabled=true`. Only an explicit
+        # false skips the app.
+        if not isinstance(entry, dict) or entry.get("enabled") is False:
             continue
-        cli = entry.get("cli-source")
+        cli = entry.get("cli-source", defaults.get("cli-source"))
         if isinstance(cli, str) and classify(cli) in NEEDS_BKS_KINDS:
             return True
     return False
