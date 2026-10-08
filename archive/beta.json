@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-08T13:14:24Z"
+    "publishedAt": "2026-10-08T20:28:56Z"
   },
   "files": {
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
@@ -20,10 +20,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.4.mpp"
+        "MorpheApp/patches-1.47.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -47,6 +47,7 @@
         "Disable QUIC protocol",
         "Disable Shorts resuming on startup",
         "Disable auto feed refresh",
+        "Disable continue watching prompt",
         "Disable double tap actions",
         "Disable fullscreen gestures",
         "Disable haptic feedback",
@@ -120,8 +121,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-08T13:14:02Z"
+      "originBuild": "260191",
+      "publishedAt": "2026-10-08T20:28:36Z"
     },
     "youtube-morphe-module-v21.16.256-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -136,10 +137,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.4.mpp"
+        "MorpheApp/patches-1.47.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -163,6 +164,7 @@
         "Disable QUIC protocol",
         "Disable Shorts resuming on startup",
         "Disable auto feed refresh",
+        "Disable continue watching prompt",
         "Disable double tap actions",
         "Disable fullscreen gestures",
         "Disable haptic feedback",
@@ -236,8 +238,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-08T13:14:02Z"
+      "originBuild": "260191",
+      "publishedAt": "2026-10-08T20:28:36Z"
     },
     "youtube-morphe-module-v21.16.256-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -252,10 +254,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.4.mpp"
+        "MorpheApp/patches-1.47.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -279,6 +281,7 @@
         "Disable QUIC protocol",
         "Disable Shorts resuming on startup",
         "Disable auto feed refresh",
+        "Disable continue watching prompt",
         "Disable double tap actions",
         "Disable fullscreen gestures",
         "Disable haptic feedback",
@@ -352,8 +355,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-08T13:14:02Z"
+      "originBuild": "260191",
+      "publishedAt": "2026-10-08T20:28:36Z"
     },
     "youtube-morphe-v21.16.256-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -368,10 +371,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.4.mpp"
+        "MorpheApp/patches-1.47.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -395,6 +398,7 @@
         "Disable QUIC protocol",
         "Disable Shorts resuming on startup",
         "Disable auto feed refresh",
+        "Disable continue watching prompt",
         "Disable double tap actions",
         "Disable fullscreen gestures",
         "Disable haptic feedback",
@@ -468,8 +472,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-08T13:14:02Z"
+      "originBuild": "260191",
+      "publishedAt": "2026-10-08T20:28:36Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -484,15 +488,14 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.4.mpp"
+        "MorpheApp/patches-1.47.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.5"
       ],
       "appliedPatches": [
         "Android Auto",
         "App refresh rate",
-        "Bypass certificate checks",
         "Change header",
         "Change miniplayer color",
         "Change start page",
@@ -513,7 +516,6 @@
         "GmsCore support",
         "Hide ads",
         "Hide buttons",
-        "Hide filter bar",
         "Hide flyout menu components",
         "Hide layout components",
         "Hide music action buttons",
@@ -540,8 +542,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-08T13:14:02Z"
+      "originBuild": "260191",
+      "publishedAt": "2026-10-08T20:28:36Z"
     },
     "youtube-music-morphe-v9.20.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -556,15 +558,14 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.4.mpp"
+        "MorpheApp/patches-1.47.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.5"
       ],
       "appliedPatches": [
         "Android Auto",
         "App refresh rate",
-        "Bypass certificate checks",
         "Change header",
         "Change miniplayer color",
         "Change start page",
@@ -585,7 +586,6 @@
         "GmsCore support",
         "Hide ads",
         "Hide buttons",
-        "Hide filter bar",
         "Hide flyout menu components",
         "Hide layout components",
         "Hide music action buttons",
@@ -612,8 +612,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-08T13:14:02Z"
+      "originBuild": "260191",
+      "publishedAt": "2026-10-08T20:28:36Z"
     },
     "youtube-music-morphe-v9.20.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -628,15 +628,14 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.4.mpp"
+        "MorpheApp/patches-1.47.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.5"
       ],
       "appliedPatches": [
         "Android Auto",
         "App refresh rate",
-        "Bypass certificate checks",
         "Change header",
         "Change miniplayer color",
         "Change start page",
@@ -657,7 +656,6 @@
         "GmsCore support",
         "Hide ads",
         "Hide buttons",
-        "Hide filter bar",
         "Hide flyout menu components",
         "Hide layout components",
         "Hide music action buttons",
@@ -684,8 +682,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-08T13:14:02Z"
+      "originBuild": "260191",
+      "publishedAt": "2026-10-08T20:28:36Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -700,15 +698,14 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.4.mpp"
+        "MorpheApp/patches-1.47.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.5"
       ],
       "appliedPatches": [
         "Android Auto",
         "App refresh rate",
-        "Bypass certificate checks",
         "Change header",
         "Change miniplayer color",
         "Change start page",
@@ -729,7 +726,6 @@
         "GmsCore support",
         "Hide ads",
         "Hide buttons",
-        "Hide filter bar",
         "Hide flyout menu components",
         "Hide layout components",
         "Hide music action buttons",
@@ -756,8 +752,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260188",
-      "publishedAt": "2026-10-08T13:14:02Z"
+      "originBuild": "260191",
+      "publishedAt": "2026-10-08T20:28:36Z"
     },
     "truecaller-bufferk-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-bufferk",
