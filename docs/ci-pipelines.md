@@ -107,10 +107,12 @@ Step order, with the reason each is where it is:
    `IS_PRERELEASE`, `TITLE_SUFFIX` and the Telegram thread — the single owner of
    "which channel is this run".
 3. Install Bouncy Castle **only if** `patchers.py needs-bks` says an app in this
-   config is patched with NPatch — the only tool that asks JCA for a BKS keystore.
-   LSPatch apps do not trigger it, and a stock Temurin JDK has no BKS type, so
-   getting this gate wrong either way is visible: skip it for an NPatch config and
-   patching dies on `KeyStoreException: BKS not found`.
+   config is patched with NPatch — the only tool that asks the **JVM** for a BKS
+   keystore type (single-argument `KeyStore.getInstance("BKS")`). ReVanced CLI and
+   Morphe also work in BKS but carry their own provider inside their jar, and
+   LSPatch uses `getDefaultType()`, so none of them trigger this step. A stock
+   Temurin has no BKS type, so getting the gate wrong either way is visible: skip
+   it for an NPatch config and patching dies on `KeyStoreException: BKS not found`.
 4. `install_keystore.sh` writes the signing identity from the four `KEYSTORE_*`
    secrets and **fails the run** if any of them is absent: there is no keystore in
    the repository to fall back on (the template's shipped a public private key), and

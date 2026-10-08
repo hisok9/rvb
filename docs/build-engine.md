@@ -211,21 +211,26 @@ see [cache-repo.md](cache-repo.md).
 `RVB_PATCHERS_SH` for tests) owns `resolve_patcher` and the `PATCHER_*` flags:
 which tool kind this is, whether it lists patches, whether it needs a mount arg,
 how its output is recovered. `.github/scripts/patchers.py` answers the CI-side
-question `needs-bks` (does this config contain an app whose patcher asks JCA for a
-BKS keystore?). Only NPatch does — it calls `KeyStore.getInstance("BKS")` and ships
-its built-in keystores as BKS files — so `PATCHER_NEEDS_BKS` is set for the npatch
-flavour of the xposed flow and cleared for LSPatch, which loads a bundled JKS
-through `KeyStore.getDefaultType()` and runs on a stock JDK. The same split decides
-`PATCHER_KEYSTORE_FORMAT`: the xposed tools sign their own output, so the identity
-reaches them as `-k <store> <pass> <alias> <pass>` and the flag names which of the
-two stores that tool can actually read. Adding a tool means editing the registry,
-not `build_rv`.
+question `needs-bks` (does this config contain an app whose patcher needs the
+**JVM** to provide a BKS keystore?). Only NPatch does: it calls the single-argument
+`KeyStore.getInstance("BKS")`, which is a global provider lookup, and ships its
+built-in stores as BKS files — so a stock Temurin answers `KeyStoreException: BKS
+not found` and the run must install the provider first. ReVanced CLI and Morphe use
+BKS too, but call `KeyStore.getInstance("BKS", "BC")` against a provider bundled in
+their own jar, and LSPatch reads a bundled JKS through `KeyStore.getDefaultType()`;
+none of those three needs anything installed, which is why the flag is set for the
+npatch flavour of the xposed flow alone.
+
+The same split decides `PATCHER_KEYSTORE_FORMAT`: the xposed tools sign their own
+output, so the identity reaches them as `-k <store> <pass> <alias> <pass>` (same
+argument order in both) and the flag names which of the two stores that tool can
+read. Adding a tool means editing the registry, not `build_rv`.
 
 ## Signing and identity
 
 | Env var | Default | Purpose |
 |---|---|---|
-| `RVB_KEYSTORE` / `RVB_KEYSTORE_P12` | none | the BKS store handed to the patch CLIs and to NPatch, and the PKCS12 store used by apksigner and LSPatch; `install_keystore.sh` writes both from `KEYSTORE_B64` / `KEYSTORE_P12_B64` and exports the two paths |
+| `RVB_KEYSTORE` / `RVB_KEYSTORE_P12` | none | the BKS store (ReVanced CLI, Morphe, NPatch) and the PKCS12 store (apksigner, LSPatch); `install_keystore.sh` writes both from `KEYSTORE_B64` / `KEYSTORE_P12_B64` and exports the two paths |
 | `RVB_KEYSTORE_PASS` / `RVB_KEY_ALIAS` | none | one password, passed as both store and key password, and one alias present in both stores. Alphanumeric only: both are interpolated into `eval`'d CLI arguments, and `require_signing_identity` rejects anything else |
 | `RVB_MORPHE_PASSTHROUGH` | `true` | keep bundles whole for morphe instead of merging at download time |
 | `RVB_INSTAFEL_FALLBACK_COMMIT`, `RVB_INSTAFEL_DEFAULT_PATCHES` | see source | used when the InstaFel CLI manifest has no commit hash or a config omits `included-patches` |
@@ -243,6 +248,23 @@ than at the first patch of every app. A local build must export all four itself,
 pointing at one key pair held in both BKS and PKCS12 form (same alias, same
 password). The price of adopting a fresh identity is paid once: every previously
 installed patched app has to be uninstalled, because its signer changed.
+
+### Why the BKS copy cannot be dropped
+
+One key pair, two store formats, because the consumers are not equally tolerant:
+
+| Consumer | How it reads `--keystore` / `-k` | BKS required? |
+|---|---|---|
+| ReVanced CLI | `KeyStore.getInstance("BKS", "BC")` on its bundled provider, no format sniffing | **yes** — a PKCS12 file will not load |
+| Morphe desktop | sniffs `KeystoreInputFormat` (BKS/JKS/PKCS12) and converts via `KeystoreImporter` | no |
+| NPatch | `KeyStore.getInstance("BKS")` against the JVM | **yes**, and it is the only one that also needs the provider installed on the runner |
+| LSPatch | `KeyStore.getInstance(KeyStore.getDefaultType())` | no — it wants the PKCS12 copy |
+| apksigner | `--ks`, auto-detects | no — it wants the PKCS12 copy |
+
+So `RVB_KEYSTORE` stays BKS as long as any `ReVanced/revanced-cli` app is
+configured; collapsing to a single PKCS12 store would mean dropping one secret and
+breaking those builds, and was checked rather than assumed (verified against the
+`revanced-cli-6.0.0-all.jar` and `morphe-desktop.jar` bytecode, not documentation).
 
 ## Guardrails
 

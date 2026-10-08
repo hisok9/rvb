@@ -23,10 +23,20 @@ DEFAULT_UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 # four itself (see require_signing_identity below and the table in
 # docs/build-engine.md#signing-and-identity).
 #
-# Two stores because the consumers ask JCA for different types: RVB_KEYSTORE is a
-# BKS file (patch CLIs and NPatch), RVB_KEYSTORE_P12 a PKCS12 one (apksigner and
-# LSPatch). They must hold the SAME key under the SAME alias, and the engine has
-# one password var, which it passes as both store and key password.
+# Two stores because the consumers read different keystore formats, one key pair:
+#   RVB_KEYSTORE (BKS)     - ReVanced CLI calls KeyStore.getInstance("BKS", "BC")
+#                            and loads the file as BKS, so this store has to be BKS
+#                            for it. Morphe would also take JKS/PKCS12 (it sniffs
+#                            the format and converts), but the CLI flows share this
+#                            variable, so the stricter consumer decides.
+#   RVB_KEYSTORE_P12 (P12)  - apksigner (--ks) and LSPatch, which load through
+#                            KeyStore.getDefaultType(), i.e. PKCS12 on a modern JDK.
+# NPatch also reads BKS - and it is the only consumer that asks the *JVM* for the
+# BKS type (single-argument getInstance("BKS")), which is why the runner-level
+# BouncyCastle install is gated on NPatch alone. ReVanced and Morphe ship their own
+# BC provider and need nothing installed.
+# One alias, and the engine has a single RVB_KEYSTORE_PASS it passes as both store
+# and key password, so the two files must be built that way.
 RVB_KEYSTORE="${RVB_KEYSTORE-}"
 RVB_KEYSTORE_P12="${RVB_KEYSTORE_P12-}"
 RVB_KEYSTORE_PASS="${RVB_KEYSTORE_PASS-}"

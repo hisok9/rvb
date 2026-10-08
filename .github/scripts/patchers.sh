@@ -24,15 +24,18 @@
 #   PATCHER_HAS_PATCH_LIST  false => list output is synthetic; skip app-patch
 #                           pre-filter and version-compat checks
 #   PATCHER_ANY_VERSION     true  => always considered compatible
-#   PATCHER_NEEDS_BKS       true  => the tool asks JCA for a BKS keystore, so the
-#                                 runner needs the BouncyCastle provider installed
-#                                 (NPatch only - LSPatch loads JKS/PKCS12 natively)
+#   PATCHER_NEEDS_BKS       true  => the tool asks the JVM for a BKS keystore, so
+#                                 the runner needs the BouncyCastle provider
+#                                 installed. NPatch only: it calls the
+#                                 single-argument KeyStore.getInstance("BKS").
+#                                 ReVanced CLI and Morphe want BKS too, but ship
+#                                 their own provider, so they need nothing here.
 #   PATCHER_SIGNING         true  => patch flow passes keystore flags
-#   PATCHER_KEYSTORE_FORMAT bks | pkcs12 - which of the two identity stores this
-#                                 tool can read, and so which one RVB_KEYSTORE
-#                                 signing uses in the xposed flow (the patch CLIs
-#                                 and NPatch ask JCA for a BKS type; apksigner and
-#                                 LSPatch use the JDK default, PKCS12).
+#   PATCHER_KEYSTORE_FORMAT bks | pkcs12 - which store format this tool will read
+#                                 for its own signing: NPatch loads the file as BKS,
+#                                 LSPatch through KeyStore.getDefaultType()
+#                                 (PKCS12). patch_apk maps it to RVB_KEYSTORE or
+#                                 RVB_KEYSTORE_P12.
 #   PATCHER_BUNDLE_ED_PER_BUNDLE  true (morphe): -e/-d ride each --patches arg;
 #                                 false (revanced/generic): one trailing group
 #   PATCHER_EXP_VERSION_UNSUPPORTED  true => version=exp blocked
@@ -46,11 +49,12 @@ resolve_patcher() {
 		*"npatch"*|*"lspatch"*)
 			kind=xposed; flow=xposed-module; bundle_re="\\.apk$"
 			list_arg=""; list_x=""; list_b=""; lv_sub=""; lp_sub=""
-			# Only NPatch needs the BouncyCastle provider: it calls
-			# KeyStore.getInstance("BKS") unconditionally and ships its built-in
-			# keystores as BKS files, and a stock JDK has no BKS type. JingMatrix
-			# LSPatch loads its bundled keystore (a JKS file) through
-			# KeyStore.getDefaultType(), so it patches fine on a bare Temurin.
+			# Only NPatch needs the BouncyCastle provider *in the JVM*: it calls the
+			# single-argument KeyStore.getInstance("BKS") and ships its built-in stores
+			# as BKS files, and a stock JDK has no BKS type. JingMatrix LSPatch reads
+			# its bundled keystore (a JKS file) through KeyStore.getDefaultType(), so
+			# it patches fine on a bare Temurin. ReVanced CLI / Morphe also use BKS but
+			# bring their own provider, so they are not this step's business.
 			# Everything else about the two tools is the same flow - including that
 			# both sign the output themselves, so the identity goes to them as -k
 			# arguments, in the store format each one can read.
@@ -72,7 +76,10 @@ resolve_patcher() {
 			kind=morphe; flow=cli-patch; bundle_re="\\.(rvp|mpp|jar)$"
 			list_arg="--patches"; list_x="-x"; list_b=""; lv_sub="list-versions"; lp_sub="list-patches"
 			has_list=true; any_ver=false; needs_bks=false; signing=true
-			# The cli-patch flows get --keystore=$RVB_KEYSTORE, i.e. the BKS store.
+			# The cli-patch flows get --keystore=$RVB_KEYSTORE, i.e. the BKS store:
+			# ReVanced CLI reads it with KeyStore.getInstance("BKS", "BC") and has no
+			# format conversion, so it is the consumer that fixes the format here
+			# (Morphe would accept a PKCS12 store and convert it itself).
 			keystore_fmt=bks
 			per_bundle_ed=true; exp_unsup=false; mount="--mount" ;;
 		*"revanced-cli"*)
