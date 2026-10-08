@@ -211,7 +211,7 @@ the runner's git config.
 | Kind | Name | Used by | Notes |
 |---|---|---|---|
 | secret | `GITHUB_TOKEN` (auto) | all | `contents: write` on the jobs that push branches |
-| secret | `KEYSTORE_B64`, `KEYSTORE_P12_B64`, `KEYSTORE_PASSWORD`, `KEY_ALIAS` | build | signing identity |
+| secret | `KEYSTORE_B64`, `KEYSTORE_P12_B64`, `KEYSTORE_PASSWORD`, `KEY_ALIAS` | build | signing identity; **all four required** — `install_keystore.sh` fails the run when any is missing and no keystore ships in the repo ([decisions/0008](decisions/0008-signing-identity-is-secret-only.md)) |
 | secret | `APKS_REPO_TOKEN` | build, cleanup | cross-repo write to `nullcpy/apks`, doubles as dispatch token |
 | secret | `CODEBERG_TOKEN` | watcher | raises Codeberg/Forgejo rate limits |
 | secret | `TG_TOKEN`, `WEBSITE_DISPATCH_TOKEN` (optional) | notify steps | |
