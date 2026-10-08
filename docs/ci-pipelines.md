@@ -106,8 +106,11 @@ Step order, with the reason each is where it is:
 2. `build_resolve_context.sh` maps the config file to `ARCHIVE_TAG`,
    `IS_PRERELEASE`, `TITLE_SUFFIX` and the Telegram thread — the single owner of
    "which channel is this run".
-3. Install Bouncy Castle **only if** `patchers.py needs-bks` says a module in this
-   config requires a BKS keystore.
+3. Install Bouncy Castle **only if** `patchers.py needs-bks` says an app in this
+   config is patched with NPatch — the only tool that asks JCA for a BKS keystore.
+   LSPatch apps do not trigger it, and a stock Temurin JDK has no BKS type, so
+   getting this gate wrong either way is visible: skip it for an NPatch config and
+   patching dies on `KeyStoreException: BKS not found`.
 4. `install_keystore.sh` writes the signing identity from secrets.
 5. `build_resolve_version.sh` computes `NEXT_VER_CODE` (`YY` + the next 4-digit
    sequence above the highest existing tag/release, e.g. `260141`).

@@ -10,7 +10,7 @@ Kinds: revanced | morphe | xposed | instafel | generic  (see patchers.sh).
 
 CLI:
     patchers.py kind <cli-source>            # print kind
-    patchers.py needs-bks <config.json>      # exit 0 if any enabled app needs BKS/BouncyCastle
+    patchers.py needs-bks <config.json>      # exit 0 if any enabled app needs BouncyCastle
     patchers.py bundle-globs <kind>          # print shell globs for patch bundles
 """
 import fnmatch
@@ -35,8 +35,11 @@ BUNDLE_GLOBS = {
 }
 
 # Needs BouncyCastle (BKS keystores) in the runner — matches patchers.sh
-# PATCHER_NEEDS_BKS (xposed flows only).
-NEEDS_BKS_KINDS = {"xposed"}
+# PATCHER_NEEDS_BKS. Within the xposed flow only NPatch qualifies: it calls
+# KeyStore.getInstance("BKS") before choosing a keystore and ships its built-in
+# keystores as BKS files, while JingMatrix LSPatch reads a bundled JKS through
+# KeyStore.getDefaultType() and needs no provider at all.
+NEEDS_BKS_SUBSTRINGS = ("npatch",)
 
 
 def classify(cli_source: str) -> str:
@@ -45,6 +48,12 @@ def classify(cli_source: str) -> str:
         if any(p in c for p in patterns):
             return kind
     return "generic"
+
+
+def needs_bks(cli_source: str) -> bool:
+    """Would patching with this tool hit a BKS keystore request?"""
+    c = (cli_source or "").lower()
+    return classify(c) == "xposed" and any(p in c for p in NEEDS_BKS_SUBSTRINGS)
 
 
 def ci_bundle_diffable(cli_sources) -> bool:
@@ -76,7 +85,7 @@ def config_needs_bks(config_path: str) -> bool:
         if not isinstance(entry, dict) or entry.get("enabled") is False:
             continue
         cli = entry.get("cli-source", defaults.get("cli-source"))
-        if isinstance(cli, str) and classify(cli) in NEEDS_BKS_KINDS:
+        if isinstance(cli, str) and needs_bks(cli):
             return True
     return False
 

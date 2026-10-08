@@ -24,7 +24,9 @@
 #   PATCHER_HAS_PATCH_LIST  false => list output is synthetic; skip app-patch
 #                           pre-filter and version-compat checks
 #   PATCHER_ANY_VERSION     true  => always considered compatible
-#   PATCHER_NEEDS_BKS       true  => BouncyCastle/BKS keystore must exist
+#   PATCHER_NEEDS_BKS       true  => the tool asks JCA for a BKS keystore, so the
+#                                 runner needs the BouncyCastle provider installed
+#                                 (NPatch only - LSPatch loads JKS/PKCS12 natively)
 #   PATCHER_SIGNING         true  => patch flow passes keystore flags
 #   PATCHER_BUNDLE_ED_PER_BUNDLE  true (morphe): -e/-d ride each --patches arg;
 #                                 false (revanced/generic): one trailing group
@@ -39,7 +41,15 @@ resolve_patcher() {
 		*"npatch"*|*"lspatch"*)
 			kind=xposed; flow=xposed-module; bundle_re="\\.apk$"
 			list_arg=""; list_x=""; list_b=""; lv_sub=""; lp_sub=""
-			has_list=false; any_ver=true; needs_bks=true; signing=false
+			# Only NPatch needs the BouncyCastle provider: it calls
+			# KeyStore.getInstance("BKS") unconditionally and ships its built-in
+			# keystores as BKS files, and a stock JDK has no BKS type. JingMatrix
+			# LSPatch loads its bundled keystore (a JKS file) through
+			# KeyStore.getDefaultType(), so it patches fine on a bare Temurin.
+			# Everything else about the two tools is the same flow.
+			has_list=false; any_ver=true; signing=false
+			needs_bks=false
+			if [[ "$src" == *"npatch"* ]]; then needs_bks=true; fi
 			per_bundle_ed=false; exp_unsup=false; mount="" ;;
 		*instafel*)
 			kind=instafel; flow=instafel-workflow; bundle_re="\\.(rvp|mpp|jar)$"

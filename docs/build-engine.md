@@ -211,9 +211,12 @@ see [cache-repo.md](cache-repo.md).
 `RVB_PATCHERS_SH` for tests) owns `resolve_patcher` and the `PATCHER_*` flags:
 which tool kind this is, whether it lists patches, whether it needs a mount arg,
 how its output is recovered. `.github/scripts/patchers.py` answers the CI-side
-question `needs-bks` (does this config contain an Xposed module that requires
-Bouncy Castle for BKS keystores?). Adding a tool means editing the registry, not
-`build_rv`.
+question `needs-bks` (does this config contain an app whose patcher asks JCA for a
+BKS keystore?). Only NPatch does — it calls `KeyStore.getInstance("BKS")` and ships
+its built-in keystores as BKS files — so `PATCHER_NEEDS_BKS` is set for the npatch
+flavour of the xposed flow and cleared for LSPatch, which loads a bundled JKS
+through `KeyStore.getDefaultType()` and runs on a stock JDK. Adding a tool means
+editing the registry, not `build_rv`.
 
 ## Signing and identity
 
