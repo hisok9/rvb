@@ -41,7 +41,9 @@ while IFS= read -r line; do
 	[ -z "$text" ] && continue
 	count=$((count + 1))
 	if [ -n "$BODY" ]; then
-		BODY+="${NL}${NL}―――${NL}${NL}"
+		# Each event already carries its own header + sub-lines; one blank line is
+		# enough separation, no divider or batch count.
+		BODY+="${NL}${NL}"
 	fi
 	BODY+="$text"
 done <<< "$content"
@@ -51,12 +53,7 @@ if [ "$count" = 0 ]; then
 	exit 0
 fi
 
-# A batch of >1 gets a header; a lone event keeps its own shape untouched.
-if [ "$count" -gt 1 ]; then
-	MSG="*🔔 ${count} updates*${NL}${NL}${BODY}"
-else
-	MSG="$BODY"
-fi
+MSG="$BODY"
 
 send_chunk() {
 	local text="${1:-}"
