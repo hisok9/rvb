@@ -215,18 +215,50 @@ def solve_challenge(url: str, session) -> tuple[bool, str]:
     return False, ""
 
 
-def fetch_from_solver_html(url: str) -> str | None:
+def write_source_note(cookie_file: str, note: str):
+    """Record which path produced the HTML that is being returned.
+
+    A page reaches the caller either as raw HTTP (curl_cffi) or as the solver's
+    JS-rendered DOM, and those are not the same document: rendering deletes and rewrites
+    markup, so a server-rendered piece can be gone (measured 2026-10-09 - APKPure's
+    /downloading/<v> DOM is ~71k chars shorter than its raw HTML and carries no
+    #download_link). A scraper that finds nothing has to say which of the two it looked
+    at, or the log reads as a broken site. Written only beside a successful return;
+    _cf_cffi_get deletes the file before each call so a failed one cannot leave a stale
+    note behind.
+    """
+    if not cookie_file:
+        return
+    try:
+        temp_dir = os.path.dirname(os.path.abspath(cookie_file))
+        with open(os.path.join(temp_dir, "cf_source.txt"), "w", encoding="utf-8") as f:
+            f.write(note)
+    except Exception:
+        pass
+
+
+def fetch_from_solver_html(url: str) -> tuple[str | None, str]:
+    """Rendered DOM from the solver's /html endpoint, and the URL it actually came from.
+
+    The solver reports its final URL in x-cf-bypasser-final-url; a browser may have been
+    redirected somewhere else entirely, which is the difference between "this store has
+    nothing" and "we fetched the wrong page", so it is returned rather than dropped.
+    """
     solver_url = os.getenv(
         "CF_SOLVER_URL", "http://localhost:8000").rstrip("/")
     try:
         resp = requests.get(f"{solver_url}/html",
                             params={"url": url}, timeout=60)
-        if resp.status_code == 200 and resp.text:
-            if not is_challenge(resp.status_code, resp.text, getattr(resp, "headers", None)):
-                return resp.text
-    except Exception:
-        pass
-    return None
+    except Exception as e:
+        sys.stderr.write(f"[cf_get] solver /html failed for {url}: {e}\n")
+        return None, ""
+    if resp.status_code == 200 and resp.text and not is_challenge(
+            resp.status_code, resp.text, getattr(resp, "headers", None)):
+        return resp.text, str(resp.headers.get("x-cf-bypasser-final-url") or url)
+    sys.stderr.write(
+        f"[cf_get] solver /html gave no usable page for {url} "
+        f"(status {resp.status_code}, {len(resp.text or '')} chars)\n")
+    return None, ""
 
 
 def download_file(url: str, dest_path: str, referer: str = "", cookie_file: str = "") -> bool:
@@ -336,12 +368,14 @@ def main():
                     # Retry with solved clearance cookies + User-Agent
                     resp = s.get(url, timeout=15, allow_redirects=True)
                     if not is_challenge(resp.status_code, resp.text, getattr(resp, "headers", None)) and resp.status_code == 200:
+                        write_source_note(cookie_file, "curl_cffi")
                         sys.stdout.write(resp.text)
                         sys.exit(0)
 
                 # Fallback: query solver's direct /html endpoint
-                solver_html = fetch_from_solver_html(effective_url(resp, url))
+                solver_html, solver_final = fetch_from_solver_html(effective_url(resp, url))
                 if solver_html:
+                    write_source_note(cookie_file, f"solver_html {solver_final}")
                     sys.stdout.write(solver_html)
                     sys.exit(0)
 
@@ -349,6 +383,7 @@ def main():
 
             if resp.status_code == 200 and resp.text:
                 save_cookies(s, cookie_file)
+                write_source_note(cookie_file, "curl_cffi")
                 sys.stdout.write(resp.text)
                 sys.exit(0)
             else:
@@ -357,8 +392,9 @@ def main():
             continue
 
     # Final fallback if curl_cffi failed on all targets: try solver /html endpoint directly
-    solver_html = fetch_from_solver_html(url)
+    solver_html, solver_final = fetch_from_solver_html(url)
     if solver_html:
+        write_source_note(cookie_file, f"solver_html {solver_final}")
         sys.stdout.write(solver_html)
         sys.exit(0)
 
