@@ -195,7 +195,8 @@ def solve_challenge(url: str, session) -> tuple[bool, str]:
             user_agent = data.get("user_agent", "")
             parsed_host = urllib.parse.urlparse(url).hostname or ""
             parts = parsed_host.split(".")
-            default_domain = f".{'.'.join(parts[-2:])}" if len(parts) >= 2 else parsed_host
+            default_domain = f".{'.'.join(parts[-2:])}" if len(
+                parts) >= 2 else parsed_host
             if isinstance(cookies, dict):
                 for k, v in cookies.items():
                     session.cookies.set(k, v, domain=default_domain)
@@ -204,7 +205,8 @@ def solve_challenge(url: str, session) -> tuple[bool, str]:
                     if isinstance(c, dict) and "name" in c and "value" in c:
                         c_domain = c.get("domain") or default_domain
                         c_path = c.get("path", "/")
-                        session.cookies.set(c["name"], c["value"], domain=c_domain, path=c_path)
+                        session.cookies.set(
+                            c["name"], c["value"], domain=c_domain, path=c_path)
 
             if user_agent:
                 session.headers["User-Agent"] = user_agent
@@ -280,7 +282,8 @@ def download_file(url: str, dest_path: str, referer: str = "", cookie_file: str 
                 # If referer triggered a block/challenge (e.g. cross-origin anti-hotlink on redirects),
                 # try without Referer header.
                 if referer:
-                    resp_no_ref = s.get(url, timeout=(10, 300), stream=True, allow_redirects=True)
+                    resp_no_ref = s.get(url, timeout=(
+                        10, 300), stream=True, allow_redirects=True)
                     if not is_challenge(resp_no_ref.status_code, "", getattr(resp_no_ref, "headers", None)):
                         resp = resp_no_ref
 
@@ -373,9 +376,11 @@ def main():
                         sys.exit(0)
 
                 # Fallback: query solver's direct /html endpoint
-                solver_html, solver_final = fetch_from_solver_html(effective_url(resp, url))
+                solver_html, solver_final = fetch_from_solver_html(
+                    effective_url(resp, url))
                 if solver_html:
-                    write_source_note(cookie_file, f"solver_html {solver_final}")
+                    write_source_note(
+                        cookie_file, f"solver_html {solver_final}")
                     sys.stdout.write(solver_html)
                     sys.exit(0)
 
