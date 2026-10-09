@@ -2122,6 +2122,18 @@ get_apkpure_vers() {
 
 get_apkpure_pkg_name() { echo "$__APKPURE_PKG__"; }
 
+# Build arch token -> the ABI name APKPure spells in its links. One mapping, because
+# _apkpure_pick_link reads it out of the page and _apkpure_construct_link has to write the
+# same spelling - a second copy would be a second thing to keep in sync.
+_apkpure_abi_of() { # $1=arch token; prints nothing when this arch has no store spelling
+	case "$1" in
+		arm64-v8a | arm64) echo arm64-v8a ;;
+		arm-v7a | arm) echo armeabi-v7a ;;
+		x86_64) echo x86_64 ;;
+		x86) echo x86 ;;
+	esac
+}
+
 # Choose APKPure's link for the architecture being built.
 #
 # An APKPure download page carries exactly one <a id="download_link"> - the variant
@@ -2157,12 +2169,7 @@ get_apkpure_pkg_name() { echo "$__APKPURE_PKG__"; }
 # config's version-code map by the build loop) instead of from the anchor.
 _apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url  $4=version code to prefer
 	local html=$1 arch=$2 featured=$3 want_vc=${4:-} abi="" want_type="" cands picked all_links
-	case "$arch" in
-		arm64-v8a | arm64) abi=arm64-v8a ;;
-		arm-v7a | arm) abi=armeabi-v7a ;;
-		x86_64) abi=x86_64 ;;
-		x86) abi=x86 ;;
-	esac
+	abi=$(_apkpure_abi_of "$arch")
 	want_type=$(grep -oE '/b/(XAPK|APK)/' <<<"$featured" | head -1) || true
 	if [ -z "$want_vc" ]; then
 		want_vc=$(grep -oE 'versionCode=[0-9]+' <<<"$featured" | head -1 | cut -d= -f2) || true
@@ -2216,6 +2223,34 @@ _apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url  $4=version code
 # also reports how the page was fetched.
 _apkpure_has_file_links() { # $1=page html
 	grep -qE 'https://d\.apkpure\.com/b/(XAPK|APK)/' <<<"${1:-}"
+}
+
+# The store's own file-link form, built without reading a page.
+#
+# This is not a guessed URL: it is the exact href APKPure puts in #download_link and in the
+# hidden iframe_download of its /downloading/<v> page -
+#   https://d.apkpure.com/b/XAPK/<pkg>?versionCode=<vc>&nc=<abi>
+# - and it was measured (2026-10-09, from this machine) to honour both parameters without
+# any page or cookie: versionCode=3240500 answers 302 with a different file per nc
+# (arm64-v8a -> full_size=41069874, armeabi-v7a -> 54307675, both labelled
+# Flipkart...9.15_APKPure.xapk), an unknown versionCode redirects to a target carrying no
+# filename and no size, and sv= changes nothing (sv=99 returned the same bytes), so it is
+# left out instead of being invented.
+#
+# It is reached only when every page this source read carried no file link at all, which is
+# what the bypass sidecar's rendered DOM does for apkpure.com (run 37964499217: three pages
+# per build, ~206k chars each, not one d.apkpure.com href in any of them), and only when the
+# engine already resolved a version code from patch metadata or the config - never one
+# chosen here. The bytes are then judged by the pipeline as usual (zip, manifest at root,
+# package, version, signature, then the arch-honesty gate of docs/decisions/0007), and the
+# caller logs that the link was constructed rather than scraped, so this cannot pass as a
+# read from the store's markup. An arch with no store spelling (all, universal) gets nothing
+# back, because there is no ABI to name and inventing one would be a claim, not a fallback.
+_apkpure_construct_link() { # $1=pkg  $2=arch  $3=version code
+	local abi
+	abi=$(_apkpure_abi_of "$2")
+	if [ -z "$abi" ] || [ -z "${3:-}" ] || [ -z "${1:-}" ]; then return 1; fi
+	printf 'https://d.apkpure.com/b/XAPK/%s?versionCode=%s&nc=%s\n' "$1" "$3" "$abi"
 }
 
 dl_apkpure() {
@@ -2303,17 +2338,36 @@ dl_apkpure() {
 			wpr "APKPure lists no '$arch' variant for '${__APKPURE_PKG__}'; using the featured link, which may carry a different ABI than '$arch'"
 		fi
 	else
-		# Used to be one message for two different failures. Whether the store carries this
-		# version at all and whether it publishes this arch are answered by different next
-		# steps - a retry at another version, or a different source - so they are named apart,
-		# with the fetch path that produced the page, because a rendered DOM is not the raw
-		# page and only says something is absent from the markup it kept.
-		if [ "$links_seen" != true ]; then
-			epr "APKPure served no app page for '${__APKPURE_PKG__}' v${version:-latest} - no file link on any page tried (fetched via ${__CF_GET_VIA__:-unknown})"
+		# Nothing on any page. Before calling that a store failure, take the one route that
+		# does not depend on the page at all - the link form the store itself writes into its
+		# download markup (see _apkpure_construct_link), for the version code the engine
+		# already resolved. Needed because the bypass sidecar's rendered DOM carries no file
+		# link whatsoever for this host: measured on run 37964499217, all three pages of every
+		# build came back from /html at ~206k characters with not one d.apkpure.com href in
+		# them, while the same URLs from a normal browser list the arm64 link. Scraping this
+		# store from a datacenter address is therefore not a solvable problem, and the URL form
+		# is - the file endpoint is checked by the pipeline afterwards exactly like a scraped one.
+		download_url=$(_apkpure_construct_link "$__APKPURE_PKG__" "$arch" "$version_code") || true
+		if [ -n "$download_url" ]; then
+			wpr "APKPure pages carried no link (last page read via ${__CF_GET_VIA__:-unknown}); using the store's file-link form for '$arch' at versionCode $version_code - the artifact is verified from its bytes"
+		elif [ "$links_seen" != true ]; then
+			# Used to be one message for two different failures. Whether the store carries this
+			# version at all and whether it publishes this arch are answered by different next
+			# steps - a retry at another version, or a different source - so they are named apart,
+			# with the fetch path that produced the page, because a rendered DOM is not the raw
+			# page and only says something is absent from the markup it kept.
+			local construct_reason
+			if [ -z "$version_code" ]; then
+				construct_reason="no target version code was resolved to build the link from"
+			else
+				construct_reason="arch '$arch' has no per-ABI spelling to build the link from"
+			fi
+			epr "APKPure served no app page for '${__APKPURE_PKG__}' v${version:-latest} - no file link on any page tried (fetched via ${__CF_GET_VIA__:-unknown}), and $construct_reason"
+			return 1
 		else
 			epr "APKPure publishes no '${arch:-any}' variant for '${__APKPURE_PKG__}' v${version:-latest}"
+			return 1
 		fi
-		return 1
 	fi
 
 	pr "Downloading from APKPure: $download_url"

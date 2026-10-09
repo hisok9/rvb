@@ -171,7 +171,7 @@ in; the first source that yields a verified artifact **carrying the requested ar
 | 4 | `archive` | `archive.org` item, the long-term fallback for delisted versions |
 | 5 | `apkmirror` | universal-bundle strategy; package/version read from the HTML |
 | 6 | `uptodown` | |
-| 7 | `apkpure` | one link per ABI read off `/downloading/<v>` → `/download/<v>` → `/download`, the page's featured `#download_link` being only one candidate; XAPK handling in `_apkpure_install_xapk` |
+| 7 | `apkpure` | one link per ABI read off `/downloading/<v>` → `/download/<v>` → `/download`, the page's featured `#download_link` being only one candidate, with the store's own `?versionCode=&nc=` link form as the last resort when a page yields nothing; XAPK handling in `_apkpure_install_xapk` |
 | 8 | `apkcombo` | trusts the served filename over its object key |
 
 Supporting machinery:
@@ -191,7 +191,16 @@ Supporting machinery:
 - **Stores answer 200 for things they do not have** — APKPure returns a generic
   "Free APK Downloader" page for a version it does not carry, so a missing link is
   named as *page not served* rather than as a parse failure; the two call for
-  different retries (another version, or another source).
+  different retries (another version, or another source). For this host the rendered
+  DOM is worse than ambiguous: measured across run 37964499217, every page the sidecar
+  returned (~206k characters, three pages per build) contained **no** `d.apkpure.com`
+  link at all, while the same URLs in a normal browser list one per ABI. Scraping
+  APKPure from a datacenter address is therefore not a solvable problem — which is why
+  `dl_apkpure` ends with the link the store writes into its own download markup
+  (`/b/XAPK/<pkg>?versionCode=<vc>&nc=<abi>`, verified to select different bytes per
+  `nc` and to serve nothing for an unknown `nc`). It is used only when the engine has
+  already resolved a version code and the arch has a store spelling, it is logged as
+  constructed, and the artifact is judged from its bytes like any other.
 - **Transfer guards** — `_req` sets connect *and* absolute ceilings plus a low-
   speed stall guard, because a mirror that trickles would otherwise hold a build
   slot forever.
