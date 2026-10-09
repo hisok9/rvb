@@ -171,7 +171,7 @@ in; the first source that yields a verified artifact **carrying the requested ar
 | 4 | `archive` | `archive.org` item, the long-term fallback for delisted versions |
 | 5 | `apkmirror` | universal-bundle strategy; package/version read from the HTML |
 | 6 | `uptodown` | |
-| 7 | `apkpure` | XAPK handling in `_apkpure_install_xapk` |
+| 7 | `apkpure` | one link per ABI read off `/downloading/<v>` → `/download/<v>` → `/download`, the page's featured `#download_link` being only one candidate; XAPK handling in `_apkpure_install_xapk` |
 | 8 | `apkcombo` | trusts the served filename over its object key |
 
 Supporting machinery:
@@ -180,6 +180,18 @@ Supporting machinery:
   `ghcr.io/sarperavci/cloudflarebypassforscraping` service in `build.yml`), asked
   about the **effective URL after redirects**, not the request URL; `curl_cffi`
   (`scripts/cf_get.py`) for TLS-fingerprint walls.
+- **Which page a scrape actually saw** — the sidecar answers in two shapes, and they
+  are not the same document: clearance cookies let `curl_cffi` fetch the **raw** page,
+  while its `/html` endpoint returns a **JS-rendered DOM**, in which rendering has
+  already deleted or rewritten server-rendered markup (measured on APKPure's
+  `downloading/<v>` page: ~71k characters shorter, with its featured anchor gone). A
+  page that yields nothing is therefore ambiguous without a record, so `cf_get.py`
+  writes the producing path plus the sidecar's final URL to `temp/cf_source.txt`, and
+  `_cf_get` exposes it as `__CF_GET_VIA__` for a scraper's failure message.
+- **Stores answer 200 for things they do not have** — APKPure returns a generic
+  "Free APK Downloader" page for a version it does not carry, so a missing link is
+  named as *page not served* rather than as a parse failure; the two call for
+  different retries (another version, or another source).
 - **Transfer guards** — `_req` sets connect *and* absolute ceilings plus a low-
   speed stall guard, because a mirror that trickles would otherwise hold a build
   slot forever.

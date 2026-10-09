@@ -1565,6 +1565,7 @@ _fallback_get(){
 	if [[ "$html" == *"Attention Required!"* || "$html" == *"Just a moment..."* || "$html" == *"Please Wait... | Cloudflare"* || "$html" == *"Verify you are human"* ]]; then
 		return 1
 	fi
+	__CF_GET_VIA__="curl"
 	CF_COOKIES=""
 	user_agent="${DEFAULT_UA}"
 }
@@ -1583,8 +1584,16 @@ _cf_cffi_get() {
 	[ ! -f "$py_script" ] && return 2
 
 	local cffi_res
-	if cffi_res=$("$py_cmd" "$py_script" "$url" "$TEMP_DIR/cookie.txt" 2>/dev/null); then
+	# Which path produced $html matters to the scrapers: curl_cffi returns the raw page
+	# while the solver returns a JS-rendered DOM that is not the same document. Clear the
+	# note first, so a failed call cannot report the previous page's provenance.
+	__CF_GET_VIA__=""
+	rm -f "$TEMP_DIR/cf_source.txt" 2> /dev/null
+	if cffi_res=$("$py_cmd" "$py_script" "$url" "$TEMP_DIR/cookie.txt" 2> /dev/null); then
 		html="$cffi_res"
+		if [ -f "$TEMP_DIR/cf_source.txt" ]; then
+			__CF_GET_VIA__="$(head -1 "$TEMP_DIR/cf_source.txt" 2> /dev/null || true)"
+		fi
 		if [ -f "$TEMP_DIR/cf_ua.txt" ]; then
 			user_agent="$(cat "$TEMP_DIR/cf_ua.txt" 2>/dev/null || echo "${DEFAULT_UA}")"
 		else
@@ -2142,8 +2151,12 @@ get_apkpure_pkg_name() { echo "$__APKPURE_PKG__"; }
 # says so, which is all a single-variant app ever offers. Whether the fetched file really
 # is universal stays decided by its contents, as everywhere else in this pipeline:
 # _cache_arch_key reads the artifact and picks the cache key from that, never from here.
-_apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url
-	local html=$1 arch=$2 featured=$3 abi="" want_type want_vc cands picked all_links
+#
+# $3 may be empty: a page with no featured anchor still lists its variants, and the
+# version code the build wants is then taken from $4 (resolved from patch metadata or the
+# config's version-code map by the build loop) instead of from the anchor.
+_apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url  $4=version code to prefer
+	local html=$1 arch=$2 featured=$3 want_vc=${4:-} abi="" want_type="" cands picked all_links
 	case "$arch" in
 		arm64-v8a | arm64) abi=arm64-v8a ;;
 		arm-v7a | arm) abi=armeabi-v7a ;;
@@ -2151,7 +2164,9 @@ _apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url
 		x86) abi=x86 ;;
 	esac
 	want_type=$(grep -oE '/b/(XAPK|APK)/' <<<"$featured" | head -1) || true
-	want_vc=$(grep -oE 'versionCode=[0-9]+' <<<"$featured" | head -1 | cut -d= -f2) || true
+	if [ -z "$want_vc" ]; then
+		want_vc=$(grep -oE 'versionCode=[0-9]+' <<<"$featured" | head -1 | cut -d= -f2) || true
+	fi
 
 	all_links=$(grep -oE 'https://d\.apkpure\.com/b/(XAPK|APK)/[^"]+' <<<"$html" | sed 's/&amp;/\&/g' | sort -u) || true
 	[ -z "$all_links" ] && return 1
@@ -2193,8 +2208,18 @@ _apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url
 	printf '%s\n' "$picked"
 }
 
+# Did APKPure actually serve an app page? A version the store does not carry is answered
+# with HTTP 200 and a generic "Free APK Downloader Online" page - measured on
+# /downloading/9.99: 294k chars, no app markup and no file link anywhere in it - so an
+# empty link search has two completely different causes and only this tells them apart.
+# A challenge or anti-bot interstitial has no file link either, which is why the caller
+# also reports how the page was fetched.
+_apkpure_has_file_links() { # $1=page html
+	grep -qE 'https://d\.apkpure\.com/b/(XAPK|APK)/' <<<"${1:-}"
+}
+
 dl_apkpure() {
-	local url=$1 version=$2 output=$3 arch=${4:-} _dpi=${5:-}
+	local url=$1 version=$2 output=$3 arch=${4:-} _dpi=${5:-} version_code=${7:-}
 	local html=""
 
 	local dl_page_url
@@ -2211,47 +2236,84 @@ dl_apkpure() {
 		[ -z "$version" ] && version=$(echo "$html" | grep -oP '"softwareVersion":"\K[^"]+' | head -1) || true
 	fi
 
-	local download_url
-	download_url=$($HTMLQ "a#download_link" --attribute href <<<"$html" 2>/dev/null | head -1) || true
-	[ -z "$download_url" ] && \
-		download_url=$(echo "$html" | grep -oP '<a[^>]+id="download_link"[^>]+href="\Khttps://[^"]+' | head -1) || true
-	[ -z "$download_url" ] && \
-		download_url=$(echo "$html" | grep -oP 'id="download_link"[^>]*href="\Khttps://[^"]+' | head -1) || true
-	[ -n "$download_url" ] && download_url=$(echo "$download_url" | sed 's/&amp;/\&/g')
-
-	if [ -z "$download_url" ]; then
-		epr "Could not find download link on APKPure"
-		return 1
-	fi
+	# APKPure's featured link: the one variant the page advertises, which need not be this
+	# build's arch. It is a candidate below, never a precondition - see why at the page scan.
+	local featured_url
+	featured_url=$($HTMLQ "a#download_link" --attribute href <<<"$html" 2>/dev/null | head -1) || true
+	[ -z "$featured_url" ] && \
+		featured_url=$(echo "$html" | grep -oP '<a[^>]+id="download_link"[^>]+href="\Khttps://[^"]+' | head -1) || true
+	[ -z "$featured_url" ] && \
+		featured_url=$(echo "$html" | grep -oP 'id="download_link"[^>]*href="\Khttps://[^"]+' | head -1) || true
+	[ -n "$featured_url" ] && featured_url=$(echo "$featured_url" | sed 's/&amp;/\&/g')
 
 	# The featured link is only correct for the arch APKPure happened to feature, so ask
 	# for this build's own variant and keep the featured one as the fallback.
 	#
 	# The version page is not enough: /downloading/<version> advertises only the single
 	# variant APKPure features for that version (measured on atvTools 1.3.2: one
-	# nc=armeabi-v7a link, no nc=arm64-v8a at all), while the app's /download page lists
-	# every ABI. So ask the version page first, then the all-variants page, and only then
-	# fall back - otherwise an arm64 build silently fetches a 32-bit bundle.
-	local apkpure_page_html="$html" variant_url="" apkpure_allvars=""
-	variant_url=$(_apkpure_pick_link "$apkpure_page_html" "$arch" "$download_url") || true
-	if [ -z "$variant_url" ] && [ -n "$arch" ]; then
-		html=""
-		if _cf_get "${__APKPURE_BASE_URL__}/download" >/dev/null 2>&1; then
-			apkpure_allvars="$html"
+	# nc=armeabi-v7a link, no nc=arm64-v8a at all), while /download/<version> lists one link
+	# per ABI for exactly that version (measured on flipkart 9.15: both
+	# versionCode=3240500&nc=arm64-v8a and ...&nc=armeabi-v7a sit on it) and the app's
+	# /download page lists the variants of whatever APKPure calls latest. So ask the page in
+	# hand, then the version's own all-variants page, then latest, and only then fall back -
+	# otherwise an arm64 build silently fetches a 32-bit bundle.
+	#
+	# A missing featured link does not stop any of that, and must not: it is server-rendered
+	# markup, and a rendered DOM can lose it. When Cloudflare keeps challenging curl_cffi,
+	# _cf_get returns the solver's browser DOM instead of the raw page - measured 2026-10-09
+	# on flipkart 9.15: 209k chars against 280k for the same URL, with no #download_link in
+	# it - and this source then died on the anchor while its variants were one page away.
+	# Parsing what a page offers instead of requiring one particular element is what keeps
+	# the source alive while a challenge is escalated.
+	local apkpure_page_html="$html" variant_url="" page_html="" links_seen=false
+	if [ -n "$featured_url" ]; then links_seen=true; fi
+	variant_url=$(_apkpure_pick_link "$apkpure_page_html" "$arch" "$featured_url" "$version_code") || true
+
+	if [ -z "$variant_url" ] && { [ -n "$arch" ] || [ -z "$featured_url" ]; }; then
+		local -a apkpure_pages=()
+		if [ -n "$version" ]; then
+			apkpure_pages+=("${__APKPURE_BASE_URL__}/download/${version}")
 		fi
+		apkpure_pages+=("${__APKPURE_BASE_URL__}/download")
+		local apkpure_page
+		for apkpure_page in "${apkpure_pages[@]}"; do
+			html=""
+			if _cf_get "$apkpure_page" >/dev/null 2>&1; then
+				page_html="$html"
+				if _apkpure_has_file_links "$page_html"; then links_seen=true; fi
+				variant_url=$(_apkpure_pick_link "$page_html" "$arch" "$featured_url" "$version_code") || true
+			fi
+			if [ -n "$variant_url" ]; then break; fi
+		done
 		html="$apkpure_page_html"
-		[ -n "$apkpure_allvars" ] && variant_url=$(_apkpure_pick_link "$apkpure_allvars" "$arch" "$download_url") || true
 	fi
+
+	local download_url=""
 	if [ -n "$variant_url" ]; then
 		download_url="$variant_url"
-	elif [ -n "$arch" ] && ! isoneof "$arch" all universal; then
-		# Deliberately still taken: when the store lists no variant for this arch the
-		# featured link is the only thing there, and its real ABI is only knowable from
-		# its bytes. It is fetched, fingerprinted into the download-link index, then judged
-		# by the arch-honesty gate in build_rv - which rejects a wrong single ABI instead of
-		# shipping it under this arch's name. A repeat job hits the index and skips the
-		# fetch. (docs/decisions/0007)
-		wpr "APKPure lists no '$arch' variant for '${__APKPURE_PKG__}'; using the featured link, which may carry a different ABI than '$arch'"
+	elif [ -n "$featured_url" ]; then
+		download_url="$featured_url"
+		if [ -n "$arch" ] && ! isoneof "$arch" all universal; then
+			# Deliberately still taken: when the store lists no variant for this arch the
+			# featured link is the only thing there, and its real ABI is only knowable from
+			# its bytes. It is fetched, fingerprinted into the download-link index, then judged
+			# by the arch-honesty gate in build_rv - which rejects a wrong single ABI instead of
+			# shipping it under this arch's name. A repeat job hits the index and skips the
+			# fetch. (docs/decisions/0007)
+			wpr "APKPure lists no '$arch' variant for '${__APKPURE_PKG__}'; using the featured link, which may carry a different ABI than '$arch'"
+		fi
+	else
+		# Used to be one message for two different failures. Whether the store carries this
+		# version at all and whether it publishes this arch are answered by different next
+		# steps - a retry at another version, or a different source - so they are named apart,
+		# with the fetch path that produced the page, because a rendered DOM is not the raw
+		# page and only says something is absent from the markup it kept.
+		if [ "$links_seen" != true ]; then
+			epr "APKPure served no app page for '${__APKPURE_PKG__}' v${version:-latest} - no file link on any page tried (fetched via ${__CF_GET_VIA__:-unknown})"
+		else
+			epr "APKPure publishes no '${arch:-any}' variant for '${__APKPURE_PKG__}' v${version:-latest}"
+		fi
+		return 1
 	fi
 
 	pr "Downloading from APKPure: $download_url"
