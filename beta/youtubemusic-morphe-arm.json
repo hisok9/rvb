@@ -1,6 +1,6 @@
 {
-  "version": "v9.20.53 (patches dev.6.mpp)",
-  "versionCode": 260193,
+  "version": "v9.20.53 (patches dev.12.mpp)",
+  "versionCode": 260196,
   "zipUrl": "https://github.com/hisok9/rvb/releases/download/beta/youtube-music-morphe-module-v9.20.53-arm-v7a.zip",
-  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260193.md"
+  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260196.md"
 }
