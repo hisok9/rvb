@@ -145,4 +145,5 @@ jobs:
     uses: ./.github/workflows/notify.yml
     with:
       workflow_name: "CI"
+      already_reported: ${{ needs.build_beta.outputs.reported_failures == 'true' || needs.build_stable.outputs.reported_failures == 'true' }}
     secrets: inherit

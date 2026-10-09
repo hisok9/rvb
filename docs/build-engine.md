@@ -19,7 +19,31 @@ bash scripts/build.sh clean                       # remove temp/, build/, build.
 - Everything transient goes under `temp/` (gitignored); everything shippable goes
   to `build/`. `build.json` is the machine record, `build.md` the human one.
 - The engine never fails the whole run for one app: per-app failures log and
-  continue; only "no output at all" aborts (`All builds failed.`).
+  continue; only "no output at all" aborts (`All builds failed.`). It stays
+  notification-free — but every failure leaves a machine-readable record under
+  `temp/failures/` for the CI report step to pick up (see below).
+
+## Per-app failure records (`temp/failures/`)
+
+Once `build_rv` has a resolved version it writes `temp/failures/<slug>.json`
+(app, version, `vc`, arch, `patches_src`); the requested arch is already part of
+the display label, so `<slug>` (= label lowercased, non-alphanumerics collapsed
+to `-`) is identical in the pooled child, the serial parent and the CI step.
+- **Build failure** — if the app then aborts, the parent copies that child's log
+  to `temp/failures/<slug>.log` alongside the descriptor. A clean return deletes
+  both. Serial mode `tee`s the build output to the same path so a single job also
+  yields an uploadable log.
+- **Download exhaustion** — writing `temp/failures/<slug>_dl.json` and returning 0
+  (a skip, not a failure), so it never gets a `.log`; it only asks for a manual
+  cache-repo upload. Both exhaustion points record: no source that can be read at
+  all, and every version tried through every source with nothing accepted — the
+  second one used to skip silently, because returning 0 makes the parent delete the
+  app's `<slug>.json` as a clean return, and only the `_dl` name survives that sweep.
+
+`temp/failures/` is wiped at the START of `build.sh` and deliberately survives the
+end-of-run sweep, so the `build.yml` "Report build failures" step can read it.
+The engine itself makes no network calls for this — see
+[ci-pipelines.md](ci-pipelines.md#the-build-job-buildyml).
 
 ## From config to a build request
 
@@ -114,7 +138,10 @@ for adding surface without a measured gain
 7. **Naming and metadata** — `aapt2`/`aapt` re-reads the patched manifest, so a
    patcher that rewrote the package id is recorded honestly; output is
    `<file-prefix>-v<version>-<arch>.apk`; `write_build_info` appends the record
-   that becomes the release manifest.
+   that becomes the release manifest. One record is written **per arch**, each with
+   its own resolved version and applied-patch set — a single build can publish
+   arm64 at the newest version and fall back to an older one for an arch a source
+   could not serve, so the per-arch values must not be lost downstream.
 8. **Module mode** (`build-mode` `module`/`both`) — the `module/` template is
    copied to a scratch dir, `module_config` writes `config`
    (`PKG_NAME`/`PKG_VER`/`MODULE_ARCH`), `module_prop` writes `module.prop` and —
@@ -122,7 +149,16 @@ for adding surface without a measured gain
    `update_json_path()`. Output: `<file-prefix>-module-v<version>-<arch>.zip`.
 9. **Finalisation** — `merge_build_info` folds per-job fragments into
    `build.json`, scratch state is swept, `generate_release_notes.py` writes
-   `build.md` for the release body.
+   `build.md` for the release body. Because fragments share one key across arches,
+   the fold keeps the first-wins scalars (`version`, `applied_patches`) for
+   backward compatibility **and** records an additive `archVersion` / `archApplied`
+   map keyed by the filename arch token, so a mixed-version build retains each
+   arch's real version and patch set. `build_make_manifest.py` resolves each file's
+   version from the filename first, then the `archVersion` map, then the scalar (and
+   its patches from `archApplied` then the scalar). `generate_release_notes.py`
+   derives each file's version straight from its filename and splits an app into one
+   release-note bullet per distinct version, so a fallback arch is never reported
+   under the other arch's version.
 
 ## Download sources, in priority order
 
@@ -138,7 +174,7 @@ in; the first source that yields a verified artifact **carrying the requested ar
 | 4 | `archive` | `archive.org` item, the long-term fallback for delisted versions |
 | 5 | `apkmirror` | universal-bundle strategy; package/version read from the HTML |
 | 6 | `uptodown` | |
-| 7 | `apkpure` | XAPK handling in `_apkpure_install_xapk` |
+| 7 | `apkpure` | one link per ABI read off `/downloading/<v>` → `/download/<v>` → `/download`, the page's featured `#download_link` being only one candidate, with the store's own `?versionCode=&nc=` link form as the last resort when a page yields nothing; XAPK handling in `_apkpure_install_xapk` |
 | 8 | `apkcombo` | trusts the served filename over its object key |
 
 Supporting machinery:
@@ -147,6 +183,27 @@ Supporting machinery:
   `ghcr.io/sarperavci/cloudflarebypassforscraping` service in `build.yml`), asked
   about the **effective URL after redirects**, not the request URL; `curl_cffi`
   (`scripts/cf_get.py`) for TLS-fingerprint walls.
+- **Which page a scrape actually saw** — the sidecar answers in two shapes, and they
+  are not the same document: clearance cookies let `curl_cffi` fetch the **raw** page,
+  while its `/html` endpoint returns a **JS-rendered DOM**, in which rendering has
+  already deleted or rewritten server-rendered markup (measured on APKPure's
+  `downloading/<v>` page: ~71k characters shorter, with its featured anchor gone). A
+  page that yields nothing is therefore ambiguous without a record, so `cf_get.py`
+  writes the producing path plus the sidecar's final URL to `temp/cf_source.txt`, and
+  `_cf_get` exposes it as `__CF_GET_VIA__` for a scraper's failure message.
+- **Stores answer 200 for things they do not have** — APKPure returns a generic
+  "Free APK Downloader" page for a version it does not carry, so a missing link is
+  named as *page not served* rather than as a parse failure; the two call for
+  different retries (another version, or another source). For this host the rendered
+  DOM is worse than ambiguous: measured across run 37964499217, every page the sidecar
+  returned (~206k characters, three pages per build) contained **no** `d.apkpure.com`
+  link at all, while the same URLs in a normal browser list one per ABI. Scraping
+  APKPure from a datacenter address is therefore not a solvable problem — which is why
+  `dl_apkpure` ends with the link the store writes into its own download markup
+  (`/b/XAPK/<pkg>?versionCode=<vc>&nc=<abi>`, verified to select different bytes per
+  `nc` and to serve nothing for an unknown `nc`). It is used only when the engine has
+  already resolved a version code and the arch has a store spelling, it is logged as
+  constructed, and the artifact is judged from its bytes like any other.
 - **Transfer guards** — `_req` sets connect *and* absolute ceilings plus a low-
   speed stall guard, because a mirror that trickles would otherwise hold a build
   slot forever.
@@ -178,22 +235,60 @@ see [cache-repo.md](cache-repo.md).
 `RVB_PATCHERS_SH` for tests) owns `resolve_patcher` and the `PATCHER_*` flags:
 which tool kind this is, whether it lists patches, whether it needs a mount arg,
 how its output is recovered. `.github/scripts/patchers.py` answers the CI-side
-question `needs-bks` (does this config contain an Xposed module that requires
-Bouncy Castle for BKS keystores?). Adding a tool means editing the registry, not
-`build_rv`.
+question `needs-bks` (does this config contain an app whose patcher needs the
+**JVM** to provide a BKS keystore?). Only NPatch does: it calls the single-argument
+`KeyStore.getInstance("BKS")`, which is a global provider lookup, and ships its
+built-in stores as BKS files — so a stock Temurin answers `KeyStoreException: BKS
+not found` and the run must install the provider first. ReVanced CLI and Morphe use
+BKS too, but call `KeyStore.getInstance("BKS", "BC")` against a provider bundled in
+their own jar, and LSPatch reads a bundled JKS through `KeyStore.getDefaultType()`;
+none of those three needs anything installed, which is why the flag is set for the
+npatch flavour of the xposed flow alone.
+
+The same split decides `PATCHER_KEYSTORE_FORMAT`: the xposed tools sign their own
+output, so the identity reaches them as `-k <store> <pass> <alias> <pass>` (same
+argument order in both) and the flag names which of the two stores that tool can
+read. Adding a tool means editing the registry, not `build_rv`.
 
 ## Signing and identity
 
 | Env var | Default | Purpose |
 |---|---|---|
-| `RVB_KEYSTORE` / `RVB_KEYSTORE_P12` | `ks.keystore` / `ks-p12.keystore` | signing identity; CI writes them from `KEYSTORE_B64` / `KEYSTORE_P12_B64` via `install_keystore.sh` |
-| `RVB_KEYSTORE_PASS` / `RVB_KEY_ALIAS` | upstream defaults | overridden by secrets in CI |
+| `RVB_KEYSTORE` / `RVB_KEYSTORE_P12` | none | the BKS store (ReVanced CLI, Morphe, NPatch) and the PKCS12 store (apksigner, LSPatch); `install_keystore.sh` writes both from `KEYSTORE_B64` / `KEYSTORE_P12_B64` and exports the two paths |
+| `RVB_KEYSTORE_PASS` / `RVB_KEY_ALIAS` | none | one password, passed as both store and key password, and one alias present in both stores. Alphanumeric only: both are interpolated into `eval`'d CLI arguments, and `require_signing_identity` rejects anything else |
 | `RVB_MORPHE_PASSTHROUGH` | `true` | keep bundles whole for morphe instead of merging at download time |
 | `RVB_INSTAFEL_FALLBACK_COMMIT`, `RVB_INSTAFEL_DEFAULT_PATCHES` | see source | used when the InstaFel CLI manifest has no commit hash or a config omits `included-patches` |
 
 Signature identity is not cosmetic: patched apps that lose the expected signer
-cannot update in place, so `check_sig` exists and the keystore is a CI secret
-rather than a repository default.
+cannot update in place, which is why `check_sig` exists. It therefore has no
+default in `utils.sh` and no keystore ships in this repository — the two files
+inherited from the template this was forked from came with a public private key, so
+a missing secret meant every build here was signable by anyone holding the same
+template. `build.sh` calls `require_signing_identity` before the first download,
+and `install_keystore.sh` fails the run when any of the four secrets is absent
+instead of falling back; it also checks the BKS magic and that the alias really is
+readable in the PKCS12 store, so a wrong secret stops the job in seconds rather
+than at the first patch of every app. A local build must export all four itself,
+pointing at one key pair held in both BKS and PKCS12 form (same alias, same
+password). The price of adopting a fresh identity is paid once: every previously
+installed patched app has to be uninstalled, because its signer changed.
+
+### Why the BKS copy cannot be dropped
+
+One key pair, two store formats, because the consumers are not equally tolerant:
+
+| Consumer | How it reads `--keystore` / `-k` | BKS required? |
+|---|---|---|
+| ReVanced CLI | `KeyStore.getInstance("BKS", "BC")` on its bundled provider, no format sniffing | **yes** — a PKCS12 file will not load |
+| Morphe desktop | sniffs `KeystoreInputFormat` (BKS/JKS/PKCS12) and converts via `KeystoreImporter` | no |
+| NPatch | `KeyStore.getInstance("BKS")` against the JVM | **yes**, and it is the only one that also needs the provider installed on the runner |
+| LSPatch | `KeyStore.getInstance(KeyStore.getDefaultType())` | no — it wants the PKCS12 copy |
+| apksigner | `--ks`, auto-detects | no — it wants the PKCS12 copy |
+
+So `RVB_KEYSTORE` stays BKS as long as any `ReVanced/revanced-cli` app is
+configured; collapsing to a single PKCS12 store would mean dropping one secret and
+breaking those builds, and was checked rather than assumed (verified against the
+`revanced-cli-6.0.0-all.jar` and `morphe-desktop.jar` bytecode, not documentation).
 
 ## Guardrails
 

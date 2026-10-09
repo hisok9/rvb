@@ -44,4 +44,5 @@ jobs:
     uses: ./.github/workflows/notify.yml
     with:
       workflow_name: "Manual CI"
+      already_reported: ${{ needs.build_manual.outputs.reported_failures == 'true' }}
     secrets: inherit

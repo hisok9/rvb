@@ -197,20 +197,49 @@ patches-version = "'stable' 'v1.2.3'"             # per-source versions
 
 ## Xposed Modules (NPatch / LSPatch)
 
-You can natively inject Xposed modules into an app using `7723mod/NPatch` or `LSPatch` directly from your config. Simply set the `cli-source` to the NPatch repository and the `patches-source` to the Xposed module repository.
+You can inject Xposed modules into an app with `7723mod/NPatch` or
+`JingMatrix/LSPatch` straight from your config: set `cli-source` to the patcher
+repository and `patches-source` to the module repository. Anything in `cli-source`
+containing `npatch` or `lspatch` selects this flow; the engine then skips the
+ReVanced CLI argument set entirely and runs the injection command instead.
 
 ```toml
 [Discord]
-cli-source = "7723mod/NPatch"                            # Use NPatch as the CLI
+cli-source = "JingMatrix/LSPatch"                         # or "7723mod/NPatch"
 cli-version = "stable"
-patches-source = "revenge-mod/revenge-xposed"            # Provide the Xposed module as the patches bundle
+patches-source = "revenge-mod/revenge-xposed"           # the Xposed module is the "patches bundle"
 patches-version = "stable"
 version = "auto"                                         # 'auto' safely falls back to 'latest' since modules don't list supported versions
 arch = "auto"
 github-dlurl = "https://github.com/discord/releases/..." # Or apkmirror, etc.
 ```
 
-When the script detects `npatch` or `lspatch` in the CLI source, it will automatically bypass ReVanced CLI arguments and execute the correct injection command. You can also pass extra options to NPatch using `patcher-args = "-l 2"`.
+### Signing is handled for you, so never write it here
+
+These tools sign their own output, so the engine passes your release identity to
+them itself: `-k <store> <password> <alias> <password>`, where the store is the BKS
+one for NPatch and the PKCS12 one for LSPatch (each can only read its own format).
+Do **not** put `-k`, a keystore path or any password into `patcher-args`: the
+configs are published to the public `data` branch, and the signing password would go
+with them. If a build ever reports it cannot find a keystore, that is a CI secret or
+a local `RVB_KEYSTORE*` problem, not a config one
+(see [docs/contributing.md](docs/contributing.md)).
+
+### `-l` means different things in the two tools
+
+`patcher-args` is passed through verbatim, and the signature-bypass scale is not
+shared between them, so a level copied from one tool's docs is a different setting
+in the other:
+
+| Tool | Levels | Default | Notes |
+|---|---|---|---|
+| NPatch | `0` None, `1` Basic, `2` High, `3` Extreme, `4` Seccomp | `1` | `3` and `4` need manager mode and are rejected in embedded (`-m`) mode |
+| LSPatch | `0` disable, `1` pm, `2` pm+openat, `3` +raw-syscall hooks | `0` | `3` patches native code, so an app that verifies its own code may notice it |
+
+Omit `-l` to take the tool's own default. The same applies to `--injectdex`: it
+puts the loader into the app's own dex list so that *isolated* sub-processes get
+hooked, and it is an opt-in for modules that need those processes, not a fix for an
+app that crashes on launch.
 
 ## Instafel Patcher (Instagram Alpha)
 

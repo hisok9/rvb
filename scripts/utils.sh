@@ -17,12 +17,61 @@ NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 OS=$(uname -o)
 DEFAULT_UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
 
-# Signing identity — overridable from CI (secrets written to these files/vars
-# by build.yml); defaults preserve the upstream keystore in the repo.
-RVB_KEYSTORE="${RVB_KEYSTORE:-ks.keystore}"
-RVB_KEYSTORE_P12="${RVB_KEYSTORE_P12:-ks-p12.keystore}"
-RVB_KEYSTORE_PASS="${RVB_KEYSTORE_PASS:-123456789}"
-RVB_KEY_ALIAS="${RVB_KEY_ALIAS:-jhc}"
+# Signing identity. There is deliberately no default here. CI supplies it: build.yml
+# passes the KEYSTORE_* secrets to install_keystore.sh, which writes the two store
+# files and exports RVB_KEYSTORE_PASS / RVB_KEY_ALIAS. A local build must set all
+# four itself (see require_signing_identity below and the table in
+# docs/build-engine.md#signing-and-identity).
+#
+# Two stores because the consumers read different keystore formats, one key pair:
+#   RVB_KEYSTORE (BKS)     - ReVanced CLI calls KeyStore.getInstance("BKS", "BC")
+#                            and loads the file as BKS, so this store has to be BKS
+#                            for it. Morphe would also take JKS/PKCS12 (it sniffs
+#                            the format and converts), but the CLI flows share this
+#                            variable, so the stricter consumer decides.
+#   RVB_KEYSTORE_P12 (P12)  - apksigner (--ks) and LSPatch, which load through
+#                            KeyStore.getDefaultType(), i.e. PKCS12 on a modern JDK.
+# NPatch also reads BKS - and it is the only consumer that asks the *JVM* for the
+# BKS type (single-argument getInstance("BKS")), which is why the runner-level
+# BouncyCastle install is gated on NPatch alone. ReVanced and Morphe ship their own
+# BC provider and need nothing installed.
+# One alias, and the engine has a single RVB_KEYSTORE_PASS it passes as both store
+# and key password, so the two files must be built that way.
+RVB_KEYSTORE="${RVB_KEYSTORE-}"
+RVB_KEYSTORE_P12="${RVB_KEYSTORE_P12-}"
+RVB_KEYSTORE_PASS="${RVB_KEYSTORE_PASS-}"
+RVB_KEY_ALIAS="${RVB_KEY_ALIAS-}"
+
+# Refuse before the first download instead of after patching: every build path
+# signs (the CLI --keystore flags, apksigner on merged bundles, -k for the xposed
+# flows), so a missing identity is a whole-run problem, not a per-app one. It used
+# to fall back to the keystore committed by the repo template, whose private key is
+# public - any fork could then produce signature-compatible "updates" for builds
+# published here. Signing with someone else's key is not a default to keep.
+require_signing_identity() {
+	local bad=0 v
+	for v in RVB_KEYSTORE RVB_KEYSTORE_P12 RVB_KEYSTORE_PASS RVB_KEY_ALIAS; do
+		if [ -z "${!v-}" ]; then epr "$v is not set"; bad=1; fi
+	done
+	if [ -n "${RVB_KEYSTORE-}" ] && [ ! -f "$RVB_KEYSTORE" ]; then epr "keystore not found: $RVB_KEYSTORE"; bad=1; fi
+	if [ -n "${RVB_KEYSTORE_P12-}" ] && [ ! -f "$RVB_KEYSTORE_P12" ]; then epr "keystore not found: $RVB_KEYSTORE_P12"; bad=1; fi
+	# The password is interpolated into an eval'd command line (and into single
+	# quotes for the -k arguments), so anything outside [0-9A-Za-z] would either
+	# split the argument or terminate it early.
+	if [ -n "${RVB_KEYSTORE_PASS-}" ] && [[ "$RVB_KEYSTORE_PASS" =~ [^0-9A-Za-z] ]]; then
+		epr "RVB_KEYSTORE_PASS must be alphanumeric: it is embedded in eval'd CLI arguments"
+		bad=1
+	fi
+	if [ -n "${RVB_KEY_ALIAS-}" ] && [[ "$RVB_KEY_ALIAS" =~ [^0-9A-Za-z_.-] ]]; then
+		epr "RVB_KEY_ALIAS must not contain characters that break eval'd CLI arguments"
+		bad=1
+	fi
+	if [ "$bad" -ne 0 ]; then
+		epr "no usable signing identity - in CI set KEYSTORE_B64, KEYSTORE_P12_B64, KEYSTORE_PASSWORD and KEY_ALIAS; locally export RVB_KEYSTORE, RVB_KEYSTORE_P12, RVB_KEYSTORE_PASS and RVB_KEY_ALIAS"
+		return 1
+	fi
+	return 0
+}
 
 # Instafel fallbacks (used when the CLI manifest lacks a commit hash, and
 # when a config omits included-patches). Overridable without code edits.
@@ -168,6 +217,48 @@ abort() {
 	rm -rf ./${TEMP_DIR}/*tmp.* ./${TEMP_DIR}/*/*tmp.* ./${TEMP_DIR}/*-temporary-files ./${TEMP_DIR}/*.apk-temporary-files ./*-temporary-files
 	trap - SIGTERM SIGINT EXIT
 	exit 1
+}
+# -- Per-app failure records (temp/failures) ---------------------------------
+# build.sh's post-build CI step reads these to report per-app failures once the
+# engine finishes. Each record is one jq-built JSON file; the engine writes them,
+# the CI step consumes them. Kept notification-free on purpose (no Telegram/curl
+# here) so the engine stays pure. A build failure leaves <slug>.json (descriptor)
+# plus <slug>.log (attached by build.sh's parent); a download-exhaustion leaves
+# only <slug>_dl.json. All fail-soft: a write error never aborts a build.
+#
+# The slug is derived from the display label "$table" (which already carries the
+# arch, e.g. "Foo (arm64-v8a)"), lowercased with every non-alphanumeric run
+# collapsed to a single '-'. build.sh and build_rv compute it identically so the
+# descriptor and the parent-attached log share a basename.
+failure_slug() { # $1=label ($table)
+	printf '%s' "${1:-}" | tr '[:upper:]' '[:lower:]' | tr -cs 'a-z0-9' '-' | sed 's/^-//; s/-$//'
+}
+
+# write_build_failure_descriptor — record an intended build for the current app so
+# that if any later step aborts, the parent can attach the log and report it.
+# Deleted by the parent on a clean build_rv return. Called from build_rv once the
+# version, version-code and patches-source are all resolved.
+write_build_failure_descriptor() { # $1=slug $2=app $3=version $4=vc $5=arch $6=patches_src
+	[ -n "${TEMP_DIR:-}" ] || return 0
+	local dir="$TEMP_DIR/failures"
+	mkdir -p "$dir" 2> /dev/null || return 0
+	jq -n --arg type "build_failed" --arg app "$2" --arg version "$3" \
+		--arg vc "$4" --arg arch "$5" --arg patches_src "$6" \
+		'{type:$type, app:$app, version:$version, vc:$vc, arch:$arch, patches_src:$patches_src}' \
+		> "$dir/$1.json" 2> /dev/null || true
+}
+
+# write_dl_failure_descriptor — record that every configured download source was
+# exhausted for this app. Emitted and build_rv returns 0 (skip), so the parent
+# never sees a non-zero rc for it and does not touch it.
+write_dl_failure_descriptor() { # $1=slug $2=app $3=version $4=vc $5=arch $6=pkg
+	[ -n "${TEMP_DIR:-}" ] || return 0
+	local dir="$TEMP_DIR/failures"
+	mkdir -p "$dir" 2> /dev/null || return 0
+	jq -n --arg type "dl_exhausted" --arg app "$2" --arg version "$3" \
+		--arg vc "$4" --arg arch "$5" --arg pkg "$6" \
+		'{type:$type, app:$app, version:$version, vc:$vc, arch:$arch, pkg:$pkg}' \
+		> "$dir/$1_dl.json" 2> /dev/null || true
 }
 # env -i keeps JVM runs hermetic; XDG_DATA_HOME is forwarded so callers can
 # relocate an app's per-user state dir out of the shared HOME (see the
@@ -1474,6 +1565,7 @@ _fallback_get(){
 	if [[ "$html" == *"Attention Required!"* || "$html" == *"Just a moment..."* || "$html" == *"Please Wait... | Cloudflare"* || "$html" == *"Verify you are human"* ]]; then
 		return 1
 	fi
+	__CF_GET_VIA__="curl"
 	CF_COOKIES=""
 	user_agent="${DEFAULT_UA}"
 }
@@ -1492,8 +1584,16 @@ _cf_cffi_get() {
 	[ ! -f "$py_script" ] && return 2
 
 	local cffi_res
-	if cffi_res=$("$py_cmd" "$py_script" "$url" "$TEMP_DIR/cookie.txt" 2>/dev/null); then
+	# Which path produced $html matters to the scrapers: curl_cffi returns the raw page
+	# while the solver returns a JS-rendered DOM that is not the same document. Clear the
+	# note first, so a failed call cannot report the previous page's provenance.
+	__CF_GET_VIA__=""
+	rm -f "$TEMP_DIR/cf_source.txt" 2> /dev/null
+	if cffi_res=$("$py_cmd" "$py_script" "$url" "$TEMP_DIR/cookie.txt" 2> /dev/null); then
 		html="$cffi_res"
+		if [ -f "$TEMP_DIR/cf_source.txt" ]; then
+			__CF_GET_VIA__="$(head -1 "$TEMP_DIR/cf_source.txt" 2> /dev/null || true)"
+		fi
 		if [ -f "$TEMP_DIR/cf_ua.txt" ]; then
 			user_agent="$(cat "$TEMP_DIR/cf_ua.txt" 2>/dev/null || echo "${DEFAULT_UA}")"
 		else
@@ -2022,6 +2122,18 @@ get_apkpure_vers() {
 
 get_apkpure_pkg_name() { echo "$__APKPURE_PKG__"; }
 
+# Build arch token -> the ABI name APKPure spells in its links. One mapping, because
+# _apkpure_pick_link reads it out of the page and _apkpure_construct_link has to write the
+# same spelling - a second copy would be a second thing to keep in sync.
+_apkpure_abi_of() { # $1=arch token; prints nothing when this arch has no store spelling
+	case "$1" in
+		arm64-v8a | arm64) echo arm64-v8a ;;
+		arm-v7a | arm) echo armeabi-v7a ;;
+		x86_64) echo x86_64 ;;
+		x86) echo x86 ;;
+	esac
+}
+
 # Choose APKPure's link for the architecture being built.
 #
 # An APKPure download page carries exactly one <a id="download_link"> - the variant
@@ -2051,16 +2163,17 @@ get_apkpure_pkg_name() { echo "$__APKPURE_PKG__"; }
 # says so, which is all a single-variant app ever offers. Whether the fetched file really
 # is universal stays decided by its contents, as everywhere else in this pipeline:
 # _cache_arch_key reads the artifact and picks the cache key from that, never from here.
-_apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url
-	local html=$1 arch=$2 featured=$3 abi="" want_type want_vc cands picked all_links
-	case "$arch" in
-		arm64-v8a | arm64) abi=arm64-v8a ;;
-		arm-v7a | arm) abi=armeabi-v7a ;;
-		x86_64) abi=x86_64 ;;
-		x86) abi=x86 ;;
-	esac
+#
+# $3 may be empty: a page with no featured anchor still lists its variants, and the
+# version code the build wants is then taken from $4 (resolved from patch metadata or the
+# config's version-code map by the build loop) instead of from the anchor.
+_apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url  $4=version code to prefer
+	local html=$1 arch=$2 featured=$3 want_vc=${4:-} abi="" want_type="" cands picked all_links
+	abi=$(_apkpure_abi_of "$arch")
 	want_type=$(grep -oE '/b/(XAPK|APK)/' <<<"$featured" | head -1) || true
-	want_vc=$(grep -oE 'versionCode=[0-9]+' <<<"$featured" | head -1 | cut -d= -f2) || true
+	if [ -z "$want_vc" ]; then
+		want_vc=$(grep -oE 'versionCode=[0-9]+' <<<"$featured" | head -1 | cut -d= -f2) || true
+	fi
 
 	all_links=$(grep -oE 'https://d\.apkpure\.com/b/(XAPK|APK)/[^"]+' <<<"$html" | sed 's/&amp;/\&/g' | sort -u) || true
 	[ -z "$all_links" ] && return 1
@@ -2102,8 +2215,46 @@ _apkpure_pick_link() { # $1=page html  $2=arch  $3=featured url
 	printf '%s\n' "$picked"
 }
 
+# Did APKPure actually serve an app page? A version the store does not carry is answered
+# with HTTP 200 and a generic "Free APK Downloader Online" page - measured on
+# /downloading/9.99: 294k chars, no app markup and no file link anywhere in it - so an
+# empty link search has two completely different causes and only this tells them apart.
+# A challenge or anti-bot interstitial has no file link either, which is why the caller
+# also reports how the page was fetched.
+_apkpure_has_file_links() { # $1=page html
+	grep -qE 'https://d\.apkpure\.com/b/(XAPK|APK)/' <<<"${1:-}"
+}
+
+# The store's own file-link form, built without reading a page.
+#
+# This is not a guessed URL: it is the exact href APKPure puts in #download_link and in the
+# hidden iframe_download of its /downloading/<v> page -
+#   https://d.apkpure.com/b/XAPK/<pkg>?versionCode=<vc>&nc=<abi>
+# - and it was measured (2026-10-09, from this machine) to honour both parameters without
+# any page or cookie: versionCode=3240500 answers 302 with a different file per nc
+# (arm64-v8a -> full_size=41069874, armeabi-v7a -> 54307675, both labelled
+# Flipkart...9.15_APKPure.xapk), an unknown versionCode redirects to a target carrying no
+# filename and no size, and sv= changes nothing (sv=99 returned the same bytes), so it is
+# left out instead of being invented.
+#
+# It is reached only when every page this source read carried no file link at all, which is
+# what the bypass sidecar's rendered DOM does for apkpure.com (run 37964499217: three pages
+# per build, ~206k chars each, not one d.apkpure.com href in any of them), and only when the
+# engine already resolved a version code from patch metadata or the config - never one
+# chosen here. The bytes are then judged by the pipeline as usual (zip, manifest at root,
+# package, version, signature, then the arch-honesty gate of docs/decisions/0007), and the
+# caller logs that the link was constructed rather than scraped, so this cannot pass as a
+# read from the store's markup. An arch with no store spelling (all, universal) gets nothing
+# back, because there is no ABI to name and inventing one would be a claim, not a fallback.
+_apkpure_construct_link() { # $1=pkg  $2=arch  $3=version code
+	local abi
+	abi=$(_apkpure_abi_of "$2")
+	if [ -z "$abi" ] || [ -z "${3:-}" ] || [ -z "${1:-}" ]; then return 1; fi
+	printf 'https://d.apkpure.com/b/XAPK/%s?versionCode=%s&nc=%s\n' "$1" "$3" "$abi"
+}
+
 dl_apkpure() {
-	local url=$1 version=$2 output=$3 arch=${4:-} _dpi=${5:-}
+	local url=$1 version=$2 output=$3 arch=${4:-} _dpi=${5:-} version_code=${7:-}
 	local html=""
 
 	local dl_page_url
@@ -2120,47 +2271,103 @@ dl_apkpure() {
 		[ -z "$version" ] && version=$(echo "$html" | grep -oP '"softwareVersion":"\K[^"]+' | head -1) || true
 	fi
 
-	local download_url
-	download_url=$($HTMLQ "a#download_link" --attribute href <<<"$html" 2>/dev/null | head -1) || true
-	[ -z "$download_url" ] && \
-		download_url=$(echo "$html" | grep -oP '<a[^>]+id="download_link"[^>]+href="\Khttps://[^"]+' | head -1) || true
-	[ -z "$download_url" ] && \
-		download_url=$(echo "$html" | grep -oP 'id="download_link"[^>]*href="\Khttps://[^"]+' | head -1) || true
-	[ -n "$download_url" ] && download_url=$(echo "$download_url" | sed 's/&amp;/\&/g')
-
-	if [ -z "$download_url" ]; then
-		epr "Could not find download link on APKPure"
-		return 1
-	fi
+	# APKPure's featured link: the one variant the page advertises, which need not be this
+	# build's arch. It is a candidate below, never a precondition - see why at the page scan.
+	local featured_url
+	featured_url=$($HTMLQ "a#download_link" --attribute href <<<"$html" 2>/dev/null | head -1) || true
+	[ -z "$featured_url" ] && \
+		featured_url=$(echo "$html" | grep -oP '<a[^>]+id="download_link"[^>]+href="\Khttps://[^"]+' | head -1) || true
+	[ -z "$featured_url" ] && \
+		featured_url=$(echo "$html" | grep -oP 'id="download_link"[^>]*href="\Khttps://[^"]+' | head -1) || true
+	[ -n "$featured_url" ] && featured_url=$(echo "$featured_url" | sed 's/&amp;/\&/g')
 
 	# The featured link is only correct for the arch APKPure happened to feature, so ask
 	# for this build's own variant and keep the featured one as the fallback.
 	#
 	# The version page is not enough: /downloading/<version> advertises only the single
 	# variant APKPure features for that version (measured on atvTools 1.3.2: one
-	# nc=armeabi-v7a link, no nc=arm64-v8a at all), while the app's /download page lists
-	# every ABI. So ask the version page first, then the all-variants page, and only then
-	# fall back - otherwise an arm64 build silently fetches a 32-bit bundle.
-	local apkpure_page_html="$html" variant_url="" apkpure_allvars=""
-	variant_url=$(_apkpure_pick_link "$apkpure_page_html" "$arch" "$download_url") || true
-	if [ -z "$variant_url" ] && [ -n "$arch" ]; then
-		html=""
-		if _cf_get "${__APKPURE_BASE_URL__}/download" >/dev/null 2>&1; then
-			apkpure_allvars="$html"
+	# nc=armeabi-v7a link, no nc=arm64-v8a at all), while /download/<version> lists one link
+	# per ABI for exactly that version (measured on flipkart 9.15: both
+	# versionCode=3240500&nc=arm64-v8a and ...&nc=armeabi-v7a sit on it) and the app's
+	# /download page lists the variants of whatever APKPure calls latest. So ask the page in
+	# hand, then the version's own all-variants page, then latest, and only then fall back -
+	# otherwise an arm64 build silently fetches a 32-bit bundle.
+	#
+	# A missing featured link does not stop any of that, and must not: it is server-rendered
+	# markup, and a rendered DOM can lose it. When Cloudflare keeps challenging curl_cffi,
+	# _cf_get returns the solver's browser DOM instead of the raw page - measured 2026-10-09
+	# on flipkart 9.15: 209k chars against 280k for the same URL, with no #download_link in
+	# it - and this source then died on the anchor while its variants were one page away.
+	# Parsing what a page offers instead of requiring one particular element is what keeps
+	# the source alive while a challenge is escalated.
+	local apkpure_page_html="$html" variant_url="" page_html="" links_seen=false
+	if [ -n "$featured_url" ]; then links_seen=true; fi
+	variant_url=$(_apkpure_pick_link "$apkpure_page_html" "$arch" "$featured_url" "$version_code") || true
+
+	if [ -z "$variant_url" ] && { [ -n "$arch" ] || [ -z "$featured_url" ]; }; then
+		local -a apkpure_pages=()
+		if [ -n "$version" ]; then
+			apkpure_pages+=("${__APKPURE_BASE_URL__}/download/${version}")
 		fi
+		apkpure_pages+=("${__APKPURE_BASE_URL__}/download")
+		local apkpure_page
+		for apkpure_page in "${apkpure_pages[@]}"; do
+			html=""
+			if _cf_get "$apkpure_page" >/dev/null 2>&1; then
+				page_html="$html"
+				if _apkpure_has_file_links "$page_html"; then links_seen=true; fi
+				variant_url=$(_apkpure_pick_link "$page_html" "$arch" "$featured_url" "$version_code") || true
+			fi
+			if [ -n "$variant_url" ]; then break; fi
+		done
 		html="$apkpure_page_html"
-		[ -n "$apkpure_allvars" ] && variant_url=$(_apkpure_pick_link "$apkpure_allvars" "$arch" "$download_url") || true
 	fi
+
+	local download_url=""
 	if [ -n "$variant_url" ]; then
 		download_url="$variant_url"
-	elif [ -n "$arch" ] && ! isoneof "$arch" all universal; then
-		# Deliberately still taken: when the store lists no variant for this arch the
-		# featured link is the only thing there, and its real ABI is only knowable from
-		# its bytes. It is fetched, fingerprinted into the download-link index, then judged
-		# by the arch-honesty gate in build_rv - which rejects a wrong single ABI instead of
-		# shipping it under this arch's name. A repeat job hits the index and skips the
-		# fetch. (docs/decisions/0007)
-		wpr "APKPure lists no '$arch' variant for '${__APKPURE_PKG__}'; using the featured link, which may carry a different ABI than '$arch'"
+	elif [ -n "$featured_url" ]; then
+		download_url="$featured_url"
+		if [ -n "$arch" ] && ! isoneof "$arch" all universal; then
+			# Deliberately still taken: when the store lists no variant for this arch the
+			# featured link is the only thing there, and its real ABI is only knowable from
+			# its bytes. It is fetched, fingerprinted into the download-link index, then judged
+			# by the arch-honesty gate in build_rv - which rejects a wrong single ABI instead of
+			# shipping it under this arch's name. A repeat job hits the index and skips the
+			# fetch. (docs/decisions/0007)
+			wpr "APKPure lists no '$arch' variant for '${__APKPURE_PKG__}'; using the featured link, which may carry a different ABI than '$arch'"
+		fi
+	else
+		# Nothing on any page. Before calling that a store failure, take the one route that
+		# does not depend on the page at all - the link form the store itself writes into its
+		# download markup (see _apkpure_construct_link), for the version code the engine
+		# already resolved. Needed because the bypass sidecar's rendered DOM carries no file
+		# link whatsoever for this host: measured on run 37964499217, all three pages of every
+		# build came back from /html at ~206k characters with not one d.apkpure.com href in
+		# them, while the same URLs from a normal browser list the arm64 link. Scraping this
+		# store from a datacenter address is therefore not a solvable problem, and the URL form
+		# is - the file endpoint is checked by the pipeline afterwards exactly like a scraped one.
+		download_url=$(_apkpure_construct_link "$__APKPURE_PKG__" "$arch" "$version_code") || true
+		if [ -n "$download_url" ]; then
+			wpr "APKPure pages carried no link (last page read via ${__CF_GET_VIA__:-unknown}); using the store's file-link form for '$arch' at versionCode $version_code - the artifact is verified from its bytes"
+		elif [ "$links_seen" != true ]; then
+			# Used to be one message for two different failures. Whether the store carries this
+			# version at all and whether it publishes this arch are answered by different next
+			# steps - a retry at another version, or a different source - so they are named apart,
+			# with the fetch path that produced the page, because a rendered DOM is not the raw
+			# page and only says something is absent from the markup it kept.
+			local construct_reason
+			if [ -z "$version_code" ]; then
+				construct_reason="no target version code was resolved to build the link from"
+			else
+				construct_reason="arch '$arch' has no per-ABI spelling to build the link from"
+			fi
+			epr "APKPure served no app page for '${__APKPURE_PKG__}' v${version:-latest} - no file link on any page tried (fetched via ${__CF_GET_VIA__:-unknown}), and $construct_reason"
+			return 1
+		else
+			epr "APKPure publishes no '${arch:-any}' variant for '${__APKPURE_PKG__}' v${version:-latest}"
+			return 1
+		fi
 	fi
 
 	pr "Downloading from APKPure: $download_url"
@@ -3121,8 +3328,24 @@ patch_apk() {
 		for j in "${p_jars[@]}"; do
 			p_args_modules+=" -m '$j'"
 		done
+		# Both tools sign the output themselves, so the identity has to reach them as
+		# arguments: -k <path> <storePass> <alias> <aliasPass>, same order in LSPatch
+		# (KeystoreSpec.of) and NPatch. Which store each can read is a per-tool fact -
+		# NPatch asks JCA for a BKS type, LSPatch for the JDK default (PKCS12) - so the
+		# registry names it. Placed before $patcher_args so a config can still override.
+		local ks_args="" ks_file="$RVB_KEYSTORE_P12"
+		if [ "${PATCHER_SIGNING:-false}" = true ]; then
+			if [ "${PATCHER_KEYSTORE_FORMAT:-pkcs12}" = bks ]; then
+				ks_file="$RVB_KEYSTORE"
+			fi
+			if [ -z "$ks_file" ] || [ ! -f "$ks_file" ]; then
+				epr "No signing keystore for '$cli_source' (want a $PATCHER_KEYSTORE_FORMAT store; have RVB_KEYSTORE='$RVB_KEYSTORE' RVB_KEYSTORE_P12='$RVB_KEYSTORE_P12')"
+				return 1
+			fi
+			ks_args=" -k '$ks_file' '$RVB_KEYSTORE_PASS' '$RVB_KEY_ALIAS' '$RVB_KEYSTORE_PASS'"
+		fi
 		mkdir -p "$tmp_dir"
-		local cmd="java -jar '$cli_jar' -o '$tmp_dir' $p_args_modules $patcher_args '$stock_input'"
+		local cmd="java -jar '$cli_jar' -o '$tmp_dir'$p_args_modules$ks_args $patcher_args '$stock_input'"
 		pr "$cmd"
 		PATCH_OUTPUT=$(eval "$cmd" 2>&1)
 		local ret=$?
@@ -3349,6 +3572,10 @@ write_build_info() {
 	local brand=${11:-${args[brand]:-}}
 	local variant=${12:-${args[variant]:-}}
 	local sub_variant=${13:-${args[sub_variant]:-}}
+	# Raw filename arch token (e.g. arm64-v8a) — captured before `arch` is folded
+	# into `ext` below. The merge keys its per-arch version/applied-patch maps by
+	# it, matching what build_make_manifest.py re-derives from the built filename.
+	local arch_token="$arch"
 	local arch_orig="${args[arch]// /}"
 	if [ "$arch_orig" != "auto" ]; then ext="${arch}${ext}"; arch=""; fi
 	# Applied patches: morphe's -r summary when we have one (it lists every patch
@@ -3415,6 +3642,7 @@ write_build_info() {
 	jq -n --arg key "$key" \
 		--arg ext "$ext" \
 		--arg arch "$arch" \
+		--arg arch_token "$arch_token" \
 		--arg name "$name" \
 		--arg version "$version" \
 		--arg patches "$patches" \
@@ -3430,6 +3658,7 @@ write_build_info() {
 			exts: [$ext],
 			name: $name,
 			arch: $arch,
+			arch_token: $arch_token,
 			version: $version,
 			patches: $patches,
 			changelog: $changelog,
@@ -3460,7 +3689,7 @@ merge_build_info() {
 	jq -s '
 		reduce .[] as $f ({};
 			($f | to_entries[0]) as $e |
-			if .[$e.key] == null then .[$e.key] = $e.value
+			(if .[$e.key] == null then .[$e.key] = $e.value
 			else
 				.[$e.key].exts = ((.[$e.key].exts + $e.value.exts) | unique) |
 				reduce (["name","arch","version","patches","changelog","package_name","display_name","patches_source","brand","variant","sub_variant"][]) as $k (.;
@@ -3469,6 +3698,15 @@ merge_build_info() {
 				if ((.[$e.key].applied_patches | length) == 0) and (($e.value.applied_patches | length) > 0)
 				then .[$e.key].applied_patches = $e.value.applied_patches else . end
 			end)
+			# Per-arch truth (additive): a single build can resolve different
+			# versions/patch-sets per arch (an arch falling back to an older build),
+			# which the first-wins scalars above lose. Key the concrete arch token to
+			# the version and applied patches of this fragment so downstream readers
+			# use the values of each file. The scalar version/applied_patches stay
+			# unchanged for backward compatibility.
+			| .[$e.key].archVersion = ((.[$e.key].archVersion // {}) + {($e.value.arch_token // "all"): ($e.value.version // "")})
+			| .[$e.key].archApplied  = ((.[$e.key].archApplied  // {}) + {($e.value.arch_token // "all"): ($e.value.applied_patches // [])})
+		)
 	' "${files[@]}" >"${BUILD_JSON_FILE}.merge-tmp" && mv -f "${BUILD_JSON_FILE}.merge-tmp" "$BUILD_JSON_FILE"
 	rm -rf "$frag_dir"
 }
@@ -4038,6 +4276,12 @@ build_rv() {
 
 			if [ -z "$dl_from" ]; then
 				epr "ERROR: No valid download source found for ${table}."
+				# Record so the CI step can ask for a manual cache-repo upload. version is
+				# the config value here (resolution hasn't run); show "unknown" when unpinned.
+				write_dl_failure_descriptor "$(failure_slug "$table")" "$table" \
+					"${resolved_version:-$version_mode}" \
+					"$(parse_arch_mapping "${args[version_code]:-}" "${arch_f:-}")" \
+					"$arch_f" "$pkg_name"
 				return 0
 			fi
 
@@ -4090,6 +4334,13 @@ build_rv() {
 			wpr "No compatible patches found in '${args[patches_src]:-${args[cli_source]:-}}' for '$pkg_name' v${version_f}. Skipping ${table}."
 			continue
 		fi
+
+		# Version, VC and patches-source are final here; anything that aborts from the
+		# build loop below leaves this descriptor for the CI step to report. The parent
+		# deletes it when build_rv returns clean. Written once with the requested arch.
+		write_build_failure_descriptor "$(failure_slug "$table")" "$table" "$version_f" \
+			"$(parse_arch_mapping "${args[version_code]:-}" "$arch_f")" \
+			"$arch_f" "${args[patches_src]:-${args[cli_source]:-}}"
 
 		for arch in "${arch_list[@]}"; do
 			arch_f="${arch// /}"
@@ -4419,6 +4670,18 @@ build_rv() {
 	
 	if [ ! -f "$stock_apk" ]; then
 		epr "ERROR: Could not download '${table}' after trying all supported versions."
+		# This path used to be silent in the notification. The sources all responded and were
+		# all tried, so it is not the "no valid download source" case above (which does record),
+		# and build_rv skips with rc 0 here - so the parent runs _clear_failure_record, which
+		# deletes <slug>.json and <slug>.log as a clean return, and temp/failures was empty by
+		# the time the CI step looked (run 37964499217: Flipkart unbuilt on both arches, report
+		# said "No failure records in temp/failures; nothing to report").
+		# write_dl_failure_descriptor uses its own <slug>_dl.json name, which that clearing does
+		# not touch, so the app now reaches the notify topic with the manual-upload hint.
+		write_dl_failure_descriptor "$(failure_slug "$table")" "$table" \
+			"${resolved_version:-$version_mode}" \
+			"$(parse_arch_mapping "${args[version_code]:-}" "${arch_f:-}")" \
+			"${arch_f:-}" "$pkg_name"
 		return 0
 	fi
 

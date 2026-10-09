@@ -150,7 +150,7 @@ source and the arch goes unbuilt if none supplies it
 bash .github/scripts/fetch_data_branch.sh            # materialise configs/ + state/
 bash .github/traces/trace_runner.sh verify           # offline engine regression gate
 bash .github/traces/trace_runner.sh capture          # re-record goldens after intent change
-bash scripts/build.sh configs/config.manual.toml     # real build (network + java + jq)
+bash scripts/build.sh configs/config.manual.toml     # real build; needs the 4 RVB_KEYSTORE* vars exported (contributing.md)
 bash scripts/build.sh clean                          # reset temp/ build/ build.md
 bash .github/scripts/push_data_configs.sh "feat(config): …"   # publish TOML edits
 gh run list --repo nullcpy/rvb                       # what ran and how

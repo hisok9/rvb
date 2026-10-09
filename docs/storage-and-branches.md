@@ -12,6 +12,7 @@ single-writer lives on another branch, so `main`'s history stays human.
 | `data` | `configs/` (human TOMLs + generated pool JSON), `state/` (watcher JSONs) | `commit_data_branch.sh` (CI, `*.json`), `push_data_configs.sh` (maintainer, `*.toml`) | watcher + build jobs through `fetch_data_branch.sh` |
 | `website` | `manifests/<tag>.json`, `archive/{stable,beta}.json` | `merge_archive_branch.sh`; pruned by `cleanup_website_branch.sh` | the site's `rebuild_catalog.py` |
 | `update` | `changelogs/<code>.md`, `<channel>/<module-id>.json` | `build_update_changelog.sh`; pruned by `cleanup_update_branch.sh` | KernelSU / Magisk module updaters on phones |
+| `notify-queue` | `queue.jsonl` (pending debounced issue/PR alerts) | `notify_enqueue.sh` (append) + `notify_drain.sh` (prune), both via `notify_queue.sh` | the drain job only |
 
 GitHub Releases are storage too, and they are **not** mirrors of branches:
 releases hold files, branches hold the metadata that describes the files.
@@ -133,6 +134,20 @@ backend, not an updater — its APKs come from releases/Obtainium and never poll
 this branch. **Never "tidy" this layout:** every installed module carries the old
 URL and would 404, which is a forced re-flash for the user.
 
+## `notify-queue`
+
+A transient working branch, not product data: one append-only `queue.jsonl` holding
+issue/PR alerts that have not been delivered yet, so a burst of events coalesces
+into one debounced Telegram message (see
+[ci-pipelines.md](ci-pipelines.md#notify-notifyyml)). The branch is created by the
+first `notify_enqueue.sh` append (a root commit off the empty tree), grows via
+push-retry under concurrent runs, and is emptied by `notify_drain.sh` once the
+batch posts — pruning exactly the prefix it sent, so an event that landed mid-send
+waits for the next drain rather than being dropped. Every write pins
+`core.autocrlf=false`/`core.eol=lf`: the file is byte-exact JSONL and the drain's
+prune matches whole lines, so a runner's git config must not be able to inject
+CRLF. Nothing reads it except the drain.
+
 ## GitHub Releases
 
 | | Numbered | Archive |
@@ -158,6 +173,34 @@ patchers write different tokens. Filename-derived arch is a *fallback*: the
 manifest's recorded arch is authoritative, and the derivation itself lives in
 `naming.py` alone — the website imports that module rather than copying it
 ([website-contract.md](website-contract.md)).
+
+### Withdrawing a bad build
+
+Numbered releases are append-only for consumers, not for the maintainer: a build
+whose artifacts are broken can be pulled, but the order matters, because the site
+resolves download links from the Releases API and reads existence from the
+manifests. What happened to build 260210 (patched with no BouncyCastle provider, so
+NPatch died after it had embedded the stock APK: two signature-less stubs, reported
+as a green build) is the reference case:
+
+1. Delete the offending assets from the **archive** release first
+   (`gh api -X DELETE repos/<owner>/<repo>/releases/assets/<id>`). Releases are the
+   existence truth for `merge_archive_branch.sh`, so a later merge prunes the
+   archive manifest on its own.
+2. Delete the numbered release with its tag: `gh release delete <tag> --cleanup-tag`.
+3. Fix the `website` metadata that named them: remove `manifests/<tag>.json`, and
+   re-run the merge's own existence filter over `archive/<channel>.json` instead of
+   hand-deleting keys, so the result is what CI would have written. Leave
+   `meta.publishedAt` alone — restamping is the merge's job, not a hand fix's.
+4. Confirm nothing on `update` still points at a withdrawn file. Only module builds
+   write pointers, but an archived `zipUrl` that no longer resolves is a silent
+   failure for every phone holding that module version.
+
+Deleting the **highest** tag also frees that version code: `build_resolve_version.sh`
+counts above the highest existing tag, so the next build reuses the number (260210
+was withdrawn and recreated the same afternoon). A version code is therefore not a
+stable unique identifier across a withdrawal — the site keys on filenames and
+manifests, so those are what must be cleaned, not the tag alone.
 
 ## `nullcpy/apks` (shared download cache)
 

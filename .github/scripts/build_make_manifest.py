@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from naming import extract_arch, normalize_arch, normalize_key, parse_patch_info  # noqa: E402
+from naming import extract_arch, extract_version, normalize_arch, normalize_key, parse_patch_info  # noqa: E402
 
 
 def main():
@@ -66,6 +66,12 @@ def main():
         sub_variant_cfg = (info.get("sub_variant") or "").strip()
         sub_variant_val = sub_variant_cfg if sub_variant_cfg else None
         version = info.get("version", "")
+        # Per-arch truth (additive keys from merge_build_info). A single build can
+        # publish arm64 at one version and arm at a fallback version, and their
+        # applied-patch sets can differ, so each file takes its own arch's values
+        # rather than the collapsed scalar the entry still carries.
+        arch_version_map = info.get("archVersion") or {}
+        arch_applied_map = info.get("archApplied") or {}
         patches_ref = (info.get("patches") or "").strip()
         changelog_url = (info.get("changelog") or "").strip()
 
@@ -74,12 +80,25 @@ def main():
             lower = fname.lower()
             if not (lower.endswith(".apk") or lower.endswith(".zip")):
                 continue
+            raw_arch = extract_arch(fname, version)
+            norm_arch = normalize_arch(raw_arch)
+            file_version = (
+                extract_version(fname)
+                or arch_version_map.get(raw_arch)
+                or arch_version_map.get(norm_arch)
+                or version
+            )
+            file_applied = (
+                arch_applied_map.get(raw_arch)
+                or arch_applied_map.get(norm_arch)
+                or (info.get("applied_patches") or [])
+            )
             files[fname] = {
                 "name": file_prefix,
-                "version": version,
+                "version": file_version,
                 "appKey": app_key,
                 "appName": app_name,
-                "arch": normalize_arch(extract_arch(fname, version)),
+                "arch": norm_arch,
                 "fileType": "APK" if lower.endswith(".apk") else "Module",
                 "brandKey": brand_key,
                 "brandName": brand_name,
@@ -88,7 +107,7 @@ def main():
                 "packageName": (info.get("package_name") or "").strip() or None,
                 "patchSources": patches_ref.split() if patches_ref else [],
                 "changelogs": changelog_url.split() if changelog_url else [],
-                "appliedPatches": info.get("applied_patches") or [],
+                "appliedPatches": file_applied,
                 "originBuild": next_ver_code,
                 "publishedAt": now_iso,
             }
