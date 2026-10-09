@@ -1,6 +1,6 @@
 {
-  "version": "v7.96.0.993165104 (patches 1.14.1.mpp)",
-  "versionCode": 260190,
+  "version": "v7.96.0.993165104 (patches 1.14.2.mpp)",
+  "versionCode": 260192,
   "zipUrl": "https://github.com/hisok9/rvb/releases/download/stable/google-photos-akashsriram-module-v7.96.0.993165104-arm64-v8a.zip",
-  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260190.md"
+  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260192.md"
 }
