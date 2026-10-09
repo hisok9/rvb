@@ -35,7 +35,10 @@ to `-`) is identical in the pooled child, the serial parent and the CI step.
   yields an uploadable log.
 - **Download exhaustion** — writing `temp/failures/<slug>_dl.json` and returning 0
   (a skip, not a failure), so it never gets a `.log`; it only asks for a manual
-  cache-repo upload.
+  cache-repo upload. Both exhaustion points record: no source that can be read at
+  all, and every version tried through every source with nothing accepted — the
+  second one used to skip silently, because returning 0 makes the parent delete the
+  app's `<slug>.json` as a clean return, and only the `_dl` name survives that sweep.
 
 `temp/failures/` is wiped at the START of `build.sh` and deliberately survives the
 end-of-run sweep, so the `build.yml` "Report build failures" step can read it.

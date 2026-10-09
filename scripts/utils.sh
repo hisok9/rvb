@@ -4670,6 +4670,18 @@ build_rv() {
 	
 	if [ ! -f "$stock_apk" ]; then
 		epr "ERROR: Could not download '${table}' after trying all supported versions."
+		# This path used to be silent in the notification. The sources all responded and were
+		# all tried, so it is not the "no valid download source" case above (which does record),
+		# and build_rv skips with rc 0 here - so the parent runs _clear_failure_record, which
+		# deletes <slug>.json and <slug>.log as a clean return, and temp/failures was empty by
+		# the time the CI step looked (run 37964499217: Flipkart unbuilt on both arches, report
+		# said "No failure records in temp/failures; nothing to report").
+		# write_dl_failure_descriptor uses its own <slug>_dl.json name, which that clearing does
+		# not touch, so the app now reaches the notify topic with the manual-upload hint.
+		write_dl_failure_descriptor "$(failure_slug "$table")" "$table" \
+			"${resolved_version:-$version_mode}" \
+			"$(parse_arch_mapping "${args[version_code]:-}" "${arch_f:-}")" \
+			"${arch_f:-}" "$pkg_name"
 		return 0
 	fi
 
