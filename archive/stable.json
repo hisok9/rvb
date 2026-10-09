@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-08T16:49:39Z"
+    "publishedAt": "2026-10-09T00:43:06Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -1674,10 +1674,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.14.1.mpp"
+        "Akash-Sriram/patches-1.14.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1691,8 +1691,8 @@
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260190",
-      "publishedAt": "2026-10-08T16:49:10Z"
+      "originBuild": "260192",
+      "publishedAt": "2026-10-09T00:42:36Z"
     },
     "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1707,10 +1707,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.14.1.mpp"
+        "Akash-Sriram/patches-1.14.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1724,8 +1724,8 @@
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260190",
-      "publishedAt": "2026-10-08T16:49:10Z"
+      "originBuild": "260192",
+      "publishedAt": "2026-10-09T00:42:36Z"
     },
     "google-photos-akashsriram-v7.96.0.993165104-arm-v7a.apk": {
       "name": "google-photos-akashsriram",
@@ -1740,10 +1740,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.14.1.mpp"
+        "Akash-Sriram/patches-1.14.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1757,8 +1757,8 @@
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260190",
-      "publishedAt": "2026-10-08T16:49:10Z"
+      "originBuild": "260192",
+      "publishedAt": "2026-10-09T00:42:36Z"
     },
     "google-photos-akashsriram-module-v7.96.0.993165104-arm64-v8a.zip": {
       "name": "google-photos-akashsriram",
@@ -1773,10 +1773,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.14.1.mpp"
+        "Akash-Sriram/patches-1.14.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.1"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.2"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1790,8 +1790,8 @@
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260190",
-      "publishedAt": "2026-10-08T16:49:10Z"
+      "originBuild": "260192",
+      "publishedAt": "2026-10-09T00:42:36Z"
     }
   }
 }
