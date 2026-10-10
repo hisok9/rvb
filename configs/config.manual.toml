@@ -35,6 +35,7 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/youtube-app/com.google.android.youtube"
 apkcombo-dlurl = "https://apkcombo.com/youtube/com.google.android.youtube"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.youtube"
+
 [YouTubeMusic-Morphe]
 enabled = true
 pkg-name = "com.google.android.apps.youtube.music"
@@ -48,6 +49,7 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/youtube-music/com.google.android.apps.youtube.music"
 apkcombo-dlurl = "https://apkcombo.com/youtube-music/com.google.android.apps.youtube.music"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.google.android.apps.youtube.music"
+
 [Truecaller-bufferk]
 enabled = true
 pkg-name = "com.truecaller"
@@ -59,6 +61,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/tr
 uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
+
 [Truecaller-Paresh]
 enabled = true
 pkg-name = "com.truecaller"
@@ -70,6 +73,7 @@ patches-source-host = "gitlab"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
 uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
+
 [CamScanner-hoodles]
 enabled = true
 pkg-name = "com.intsig.camscanner"
@@ -82,6 +86,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf
 uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"
 apkcombo-dlurl = "https://apkcombo.com/camscanner/com.intsig.camscanner"
+
 [CamScanner-rushiranpise]
 enabled = true
 pkg-name = "com.intsig.camscanner"
@@ -94,6 +99,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf
 uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"
 apkcombo-dlurl = "https://apkcombo.com/camscanner/com.intsig.camscanner"
+
 [GooglePhotos-DeVanced]
 enabled = true
 pkg-name = "com.google.android.apps.photos"
@@ -102,6 +108,7 @@ brand = "DeVanced"
 build-mode = "both"
 patches-source = "RookieEnough/De-Vanced"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+
 [GooglePhotos-rushiranpise]
 enabled = true
 pkg-name = "com.google.android.apps.photos"
@@ -111,6 +118,7 @@ patches-source = "rushiranpise/morphe-patches"
 included-patches = "'AMOLED dark theme' 'Change package name' 'Enable DCIM folders backup control' 'Fix DCIM folder classification'"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+
 [GooglePhotos-AkashSriram]
 enabled = true
 pkg-name = "com.google.android.apps.photos"
@@ -120,6 +128,7 @@ build-mode = "both"
 patches-source = "Akash-Sriram/morphe-google-photos"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+
 [BraveBrowser-kveld9]
 enabled = true
 pkg-name = "com.brave.browser"
@@ -132,6 +141,7 @@ uptodown-dlurl = "https://brave-software-brave.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/brave-browser-private-ads-block/com.brave.browser"
 apkcombo-dlurl = "https://apkcombo.com/brave-browser/com.brave.browser"
 github-dlurl = "https://github.com/brave/brave-browser"
+
 [BraveBrowser-dh6k-Beta]
 enabled = true
 pkg-name = "com.brave.browser_beta"
@@ -139,12 +149,11 @@ app-name = "Brave Browser"
 brand = "dh6k"
 patches-source = "dh6k/morphe-patches"
 variant = "Beta"
-github-regex = "arm64-v8a: BraveMonoarm64\\.apk | arm-v7a: BraveMonoarm\\.apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser-beta"
 uptodown-dlurl = "https://brave-browser-beta.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/brave-browser-beta/com.brave.browser_beta"
 apkcombo-dlurl = "https://apkcombo.com/brave-beta/com.brave.browser_beta"
-github-dlurl = "https://github.com/brave/brave-browser"
+
 [BraveBrowser-dh6k-Nightly]
 enabled = true
 pkg-name = "com.brave.browser_nightly"
@@ -152,12 +161,11 @@ app-name = "Brave Browser"
 brand = "dh6k"
 patches-source = "dh6k/morphe-patches"
 variant = "Nightly"
-github-regex = "arm64-v8a: BraveMonoarm64\\.apk | arm-v7a: BraveMonoarm\\.apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser-nightly"
 uptodown-dlurl = "https://brave-browser-nightly.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/brave-nightly/com.brave.browser_nightly"
 apkcombo-dlurl = "https://apkcombo.com/brave-nightly/com.brave.browser_nightly"
-github-dlurl = "https://github.com/brave/brave-browser"
+
 [Duolingo-hoodles]
 enabled = true
 pkg-name = "com.duolingo"
@@ -168,6 +176,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/duolingo/duolingo-duolingo"
 uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/duolingo-learn-languages/com.duolingo"
 apkcombo-dlurl = "https://apkcombo.com/duolingo/com.duolingo"
+
 [MicrosoftEdge-quantavil]
 enabled = true
 pkg-name = "com.microsoft.emmx"
@@ -176,6 +185,7 @@ brand = "quantavil"
 patches-source = "quantavil/edge-morphe-patches"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/microsoft-corporation/microsoft-edge"
 uptodown-dlurl = "https://microsoft-edge.en.uptodown.com/android"
+
 [Instagram-Aunali321]
 enabled = true
 pkg-name = "com.instagram.android"
@@ -185,6 +195,7 @@ patches-source = "Aunali321/ReVancedExperiments"
 cli-source = "ReVanced/revanced-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+
 [Instagram-brosssh]
 enabled = true
 pkg-name = "com.instagram.android"
@@ -194,6 +205,7 @@ patches-source = "brosssh/morphe-patches"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
+
 [Instagram-brosssh-Clone]
 enabled = true
 pkg-name = "com.instagram.android"
@@ -205,6 +217,7 @@ included-patches = "'Clone'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
+
 [Instagram-InstaFel]
 enabled = true
 pkg-name = "com.instagram.android"
@@ -215,6 +228,7 @@ cli-source = "instafel/p-rel"
 included-patches = "'unlock_developer_options' 'remove_snooze_warning' 'remove_ads' 'amoled_theme' 'instafel'"
 dpi = "480dpi nodpi anydpi auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+
 [Instagram-InstaFel-Clone]
 enabled = true
 pkg-name = "com.instagram.android"
@@ -226,6 +240,7 @@ variant = "Clone"
 included-patches = "'unlock_developer_options' 'remove_snooze_warning' 'remove_ads' 'amoled_theme' 'instafel' 'clone'"
 dpi = "480dpi nodpi anydpi auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+
 [Instagram-Piko]
 enabled = true
 pkg-name = "com.instagram.android"
@@ -236,6 +251,7 @@ patches-source = "crimera/piko"
 arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+
 [Instagram-Piko-Clone]
 enabled = true
 pkg-name = "com.instagram.android"
@@ -248,6 +264,7 @@ arch = "arm64-v8a"
 included-patches = "'Clone'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+
 [Instagram-HushGram]
 enabled = true
 pkg-name = "com.instagram.android"
@@ -259,6 +276,7 @@ inclusive-patches = true
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
+
 [ProtonVPN-hoodles]
 enabled = true
 pkg-name = "ch.protonvpn.android"
@@ -268,6 +286,7 @@ patches-source = "hoo-dles/morphe-patches"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"
 uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonvpn.android"
+
 [ProtonVPN-Paresh]
 enabled = true
 pkg-name = "ch.protonvpn.android"

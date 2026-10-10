@@ -27,6 +27,14 @@ Build-pruning + fork setup. Local checkout: `data`.
   Output files never collide — `file_prefix` appends `variant`, which is what
   separates the Clone / Beta / Nightly tables.
 
+- **Brave Beta/Nightly — `github-dlurl` removed:** with no pinned version the
+  engine takes the newest GitHub release *named* `Beta`/`Nightly`, and Brave only
+  sometimes attaches Android APKs to those (`v1.98.53` → 0 APKs → 404; `v1.98.52`
+  → 5). Once that phantom version is chosen every later source is asked for it
+  by name, so the whole chain fails. Version now comes from APKMirror (Beta
+  `1.98.52`, Nightly `1.99.26`). `BraveBrowser-kveld9` keeps GitHub — its bundle
+  pins `1.97.56`, whose tag does carry the APKs.
+
 - **Mechanism:** `enabled = false` **on each table**, never file-level —
   `build.sh:168` does `toml_get "$t" enabled) || enabled=true` (table only, falls
   back to *true*). Deleting the line re-enables. Config was never deleted.
