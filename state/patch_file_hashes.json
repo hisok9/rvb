@@ -60,14 +60,20 @@
       "tv.twitch.android.app": "ae990bd92ef0f6fb56cab8da0398e711"
     }
   },
+  "aunali321/revancedexperiments": {
+    "beta": {},
+    "stable": {
+      "com.instagram.android": "ff2d1822f9ce7a3cbef9c47effbd2b1f",
+      "shared": "1c29accc9255fcf425f6651eea76d7d3"
+    }
+  },
   "brosssh/morphe-patches": {
     "beta": {
-      "com.instagram.android": "efab2a964a11129ee3e218a482255ae3",
+      "com.instagram.android": "c964a1c3f7d643bebcb3c27e4b86487c",
       "shared": "e8477a3349f8bb6238d3bdfde82b803b"
     },
     "stable": {
       "com.instagram.android": "efab2a964a11129ee3e218a482255ae3",
-      "de.komoot.android": "0277a67a65d165f8c41b799a592891f4",
       "shared": "e8477a3349f8bb6238d3bdfde82b803b"
     }
   },
@@ -94,14 +100,12 @@
   },
   "crimera/piko": {
     "beta": {
-      "com.instagram.android": "d11a308bd5975b1e031bd75b79b677ab",
-      "com.twitter.android": "fdffc390c593cfc8f0ba76cc093b18b6",
-      "shared": "fd0f7f25f8b90543c362c99530812b52"
+      "com.instagram.android": "90b1539aa4fd996d64df92684f5747b4",
+      "shared": "af8e6b25a156bf0a8dd0cc8a238f9f09"
     },
     "stable": {
-      "com.instagram.android": "084b5083d2993f8e93436d3ba6df3d7d",
-      "com.twitter.android": "f503d93628dc092e6780f615fef2f6e2",
-      "shared": "b6714c5dbdf40c5dc2eb2bfd60c3667e"
+      "com.instagram.android": "90b1539aa4fd996d64df92684f5747b4",
+      "shared": "af8e6b25a156bf0a8dd0cc8a238f9f09"
     }
   },
   "dh6k/morphe-patches": {
@@ -109,7 +113,6 @@
     "stable": {
       "com.brave.browser_beta": "3d2dfc1a69fefa9a5107989f38a0dc51",
       "com.brave.browser_nightly": "3d2dfc1a69fefa9a5107989f38a0dc51",
-      "io.github.jqssun.helium": "979f66bbe1c474fd48ae82036a018e82",
       "shared": "e8e5b76bb4511041f43aa0f19ece4ab0"
     }
   },
@@ -265,10 +268,8 @@
   "kveld9/kveld-morphe-patches": {
     "beta": {},
     "stable": {
-      "com.brave.browser": "90dcc6e9c635e251ccc00f479e28e5ff",
-      "com.ss.android.ugc.trill": "dc46ac5a483e5c0c1e495bcbbe489ccf",
-      "com.zhiliaoapp.musically": "8f638913e06ae43b1bf918b8e621d8de",
-      "shared": "88362a78639b4cf9eeb42c6d2e528bbb"
+      "com.brave.browser": "e28ae25ccfbde61a80e52966b0ed943e",
+      "shared": "20e38d5dac141154eadf7dd09150a450"
     }
   },
   "liongalahad/nuviotv-morphe-patches": {
@@ -281,7 +282,7 @@
   "morpheapp/morphe-patches": {
     "beta": {
       "com.google.android.apps.youtube.music": "85cc05ef5c59f39524e30d9bbc273781",
-      "com.google.android.youtube": "81cf7e2ac075fe284edbf53bc5bf4e44",
+      "com.google.android.youtube": "2bad6772d15f7203431fd91b4a0d2d2e",
       "shared": "b723e5d632ba985c63d8a3dfce2f8673"
     },
     "stable": {
@@ -421,8 +422,8 @@
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "1e4c93bba6f25d5bfdb2d130d52f1e02",
-      "shared": "cc8e14634cd283868c34baa25c952acc"
+      "com.instagram.android": "4892975b60d0f85225714e03fddd105d",
+      "shared": "014be086a5df3a4a765c08b771eb8768"
     }
   },
   "sysadmindoc/hushmessenger": {
