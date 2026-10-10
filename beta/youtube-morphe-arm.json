@@ -1,6 +1,6 @@
 {
-  "version": "v21.20.405 (patches dev.19.mpp)",
-  "versionCode": 260200,
+  "version": "v21.20.405 (patches dev.20.mpp)",
+  "versionCode": 260202,
   "zipUrl": "https://github.com/hisok9/rvb/releases/download/beta/youtube-morphe-module-v21.20.405-arm-v7a.zip",
-  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260200.md"
+  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260202.md"
 }
