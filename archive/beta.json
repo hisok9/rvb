@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-10T13:10:13Z"
+    "publishedAt": "2026-10-10T16:47:49Z"
   },
   "files": {
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
@@ -884,10 +884,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.18.mpp"
+        "MorpheApp/patches-1.47.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.19"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -984,8 +984,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260199",
-      "publishedAt": "2026-10-10T13:09:47Z"
+      "originBuild": "260200",
+      "publishedAt": "2026-10-10T16:47:30Z"
     },
     "youtube-morphe-module-v21.20.405-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1000,10 +1000,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.18.mpp"
+        "MorpheApp/patches-1.47.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.19"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1100,8 +1100,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260199",
-      "publishedAt": "2026-10-10T13:09:47Z"
+      "originBuild": "260200",
+      "publishedAt": "2026-10-10T16:47:30Z"
     },
     "youtube-morphe-module-v21.20.405-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -1116,10 +1116,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.18.mpp"
+        "MorpheApp/patches-1.47.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.19"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1216,8 +1216,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260199",
-      "publishedAt": "2026-10-10T13:09:47Z"
+      "originBuild": "260200",
+      "publishedAt": "2026-10-10T16:47:30Z"
     },
     "youtube-morphe-v21.20.405-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1232,10 +1232,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.18.mpp"
+        "MorpheApp/patches-1.47.0-dev.19.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.18"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.19"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1332,8 +1332,146 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260199",
-      "publishedAt": "2026-10-10T13:09:47Z"
+      "originBuild": "260200",
+      "publishedAt": "2026-10-10T16:47:30Z"
+    },
+    "instagram-brosssh-clone-v439.0.0.37.89-arm-v7a.apk": {
+      "name": "instagram-brosssh-clone",
+      "version": "439.0.0.37.89",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "brosssh",
+      "brandName": "brosssh",
+      "variant": "Clone",
+      "subVariant": null,
+      "packageName": "com.instagram.android.brosssh",
+      "patchSources": [
+        "brosssh/patches-2.8.3-dev.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/brosssh/morphe-patches/releases/tag/v2.8.3-dev.2"
+      ],
+      "appliedPatches": [
+        "Bypass signature check",
+        "Clone",
+        "Disable Reels scrolling",
+        "Disable story auto flipping",
+        "Hide ads",
+        "Hide explore feed",
+        "Hide navigation buttons",
+        "Hide notes tray",
+        "Hide reshare button",
+        "Hide suggested content",
+        "Limit feed to following profiles",
+        "Remove build expired popup"
+      ],
+      "originBuild": "260200",
+      "publishedAt": "2026-10-10T16:47:30Z"
+    },
+    "instagram-brosssh-clone-v439.0.0.37.89-arm64-v8a.apk": {
+      "name": "instagram-brosssh-clone",
+      "version": "439.0.0.37.89",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "brosssh",
+      "brandName": "brosssh",
+      "variant": "Clone",
+      "subVariant": null,
+      "packageName": "com.instagram.android.brosssh",
+      "patchSources": [
+        "brosssh/patches-2.8.3-dev.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/brosssh/morphe-patches/releases/tag/v2.8.3-dev.2"
+      ],
+      "appliedPatches": [
+        "Bypass signature check",
+        "Clone",
+        "Disable Reels scrolling",
+        "Disable story auto flipping",
+        "Hide ads",
+        "Hide explore feed",
+        "Hide navigation buttons",
+        "Hide notes tray",
+        "Hide reshare button",
+        "Hide suggested content",
+        "Limit feed to following profiles",
+        "Remove build expired popup"
+      ],
+      "originBuild": "260200",
+      "publishedAt": "2026-10-10T16:47:30Z"
+    },
+    "instagram-brosssh-v439.0.0.37.89-arm-v7a.apk": {
+      "name": "instagram-brosssh",
+      "version": "439.0.0.37.89",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "brosssh",
+      "brandName": "brosssh",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "brosssh/patches-2.8.3-dev.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/brosssh/morphe-patches/releases/tag/v2.8.3-dev.2"
+      ],
+      "appliedPatches": [
+        "Bypass signature check",
+        "Disable Reels scrolling",
+        "Disable story auto flipping",
+        "Hide ads",
+        "Hide explore feed",
+        "Hide navigation buttons",
+        "Hide notes tray",
+        "Hide reshare button",
+        "Hide suggested content",
+        "Limit feed to following profiles",
+        "Remove build expired popup"
+      ],
+      "originBuild": "260200",
+      "publishedAt": "2026-10-10T16:47:30Z"
+    },
+    "instagram-brosssh-v439.0.0.37.89-arm64-v8a.apk": {
+      "name": "instagram-brosssh",
+      "version": "439.0.0.37.89",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "brosssh",
+      "brandName": "brosssh",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "brosssh/patches-2.8.3-dev.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/brosssh/morphe-patches/releases/tag/v2.8.3-dev.2"
+      ],
+      "appliedPatches": [
+        "Bypass signature check",
+        "Disable Reels scrolling",
+        "Disable story auto flipping",
+        "Hide ads",
+        "Hide explore feed",
+        "Hide navigation buttons",
+        "Hide notes tray",
+        "Hide reshare button",
+        "Hide suggested content",
+        "Limit feed to following profiles",
+        "Remove build expired popup"
+      ],
+      "originBuild": "260200",
+      "publishedAt": "2026-10-10T16:47:30Z"
     }
   }
 }
