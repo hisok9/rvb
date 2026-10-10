@@ -2,7 +2,7 @@ patches-source = "quantavil/edge-morphe-patches"
 brand = "quantavil"
 
 [MicrosoftEdge-quantavil]
-enabled = false
+enabled = true
 pkg-name = "com.microsoft.emmx"
 app-name = "Microsoft Edge"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/microsoft-corporation/microsoft-edge"

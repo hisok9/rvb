@@ -12,7 +12,7 @@ apkpure-dlurl = "https://apkpure.com/sound-cloud-android-app/com.soundcloud.andr
 apkcombo-dlurl = "https://apkcombo.com/soundcloud/com.soundcloud.android"
 
 [Duolingo-hoodles]
-enabled = false
+enabled = true
 pkg-name = "com.duolingo"
 app-name = "Duolingo"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/duolingo/duolingo-duolingo"
@@ -157,7 +157,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/github/github-2"
 uptodown-dlurl = "https://github-android.en.uptodown.com/android"
 
 [ProtonVPN-hoodles]
-enabled = false
+enabled = true
 pkg-name = "ch.protonvpn.android"
 app-name = "Proton VPN"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"

@@ -1,5 +1,5 @@
 [Instagram-Aunali321]
-enabled = false
+enabled = true
 pkg-name = "com.instagram.android"
 app-name = "Instagram"
 patches-source = "Aunali321/ReVancedExperiments"
@@ -9,7 +9,7 @@ uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 
 [Instagram-brosssh]
-enabled = false
+enabled = true
 pkg-name = "com.instagram.android"
 app-name = "Instagram"
 patches-version = "both"
@@ -20,7 +20,7 @@ uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
 
 [Instagram-brosssh-Clone]
-enabled = false
+enabled = true
 pkg-name = "com.instagram.android"
 app-name = "Instagram"
 variant = "Clone"
@@ -33,7 +33,7 @@ uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
 
 [Instagram-InstaFel]
-enabled = false
+enabled = true
 pkg-name = "com.instagram.android"
 app-name = "Instagram"
 patches-source = "instafel/pc-rel"
@@ -44,7 +44,7 @@ dpi = "480dpi nodpi anydpi auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 
 [Instagram-InstaFel-Clone]
-enabled = false
+enabled = true
 pkg-name = "com.instagram.android"
 app-name = "Instagram"
 patches-source = "instafel/pc-rel"
@@ -56,7 +56,7 @@ dpi = "480dpi nodpi anydpi auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 
 [Instagram-Piko]
-enabled = false
+enabled = true
 pkg-name = "com.instagram.android"
 app-name = "Instagram"
 patches-source = "crimera/piko"
@@ -68,7 +68,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 
 [Instagram-Piko-Clone]
-enabled = false
+enabled = true
 pkg-name = "com.instagram.android"
 app-name = "Instagram"
 sub-variant = "Clone"
@@ -82,7 +82,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 
 [Instagram-HushGram]
-enabled = false
+enabled = true
 pkg-name = "com.instagram.android"
 app-name = "Instagram"
 patches-source = "SysAdminDoc/HushGram"

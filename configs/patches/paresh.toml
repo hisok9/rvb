@@ -48,7 +48,7 @@ apkpure-dlurl = "https://apkpure.com/sd-maid-2-se-system-cleaner/eu.darken.sdmse
 apkcombo-dlurl = "https://apkcombo.com/sd-maid-2-se-system-cleaner/eu.darken.sdmse"
 
 [ProtonVPN-Paresh]
-enabled = false
+enabled = true
 pkg-name = "ch.protonvpn.android"
 app-name = "Proton VPN"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"

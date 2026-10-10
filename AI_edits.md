@@ -6,26 +6,33 @@ Build-pruning + fork setup. Local checkout: `data`.
 
 ## Scope
 
-- **9 keepers** in `configs/patches/*.toml` (43 files, 184 tables → 175 flips):
+- **24 keepers** in `configs/patches/*.toml` (43 files, 184 tables → 160 flips):
 
   | File | Keep |
   |---|---|
   | `photos.toml` | `GooglePhotos-DeVanced`, `GooglePhotos-rushiranpise`, `GooglePhotos-AkashSriram` |
   | `morphe.toml` | `YouTube-Morphe`, `YouTubeMusic-Morphe` |
   | `bufferk.toml` | `Truecaller-bufferk` |
-  | `paresh.toml` | `Truecaller-Paresh` |
-  | `hoodles.toml` | `CamScanner-hoodles` |
+  | `paresh.toml` | `Truecaller-Paresh`, `ProtonVPN-Paresh` |
+  | `hoodles.toml` | `CamScanner-hoodles`, `Duolingo-hoodles`, `ProtonVPN-hoodles` |
   | `rushiranpise.toml` | `CamScanner-rushiranpise` |
+  | `kveld9.toml` | `BraveBrowser-kveld9` |
+  | `dh6k.toml` | `BraveBrowser-dh6k-Beta`, `BraveBrowser-dh6k-Nightly` |
+  | `quantavil.toml` | `MicrosoftEdge-quantavil` |
+  | `instagram.toml` | `Instagram-Aunali321`, `-brosssh`, `-brosssh-Clone`, `-InstaFel`, `-InstaFel-Clone`, `-Piko`, `-Piko-Clone`, `-HushGram` |
 
-  The two CamScanner keepers share `pkg-name = com.intsig.camscanner` and our key,
-  so only one installs at a time — rushiranpise (`7.24.5`) upgrades over hoodles
-  (`7.20.0`); going back needs an uninstall first.
+  **Shared `pkg-name` = one installs at a time** (5 groups): 8 Instagram tables,
+  3 Google Photos, 2 each for CamScanner (`rushiranpise` 7.24.5 upgrades over
+  `hoodles` 7.20.0; going back needs an uninstall), Truecaller, Proton VPN.
+  Output files never collide — `file_prefix` appends `variant`, which is what
+  separates the Clone / Beta / Nightly tables.
 
 - **Mechanism:** `enabled = false` **on each table**, never file-level —
   `build.sh:168` does `toml_get "$t" enabled) || enabled=true` (table only, falls
   back to *true*). Deleting the line re-enables. Config was never deleted.
-- **Pools:** `compile_patch_configs.py` → stable = 9, beta = 4
-  (beta = the 4 keepers with `patches-version = "both"`).
+- **Pools:** `compile_patch_configs.py` → stable = 24, beta = 8
+  (beta = the 8 keepers with `patches-version = "both"`: YouTube ×2,
+  `Truecaller-bufferk`, `GooglePhotos-DeVanced`, Instagram `brosssh` ×2 + `Piko` ×2).
 - **Never touched:** `TG_TOKEN` (unset → notify skips), `APKS_REPO` (unset).
 
 ---
@@ -50,7 +57,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 | Fork inherits upstream's *generated* `configs/*_build.json` (17 apps), not your TOMLs | self-corrects on the first `ANYTHING_CHANGED=1` run (steps 7→8 order guarantees it) |
 | `ANYTHING_CHANGED` never looks at TOMLs — flipping `enabled` sets no trigger | step 3 (base compile) always runs; steps 7 & 12 wait for an upstream signal |
 | inherited `archive/beta.json` on `website` | **deleted** — `merge_archive_branch.sh:47` has an absent-case `else`; no `beta` release exists so it was never read |
-| `config.manual.toml` | now the `GooglePhotos-AkashSriram` fixture |
+| `config.manual.toml` | the 24-keeper fixture (regenerated, byte-equal to compile) |
 | `data` branch has **no `.gitignore`** | keep scratch files outside the repo |
 
 ---
@@ -189,5 +196,5 @@ and the **Magisk module** `versionCode` (`utils.sh:4818`). The APK's Android
 
 - Catalog sizes stale by 4–8 B (`data.json` predates run #3) — URLs fine, self-heals
   at `Rebuild Catalog` (`23 */6 * * *`). Dispatch needs **admin**
-- `CamScanner-rushiranpise` (9th keeper) has never built — next Manual CI or cron.
+- The 15 newly enabled keepers have never built — next Manual CI or cron.
 - Release `260176` still holds old-key APKs; nothing links to it, safe to delete.
