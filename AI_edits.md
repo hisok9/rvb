@@ -6,14 +6,14 @@ Build-pruning + fork setup. Local checkout: `data`.
 
 ## Scope
 
-- **24 keepers** in `configs/patches/*.toml` (43 files, 184 tables → 160 flips):
+- **23 keepers** in `configs/patches/*.toml` (43 files, 184 tables → 161 flips):
 
   | File | Keep |
   |---|---|
   | `photos.toml` | `GooglePhotos-DeVanced`, `GooglePhotos-rushiranpise`, `GooglePhotos-AkashSriram` |
   | `morphe.toml` | `YouTube-Morphe`, `YouTubeMusic-Morphe` |
   | `bufferk.toml` | `Truecaller-bufferk` |
-  | `paresh.toml` | `Truecaller-Paresh`, `ProtonVPN-Paresh` |
+  | `paresh.toml` | `Truecaller-Paresh` |
   | `hoodles.toml` | `CamScanner-hoodles`, `Duolingo-hoodles`, `ProtonVPN-hoodles` |
   | `rushiranpise.toml` | `CamScanner-rushiranpise` |
   | `kveld9.toml` | `BraveBrowser-kveld9` |
@@ -21,11 +21,17 @@ Build-pruning + fork setup. Local checkout: `data`.
   | `quantavil.toml` | `MicrosoftEdge-quantavil` |
   | `instagram.toml` | `Instagram-Aunali321`, `-brosssh`, `-brosssh-Clone`, `-InstaFel`, `-InstaFel-Clone`, `-Piko`, `-Piko-Clone`, `-HushGram` |
 
-  **Shared `pkg-name` = one installs at a time** (5 groups): 8 Instagram tables,
+  **Shared `pkg-name` = one installs at a time** (4 groups): 8 Instagram tables,
   3 Google Photos, 2 each for CamScanner (`rushiranpise` 7.24.5 upgrades over
-  `hoodles` 7.20.0; going back needs an uninstall), Truecaller, Proton VPN.
+  `hoodles` 7.20.0; going back needs an uninstall) and Truecaller.
   Output files never collide — `file_prefix` appends `variant`, which is what
   separates the Clone / Beta / Nightly tables.
+
+- **`ProtonVPN-Paresh` re-disabled:** its bundle `patches-1.20.0.mpp` pins
+  5.19.72.0 and its `Proton VPN Premium` patch fails
+  `GetHasSubscriptionFingerprint` there (the other patch, `Disable telemetry`,
+  applies fine). Both arches fail. `ProtonVPN-hoodles` covers the same
+  `ch.protonvpn.android` and builds at 5.20.57.0, so nothing is lost.
 
 - **Brave Beta/Nightly — `github-dlurl` removed:** with no pinned version the
   engine takes the newest GitHub release *named* `Beta`/`Nightly`, and Brave only
@@ -38,7 +44,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 - **Mechanism:** `enabled = false` **on each table**, never file-level —
   `build.sh:168` does `toml_get "$t" enabled) || enabled=true` (table only, falls
   back to *true*). Deleting the line re-enables. Config was never deleted.
-- **Pools:** `compile_patch_configs.py` → stable = 24, beta = 8
+- **Pools:** `compile_patch_configs.py` → stable = 23, beta = 8
   (beta = the 8 keepers with `patches-version = "both"`: YouTube ×2,
   `Truecaller-bufferk`, `GooglePhotos-DeVanced`, Instagram `brosssh` ×2 + `Piko` ×2).
 - **Never touched:** `TG_TOKEN` (unset → notify skips), `APKS_REPO` (unset).
@@ -53,8 +59,8 @@ Build-pruning + fork setup. Local checkout: `data`.
 - Crons UTC: `00:11 04:46 08:08 12:52 16:29 20:03`. Or Actions → CI → Run workflow.
 - **Manual CI:** `manual-ci.yml` never recompiles — `build_resolve_context.sh` only
   reads `patches-version`. Its `config_file` default is now
-  `configs/config.manual.toml` = **the 15 newly added apps only**; `auto` still
-  compiles all 24 and is what the cron uses. The `*_build.json` choices were
+  `configs/config.manual.toml` = **the 14 newly enabled apps only**; `auto` still
+  compiles all 23 and is what the cron uses. The `*_build.json` choices were
   upstream-stale. (The default lives in `manual-ci.yml` on **`main`**; the fixture
   itself lives on **`data`**, which `build.yml` materialises.)
 - **Repo setting: Workflow permissions → Read and write.** `manual-ci.yml` declares
@@ -68,7 +74,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 | Fork inherits upstream's *generated* `configs/*_build.json` (17 apps), not your TOMLs | self-corrects on the first `ANYTHING_CHANGED=1` run (steps 7→8 order guarantees it) |
 | `ANYTHING_CHANGED` never looks at TOMLs — flipping `enabled` sets no trigger | step 3 (base compile) always runs; steps 7 & 12 wait for an upstream signal |
 | inherited `archive/beta.json` on `website` | **deleted** — `merge_archive_branch.sh:47` has an absent-case `else`; no `beta` release exists so it was never read |
-| `config.manual.toml` | the **15 newly added** apps only (byte-equal to compile merge) — Manual CI's default; the original 9 stay enabled in `patches/*.toml` for the cron |
+| `config.manual.toml` | the **14 newly enabled** apps only (table bodies byte-equal to the compile render) — Manual CI's default; the original 9 stay enabled in `patches/*.toml` for the cron |
 | `data` branch has **no `.gitignore`** | keep scratch files outside the repo |
 
 ---
@@ -207,6 +213,7 @@ and the **Magisk module** `versionCode` (`utils.sh:4818`). The APK's Android
 
 - Catalog sizes stale by 4–8 B (`data.json` predates run #3) — URLs fine, self-heals
   at `Rebuild Catalog` (`23 */6 * * *`). Dispatch needs **admin**
-- The 15 newly enabled keepers have never built — they are now Manual CI's
-  default set; dispatch it, or wait for the cron.
+- ~~The 15 newly enabled keepers have never built~~ — Manual CI run `38139881745`
+  built 14/15 (25 APKs); Brave Beta/Nightly both resolved from APKMirror.
+  `ProtonVPN-Paresh` is now disabled, so the fixture holds 14 tables.
 - Release `260176` still holds old-key APKs; nothing links to it, safe to delete.

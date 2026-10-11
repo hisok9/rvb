@@ -1,8 +1,8 @@
-# Manual CI fixture — the 15 newly added apps, as a frozen snapshot.
+# Manual CI fixture — the newly enabled apps, as a frozen snapshot.
 #
-# Manual CI's DEFAULT `config_file`, so a dispatch builds exactly these 15
+# Manual CI's DEFAULT `config_file`, so a dispatch builds exactly these 14
 # tables: Brave (stable + Beta + Nightly), Duolingo, Edge, Instagram x8,
-# Proton VPN x2. The original 9 keepers are still enabled in
+# Proton VPN. The original 9 keepers are still enabled in
 # configs/patches/*.toml and build from the cron, which compiles the whole
 # enabled set — they are deliberately not listed here.
 #
@@ -175,17 +175,6 @@ pkg-name = "ch.protonvpn.android"
 app-name = "Proton VPN"
 brand = "hoodles"
 patches-source = "hoo-dles/morphe-patches"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"
-uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonvpn.android"
-
-[ProtonVPN-Paresh]
-enabled = true
-pkg-name = "ch.protonvpn.android"
-app-name = "Proton VPN"
-brand = "Paresh"
-patches-source = "Paresh-Maheshwari/paresh-patches"
-patches-source-host = "gitlab"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"
 uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonvpn.android"
