@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-10T20:25:17Z"
+    "publishedAt": "2026-10-11T00:41:19Z"
   },
   "files": {
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
@@ -488,10 +488,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.20.mpp"
+        "MorpheApp/patches-1.47.0-dev.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.20"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.22"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -541,8 +541,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260202",
-      "publishedAt": "2026-10-10T20:24:51Z"
+      "originBuild": "260203",
+      "publishedAt": "2026-10-11T00:40:54Z"
     },
     "youtube-music-morphe-v9.20.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -557,10 +557,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.20.mpp"
+        "MorpheApp/patches-1.47.0-dev.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.20"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.22"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -610,8 +610,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260202",
-      "publishedAt": "2026-10-10T20:24:51Z"
+      "originBuild": "260203",
+      "publishedAt": "2026-10-11T00:40:54Z"
     },
     "youtube-music-morphe-v9.20.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -626,10 +626,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.20.mpp"
+        "MorpheApp/patches-1.47.0-dev.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.20"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.22"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -679,8 +679,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260202",
-      "publishedAt": "2026-10-10T20:24:51Z"
+      "originBuild": "260203",
+      "publishedAt": "2026-10-11T00:40:54Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -695,10 +695,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.20.mpp"
+        "MorpheApp/patches-1.47.0-dev.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.20"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.22"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -748,8 +748,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260202",
-      "publishedAt": "2026-10-10T20:24:51Z"
+      "originBuild": "260203",
+      "publishedAt": "2026-10-11T00:40:54Z"
     },
     "truecaller-bufferk-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-bufferk",
@@ -884,10 +884,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.20.mpp"
+        "MorpheApp/patches-1.47.0-dev.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.20"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.22"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -928,6 +928,7 @@
         "Exit fullscreen mode",
         "Force fullscreen landscape",
         "Force original audio",
+        "Force system font",
         "Fullscreen video scale",
         "Hide Shorts components",
         "Hide ads",
@@ -984,8 +985,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260202",
-      "publishedAt": "2026-10-10T20:24:51Z"
+      "originBuild": "260203",
+      "publishedAt": "2026-10-11T00:40:54Z"
     },
     "youtube-morphe-module-v21.20.405-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1000,10 +1001,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.20.mpp"
+        "MorpheApp/patches-1.47.0-dev.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.20"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.22"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1044,6 +1045,7 @@
         "Exit fullscreen mode",
         "Force fullscreen landscape",
         "Force original audio",
+        "Force system font",
         "Fullscreen video scale",
         "Hide Shorts components",
         "Hide ads",
@@ -1100,8 +1102,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260202",
-      "publishedAt": "2026-10-10T20:24:51Z"
+      "originBuild": "260203",
+      "publishedAt": "2026-10-11T00:40:54Z"
     },
     "youtube-morphe-module-v21.20.405-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -1116,10 +1118,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.20.mpp"
+        "MorpheApp/patches-1.47.0-dev.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.20"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.22"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1160,6 +1162,7 @@
         "Exit fullscreen mode",
         "Force fullscreen landscape",
         "Force original audio",
+        "Force system font",
         "Fullscreen video scale",
         "Hide Shorts components",
         "Hide ads",
@@ -1216,8 +1219,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260202",
-      "publishedAt": "2026-10-10T20:24:51Z"
+      "originBuild": "260203",
+      "publishedAt": "2026-10-11T00:40:54Z"
     },
     "youtube-morphe-v21.20.405-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1232,10 +1235,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.47.0-dev.20.mpp"
+        "MorpheApp/patches-1.47.0-dev.22.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.20"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0-dev.22"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1276,6 +1279,7 @@
         "Exit fullscreen mode",
         "Force fullscreen landscape",
         "Force original audio",
+        "Force system font",
         "Fullscreen video scale",
         "Hide Shorts components",
         "Hide ads",
@@ -1332,8 +1336,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260202",
-      "publishedAt": "2026-10-10T20:24:51Z"
+      "originBuild": "260203",
+      "publishedAt": "2026-10-11T00:40:54Z"
     },
     "instagram-brosssh-clone-v439.0.0.37.89-arm-v7a.apk": {
       "name": "instagram-brosssh-clone",
