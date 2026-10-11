@@ -6,7 +6,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 
 ## Scope
 
-- **23 keepers** in `configs/patches/*.toml` (43 files, 184 tables → 161 flips):
+- **23 keepers** in `configs/patches/*.toml` (54 files, 193 tables → 170 flips):
 
   | File | Keep |
   |---|---|
@@ -48,6 +48,31 @@ Build-pruning + fork setup. Local checkout: `data`.
   (beta = the 8 keepers with `patches-version = "both"`: YouTube ×2,
   `Truecaller-bufferk`, `GooglePhotos-DeVanced`, Instagram `brosssh` ×2 + `Piko` ×2).
 - **Never touched:** `TG_TOKEN` (unset → notify skips), `APKS_REPO` (unset).
+
+---
+
+## Upstream sync
+
+- `git sync` = `/opt/homebrew/bin/git-sync`: fetches `origin` + `upstream`, then per
+  local branch merges `origin/<b>` then `upstream/<b>`. Merges only, never rebases,
+  **never pushes** — upstream's push URL is `DISABLED`, so `git push upstream` fails.
+  `--dry-run` / `-h`. Conflicts abort that one branch and leave it untouched.
+- Merged `upstream/data` in `43214421` (17 conflicts). Upstream regrouped
+  `configs/patches/` **per-app** (`5532efc4`) and dropped stale files (`7ee018bc`).
+- **`morphe.toml` + `anddea.toml` deleted — nothing lost:** all 14 of their tables
+  are in upstream's `youtube.toml` / `youtube-music.toml` / `reddit.toml`.
+- **Our enabled set is preserved exactly (23).** Upstream's copy of every keeper was
+  already `enabled = true`, so taking their layout was safe.
+- **Two tables upstream lacks, restored by hand** — they sat inside conflict hunks:
+  `CamScanner-rushiranpise` (keeper, pinned 7.24.5) and `TikTok-kveld9-Asia`.
+- **Restored our own keys** upstream never had: `CamScanner-hoodles` `version`
+  (7.20.0 pin) and `YouTube-Morphe` `excluded-patches = "'Custom branding'"`.
+- **9 new tables came in `enabled = false`** for separate review, not silently:
+  Fdroid-patchweaver, Flipkart-debakarr, GoogleMaps-bearinmindcat,
+  Letterboxd-mvaishak (+ `-MaterialYou`), Meesho-debakarr, ProtonVPN-hxreborn,
+  Terabox-hxreborn, Termius-rushiranpise.
+- Upstream also trimmed `archive-dlurl` from several keepers (their `fb440d23` /
+  restructure) — kept as-is, it is only a fallback source.
 
 ---
 
