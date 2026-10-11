@@ -52,8 +52,11 @@ Build-pruning + fork setup. Local checkout: `data`.
   matches only `scripts/`, `.github/traces/**`. A `configs/**` push runs nothing.
 - Crons UTC: `00:11 04:46 08:08 12:52 16:29 20:03`. Or Actions → CI → Run workflow.
 - **Manual CI:** `manual-ci.yml` never recompiles — `build_resolve_context.sh` only
-  reads `patches-version`. Use `config_file=configs/config.manual.toml`
-  (deterministic hand-written TOML). The `*_build.json` choices were upstream-stale.
+  reads `patches-version`. Its `config_file` default is now
+  `configs/config.manual.toml` = **the 15 newly added apps only**; `auto` still
+  compiles all 24 and is what the cron uses. The `*_build.json` choices were
+  upstream-stale. (The default lives in `manual-ci.yml` on **`main`**; the fixture
+  itself lives on **`data`**, which `build.yml` materialises.)
 - **Repo setting: Workflow permissions → Read and write.** `manual-ci.yml` declares
   **no `permissions:` block**, and `ci.yml`'s `build_beta`/`build_stable` don't
   either, while the nested `build.yml` requests `contents: write`.
@@ -65,7 +68,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 | Fork inherits upstream's *generated* `configs/*_build.json` (17 apps), not your TOMLs | self-corrects on the first `ANYTHING_CHANGED=1` run (steps 7→8 order guarantees it) |
 | `ANYTHING_CHANGED` never looks at TOMLs — flipping `enabled` sets no trigger | step 3 (base compile) always runs; steps 7 & 12 wait for an upstream signal |
 | inherited `archive/beta.json` on `website` | **deleted** — `merge_archive_branch.sh:47` has an absent-case `else`; no `beta` release exists so it was never read |
-| `config.manual.toml` | the 24-keeper fixture (regenerated, byte-equal to compile) |
+| `config.manual.toml` | the **15 newly added** apps only (byte-equal to compile merge) — Manual CI's default; the original 9 stay enabled in `patches/*.toml` for the cron |
 | `data` branch has **no `.gitignore`** | keep scratch files outside the repo |
 
 ---
@@ -204,5 +207,6 @@ and the **Magisk module** `versionCode` (`utils.sh:4818`). The APK's Android
 
 - Catalog sizes stale by 4–8 B (`data.json` predates run #3) — URLs fine, self-heals
   at `Rebuild Catalog` (`23 */6 * * *`). Dispatch needs **admin**
-- The 15 newly enabled keepers have never built — next Manual CI or cron.
+- The 15 newly enabled keepers have never built — they are now Manual CI's
+  default set; dispatch it, or wait for the cron.
 - Release `260176` still holds old-key APKs; nothing links to it, safe to delete.
