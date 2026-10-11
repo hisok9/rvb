@@ -1,16 +1,6 @@
 patches-source = "hoo-dles/morphe-patches"
 brand = "hoodles"
 
-[SoundCloud-hoodles]
-enabled = false
-pkg-name = "com.soundcloud.android"
-app-name = "SoundCloud"
-included-patches = "'AMOLED dark theme'"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/soundcloud/soundcloud-soundcloud"
-uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/sound-cloud-android-app/com.soundcloud.android"
-apkcombo-dlurl = "https://apkcombo.com/soundcloud/com.soundcloud.android"
-
 [Duolingo-hoodles]
 enabled = true
 pkg-name = "com.duolingo"
@@ -106,15 +96,6 @@ apkpure-dlurl = "https://apkpure.com/screen-recorder-xrecorder-app/videoeditor.v
 apkcombo-dlurl = "https://apkcombo.com/xrecorder/videoeditor.videorecorder.screenrecorder"
 uptodown-dlurl = "https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android"
 
-[AdGuard-hoodles]
-enabled = false
-pkg-name = "com.adguard.android"
-app-name = "AdGuard"
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard"
-uptodown-dlurl = "https://adguard-for-android.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/adguard/com.adguard.android"
-
 [NovaLauncher-hoodles]
 enabled = false
 pkg-name = "com.teslacoilsw.launcher"
@@ -155,14 +136,6 @@ app-name = "GitHub"
 included-patches = "'AMOLED dark theme'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/github/github-2"
 uptodown-dlurl = "https://github-android.en.uptodown.com/android"
-
-[ProtonVPN-hoodles]
-enabled = true
-pkg-name = "ch.protonvpn.android"
-app-name = "Proton VPN"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"
-uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonvpn.android"
 
 [HelloChinese-hoodles]
 enabled = false

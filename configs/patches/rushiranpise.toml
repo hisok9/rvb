@@ -1,15 +1,6 @@
 patches-source = "rushiranpise/morphe-patches"
 brand = "rushiranpise"
 
-[AdGuard-rushiranpise-Nightly]
-enabled = false
-pkg-name = "com.adguard.android"
-app-name = "AdGuard"
-variant = "Nightly"
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard"
-uptodown-dlurl = "https://adguard-for-android.en.uptodown.com/android"
-
 [Cloudflare-WARP-rushiranpise]
 enabled = false
 pkg-name = "com.cloudflare.onedotonedotonedotone"
@@ -113,15 +104,6 @@ uptodown-dlurl = "https://bluetooth-keyboard-and-mouse.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/bluetooth-keyboard-mouse/io.appground.blek"
 apkcombo-dlurl = "https://apkcombo.com/bluetooth-keyboard-mouse/io.appground.blek"
 
-[MacroDroid-rushiranpise]
-enabled = false
-pkg-name = "com.arlosoft.macrodroid"
-app-name = "MacroDroid"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/arlosoft/macrodroid-device-automation-2"
-uptodown-dlurl = "https://macrodroid.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/macrodroid-device-automation-app/com.arlosoft.macrodroid"
-apkcombo-dlurl = "https://apkcombo.com/macrodroid/com.arlosoft.macrodroid"
-
 [SendFilesToTV-rushiranpise]
 enabled = false
 pkg-name = "com.yablio.sendfilestotv"
@@ -138,16 +120,6 @@ app-name = "PicsArt"
 arch = "all"
 uptodown-dlurl = "https://picsart-estudio.en.uptodown.com/android"
 apkcombo-dlurl = "https://apkcombo.com/picsart/com.picsart.studio"
-
-[ProtonMail-rushiranpise]
-enabled = false
-pkg-name = "ch.protonmail.android"
-app-name = "Proton Mail"
-apkmirror-dlurl = "https://apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email"
-uptodown-dlurl = "https://protonmail.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/proton-mail-encrypted-email/ch.protonmail.android"
-apkcombo-dlurl = "https://apkcombo.com/proton-mail/ch.protonmail.android"
-archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonmail.android"
 
 [AdobeScan-rushiranpise]
 enabled = false
@@ -175,6 +147,16 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-shoppi
 uptodown-dlurl = "https://amazon-shopping.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/amazon-shopping/com.amazon.mShop.android.shopping"
 apkcombo-dlurl = "https://apkcombo.com/amazon-shopping/com.amazon.mShop.android.shopping"
+
+[Termius-rushiranpise]
+enabled = false
+pkg-name = "com.server.auditor.ssh.client"
+app-name = "Termius"
+patch-folder = "serverauditor"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/termius-corporation/termius-ssh-telnet-client"
+uptodown-dlurl = "https://serverauditor.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/termius-modern-ssh-client/com.server.auditor.ssh.client"
+
 
 [CamScanner-rushiranpise]
 enabled = true

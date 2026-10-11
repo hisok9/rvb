@@ -81,12 +81,3 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/netflix-inc/netflix-android-tv"
 uptodown-dlurl = "https://netflix-inc-netflix.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/netflix-android-tv-app/com.netflix.ninja"
 apkcombo-dlurl = "https://apkcombo.com/netflix-tv/com.netflix.ninja"
-
-[Twitch-ajstrick81-AndroidTV]
-enabled = false
-pkg-name = "tv.twitch.android.app"
-app-name = "Twitch"
-patch-folder = "twitchatv"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch-android-tv/"
-apkpure-dlurl = "https://apkpure.com/twitch-livestream-multiplayer-games-esports-app/tv.twitch.android.app"
-apkcombo-dlurl = "https://apkcombo.com/twitch/tv.twitch.android.app"

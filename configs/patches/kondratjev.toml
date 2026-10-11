@@ -9,12 +9,3 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/fatsecret/calorie-counter-by-fa
 uptodown-dlurl = "https://fatsecret-calorie-counter.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/calorie-counter-by-fatsecret/com.fatsecret.android"
 apkcombo-dlurl = "https://apkcombo.com/fatsecret/com.fatsecret.android"
-
-[SoundCloud-kondratjev]
-enabled = false
-pkg-name = "com.soundcloud.android"
-app-name = "SoundCloud"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/soundcloud/soundcloud-soundcloud"
-uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/sound-cloud-android-app/com.soundcloud.android"
-apkcombo-dlurl = "https://apkcombo.com/soundcloud/com.soundcloud.android"

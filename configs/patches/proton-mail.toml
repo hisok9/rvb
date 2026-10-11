@@ -2,8 +2,8 @@
 enabled = false
 pkg-name = "ch.protonmail.android"
 app-name = "Proton Mail"
-patches-source = "hxreborn/morphe-patches"
 brand = "hxreborn"
+patches-source = "hxreborn/morphe-patches"
 apkmirror-dlurl = "https://apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email"
 uptodown-dlurl = "https://protonmail.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/proton-mail-encrypted-email/ch.protonmail.android"
@@ -34,6 +34,14 @@ apkpure-dlurl = "https://apkpure.com/proton-mail-encrypted-email/ch.protonmail.a
 apkcombo-dlurl = "https://apkcombo.com/proton-mail/ch.protonmail.android"
 archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonmail.android"
 
-
-
-
+[ProtonMail-rushiranpise]
+enabled = false
+pkg-name = "ch.protonmail.android"
+app-name = "Proton Mail"
+patches-source = "rushiranpise/morphe-patches"
+brand = "rushiranpise"
+apkmirror-dlurl = "https://apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email"
+uptodown-dlurl = "https://protonmail.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/proton-mail-encrypted-email/ch.protonmail.android"
+apkcombo-dlurl = "https://apkcombo.com/proton-mail/ch.protonmail.android"
+archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonmail.android"

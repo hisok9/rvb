@@ -8,13 +8,6 @@ app-name = "Rumble"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/rumble-inc/rumble"
 uptodown-dlurl = "https://rumble.en.uptodown.com/android"
 
-[Twitch-hooman]
-enabled = false
-pkg-name = "tv.twitch.android.app"
-app-name = "Twitch"
-apkmirror-dlurl = "https://apkmirror.com/apk/twitch-interactive-inc/twitch"
-uptodown-dlurl = "https://twitch.en.uptodown.com/android"
-
 [BatteryGuru-hooman]
 enabled = false
 pkg-name = "com.paget96.batteryguru"

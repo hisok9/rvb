@@ -47,34 +47,9 @@ uptodown-dlurl = "https://sd-maid-se.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/sd-maid-2-se-system-cleaner/eu.darken.sdmse"
 apkcombo-dlurl = "https://apkcombo.com/sd-maid-2-se-system-cleaner/eu.darken.sdmse"
 
-[ProtonVPN-Paresh]
-enabled = false
-pkg-name = "ch.protonvpn.android"
-app-name = "Proton VPN"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"
-uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/geologically/apks/ch.protonvpn.android"
-
-[Truecaller-Paresh]
-enabled = true
-pkg-name = "com.truecaller"
-app-name = "Truecaller"
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
-uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
-
 [Fing-Paresh]
 enabled = false
 pkg-name = "com.overlook.android.fing"
 app-name = "Fing"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/fing-limited/fing-network-tools"
 uptodown-dlurl = "https://fing-network-tools.en.uptodown.com/android"
-
-[MacroDroid-Paresh]
-enabled = false
-pkg-name = "com.arlosoft.macrodroid"
-app-name = "MacroDroid"
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/arlosoft/macrodroid-device-automation-2"
-uptodown-dlurl = "https://macrodroid.en.uptodown.com/android"
