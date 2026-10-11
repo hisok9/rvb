@@ -6,7 +6,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 
 ## Scope
 
-- **23 keepers** in `configs/patches/*.toml` (54 files, 193 tables → 170 flips):
+- **24 keepers** in `configs/patches/*.toml` (54 files, 193 tables → 169 flips):
 
   | File | Keep |
   |---|---|
@@ -19,6 +19,7 @@ Build-pruning + fork setup. Local checkout: `data`.
   | `kveld9.toml` | `BraveBrowser-kveld9` |
   | `dh6k.toml` | `BraveBrowser-dh6k-Beta`, `BraveBrowser-dh6k-Nightly` |
   | `quantavil.toml` | `MicrosoftEdge-quantavil` |
+  | `bearinmindcat.toml` | `GoogleMaps-bearinmindcat` |
   | `instagram.toml` | `Instagram-Aunali321`, `-brosssh`, `-brosssh-Clone`, `-InstaFel`, `-InstaFel-Clone`, `-Piko`, `-Piko-Clone`, `-HushGram` |
 
   **Shared `pkg-name` = one installs at a time** (4 groups): 8 Instagram tables,
@@ -61,16 +62,21 @@ Build-pruning + fork setup. Local checkout: `data`.
   `configs/patches/` **per-app** (`5532efc4`) and dropped stale files (`7ee018bc`).
 - **`morphe.toml` + `anddea.toml` deleted — nothing lost:** all 14 of their tables
   are in upstream's `youtube.toml` / `youtube-music.toml` / `reddit.toml`.
-- **Our enabled set is preserved exactly (23).** Upstream's copy of every keeper was
-  already `enabled = true`, so taking their layout was safe.
+- **Our enabled set was preserved exactly (23) through the merge.** Upstream's copy
+  of every keeper was already `enabled = true`, so taking their layout was safe.
 - **Two tables upstream lacks, restored by hand** — they sat inside conflict hunks:
   `CamScanner-rushiranpise` (keeper, pinned 7.24.5) and `TikTok-kveld9-Asia`.
 - **Restored our own keys** upstream never had: `CamScanner-hoodles` `version`
   (7.20.0 pin) and `YouTube-Morphe` `excluded-patches = "'Custom branding'"`.
-- **9 new tables came in `enabled = false`** for separate review, not silently:
-  Fdroid-patchweaver, Flipkart-debakarr, GoogleMaps-bearinmindcat,
-  Letterboxd-mvaishak (+ `-MaterialYou`), Meesho-debakarr, ProtonVPN-hxreborn,
-  Terabox-hxreborn, Termius-rushiranpise.
+- **8 of the 9 new tables came in `enabled = false`** for separate review, not
+  silently: Fdroid-patchweaver, Flipkart-debakarr, Letterboxd-mvaishak
+  (+ `-MaterialYou`), Meesho-debakarr, ProtonVPN-hxreborn, Terabox-hxreborn,
+  Termius-rushiranpise.
+- **`GoogleMaps-bearinmindcat` enabled separately** — this is the app that had
+  been dropped as "no patch source available". The source is real: `v2.1.0`
+  ships `patches-2.1.0.mpp` with **136 Maps classes** under
+  `org/ungoogled/patches/maps/` (ads, offline, saved places, MicroG/GMS,
+  speedometer). Bumps the keeper set to **24** (stable 24 / beta 8).
 - Upstream also trimmed `archive-dlurl` from several keepers (their `fb440d23` /
   restructure) — kept as-is, it is only a fallback source.
 
@@ -84,10 +90,10 @@ Build-pruning + fork setup. Local checkout: `data`.
 - Crons UTC: `00:11 04:46 08:08 12:52 16:29 20:03`. Or Actions → CI → Run workflow.
 - **Manual CI:** `manual-ci.yml` never recompiles — `build_resolve_context.sh` only
   reads `patches-version`. Its `config_file` default is now
-  `configs/config.manual.toml` = **the 14 newly enabled apps only**; `auto` still
-  compiles all 23 and is what the cron uses. The `*_build.json` choices were
-  upstream-stale. (The default lives in `manual-ci.yml` on **`main`**; the fixture
-  itself lives on **`data`**, which `build.yml` materialises.)
+  `configs/config.manual.toml` = **Google Maps only** (a single-app smoke test);
+  `auto` still compiles all 24 and is what the cron uses. The `*_build.json`
+  choices were upstream-stale. (The default lives in `manual-ci.yml` on **`main`**;
+  the fixture itself lives on **`data`**, which `build.yml` materialises.)
 - **Repo setting: Workflow permissions → Read and write.** `manual-ci.yml` declares
   **no `permissions:` block**, and `ci.yml`'s `build_beta`/`build_stable` don't
   either, while the nested `build.yml` requests `contents: write`.
@@ -99,7 +105,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 | Fork inherits upstream's *generated* `configs/*_build.json` (17 apps), not your TOMLs | self-corrects on the first `ANYTHING_CHANGED=1` run (steps 7→8 order guarantees it) |
 | `ANYTHING_CHANGED` never looks at TOMLs — flipping `enabled` sets no trigger | step 3 (base compile) always runs; steps 7 & 12 wait for an upstream signal |
 | inherited `archive/beta.json` on `website` | **deleted** — `merge_archive_branch.sh:47` has an absent-case `else`; no `beta` release exists so it was never read |
-| `config.manual.toml` | the **14 newly enabled** apps only (table bodies byte-equal to the compile render) — Manual CI's default; the original 9 stay enabled in `patches/*.toml` for the cron |
+| `config.manual.toml` | **Google Maps only** (body byte-equal to the compile render) — Manual CI's default; it is a throwaway smoke-test set, *not* a copy of the keepers, so it shrinks to whatever is being trialled. The 24 keepers stay in `patches/*.toml` for the cron |
 | `data` branch has **no `.gitignore`** | keep scratch files outside the repo |
 
 ---
