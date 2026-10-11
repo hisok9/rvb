@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-10T17:04:51Z"
+    "publishedAt": "2026-10-11T13:03:10Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -1827,8 +1827,8 @@
         "Suppress In-App Promos & Surveys",
         "Tab Group Close Selection"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "brave-browser-kveld9-v1.97.56-arm64-v8a.apk": {
       "name": "brave-browser-kveld9",
@@ -1864,8 +1864,8 @@
         "Suppress In-App Promos & Surveys",
         "Tab Group Close Selection"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-aunali321-v450.0.0.50.77-arm64-v8a.apk": {
       "name": "instagram-aunali321",
@@ -1891,8 +1891,8 @@
         "Max Media Quality",
         "Selectable Bio"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-aunali321-v450.0.0.50.77-arm-v7a.apk": {
       "name": "instagram-aunali321",
@@ -1918,8 +1918,8 @@
         "Max Media Quality",
         "Selectable Bio"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-hushgram-v450.0.0.50.77-arm64-v8a.apk": {
       "name": "instagram-hushgram",
@@ -2020,8 +2020,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-instafel-clone-v450.0.0.50.77-arm64-v8a.apk": {
       "name": "instagram-instafel-clone",
@@ -2054,8 +2054,8 @@
         "Clone General",
         "Replace Instagram Strings"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-instafel-clone-v450.0.0.50.77-arm-v7a.apk": {
       "name": "instagram-instafel-clone",
@@ -2088,8 +2088,8 @@
         "Clone General",
         "Replace Instagram Strings"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-instafel-v450.0.0.50.77-arm-v7a.apk": {
       "name": "instagram-instafel",
@@ -2120,8 +2120,8 @@
         "Change Home Long Click",
         "Add App Trigger"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a.apk": {
       "name": "instagram-piko-clone",
@@ -2196,8 +2196,8 @@
         "Unlock developer options",
         "View story mentions"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-piko-v447.0.0.55.81-arm64-v8a.apk": {
       "name": "instagram-piko",
@@ -2271,8 +2271,8 @@
         "Unlock developer options",
         "View story mentions"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-piko-module-v447.0.0.55.81-arm64-v8a.zip": {
       "name": "instagram-piko",
@@ -2346,8 +2346,432 @@
         "Unlock developer options",
         "View story mentions"
       ],
-      "originBuild": "260201",
-      "publishedAt": "2026-10-10T17:04:19Z"
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "brave-browser-dh6k-beta-v1.98.52-arm-v7a.apk": {
+      "name": "brave-browser-dh6k-beta",
+      "version": "1.98.52",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "dh6k",
+      "brandName": "dh6k",
+      "variant": "Beta",
+      "subVariant": null,
+      "packageName": "com.brave.browser_beta",
+      "patchSources": [
+        "dh6k/patches-1.8.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/dh6k/morphe-patches/releases/tag/v1.8.0"
+      ],
+      "appliedPatches": [
+        "Brave Origin",
+        "Brave Startup Performance Optimization"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "brave-browser-dh6k-beta-v1.98.52-arm64-v8a.apk": {
+      "name": "brave-browser-dh6k-beta",
+      "version": "1.98.52",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "dh6k",
+      "brandName": "dh6k",
+      "variant": "Beta",
+      "subVariant": null,
+      "packageName": "com.brave.browser_beta",
+      "patchSources": [
+        "dh6k/patches-1.8.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/dh6k/morphe-patches/releases/tag/v1.8.0"
+      ],
+      "appliedPatches": [
+        "Brave Origin",
+        "Brave Startup Performance Optimization"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "brave-browser-dh6k-nightly-v1.99.26-arm-v7a.apk": {
+      "name": "brave-browser-dh6k-nightly",
+      "version": "1.99.26",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "dh6k",
+      "brandName": "dh6k",
+      "variant": "Nightly",
+      "subVariant": null,
+      "packageName": "com.brave.browser_nightly",
+      "patchSources": [
+        "dh6k/patches-1.8.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/dh6k/morphe-patches/releases/tag/v1.8.0"
+      ],
+      "appliedPatches": [
+        "Brave Origin",
+        "Brave Startup Performance Optimization"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "brave-browser-dh6k-nightly-v1.99.26-arm64-v8a.apk": {
+      "name": "brave-browser-dh6k-nightly",
+      "version": "1.99.26",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "dh6k",
+      "brandName": "dh6k",
+      "variant": "Nightly",
+      "subVariant": null,
+      "packageName": "com.brave.browser_nightly",
+      "patchSources": [
+        "dh6k/patches-1.8.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/dh6k/morphe-patches/releases/tag/v1.8.0"
+      ],
+      "appliedPatches": [
+        "Brave Origin",
+        "Brave Startup Performance Optimization"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "duolingo-hoodles-v6.98.4-arm-v7a.apk": {
+      "name": "duolingo-hoodles",
+      "version": "6.98.4",
+      "appKey": "duolingo",
+      "appName": "Duolingo",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "hoodles",
+      "brandName": "hoodles",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.duolingo",
+      "patchSources": [
+        "hoo-dles/patches-1.47.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0"
+      ],
+      "appliedPatches": [
+        "Enable Premium"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "duolingo-hoodles-v6.98.4-arm64-v8a.apk": {
+      "name": "duolingo-hoodles",
+      "version": "6.98.4",
+      "appKey": "duolingo",
+      "appName": "Duolingo",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hoodles",
+      "brandName": "hoodles",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.duolingo",
+      "patchSources": [
+        "hoo-dles/patches-1.47.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0"
+      ],
+      "appliedPatches": [
+        "Enable Premium"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "instagram-instafel-v450.0.0.50.77-arm64-v8a.apk": {
+      "name": "instagram-instafel",
+      "version": "450.0.0.50.77",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "instafel",
+      "brandName": "Instafel",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "instafel/ifl-patcher-core-db441b9.jar"
+      ],
+      "changelogs": [
+        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
+      ],
+      "appliedPatches": [
+        "Unlock Developer Options",
+        "Remove Snooze Warning",
+        "Remove Ads",
+        "AMOLED Theme",
+        "Get Generation Info",
+        "Copy Instafel Sources",
+        "Add Initialize Instafel",
+        "Change Home Long Click",
+        "Add App Trigger"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "instagram-brosssh-clone-v439.0.0.37.89-arm-v7a.apk": {
+      "name": "instagram-brosssh-clone",
+      "version": "439.0.0.37.89",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "brosssh",
+      "brandName": "brosssh",
+      "variant": "Clone",
+      "subVariant": null,
+      "packageName": "com.instagram.android.brosssh",
+      "patchSources": [
+        "brosssh/patches-2.8.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/brosssh/morphe-patches/releases/tag/v2.8.2"
+      ],
+      "appliedPatches": [
+        "Bypass signature check",
+        "Clone",
+        "Disable Reels scrolling",
+        "Disable story auto flipping",
+        "Hide ads",
+        "Hide explore feed",
+        "Hide navigation buttons",
+        "Hide notes tray",
+        "Hide reshare button",
+        "Hide suggested content",
+        "Limit feed to following profiles",
+        "Remove build expired popup"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "instagram-brosssh-clone-v439.0.0.37.89-arm64-v8a.apk": {
+      "name": "instagram-brosssh-clone",
+      "version": "439.0.0.37.89",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "brosssh",
+      "brandName": "brosssh",
+      "variant": "Clone",
+      "subVariant": null,
+      "packageName": "com.instagram.android.brosssh",
+      "patchSources": [
+        "brosssh/patches-2.8.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/brosssh/morphe-patches/releases/tag/v2.8.2"
+      ],
+      "appliedPatches": [
+        "Bypass signature check",
+        "Clone",
+        "Disable Reels scrolling",
+        "Disable story auto flipping",
+        "Hide ads",
+        "Hide explore feed",
+        "Hide navigation buttons",
+        "Hide notes tray",
+        "Hide reshare button",
+        "Hide suggested content",
+        "Limit feed to following profiles",
+        "Remove build expired popup"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "instagram-brosssh-v439.0.0.37.89-arm-v7a.apk": {
+      "name": "instagram-brosssh",
+      "version": "439.0.0.37.89",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "brosssh",
+      "brandName": "brosssh",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "brosssh/patches-2.8.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/brosssh/morphe-patches/releases/tag/v2.8.2"
+      ],
+      "appliedPatches": [
+        "Bypass signature check",
+        "Disable Reels scrolling",
+        "Disable story auto flipping",
+        "Hide ads",
+        "Hide explore feed",
+        "Hide navigation buttons",
+        "Hide notes tray",
+        "Hide reshare button",
+        "Hide suggested content",
+        "Limit feed to following profiles",
+        "Remove build expired popup"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "instagram-brosssh-v439.0.0.37.89-arm64-v8a.apk": {
+      "name": "instagram-brosssh",
+      "version": "439.0.0.37.89",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "brosssh",
+      "brandName": "brosssh",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "brosssh/patches-2.8.2.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/brosssh/morphe-patches/releases/tag/v2.8.2"
+      ],
+      "appliedPatches": [
+        "Bypass signature check",
+        "Disable Reels scrolling",
+        "Disable story auto flipping",
+        "Hide ads",
+        "Hide explore feed",
+        "Hide navigation buttons",
+        "Hide notes tray",
+        "Hide reshare button",
+        "Hide suggested content",
+        "Limit feed to following profiles",
+        "Remove build expired popup"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "microsoft-edge-quantavil-v152.0.4191.65-arm64-v8a.apk": {
+      "name": "microsoft-edge-quantavil",
+      "version": "152.0.4191.65",
+      "appKey": "microsoftedge",
+      "appName": "Microsoft Edge",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "quantavil",
+      "brandName": "quantavil",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.microsoft.emmx",
+      "patchSources": [
+        "quantavil/patches-1.36.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/quantavil/edge-morphe-patches/releases/tag/v1.36.1"
+      ],
+      "appliedPatches": [
+        "Copilot feature toggle",
+        "Disable news notifications",
+        "Telemetry elimination"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "microsoft-edge-quantavil-v152.0.4191.65-arm-v7a.apk": {
+      "name": "microsoft-edge-quantavil",
+      "version": "152.0.4191.65",
+      "appKey": "microsoftedge",
+      "appName": "Microsoft Edge",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "quantavil",
+      "brandName": "quantavil",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.microsoft.emmx",
+      "patchSources": [
+        "quantavil/patches-1.36.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/quantavil/edge-morphe-patches/releases/tag/v1.36.1"
+      ],
+      "appliedPatches": [
+        "Copilot feature toggle",
+        "Disable news notifications",
+        "Telemetry elimination"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "proton-vpn-hoodles-v5.20.57.0-arm-v7a.apk": {
+      "name": "proton-vpn-hoodles",
+      "version": "5.20.57.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "hoodles",
+      "brandName": "hoodles",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hoo-dles/patches-1.47.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0"
+      ],
+      "appliedPatches": [
+        "Remove delay",
+        "Unlock LAN connections",
+        "Unlock custom DNS",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
+    },
+    "proton-vpn-hoodles-v5.20.57.0-arm64-v8a.apk": {
+      "name": "proton-vpn-hoodles",
+      "version": "5.20.57.0",
+      "appKey": "protonvpn",
+      "appName": "Proton VPN",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "hoodles",
+      "brandName": "hoodles",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "ch.protonvpn.android",
+      "patchSources": [
+        "hoo-dles/patches-1.47.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0"
+      ],
+      "appliedPatches": [
+        "Remove delay",
+        "Unlock LAN connections",
+        "Unlock custom DNS",
+        "Unlock split tunneling"
+      ],
+      "originBuild": "260205",
+      "publishedAt": "2026-10-11T13:02:29Z"
     }
   }
 }
