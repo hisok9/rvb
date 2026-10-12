@@ -8,11 +8,12 @@
   "stable": {
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a": "1a10cd6eec62a7234e3d9744c7c26d8a",
     "instagram-piko-v447.0.0.55.81-arm64-v8a": "c661c5ea8677fc82dc1ffc271a6813be",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "772261a2039632f30a3bd4f3b20d7ddd",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "08a35f18a44af23df5a7b9b5422ffab2",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "0d953b1ed42506d12dd311c3393bfa1a",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "466f3bd43dfe8a01d57f28aa4f397cd0",
     "youtube-music-morphe-v9.20.53-arm64-v8a": "85794d6ab2ad6ac70c4a831744954cd4",
     "youtube-music-morphe-v9.20.53-arm-v7a": "d63ab17e3a8681f2d2e7f18ba51a1c81",
     "youtube-morphe-v21.20.405-arm64-v8a": "4880131ce9e9705f414f106291df0893",
-    "youtube-morphe-v21.20.405-arm-v7a": "698d614122cd4b2bfbcc42f3788f0be1"
+    "youtube-morphe-v21.20.405-arm-v7a": "698d614122cd4b2bfbcc42f3788f0be1",
+    "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "17031d47ee57d642a5590ae52cb0e198"
   }
 }
