@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-12T00:42:46Z"
+    "publishedAt": "2026-10-12T05:04:30Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -2804,10 +2804,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.2.5.mpp"
+        "bearinmindcat/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.5"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2832,11 +2832,12 @@
         "Speed cameras",
         "Speeding chime",
         "Trim account menu",
+        "Waze alerts",
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260208",
-      "publishedAt": "2026-10-12T00:42:26Z"
+      "originBuild": "260209",
+      "publishedAt": "2026-10-12T05:04:13Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -2851,10 +2852,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.2.5.mpp"
+        "bearinmindcat/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.5"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2879,11 +2880,12 @@
         "Speed cameras",
         "Speeding chime",
         "Trim account menu",
+        "Waze alerts",
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260208",
-      "publishedAt": "2026-10-12T00:42:26Z"
+      "originBuild": "260209",
+      "publishedAt": "2026-10-12T05:04:13Z"
     },
     "youtube-morphe-v21.20.405-arm64-v8a.apk": {
       "name": "youtube-morphe",
