@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-12T05:04:30Z"
+    "publishedAt": "2026-10-12T13:36:23Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -1670,10 +1670,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.14.3.mpp"
+        "Akash-Sriram/patches-1.14.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.3"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1681,14 +1681,13 @@
         "Enable DCIM folders backup control",
         "Enable Phenotype flag manager",
         "Fix memory style font loading",
-        "GmsCore support",
         "Google One Bento Badge",
         "Local creation downloader",
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260194",
-      "publishedAt": "2026-10-09T08:35:07Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-10-12T13:35:55Z"
     },
     "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -1703,10 +1702,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.14.3.mpp"
+        "Akash-Sriram/patches-1.14.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.3"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1714,14 +1713,13 @@
         "Enable DCIM folders backup control",
         "Enable Phenotype flag manager",
         "Fix memory style font loading",
-        "GmsCore support",
         "Google One Bento Badge",
         "Local creation downloader",
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260194",
-      "publishedAt": "2026-10-09T08:35:07Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-10-12T13:35:55Z"
     },
     "google-photos-akashsriram-v7.96.0.993165104-arm-v7a.apk": {
       "name": "google-photos-akashsriram",
@@ -1736,10 +1734,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.14.3.mpp"
+        "Akash-Sriram/patches-1.14.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.3"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1747,14 +1745,13 @@
         "Enable DCIM folders backup control",
         "Enable Phenotype flag manager",
         "Fix memory style font loading",
-        "GmsCore support",
         "Google One Bento Badge",
         "Local creation downloader",
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260194",
-      "publishedAt": "2026-10-09T08:35:07Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-10-12T13:35:55Z"
     },
     "google-photos-akashsriram-module-v7.96.0.993165104-arm64-v8a.zip": {
       "name": "google-photos-akashsriram",
@@ -1769,10 +1766,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.14.3.mpp"
+        "Akash-Sriram/patches-1.14.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.3"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -1780,14 +1777,13 @@
         "Enable DCIM folders backup control",
         "Enable Phenotype flag manager",
         "Fix memory style font loading",
-        "GmsCore support",
         "Google One Bento Badge",
         "Local creation downloader",
         "Model Readiness Gates",
         "Spoof features"
       ],
-      "originBuild": "260194",
-      "publishedAt": "2026-10-09T08:35:07Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-10-12T13:35:55Z"
     },
     "brave-browser-kveld9-v1.97.56-arm-v7a.apk": {
       "name": "brave-browser-kveld9",
@@ -2804,10 +2800,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.3.0.mpp"
+        "bearinmindcat/patches-2.3.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.3.0"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.3.1"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2836,8 +2832,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260209",
-      "publishedAt": "2026-10-12T05:04:13Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-10-12T13:35:55Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -2852,10 +2848,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.3.0.mpp"
+        "bearinmindcat/patches-2.3.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.3.0"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.3.1"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2884,8 +2880,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260209",
-      "publishedAt": "2026-10-12T05:04:13Z"
+      "originBuild": "260212",
+      "publishedAt": "2026-10-12T13:35:55Z"
     },
     "youtube-morphe-v21.20.405-arm64-v8a.apk": {
       "name": "youtube-morphe",
