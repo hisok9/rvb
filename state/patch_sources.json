@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.47.0-dev.25",
-    "beta_date": "2026-10-11T15:09:15Z",
+    "beta": "v1.48.0-dev.2",
+    "beta_date": "2026-10-12T08:02:54Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -117,8 +117,8 @@
     "stable_date": "2026-09-16T15:07:16Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.7.0-experimental.9",
-    "beta_date": "2026-10-11T19:46:30Z",
+    "beta": "v2.7.0-experimental.10",
+    "beta_date": "2026-10-12T05:14:24Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
