@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-11T16:50:57Z"
+    "publishedAt": "2026-10-12T00:42:46Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -1928,22 +1928,26 @@
       "brandName": "HushGram",
       "variant": null,
       "subVariant": null,
-      "packageName": "com.instagram.android",
+      "packageName": "com.instagram.android.hush",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.8.mpp"
+        "SysAdminDoc/patches-0.0.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.8"
+        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.9"
       ],
       "appliedPatches": [
+        "Accent color",
         "Allow screenshots",
         "Ask before a call",
         "Ask before a like",
         "Ask before a refresh",
+        "Back leaves Home",
+        "Blur the bars around Reels",
         "Change the like animation",
         "Change version code",
         "Clean up Reels",
         "Clear the media cache",
+        "Control taps and volume on Reels",
         "Copy comment",
         "Data saver",
         "Default playback quality",
@@ -1956,15 +1960,20 @@
         "Download any video",
         "Download voice messages",
         "Emoji style",
+        "Find the reel you came from",
         "Full resolution photos",
+        "Full screen Reels and Home",
+        "Glass tab bar",
         "Group Instagram's notifications",
         "Hide Instants",
         "Hide Meta AI",
+        "Hide Notes on profile pictures",
         "Hide Reels in the feed",
         "Hide ads",
         "Hide comments",
         "Hide group buttons on the share sheet",
         "Hide highlights",
+        "Hide paid partnership Reels",
         "Hide suggested accounts in DMs",
         "Hide suggested accounts in Reels",
         "Hide suggested people on profiles",
@@ -1978,15 +1987,19 @@
         "Hide the Threads button",
         "Hide the home feed",
         "Hide the notes row",
+        "Hide your active status",
+        "HushGram launch screen",
         "HushGram settings",
         "Keep Reels auto scroll on",
         "Keep a seek bar on Reels",
         "Keep in chat",
         "Keep the reel speed",
         "Lock your messages",
+        "Long press to zoom",
         "Loop a story",
         "Open developer options",
         "Open links in external browser",
+        "Profile posts as a list",
         "Pure black dark mode",
         "Read messages without the seen receipt",
         "Remove build expired popup",
@@ -1994,30 +2007,39 @@
         "Remove the empty space at the bottom",
         "Restore trust on re-signed builds",
         "Resume long videos",
+        "Rounded post corners",
         "Sanitize sharing links",
         "Save comment photo",
         "Save profile picture",
+        "Saved on your profile",
         "See who a story mentions",
         "Show a post's exact time",
         "Show a story's exact time",
+        "Show hidden like counts",
         "Show if a profile follows you",
+        "Show when someone was last active",
         "Spoof location",
         "Start Home on Following",
+        "Start feed videos with sound",
         "Start on x86 devices",
+        "Start stories with sound",
         "Stop Reels scrolling",
         "Stop Story auto-advance",
+        "Stop background wake-ups",
         "Stop swipe to create",
         "Stop swiping between tabs",
         "Story ring size",
         "Tap to play",
         "Turn off HDR brightness boosts",
         "Turn off double tap to like",
+        "Upload stories at full quality",
         "View DM photos and videos anonymously",
         "View live anonymously",
-        "View stories anonymously"
+        "View stories anonymously",
+        "Install next to Instagram"
       ],
-      "originBuild": "260205",
-      "publishedAt": "2026-10-11T13:02:29Z"
+      "originBuild": "260208",
+      "publishedAt": "2026-10-12T00:42:26Z"
     },
     "instagram-instafel-clone-v450.0.0.50.77-arm64-v8a.apk": {
       "name": "instagram-instafel-clone",
@@ -2782,10 +2804,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.2.0.mpp"
+        "bearinmindcat/patches-2.2.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.5"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2813,8 +2835,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260207",
-      "publishedAt": "2026-10-11T16:50:32Z"
+      "originBuild": "260208",
+      "publishedAt": "2026-10-12T00:42:26Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -2829,10 +2851,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.2.0.mpp"
+        "bearinmindcat/patches-2.2.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.2.5"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2860,8 +2882,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260207",
-      "publishedAt": "2026-10-11T16:50:32Z"
+      "originBuild": "260208",
+      "publishedAt": "2026-10-12T00:42:26Z"
     },
     "youtube-morphe-v21.20.405-arm64-v8a.apk": {
       "name": "youtube-morphe",
