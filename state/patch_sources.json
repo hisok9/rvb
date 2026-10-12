@@ -50,8 +50,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.8",
-    "stable_date": "2026-10-10T04:24:39Z"
+    "stable": "v0.0.9",
+    "stable_date": "2026-10-11T22:21:55Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -59,8 +59,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.2.2",
-    "stable_date": "2026-10-11T20:11:55Z"
+    "stable": "v2.2.5",
+    "stable_date": "2026-10-11T23:28:13Z"
   },
   "brosssh/morphe-patches": {
     "beta": "v2.8.3-dev.2",
