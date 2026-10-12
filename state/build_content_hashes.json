@@ -1,9 +1,9 @@
 {
   "beta": {
-    "youtube-morphe-v21.20.405-arm64-v8a": "a10435095d1776d730126298b3bdb609",
-    "youtube-morphe-v21.20.405-arm-v7a": "1a16d7d1826a0610004ae81714f8e34d",
-    "youtube-music-morphe-v9.20.53-arm-v7a": "2a8baf6fa18b265acdb408aab82688ea",
-    "youtube-music-morphe-v9.20.53-arm64-v8a": "74c3c33cbd124fe157a0079e84a3b6f5"
+    "youtube-morphe-v21.20.405-arm64-v8a": "b3468297ca737e55aacdca9c8ddec655",
+    "youtube-morphe-v21.20.405-arm-v7a": "ced5acbd97339c7bf8a7384d7698213e",
+    "youtube-music-morphe-v9.20.53-arm-v7a": "a9bd432d993d7fa7aa4f696ef5db02c5",
+    "youtube-music-morphe-v9.20.53-arm64-v8a": "3eef7535ec8a26ccff601b3266ef7f5a"
   },
   "stable": {
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a": "1a10cd6eec62a7234e3d9744c7c26d8a",
