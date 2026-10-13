@@ -3,7 +3,7 @@
   "GoogleMaps-bearinmindcat": {
     "patches-source": "bearinmindcat/morphe-patches",
     "brand": "bearinmindcat",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/maps",
@@ -91,7 +91,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Instagram-InstaFel": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "instafel/pc-rel",
@@ -102,7 +102,7 @@
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/instagram/instagram-instagram"
   },
   "Instagram-InstaFel-Clone": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "instafel/pc-rel",
