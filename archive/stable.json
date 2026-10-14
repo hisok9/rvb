@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-13T20:36:42Z"
+    "publishedAt": "2026-10-14T17:04:58Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -2800,10 +2800,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.5.2.mpp"
+        "bearinmindcat/patches-2.5.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.2"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2834,8 +2834,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260218",
-      "publishedAt": "2026-10-13T20:36:26Z"
+      "originBuild": "260220",
+      "publishedAt": "2026-10-14T17:04:41Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -2850,10 +2850,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.5.2.mpp"
+        "bearinmindcat/patches-2.5.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.2"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.5.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2884,8 +2884,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260218",
-      "publishedAt": "2026-10-13T20:36:26Z"
+      "originBuild": "260220",
+      "publishedAt": "2026-10-14T17:04:41Z"
     },
     "youtube-morphe-v21.20.405-arm64-v8a.apk": {
       "name": "youtube-morphe",
