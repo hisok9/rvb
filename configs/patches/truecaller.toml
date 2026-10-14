@@ -8,7 +8,7 @@ brand = "Paresh"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
 uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
+apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
 
 [Truecaller-bufferk]
 enabled = true
@@ -21,4 +21,18 @@ patches-version = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
 uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
 apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
-archive-dlurl = "https://archive.org/download/geologically/apks/com.truecaller"
+
+[Truecaller-heval99]
+enabled = true
+pkg-name = "com.truecaller"
+app-name = "Truecaller"
+brand = "heval99"
+patches-source = "heval99/Heval-Morphe-Patches"
+patches-version = "both"
+build-mode = "both"
+included-patches = "'Hide Premium tab' 'Hide Scam feed' 'Hide family button' 'Spoof signature' 'Use SMS for verification codes'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
+uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
+
+
