@@ -122,8 +122,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushFacebook",
-    "stable": "v0.12.0",
-    "stable_date": "2026-10-13T22:25:37Z"
+    "stable": "v0.13.0",
+    "stable_date": "2026-10-14T17:40:12Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -167,8 +167,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/hushfeed",
-    "stable": "v0.72.0",
-    "stable_date": "2026-10-14T00:14:03Z"
+    "stable": "v0.73.0",
+    "stable_date": "2026-10-14T19:05:14Z"
   },
   "VenusIsJaded/Venus-Patches": {
     "beta": "",
@@ -221,8 +221,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.5.4",
-    "stable_date": "2026-10-14T16:38:16Z"
+    "stable": "v2.5.5",
+    "stable_date": "2026-10-14T18:28:44Z"
   },
   "binarymend/morphe-patches": {
     "beta": "v1.3.1-dev.1",
@@ -288,8 +288,8 @@
     "stable_date": "2026-10-12T11:19:43Z"
   },
   "dh6k/morphe-patches": {
-    "beta": "v1.9.0-dev.10",
-    "beta_date": "2026-10-14T16:53:43Z",
+    "beta": "v1.9.0-dev.15",
+    "beta_date": "2026-10-14T20:02:53Z",
     "blocked": false,
     "host": "github",
     "repo": "dh6k/morphe-patches",
@@ -302,8 +302,8 @@
     "blocked": false,
     "host": "github",
     "repo": "dhrubonai/morphe-patches",
-    "stable": "v1.29.0",
-    "stable_date": "2026-10-11T12:05:50Z"
+    "stable": "v1.30.1",
+    "stable_date": "2026-10-14T18:23:22Z"
   },
   "docbt/patched-up": {
     "beta": "v1.3.1-dev.2",
@@ -414,8 +414,8 @@
     "stable_date": "2026-09-10T16:33:50Z"
   },
   "jasonwu1994/Gboard-patches": {
-    "beta": "v3.13.0-dev.1",
-    "beta_date": "2026-10-14T03:29:28Z",
+    "beta": "v3.13.0-dev.2",
+    "beta_date": "2026-10-14T19:42:12Z",
     "blocked": false,
     "host": "github",
     "repo": "jasonwu1994/Gboard-patches",
@@ -450,8 +450,8 @@
     "stable_date": "2026-10-09T18:16:59Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.7.0-experimental.20",
-    "beta_date": "2026-10-14T05:48:07Z",
+    "beta": "v2.7.0-experimental.22",
+    "beta_date": "2026-10-14T19:27:03Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
@@ -527,8 +527,8 @@
     "blocked": false,
     "host": "github",
     "repo": "rushiranpise/morphe-patches",
-    "stable": "v1.22.0",
-    "stable_date": "2026-09-15T20:58:05Z"
+    "stable": "v1.23.0",
+    "stable_date": "2026-10-14T17:39:11Z"
   },
   "shaun-the-sheep-patches/morphe-patches": {
     "beta": "v1.2.0-dev.1",

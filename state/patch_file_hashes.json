@@ -63,7 +63,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "9e6cae5f765660c491c61d1046c16949",
+      "com.google.android.apps.maps": "d1a946951921b8e51d00a34c663ad951",
       "shared": "ccad433d728a8fca2434563b046d8fc7"
     }
   },
@@ -132,7 +132,7 @@
     "beta": {},
     "stable": {
       "ch.protonmail.android": "649bd0176545d5822d936803d4150e3f",
-      "shared": "1fe847f9076537fdd2843cb04be0e428"
+      "shared": "3ee7ee8f315e57567368800d84b2c4b3"
     }
   },
   "durgesh0505/chiggi_morphe_patches": {
@@ -295,8 +295,8 @@
   },
   "jasonwu1994/gboard-patches": {
     "beta": {
-      "com.google.android.inputmethod.latin": "a4c9e2ed85338499d1fe5e427d867b32",
-      "shared": "a16653680b70bdff0006d79786e75a69"
+      "com.google.android.inputmethod.latin": "aa31afbadc7fdbac2ba302a8dccb9cbf",
+      "shared": "fbc47d291242fd807dae3d2a6ebd0408"
     },
     "stable": {
       "com.google.android.inputmethod.latin": "c47434ff4d36e25323d30e352ae55e14",
@@ -447,26 +447,30 @@
   "rushiranpise/morphe-patches": {
     "beta": {},
     "stable": {
-      "app.ninjavpn.android": "c30ff1490a44b88ffd4c7c717044f25a",
-      "au.com.shiftyjelly.pocketcasts": "c5c092228e9a43ab49b3707e1b6f7dc1",
+      "app.ninjavpn.android": "81252b4a4ce413bcdc3f939d1ec048de",
+      "au.com.shiftyjelly.pocketcasts": "bbe3cee21b3e14d92ab1216f24854897",
       "ch.protonmail.android": "d41d8cd98f00b204e9800998ecf8427e",
-      "com.accuweather.android": "2049a5ca24003b6ed4ced6f0c520d6eb",
-      "com.adguard.android": "5b2b7a02e6f99456e95cd0300799e011",
-      "com.adobe.scan.android": "c05c4d8e096d3fd2fffec0e1e9f8b339",
-      "com.arlosoft.macrodroid": "6057f1721f919c1d57548d465cde7726",
-      "com.calm.android": "ddf48560ef19a65be7fbd0f0ffaebf43",
-      "com.cloudflare.onedotonedotonedotone": "e482dea53e48b8e01b9ab4617f2a22a1",
-      "com.facebook.orca": "4ec3053b35298ac5b69c3d43fbebdd24",
-      "com.google.android.apps.photos": "a519146c3007fff8b0aa93a1eda164b4",
-      "com.picsart.studio": "20fcc97a86ad0b5ea52cf89902630e5f",
-      "com.rarlab.rar": "bb2ae9a3e9129de23d2f75034ceb0534",
-      "com.weather.Weather": "c05c4d8e096d3fd2fffec0e1e9f8b339",
-      "com.windscribe.vpn": "371910661a688b92d7bfe1a8b54b7b83",
-      "com.yablio.sendfilestotv": "d7e1ea862a452879f1f546f59b6f4ec7",
-      "in.amazon.mShop.android.shopping": "6901649f342501d6f941ff6a52811b26",
-      "io.appground.blek": "211803ce0fdfe2706c3ab3bf61ed7fcd",
-      "it.mirko.beta": "9b4e60af84fb2b247a68fbbba0a6945e",
-      "org.hola.play": "c05c4d8e096d3fd2fffec0e1e9f8b339",
+      "com.accuweather.android": "154ad6ec20bdcaca72aad7e0fbcc661f",
+      "com.adguard.android": "22c4442abbf29254668c08c6c556305c",
+      "com.adobe.scan.android": "98b548b18cb16fe0201d32390ac21632",
+      "com.amazon.mShop.android.shopping": "780133184651467837ee66e77e0a31ec",
+      "com.arlosoft.macrodroid": "5787429c5d78dbef646d5dc89ed0b74b",
+      "com.calm.android": "3aa0ae8d86ea9a838b0f081efce657d9",
+      "com.citymapper.app.release": "0f958c0a3ae6fe5328d3d7874865559a",
+      "com.cloudflare.onedotonedotonedotone": "04edcd306778cd56c989ae4e45c0f111",
+      "com.facebook.orca": "497b255ce9dd5fe7642606a7c0507997",
+      "com.google.android.apps.photos": "95db4ec7e17094158f22e5da2adae0a1",
+      "com.picsart.studio": "9737caa9194af52ff2f8c448e7533f11",
+      "com.rarlab.rar": "b7201db0a0370c624383b8548e8086e2",
+      "com.server.auditor.ssh.client": "bb5aaf6f3dc094f16ba5555503afb898",
+      "com.weather.Weather": "98b548b18cb16fe0201d32390ac21632",
+      "com.windscribe.vpn": "4fd54f68599519843634ebecaf51ed22",
+      "com.yablio.sendfilestotv": "3cb76064877d8decb39e095df82b5886",
+      "in.amazon.mShop.android.shopping": "780133184651467837ee66e77e0a31ec",
+      "io.appground.blek": "6450f326a5032c70e8b069341f34aa68",
+      "it.mirko.beta": "4d5a9ce5062b7ec743bbc1a60d59703e",
+      "org.hola.play": "98b548b18cb16fe0201d32390ac21632",
+      "org.telegram.messenger": "893c50131ed18c5c4f2b6e1bd5eda6f5",
       "shared": "3feee68e9fca7acb1461160dc0edc12a"
     }
   },
@@ -487,14 +491,14 @@
   "sysadmindoc/hushfacebook": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "a6fa2e7f94aaa9881b032c7be1a1855e",
-      "shared": "b502b6192c590fbcf97f8de929d515a6"
+      "com.facebook.katana": "87094cb4d7bdff4043dd4e5625a7f340",
+      "shared": "ab62ce7acc18e0f458626cefd09f7149"
     }
   },
   "sysadmindoc/hushfeed": {
     "beta": {},
     "stable": {
-      "com.zhiliaoapp.musically": "056f9367f1f3be0526ccf3895a87ff16",
+      "com.zhiliaoapp.musically": "8c8582842a06f88efb21fca2d67fbe7b",
       "shared": "46d8882e3e2552c9319178d27875fbae"
     }
   },
