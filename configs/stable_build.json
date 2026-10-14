@@ -172,7 +172,7 @@
     "apkmirror-dlurl": "https://apkmirror.com/apk/google-inc/photos"
   },
   "GooglePhotos-rushiranpise": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "rushiranpise",
@@ -213,7 +213,7 @@
   "CamScanner-rushiranpise": {
     "patches-source": "rushiranpise/morphe-patches",
     "brand": "rushiranpise",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.intsig.camscanner",
     "app-name": "CamScanner",
     "version": "7.24.5.2608200000",

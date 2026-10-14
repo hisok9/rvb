@@ -59,8 +59,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.5.4",
-    "stable_date": "2026-10-14T16:38:16Z"
+    "stable": "v2.5.5",
+    "stable_date": "2026-10-14T18:28:44Z"
   },
   "brosssh/morphe-patches": {
     "beta": "v2.8.3-dev.2",
@@ -90,8 +90,8 @@
     "stable_date": "2026-10-10T14:58:13Z"
   },
   "dh6k/morphe-patches": {
-    "beta": "v1.9.0-dev.10",
-    "beta_date": "2026-10-14T16:53:43Z",
+    "beta": "v1.9.0-dev.15",
+    "beta_date": "2026-10-14T20:02:53Z",
     "blocked": false,
     "host": "github",
     "repo": "dh6k/morphe-patches",
@@ -117,8 +117,8 @@
     "stable_date": "2026-09-16T15:07:16Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.7.0-experimental.20",
-    "beta_date": "2026-10-14T05:48:07Z",
+    "beta": "v2.7.0-experimental.22",
+    "beta_date": "2026-10-14T19:27:03Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
@@ -135,12 +135,12 @@
     "stable_date": "2026-09-14T14:51:02Z"
   },
   "rushiranpise/morphe-patches": {
-    "beta": "v1.23.0-dev.1",
-    "beta_date": "2026-09-20T12:55:20Z",
+    "beta": "v1.22.0-dev.1",
+    "beta_date": "2026-09-15T20:50:28Z",
     "blocked": false,
     "host": "github",
     "repo": "rushiranpise/morphe-patches",
-    "stable": "v1.22.0",
-    "stable_date": "2026-09-15T20:58:05Z"
+    "stable": "v1.23.0",
+    "stable_date": "2026-10-14T17:39:11Z"
   }
 }
