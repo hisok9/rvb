@@ -533,8 +533,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "0c099d8be14cc5f5f6e02f46fc0303ac",
-      "shared": "fd75ea465156d37b1724a4af08c50564"
+      "com.discord": "957130586a9b9778167f01cfd62201a6",
+      "shared": "8ef30eba4f8ff1065596c30248bad83d"
     }
   }
 }
