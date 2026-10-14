@@ -243,7 +243,7 @@
   "GoogleMaps-bearinmindcat": {
     "patches-source": "bearinmindcat/morphe-patches",
     "brand": "bearinmindcat",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/maps",
@@ -482,7 +482,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook/com.facebook.katana"
   },
   "Facebook-andrewliang25": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.katana",
     "app-name": "Facebook",
     "patches-source": "andrewliang25/morphe-patches",
@@ -499,7 +499,6 @@
     "app-name": "Facebook",
     "patches-source": "SysAdminDoc/HushFacebook",
     "brand": "HushFacebook",
-    "arch": "arm64-v8a",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/facebook-2/facebook",
     "uptodown-dlurl": "https://facebook.en.uptodown.com/android",
     "apkpure-dlurl": "https://apkpure.com/facebook-app/com.facebook.katana",
@@ -538,7 +537,7 @@
     "apkpure-dlurl": "https://apkpure.com/offline-games-no-wifi-games/com.JindoBlu.OfflineGames"
   },
   "FairEmail-heval99": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "eu.faircode.email",
     "app-name": "FairEmail",
     "brand": "heval99",
@@ -549,7 +548,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/fairemail-privacy-aware-email/eu.faircode.email"
   },
   "Sofascore-heval99": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.sofascore.results",
     "app-name": "Sofascore",
     "brand": "heval99",
@@ -954,9 +953,21 @@
     "enabled": false,
     "pkg-name": "com.dubox.drive",
     "app-name": "TeraBox",
+    "folder-name": "terabox",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/flextech-inc/terabox-cloud-storage-cloud-backup-data-backup",
     "apkpure-dlurl": "https://apkpure.com/terabox-1tb-cloud-ai-space-app/com.dubox.drive",
     "apkcombo-dlurl": "https://apkcombo.com/terabox/com.dubox.drive"
+  },
+  "ProtonPass-hxreborn": {
+    "patches-source": "hxreborn/morphe-patches",
+    "brand": "hxreborn",
+    "enabled": false,
+    "pkg-name": "proton.android.pass",
+    "app-name": "Proton Pass",
+    "folder-name": "protonpass",
+    "uptodown-dlurl": "https://proton-pass.en.uptodown.com/android",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/proton-technologies-ag/proton-pass-password-manager",
+    "apkpure-dlurl": "https://apkpure.com/password-manager-proton-pass/proton.android.pass"
   },
   "Instagram-Aunali321": {
     "enabled": false,
@@ -1223,7 +1234,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook-messenger/com.facebook.orca"
   },
   "Messenger-HushMessenger": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "patches-source": "SysAdminDoc/HushMessenger",
@@ -1235,7 +1246,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/facebook-messenger/com.facebook.orca"
   },
   "Messenger-HushMessenger-MaterialYou": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.facebook.orca",
     "app-name": "Messenger",
     "patches-source": "SysAdminDoc/HushMessenger",
@@ -1561,7 +1572,7 @@
   "CapCut-riky": {
     "patches-source": "riky-dev/morphe-patches",
     "brand": "riky",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.lemon.lvoverseas",
     "app-name": "CapCut",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/bytedance-pte-ltd/capcut",
@@ -1986,7 +1997,7 @@
     "build-mode": "both",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block",
     "uptodown-dlurl": "https://truecaller.en.uptodown.com/android",
-    "archive-dlurl": "https://archive.org/download/geologically/apks/com.truecaller"
+    "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Truecaller-bufferk": {
     "enabled": false,
@@ -1997,8 +2008,19 @@
     "build-mode": "both",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block",
     "uptodown-dlurl": "https://truecaller.en.uptodown.com/android",
-    "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller",
-    "archive-dlurl": "https://archive.org/download/geologically/apks/com.truecaller"
+    "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
+  },
+  "Truecaller-heval99": {
+    "enabled": false,
+    "pkg-name": "com.truecaller",
+    "app-name": "Truecaller",
+    "brand": "heval99",
+    "patches-source": "heval99/Heval-Morphe-Patches",
+    "build-mode": "both",
+    "included-patches": "'GmsCore support' 'Hide Premium tab' 'Hide Scam feed' 'Hide family button' 'Spoof signature' 'Use SMS for verification codes'",
+    "apkmirror-dlurl": "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block",
+    "uptodown-dlurl": "https://truecaller.en.uptodown.com/android",
+    "apkpure-dlurl": "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
   },
   "Twitch-hooman": {
     "enabled": false,

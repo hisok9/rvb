@@ -1,7 +1,7 @@
 {
   "Akash-Sriram/morphe-google-photos": {
-    "beta": "",
-    "beta_date": "",
+    "beta": "dev-build",
+    "beta_date": "2026-10-14T15:48:45Z",
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
@@ -140,8 +140,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushMessenger",
-    "stable": "v0.23.0",
-    "stable_date": "2026-10-11T21:06:03Z"
+    "stable": "v0.24.0",
+    "stable_date": "2026-10-14T15:59:46Z"
   },
   "SysAdminDoc/HushTelegram": {
     "beta": "",
@@ -203,8 +203,8 @@
     "blocked": false,
     "host": "github",
     "repo": "andrewliang25/morphe-patches",
-    "stable": "v3.5.0",
-    "stable_date": "2026-10-08T13:58:52Z"
+    "stable": "v3.6.0",
+    "stable_date": "2026-10-14T16:13:37Z"
   },
   "arandomhooman/hoomans-morphe-patches": {
     "beta": "v1.44.0-dev.4",
@@ -221,8 +221,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.5.2",
-    "stable_date": "2026-10-13T19:49:33Z"
+    "stable": "v2.5.4",
+    "stable_date": "2026-10-14T16:38:16Z"
   },
   "binarymend/morphe-patches": {
     "beta": "v1.3.1-dev.1",
@@ -288,8 +288,8 @@
     "stable_date": "2026-10-12T11:19:43Z"
   },
   "dh6k/morphe-patches": {
-    "beta": "v1.9.0-dev.6",
-    "beta_date": "2026-10-14T05:04:37Z",
+    "beta": "v1.9.0-dev.10",
+    "beta_date": "2026-10-14T16:53:43Z",
     "blocked": false,
     "host": "github",
     "repo": "dh6k/morphe-patches",
@@ -342,8 +342,8 @@
     "stable_date": "2026-09-27T13:12:56Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.15.0-dev.3",
-    "beta_date": "2026-10-14T10:46:22Z",
+    "beta": "v1.15.0-dev.10",
+    "beta_date": "2026-10-14T17:20:19Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -513,17 +513,17 @@
     "stable_date": "2026-10-09T17:33:10Z"
   },
   "riky-dev/morphe-patches": {
-    "beta": "v2.2.0-dev.1",
-    "beta_date": "2026-10-04T14:54:19Z",
+    "beta": "v2.3.0-dev.1",
+    "beta_date": "2026-10-14T15:34:44Z",
     "blocked": false,
     "host": "github",
     "repo": "riky-dev/morphe-patches",
-    "stable": "v2.2.0",
-    "stable_date": "2026-10-04T14:54:14Z"
+    "stable": "v2.3.0",
+    "stable_date": "2026-10-14T15:34:44Z"
   },
   "rushiranpise/morphe-patches": {
-    "beta": "v1.23.0-dev.1",
-    "beta_date": "2026-09-20T12:55:20Z",
+    "beta": "v1.22.0-dev.1",
+    "beta_date": "2026-09-15T20:50:28Z",
     "blocked": false,
     "host": "github",
     "repo": "rushiranpise/morphe-patches",

@@ -36,8 +36,8 @@
   "andrewliang25/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.facebook.katana": "ed7a6b4501bf1d997b0378e45bee3ea3",
-      "shared": "896486938b5de28e83d923a732d3ec47"
+      "com.facebook.katana": "f001e35ff15aee9fce19e0b5ae7a678d",
+      "shared": "b31e48f28e09284c8b8d893819c8041f"
     }
   },
   "arandomhooman/hoomans-morphe-patches": {
@@ -63,7 +63,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "23e5c7d525418b7717340d93a2077b44",
+      "com.google.android.apps.maps": "9e6cae5f765660c491c61d1046c16949",
       "shared": "ccad433d728a8fca2434563b046d8fc7"
     }
   },
@@ -175,7 +175,10 @@
     }
   },
   "heval99/heval-morphe-patches": {
-    "beta": {},
+    "beta": {
+      "com.truecaller": "208f47d37a1f7ae5f61bb9145e213ab5",
+      "shared": "bae959b0d1344b8804d8a39ed0e98880"
+    },
     "stable": {
       "com.sofascore.results": "04597f5c292ceca86e3cd75f61a67b1a",
       "eu.faircode.email": "bf8c03cda371df72f7030e78b2274447",
@@ -419,7 +422,7 @@
   "riky-dev/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.lemon.lvoverseas": "ee848b1eb44d043efb0bc85b2554ed05",
+      "com.lemon.lvoverseas": "c6979233a1dbc5bc05021fc0303c50cb",
       "shared": "b01d4f859a21a4167576736f1a629d34"
     }
   },
@@ -505,7 +508,7 @@
   "sysadmindoc/hushmessenger": {
     "beta": {},
     "stable": {
-      "com.facebook.orca": "0d991c58a15e1df7ffafde12e32be630",
+      "com.facebook.orca": "88ecc41bf5707203c9f4fa9123144bc8",
       "shared": "d41d8cd98f00b204e9800998ecf8427e"
     }
   },
