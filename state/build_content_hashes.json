@@ -52,8 +52,8 @@
     "fairemail-heval99-v1.2338-arm64-v8a": "f8ef6700595633e92c01c56957b763cd",
     "swift-backup-byehi98-v5.1.0-arm64-v8a": "9da253e6e2227294b8333bf1ced6ab0b",
     "swift-backup-byehi98-v5.1.0-arm-v7a": "6e2aea76e5aaba2ee772d2ef5369e0c2",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "9ec9d0188521eaeab45645ebd1e7680d",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "125ab09fee28e2769d60c192989964af",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "66e2df3fdd3c283bdeab7719f4175198",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "5ebc9cae2193a6458b52cbc02027f9df",
     "reddit-morphe-v2026.24.0-arm64-v8a": "65bd806af930987762743d7df604120a",
     "reddit-morphe-v2026.24.0-arm-v7a": "a86b3d46e938c96cebcf57d206f51435",
     "reddit-morphe-experimental-v2026.41.0-arm64-v8a": "f80ba4bb3fb4adfcd8e35c3d25e8c035",
@@ -97,6 +97,10 @@
     "facebook-hushfacebook-v582.0.0.50.54-arm-v7a": "51e7ec681494768c197be74a1594bc0a",
     "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855",
     "proton-pass-hxreborn-v1.41.3-arm-v7a": "3fc379edcdcbfea5226a2d650e01055e",
-    "truecaller-heval99-v26.39.6-arm-v7a": "fd6fc9fbd33914e2630c8aaa145e9eef"
+    "truecaller-heval99-v26.39.6-arm-v7a": "fd6fc9fbd33914e2630c8aaa145e9eef",
+    "facebook-andrewliang25-v577.0.0.50.72-arm64-v8a": "172c49189680e513858ec77d474cad10",
+    "facebook-andrewliang25-v577.0.0.50.72-arm-v7a": "e6c3060bc55d8079f4d18515084faba8",
+    "messenger-hushmessenger-material-you-v583.0.0.29.95-arm64-v8a": "2e67cb44a20f0aca4c59b157bd195dba",
+    "messenger-hushmessenger-v583.0.0.29.95-arm64-v8a": "2e67cb44a20f0aca4c59b157bd195dba"
   }
 }
