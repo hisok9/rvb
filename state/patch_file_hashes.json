@@ -23,9 +23,9 @@
   },
   "anddea/revanced-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "7f1291038edaabc0b7e2c199f811b26e",
-      "com.google.android.youtube": "90fe0c020a003954f58afe1168a21167",
-      "shared": "64cd23189407b4424baeb9406ad36646"
+      "com.google.android.apps.youtube.music": "7aee0cb611fa90d3471f3578f5d3b6d6",
+      "com.google.android.youtube": "ec7182d2ed21c8a3e332948439216639",
+      "shared": "e71ecbd90108c6a231e797ca134c7838"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "38f7dee029d8d691d4d374f1f5bf7718",
@@ -252,13 +252,13 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonmail.android": "e9bfa1861b0968890c96ee7240675c9f",
-      "ch.protonvpn.android": "effe8f61d68d773c9846f8921def8998",
-      "com.dubox.drive": "1f6228cf742d46c259d74c9433802d13",
-      "com.greenstone.pocketwhip": "0d07e66b6c45c4e748d5db6cc6897036",
-      "com.michaldrabik.showly2": "eda13c217060e03a2073893ed132568e",
-      "dev.vodik7.atvtools": "f5d9a1a8f8e5e98cd118d028c043014c",
-      "shared": "b80cc7b0bb31457d2cc7ccfa2862ca8e"
+      "ch.protonmail.android": "55019817ba716523c10d0429216ed377",
+      "ch.protonvpn.android": "9fddd74fbeebb6a502bd2cc0699f8135",
+      "com.dubox.drive": "b22cf77f705903a0e3512cf9a16c3324",
+      "com.greenstone.pocketwhip": "fa2b1681e786aa50bb21b85281e64d77",
+      "com.michaldrabik.showly2": "2fd455dcbbb8ba81ef3837f0dab1b3cc",
+      "dev.vodik7.atvtools": "14179ab4ede545924e56842b4b7bbca2",
+      "shared": "4c4f255658dd7e72865ecd266f7af279"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -339,10 +339,10 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "c0d3aec38957935cf2dd82cf3f287210",
-      "com.google.android.youtube": "462ee4aefa4a880460220bcc5a6b4bef",
-      "com.reddit.frontpage": "1ca84f8fe868e5cb8c8b0790aa0af9af",
-      "shared": "e5b4ca883a13a403badbcd11e9eace0d"
+      "com.google.android.apps.youtube.music": "c63f9ecf35fa6c0c71193729bbcc067a",
+      "com.google.android.youtube": "45fcadce2728456617a7189080287661",
+      "com.reddit.frontpage": "72b5fbaa4427af547d7a533534fe9923",
+      "shared": "e6cc6ec73daa02d5e17134fa270c72c0"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "1e4aadd260009e9cc452874a2de1018d",
