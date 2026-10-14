@@ -1,25 +1,3 @@
-[Facebook-HushFacebook]
-enabled = true
-pkg-name = "com.facebook.katana"
-app-name = "Facebook"
-patches-source = "SysAdminDoc/HushFacebook"
-brand = "HushFacebook"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/facebook"
-uptodown-dlurl = "https://facebook.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/facebook-app/com.facebook.katana"
-apkcombo-dlurl = "https://apkcombo.com/facebook/com.facebook.katana"
-
-[ProtonPass-hxreborn]
-enabled = true
-pkg-name = "proton.android.pass"
-app-name = "Proton Pass"
-folder-name = "protonpass"
-patches-source = "hxreborn/morphe-patches"
-brand = "hxreborn"
-uptodown-dlurl = "https://proton-pass.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/proton-pass-password-manager"
-apkpure-dlurl = "https://apkpure.com/password-manager-proton-pass/proton.android.pass"
-
 [Truecaller-heval99]
 enabled = true
 pkg-name = "com.truecaller"
