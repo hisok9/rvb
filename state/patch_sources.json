@@ -198,8 +198,8 @@
     "stable_date": "2026-09-28T12:26:39Z"
   },
   "andrewliang25/morphe-patches": {
-    "beta": "v3.5.0-dev.3",
-    "beta_date": "2026-10-08T09:18:39Z",
+    "beta": "v3.6.0-dev.2",
+    "beta_date": "2026-10-14T13:28:41Z",
     "blocked": false,
     "host": "github",
     "repo": "andrewliang25/morphe-patches",
@@ -342,13 +342,13 @@
     "stable_date": "2026-09-27T13:12:56Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.14.0-dev.9",
-    "beta_date": "2026-10-14T09:30:38Z",
+    "beta": "v1.15.0-dev.3",
+    "beta_date": "2026-10-14T10:46:22Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
-    "stable": "v1.13.0",
-    "stable_date": "2026-10-11T08:14:50Z"
+    "stable": "v1.14.0",
+    "stable_date": "2026-10-14T10:14:45Z"
   },
   "heyymichii/michii-patches": {
     "beta": "v1.1.0-dev.3",

@@ -177,8 +177,9 @@
   "heval99/heval-morphe-patches": {
     "beta": {},
     "stable": {
-      "eu.faircode.email": "10d00ca8fc6e4ddf38681226edc76521",
-      "shared": "14efd9f2f66e672e8424a19e6e749180"
+      "com.sofascore.results": "04597f5c292ceca86e3cd75f61a67b1a",
+      "eu.faircode.email": "bf8c03cda371df72f7030e78b2274447",
+      "shared": "4424283b4cbe93812c2225979b7e2fb0"
     }
   },
   "heyymichii/michii-patches": {
