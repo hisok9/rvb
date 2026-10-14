@@ -8,14 +8,18 @@
   "stable": {
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a": "1a10cd6eec62a7234e3d9744c7c26d8a",
     "instagram-piko-v447.0.0.55.81-arm64-v8a": "c661c5ea8677fc82dc1ffc271a6813be",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "5ebc9cae2193a6458b52cbc02027f9df",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "66e2df3fdd3c283bdeab7719f4175198",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "7ffa87cceefe63a6a34f3b1e2cf19736",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "a470d8fcfe08bdaeaa6647b045912092",
     "youtube-music-morphe-v9.20.53-arm64-v8a": "85794d6ab2ad6ac70c4a831744954cd4",
     "youtube-music-morphe-v9.20.53-arm-v7a": "d63ab17e3a8681f2d2e7f18ba51a1c81",
     "youtube-morphe-v21.20.405-arm64-v8a": "4880131ce9e9705f414f106291df0893",
     "youtube-morphe-v21.20.405-arm-v7a": "698d614122cd4b2bfbcc42f3788f0be1",
     "instagram-hushgram-v450.0.0.50.77-arm64-v8a": "17031d47ee57d642a5590ae52cb0e198",
     "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a": "1d3bc38f2130a37e56f310a45fe36c61",
-    "google-photos-akashsriram-v7.96.0.993165104-arm-v7a": "ab3368c003fb20203283d14363c19af4"
+    "google-photos-akashsriram-v7.96.0.993165104-arm-v7a": "ab3368c003fb20203283d14363c19af4",
+    "camscanner-rushiranpise-v7.24.5.2608200000-arm-v7a": "affc4d4d0f2c11000244b11e8005c601",
+    "camscanner-rushiranpise-v7.24.5.2608200000-arm64-v8a": "d6833434c09a9d69cb40526ef1d1f15e",
+    "google-photos-rushiranpise-v7.97.0.997578476-arm64-v8a": "2bb23e9ab7f2370b096a19d033fc328a",
+    "google-photos-rushiranpise-v7.97.0.997578476-arm-v7a": "a458916f23020a6a7e34165fa461ca4f"
   }
 }
