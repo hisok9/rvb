@@ -17,13 +17,8 @@ There exists an example below with all defaults shown and all the keys explicitl
 
 ```toml
 compression-level = 9                # module zip compression level
-# duplicate-build suppression: off | log | enforce (default: log). CI-only effect:
-# enforce skips publishing an app whose freshly patched APK hashes identical to the
-# published one (state/build_content_hashes.json on `data`) and stops before module
-# packaging. log measures and prints without skipping; local builds never skip.
-dedup-mode = "log"
 remove-rv-integrations-checks = true # remove checks from the revanced integrations
-dpi = "320dpi nodpi"            # dpi packages to be searched in order. 'auto' matches whatever is available. default: "nodpi anydpi auto"
+dpi = "320dpi nodpi"            # apkmirror 'Screen DPI' values to accept; 'auto' also takes whatever else the release has. default: "nodpi anydpi auto"
 
 patches-source = "revanced/revanced-patches" # where to fetch patches bundle from. default: "MorpheApp/morphe-patches"
 patches-source-host = "github"               # source host for patches: "github", "gitlab" or "codeberg". default: "github"
@@ -89,7 +84,7 @@ excluded-patches = """\
   'Some Other Patch' \
   """                                                      # whitespace seperated list of patches to exclude. When mixing multiple `patches-source` bundles, you can use `|` to separate the patches for each bundle. To skip a bundle, leave the side empty (e.g. `" | 'Patch for second bundle'"`).
 
-included-patches = "'Some Patch'"                          # whitespace seperated list of non-default patches to include. default: "". When mixing multiple `patches-source` bundles, you can use `|` to separate the patches for each bundle. To skip a bundle, leave the side empty (e.g. `" | 'Patch for second bundle'"`).
+included-patches = "'Some Patch'"                          # whitespace seperated list of non-default patches to include. default: "". When mixing multiple `patches-source` bundles, you can use `|` to separate the patches for each bundle. To skip a bundle, leave the side empty (e.g. `" | 'Patch for second bundle'"`). These names decide more than the `-e` list: the versions the build will accept, and the versionCode it pins per arch, are read from **these** patches (`list-patches`) rather than the CLI's default-enabled set (`list-versions`), so an app whose patches ship `Enabled: false` only builds when they are named here.
 include-stock = "merged"                                   # 'merged', 'split' or 'disable'. default: merged
 exclusive-patches = false                                  # exclude all patches by default. Accepts `true`, `false`, or a string of patch sources (e.g. `"'jkennethcarino/adobo'"`). When a specific patch source is provided, only that bundle becomes exclusive, while others retain their default patches. default: false
 inclusive-patches = false                                  # the mirror of `exclusive-patches`: `true` applies **every** patch the CLI lists for this app, so you curate downwards with `excluded-patches` instead of writing out dozens of `included-patches` names. Boolean only (no patch-source list), cannot be combined with `exclusive-patches`, and needs a tool that can list patches (Morphe/ReVanced - not Xposed modules or Instafel). "Every" is the package-filtered listing the builder already reads (`list-patches -f <pkg> -x`), so patches declaring no package are not included. Names are expanded at build time from the live listing: a patch the author adds later is picked up automatically, and since Morphe aborts when a patch fails, that automatic pickup can break a build with no change on your side. default: false
@@ -119,7 +114,7 @@ module-prop-name = "some-app-module"                       # module prop name. d
 # FILE-LEVEL ONLY (an app block cannot change it), and forced off for local builds,
 # where there is no published update branch to point at. default: true in CI, false locally
 enable-module-update = true
-dpi = "360-480dpi"                                         # used to select apk variant from apkmirror. 'auto' matches whatever is available. default: nodpi anydpi auto
+dpi = "360-480dpi"                                         # apkmirror variant filter: rows whose `Screen DPI` column is listed here are preferred, 'auto' accepts whatever else the release has. Among the rows that pass arch/versionCode/dpi, the lowest `Minimum Version` wins so the build installs on the oldest device, then the widest architecture coverage. default: nodpi anydpi auto
 ```
 
 ### Naming & Catalog Hierarchy

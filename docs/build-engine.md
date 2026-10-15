@@ -39,6 +39,16 @@ to `-`) is identical in the pooled child, the serial parent and the CI step.
   all, and every version tried through every source with nothing accepted — the
   second one used to skip silently, because returning 0 makes the parent delete the
   app's `<slug>.json` as a clean return, and only the `_dl` name survives that sweep.
+- **Patch-set rejection** — writing `temp/failures/<slug>_np.json` (`tried` lists the
+  versions the bundle refused) and returning 0. Kept separate from `_dl` because it
+  means the opposite: no source failed and no APK is missing, the patch set has
+  nothing to apply for this version set or this arch, so the report names the bundle
+  instead of asking for an upload ([decisions/0009](decisions/0009-effective-patch-set-decides-compatibility.md)).
+- **Version-code fallback** — a build-failure descriptor also carries
+  `vc_fallback: true` when the arch was already fetched through the code→arch fallback
+  (stage 4) and still failed. That is a genuine incompatibility, not a transient miss, so
+  the retry writer parks it rather than re-queueing it and the report says so
+  ([decisions/0011](decisions/0011-version-code-fallback-to-arch.md)).
 
 `temp/failures/` is wiped at the START of `build.sh` and deliberately survives the
 end-of-run sweep, so the `build.yml` "Report build failures" step can read it.
@@ -84,11 +94,14 @@ an identical APK under a new build number falsely notifies every updater
   stability for the other tools is unmeasured), `python3` present, channel
   recognised. Anything missing publishes as today: the check fails toward
   redundancy, never toward a silent drop.
-- **`RVB_DEDUP_MODE`** (`off|log|enforce`, also settable as the `dedup-mode`
-  file-level config key; the pool default comes from the `build.yml` env, which
-  runs **`enforce`** since the 1388-1391 log phase found one true duplicate,
-  zero false matches and no stale state; a config naming nothing falls back to
-  `log`, so local and hand-run builds still only measure). `log` computes and
+- **`RVB_DEDUP_MODE`** (`off|log|enforce`). Tuning knob by
+  [decisions/0005](decisions/0005-tuning-knobs-live-in-the-workflow.md): named
+  **only** by the `build.yml` job env (which runs `enforce` since the 1388-1391
+  log phase found one true duplicate, zero false matches and no stale state) —
+  there is deliberately no config key for it. Unset, as in any local run, it
+  defaults to `log`: measure, never skip. The value is read into the exported
+  variable itself and printed at build start; assigning it after a config-style
+  read is how the workflow's choice got clobbered once. `log` computes and
   compares but skips nothing and mutates no reference.
 - Records: `temp/unchanged/<slug>.json` per skipped app (same survive-the-sweep
   rule as `temp/failures/`), and `temp/hashes/append.<pid>.tsv` lines per fresh
@@ -162,9 +175,20 @@ for adding surface without a measured gain
    precedence: explicit `version` from the config (a tag, or `exp`/`latest`/`beta`)
    → the version the patch bundle advertises under `auto` (a tested compatibility
    guarantee) → `state/app_versions.json` (only when the CLI advertises nothing) →
-   live latest from the source. The target `versionCode` is derived from patch
-   metadata only, and `has_compatible_patches` gates the build on the bundle
-   actually covering the resolved version.
+   live latest from the source. What the bundle "advertises" is the version set of
+   the patches that will actually be applied: `_effective_patch_versions` reads
+   `list-patches` restricted to the `included-patches` names when they are set (they
+   reach the CLI as `-e` and apply even when the bundle ships them `Enabled: false`)
+   and `list-versions` — which counts only the default-enabled set — when they are
+   not. The same table supplies the target `versionCode` and answers
+   `has_compatible_patches`, so a version can never be advertised by one function and
+   rejected by the other ([decisions/0009](decisions/0009-effective-patch-set-decides-compatibility.md)).
+   A candidate whose version-code annotation lists other ABIs only is redirected, not
+   dropped: if another supported version is viable for the arch it takes its place
+   (that is what lets one app publish arm64 at one version and arm-v7a at another),
+   and when none of them mentions the arch the download proceeds and the artifact-bytes
+   gate above decides — the annotation records what the patch author tested, not what
+   the store ships. `arch=all`/`auto` never filters.
 4. **Stock acquisition** — see the source order below. Bundles
    (`.xapk`/`.apkm`/`.apks`) are kept whole and handed to morphe untouched when
    `RVB_MORPHE_PASSTHROUGH=true` (morphe merges natively, and some APKs misbehave
@@ -176,6 +200,12 @@ for adding surface without a measured gain
    and the run falls through to the next source — the arch goes unbuilt if no source
    supplies it, so no file is ever named for an ABI it does not contain
    ([decisions/0007](decisions/0007-requested-arch-is-a-hard-requirement.md)).
+   A pinned `versionCode` is a preference, not a veto: when no APKMirror variant carries
+   both the pinned code and the requested arch (a bundle can stamp the arm64 code on
+   every ABI), `dl_apkmirror` re-selects by arch+version alone and `build_rv` re-keys the
+   artifact to the code read off its bytes, so a wrong per-ABI code cannot drop a
+   buildable arch and patch application decides compatibility
+   ([decisions/0011](decisions/0011-version-code-fallback-to-arch.md)).
    APKPure/APKCombo/Uptodown links carry no ABI in the URL, so the first build to want
    one fetches it **once** and records its bytes in `temp/urlindex`; a later job that
    resolves the same link adopts the stored blob (right arch) or skips the source
@@ -205,11 +235,16 @@ for adding surface without a measured gain
    [Duplicate-build suppression](#duplicate-build-suppression-tempunchanged-statebuild_content_hashesjson))
    never reaches this point: it writes no fragment. Because fragments share one key across arches,
    the fold keeps the first-wins scalars (`version`, `applied_patches`) for
-   backward compatibility **and** records an additive `archVersion` / `archApplied`
-   map keyed by the filename arch token, so a mixed-version build retains each
-   arch's real version and patch set. `build_make_manifest.py` resolves each file's
-   version from the filename first, then the `archVersion` map, then the scalar (and
-   its patches from `archApplied` then the scalar). `generate_release_notes.py`
+   backward compatibility **and** records additive `archVersion` / `archApplied`
+   maps: `archVersion` keyed by the filename arch token, `archApplied` keyed by
+   `token/kind` (`apk` vs the module `zip`), so a mixed-version build retains each
+   arch's real version and each artifact's real patch set — under `build-mode`
+   `both` one arch yields both an APK and a module whose applied sets differ
+   (module mode disables the microG/GmsCore patches), which a token-only key
+   would collapse to whichever fragment sorts last. `build_make_manifest.py`
+   resolves each file's version from the filename first, then the `archVersion`
+   map, then the scalar (and its patches from `archApplied` at the file's own
+   `arch/kind`, then the scalar). `generate_release_notes.py`
    derives each file's version straight from its filename and splits an app into one
    release-note bullet per distinct version, so a fallback arch is never reported
    under the other arch's version.
@@ -222,11 +257,11 @@ in; the first source that yields a verified artifact **carrying the requested ar
 
 | # | Source | Notes |
 |---|---|---|
-| 1 | `cache_repo` | `nullcpy/apks` — release per package name, download-only (never used to list versions) → [cache-repo.md](cache-repo.md) |
+| 1 | `cache_repo` | `nullcpy/apks` — release per package name, download-only (never used to list versions) → [cache-repo.md](cache-repo.md). No release for the package means it has never been uploaded (every app's first build), which is logged as a cache miss, not as a failed request |
 | 2 | `direct` | a straight file URL in the config |
 | 3 | `github` | release assets, filtered by `github-release-regex` / `github-regex`, arch-mapped |
 | 4 | `archive` | `archive.org` item, the long-term fallback for delisted versions |
-| 5 | `apkmirror` | universal-bundle strategy; package/version read from the HTML |
+| 5 | `apkmirror` | variant picker ranks the release's rows (see below); package/version read from the HTML |
 | 6 | `uptodown` | |
 | 7 | `apkpure` | one link per ABI read off `/downloading/<v>` → `/download/<v>` → `/download`, the page's featured `#download_link` being only one candidate, with the store's own `?versionCode=&nc=` link form as the last resort when a page yields nothing; XAPK handling in `_apkpure_install_xapk` |
 | 8 | `apkcombo` | trusts the served filename over its object key |
@@ -258,6 +293,22 @@ Supporting machinery:
   `nc` and to serve nothing for an unknown `nc`). It is used only when the engine has
   already resolved a version code and the arch has a store spelling, it is logged as
   constructed, and the artifact is judged from its bytes like any other.
+- **APKMirror variant picking** — one release page lists several uploads of the *same*
+  versionCode that differ only in their Architecture / Minimum Version / Screen DPI
+  columns, so the row matcher (`scripts/apkmirror_search.py`, mirrored in `utils.sh` for
+  a runner without python) treats each column as a predicate and then ranks what is left:
+  the **lowest Minimum Version** first, so the published artifact installs on the oldest
+  device the app still supports instead of on whichever row sits at the table's bottom;
+  wider ABI coverage next (one fetch then serves both arm builds); an exact DPI match
+  next; table position last. A pinned versionCode narrows the rows and does not end the
+  search — answering the first numeric match is what handed the arm-v7a build the
+  arm64-only bundle in run 38589077939. A multi-ABI column is read by membership, so
+  `arm64-v8a + armeabi-v7a + x86 + x86_64` counts as carrying arm-v7a, while a catch-all
+  `all` request takes only `universal`/`noarch`. Split uploads are looked for **before**
+  single-file APKs (`_apkmirror_type_order`), falling through to the plain APK when no
+  bundle row satisfies arch, versionCode and DPI. A version no row satisfies is not
+  guessed at: the source is skipped and the next one tried, and the bytes are still
+  judged by the arch-honesty gate above.
 - **Transfer guards** — `_req` sets connect *and* absolute ceilings plus a low-
   speed stall guard, because a mirror that trickles would otherwise hold a build
   slot forever.

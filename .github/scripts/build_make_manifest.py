@@ -39,7 +39,8 @@ def main():
             build_info = json.load(f)
 
     build_dir = Path("build")
-    built_files = [f for f in build_dir.iterdir() if f.is_file()] if build_dir.exists() else []
+    built_files = [f for f in build_dir.iterdir() if f.is_file()
+                   ] if build_dir.exists() else []
 
     files = {}
     for target_key, info in build_info.items():
@@ -59,17 +60,22 @@ def main():
         if brand_cfg:
             brand_key, brand_name = normalize_key(brand_cfg), brand_cfg
         else:
-            brand_key, brand_name = parse_patch_info(info.get("patches_source"), info.get("patches"))
+            brand_key, brand_name = parse_patch_info(
+                info.get("patches_source"), info.get("patches"))
 
         variant_cfg = (info.get("variant") or "").strip()
-        variant_val = variant_cfg if (variant_cfg and variant_cfg.lower() != "default") else None
+        variant_val = variant_cfg if (
+            variant_cfg and variant_cfg.lower() != "default") else None
         sub_variant_cfg = (info.get("sub_variant") or "").strip()
         sub_variant_val = sub_variant_cfg if sub_variant_cfg else None
         version = info.get("version", "")
         # Per-arch truth (additive keys from merge_build_info). A single build can
         # publish arm64 at one version and arm at a fallback version, and their
         # applied-patch sets can differ, so each file takes its own arch's values
-        # rather than the collapsed scalar the entry still carries.
+        # rather than the collapsed scalar the entry still carries. Applied patches
+        # are additionally keyed by file kind (apk vs module zip): under build-mode
+        # "both" one arch ships both artifacts and their patch sets differ (module
+        # mode disables the microG/GmsCore patches), so the kind is part of the key.
         arch_version_map = info.get("archVersion") or {}
         arch_applied_map = info.get("archApplied") or {}
         patches_ref = (info.get("patches") or "").strip()
@@ -82,14 +88,20 @@ def main():
                 continue
             raw_arch = extract_arch(fname, version)
             norm_arch = normalize_arch(raw_arch)
+            kind = "apk" if lower.endswith(".apk") else "zip"
             file_version = (
                 extract_version(fname)
                 or arch_version_map.get(raw_arch)
                 or arch_version_map.get(norm_arch)
                 or version
             )
+            # "arch/kind" key from merge_build_info (kind is the bare extension,
+            # apk/zip), falling back to the bare-arch key (single-mode or older
+            # fragments) then the collapsed scalar.
             file_applied = (
-                arch_applied_map.get(raw_arch)
+                arch_applied_map.get(f"{raw_arch}/{kind}")
+                or arch_applied_map.get(f"{norm_arch}/{kind}")
+                or arch_applied_map.get(raw_arch)
                 or arch_applied_map.get(norm_arch)
                 or (info.get("applied_patches") or [])
             )
@@ -124,7 +136,8 @@ def main():
     out_path = out_dir / "build.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, separators=(",", ":"))
-    print(f"Wrote {out_path} with {len(files)} file entries (build {next_ver_code}, channel {channel}).")
+    print(
+        f"Wrote {out_path} with {len(files)} file entries (build {next_ver_code}, channel {channel}).")
 
 
 if __name__ == "__main__":

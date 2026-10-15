@@ -11,7 +11,7 @@ GitHub's limits; notify reports failures.
 | [cleanup.yml](../.github/workflows/cleanup.yml) | Cleanup | `workflow_call`, `workflow_dispatch` | `clean` |
 | [manual-ci.yml](../.github/workflows/manual-ci.yml) | Manual CI | `workflow_dispatch` (config choice + optional `remove_apks`) | `ci` |
 | [notify.yml](../.github/workflows/notify.yml) | Notify | `issues`/`pull_request` (debounced batch), `workflow_call` (immediate, on `failure()` of the caller) | drain: `notify-debounce` |
-| [trace-verify.yml](../.github/workflows/trace-verify.yml) | Trace Verify | `push` touching `scripts/build.sh`, `scripts/utils.sh` or `.github/traces/**` | `trace-verify` |
+| [trace-verify.yml](../.github/workflows/trace-verify.yml) | Trace Verify | `push` touching `scripts/build.sh`, `scripts/utils.sh`, `scripts/apkmirror_search.py` or `.github/traces/**` | `trace-verify` |
 
 Nothing here runs on `push` to `main` except Trace Verify: a push changes
 behaviour for the *next* scheduled run, it does not start a build.
@@ -40,7 +40,8 @@ step's output is the next step's input:
 | Sync Patch Sources | `sync_patch_sources.py` | discovers all `(patches-source, host)` pairs, lists releases on GitHub/GitLab/Codeberg, rewrites `state/patch_sources.json`, prunes sources no config uses, emits `TRIGGER_STABLE`/`TRIGGER_BETA`/`TRIGGER_BLOCKED` and writes `changed_sources.json` |
 | Fetch App Versions | `ci_fetch_app_versions.sh` | scrapes current store versions (honours `"_check_only_listed"` in `state/app_versions.json`) |
 | Compare App Versions | `compare` step | `TRIGGER_APP_UPDATE` when a tracked app moved |
-| Classify triggers | `ci_trigger_flags.sh` | the two questions everyone else asks: `SOURCES_CHANGED`, `ANYTHING_CHANGED` |
+| Detect config changes | `ci_detect_config_changes.sh` | always runs: diffs the compiled config against `state/built_shape.json`, enqueues new apps/arches and carried-over retries into `state/pending_builds.json`, prunes entries whose app/arch left the config, and emits `TRIGGER_CONFIG_CHANGE` (why: [decisions/0010](decisions/0010-config-change-pending-builds.md)) |
+| Classify triggers | `ci_trigger_flags.sh` | the two questions everyone else asks: `SOURCES_CHANGED`, `ANYTHING_CHANGED` (config change counts toward the latter, never the former) |
 | Check Patch App Updates | `ci_check_app_patches.py` | only when `SOURCES_CHANGED`: downloads the changed bundles and hashes them (`state/patch_file_hashes.json`) to find which apps the new patches actually cover |
 | Generate configs (JSON) | `ci_generate_configs.sh` | only when `ANYTHING_CHANGED`: writes the pool config each channel will build |
 | Resolve effective triggers | `ci_resolve_triggers.sh` | per-channel `TRIGGER_*` **after** generation, and downgrades a trigger to 0 when the resulting pool has no enabled apps |
@@ -71,6 +72,7 @@ Two design rules worth preserving:
 | …on the beta channel | `TRIGGER_BETA` | beta pool only |
 | An app's own version changed in a tracked store | `TRIGGER_APP_UPDATE` | both pools reconsider membership (beta gated as above) |
 | A source is blocked or unblocked (`404`/`451`/`403` from the forge) | `TRIGGER_BLOCKED` | regenerates membership, so frozen sources drop out and recovered ones return |
+| The config gained a new app or a new architecture, **or** a previously-failed build is still owed a retry | `TRIGGER_CONFIG_CHANGE` (non-parked pending list) | pool regenerates with the pending apps force-enabled, and the build runs even though no source or version moved (why: [decisions/0010](decisions/0010-config-change-pending-builds.md)) |
 | Nothing moved | all `0` | no config write, no notification, no build |
 
 A blocked source is **skipped**, not retried: neither a retry nor a live listing
@@ -137,13 +139,27 @@ Step order, with the reason each is where it is:
 7b. **Report build failures** (`build_report_failures.sh`, `if: always()`,
    `continue-on-error`): reads `temp/failures/`, uploads each build log to
    `xi.pe`, and posts ONE batched Markdown message to the failure topic
-   (`TG_THREAD_NOTIFY`, 3031) — apps that failed to **build** (with the log link
-   and patch source) and apps whose **download sources were all exhausted** (a
-   request to upload the APK to the cache repo manually), plus a link to the run.
-   When it sends, it sets the job output `reported_failures=true`, which
+   (`TG_THREAD_NOTIFY`) in up to three sections — apps that failed to **build**
+   (`<slug>.json`, with the log link and patch source), apps the patch set
+   **refused for every supported version** (`<slug>_np.json`: the tried versions and
+   the bundle link, and deliberately no APK search links, since nothing was ever
+   fetched), and apps whose **download sources were all exhausted**
+   (`<slug>_dl.json`, a request to upload the APK to the cache repo manually), plus a
+   link to the run. A slug that has a build record has its `_dl`/`_np` twins dropped,
+   so an app is reported once. When it sends, it sets the job output
+   `reported_failures=true`, which
    `trigger_notify_failure` forwards as `already_reported` so
    `notify_send_telegram.sh` skips the generic "🔴 CI #N failed" alert for that
    run (Route B) — non-build failures still notify normally.
+7b2. **Reconcile pending-build state** (`build_update_retry_list.sh`,
+   `if: !cancelled()`): reads the same `temp/failures/` records and updates
+   `state/built_shape.json` + `state/pending_builds.json` for this channel — an
+   attempted app/arch with no failure record is recorded as built and cleared from
+   the pending list, a failed arch still requested is re-queued as a retry and
+   parked once it hits `RVB_RETRY_MAX`, and `_np` (no-patch) records are not retried
+   because the bundle updating re-triggers the app anyway. A dedicated commit step
+   pushes the two files to `data`. The watcher reads them next run to force-enable
+   the queue (step 7c of `check_patch`, [above](#the-watcher-ciyml)).
 7c. **Check whether anything needs publishing** (`build_check_no_change.sh`):
    `build/` empty plus `temp/unchanged/all.txt` (every artifact this pool built
    was an unchanged duplicate) → `HAS_NEW_FILES=false`, and steps 9–16 are all
@@ -191,7 +207,11 @@ Step order, with the reason each is where it is:
     `commit_data_branch.sh` then pushes the state file to `data` (only when the
     merge changed it; a failed data push is a warning, not a failure — the next
     run's fetch converges and the worst case is one redundant republish).
-17. `build_notify_telegram.sh` posts the release to the channel's thread.
+17. `build_notify_telegram.sh` posts the release to the channel's thread and to the
+    broadcast channel. `continue-on-error`: the chat, the channel and the topic come
+    from variables only (no built-in handle), so an unset one fails this step — but
+    the step runs last, after publishing, and a notification-config error must not
+    turn a run whose files are already live into a failed build.
 
 ## Cleanup (`cleanup.yml`)
 
@@ -221,7 +241,8 @@ Step order, with the reason each is where it is:
 
 ## Notify (`notify.yml`)
 
-Two delivery models sharing one renderer (`notify_render.sh`):
+Two delivery models sharing one renderer (`notify_render.sh`) and one target guard
+(`notify_targets.sh`):
 
 - **`workflow_call` — immediate.** A caller (`ci.yml`/`manual-ci.yml`) invokes it on
   `failure()`; the `notify` job renders the generic "🔴 CI #N failed" alert via
@@ -240,6 +261,18 @@ Two delivery models sharing one renderer (`notify_render.sh`):
   ONE batched message and prunes exactly the drained prefix. Later queued drains
   find the queue empty and no-op.
 
+**No notification script names a chat.** Every `TG_*` target arrives from a
+repository variable, and `tg_require_targets` refuses to send when one is unset:
+the step fails with an `::error::` listing the missing names and no message goes
+out. It used to be `${TG_CHAT_ID:-@handle}` / `${TG_THREAD_*:-<number>}` defaults at
+each send site, which meant a renamed group or a misspelled variable kept posting to
+the stale chat instead of saying so. A missing topic ID is an error too, not "no
+thread" — in a forum group Telegram routes a threadless message to General, which
+looks like a delivered notification. The guard runs after the `TG_TOKEN` skip (a
+fork with no token still exits 0 quietly) and after each script's own "nothing to
+send" early exit, so a clean run never fails over config nobody needed; a failed
+drain leaves its queue lines on the branch for the next attempt.
+
 The queue is append-only and every plumbing call pins `core.autocrlf=false` /
 `core.eol=lf`, so the JSONL bytes (and the drain's prefix prune) do not depend on
 the runner's git config.
@@ -254,8 +287,8 @@ the runner's git config.
 | secret | `CODEBERG_TOKEN` | watcher | raises Codeberg/Forgejo rate limits |
 | secret | `TG_TOKEN`, `WEBSITE_DISPATCH_TOKEN` (optional) | notify steps | |
 | var | `APKS_REPO`, `WEBSITE_REPO` | build, cleanup | alternate cache/site repos for forks |
-| var | `TG_CHAT_ID`, `TG_CHAT_ID_BROADCAST`, `TG_THREAD_CI`, `TG_THREAD_STABLE`, `TG_THREAD_BETA`, `TG_THREAD_NOTIFY` (3031) | notifications | Telegram topic routing; `TG_THREAD_NOTIFY` receives the per-app build/download failure report |
-| var | `RELEASE_NOTES_TG_LINK`, `RELEASE_NOTES_DONATE_LINK`, `RELEASE_NOTES_WEBSITE_LINK` | build | footer links in the generated release body |
+| var | `TG_CHAT_ID`, `TG_CHAT_ID_BROADCAST`, `TG_THREAD_CI`, `TG_THREAD_STABLE`, `TG_THREAD_BETA`, `TG_THREAD_NOTIFY` | notifications | **all six required** — the chat handle and every topic ID come from here only, and an unset one fails its notify step (see the target guard above) instead of falling back to a written-in chat; `TG_THREAD_NOTIFY` receives the per-app build/download failure report |
+| var | `RELEASE_NOTES_TG_LINK`, `RELEASE_NOTES_DONATE_LINK`, `RELEASE_NOTES_WEBSITE_LINK` | build | footer links in the generated release body; the Group link is omitted when its var is unset, never invented |
 | var | `RVB_MORPHE_PASSTHROUGH` | build | bundle handling escape hatch |
 
 ## Log conventions

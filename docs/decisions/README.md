@@ -39,9 +39,13 @@ document.
 | [0006](0006-filename-parsing-is-imported-not-mirrored.md) | Filename parsing is imported across the repo boundary, never mirrored | `naming.py`, the site's catalogue rebuild |
 | [0007](0007-requested-arch-is-a-hard-requirement.md) | A requested build arch is a hard requirement; no mislabeled artifacts | `build_rv` download gate, download-link index, published arch names |
 | [0008](0008-signing-identity-is-secret-only.md) | The signing identity is a secret, never a repository file | `install_keystore.sh`, `RVB_KEYSTORE*`, keystore secrets, every published artifact's signer |
+| [0009](0009-effective-patch-set-decides-compatibility.md) | The patch set that will be applied decides compatibility | `has_compatible_patches`, version resolution, candidate arch filter, `temp/failures/*_np.json` |
+| [0010](0010-config-change-pending-builds.md) | Config changes and build failures drive a pending-build list | `ci_detect_config_changes.sh`, `build_update_retry_list.sh`, `state/built_shape.json`, `state/pending_builds.json`, `TRIGGER_CONFIG_CHANGE` |
+| [0011](0011-version-code-fallback-to-arch.md) | A pinned version code is a preference; the arch wins when the bundle is wrong | `dl_apkmirror`, `build_rv` re-key, `temp/failures/*` `vc_fallback`, retry parking |
 
 Candidates still unwritten, because the reasoning currently lives only in commit
 messages: pinning a patch source's `patches-version` to a tag vs resolving the
-keyword from the state snapshot (2fced014), the universal-bundle strategy on
-APKMirror (20eb4e5a), and why the archive release is the download target for module
-update pointers rather than the numbered release.
+keyword from the state snapshot (2fced014), the APKMirror variant picker — split
+bundle before plain APK, lowest `Minimum Version` first, a pinned versionCode as a
+filter rather than an answer (20eb4e5a) — and why the archive release is the download
+target for module update pointers rather than the numbered release.
