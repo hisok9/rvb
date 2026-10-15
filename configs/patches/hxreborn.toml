@@ -44,8 +44,11 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/proton-p
 apkpure-dlurl = "https://apkpure.com/password-manager-proton-pass/proton.android.pass"
 
 [AnyTracker-hxreborn]
-enabled = false
+enabled = true
 pkg-name = "com.shervinkoushan.anyTracker"
 app-name = "AnyTracker"
+# not on any Mirror listed in DL_SRCS; archive.org item holds a single
+# AnyTracker.apk, so `direct` (which ignores the filename) is the only fit
+direct-dlurl = "https://archive.org/download/any-tracker/AnyTracker.apk"
 
 

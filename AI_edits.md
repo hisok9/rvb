@@ -6,7 +6,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 
 ## Scope
 
-- **27 keepers** in `configs/patches/*.toml` (56 files, 200 tables → 173 flips):
+- **28 keepers** in `configs/patches/*.toml` (56 files, 201 tables → 173 flips):
 
   | File | Keep |
   |---|---|
@@ -23,6 +23,7 @@ Build-pruning + fork setup. Local checkout: `data`.
   | `discord.toml` | `Discord-Venus` |
   | `michii.toml` | `LinkedIn-michii` |
   | `truecaller.toml` | `Truecaller-heval99` |
+  | `hxreborn.toml` | `AnyTracker-hxreborn` |
   | `instagram.toml` | `Instagram-Aunali321`, `-brosssh`, `-brosssh-Clone`, `-InstaFel`, `-InstaFel-Clone`, `-Piko`, `-Piko-Clone`, `-HushGram` |
 
   **Shared `pkg-name` = one installs at a time** (4 groups): 8 Instagram tables,
@@ -49,7 +50,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 - **Mechanism:** `enabled = false` **on each table**, never file-level —
   `build.sh:168` does `toml_get "$t" enabled) || enabled=true` (table only, falls
   back to *true*). Deleting the line re-enables. Config was never deleted.
-- **Pools:** `compile_patch_configs.py` → stable = 27, beta = 9
+- **Pools:** `compile_patch_configs.py` → stable = 28, beta = 9
   (beta = the 9 keepers with `patches-version = "both"`: YouTube ×2,
   `Truecaller-bufferk`, `Truecaller-heval99`, `GooglePhotos-DeVanced`,
   Instagram `brosssh` ×2 + `Piko` ×2).
@@ -96,6 +97,13 @@ Build-pruning + fork setup. Local checkout: `data`.
   careless resolution drops it every sync.
 - Upstream also trimmed `archive-dlurl` from several keepers (their `fb440d23` /
   restructure) — kept as-is, it is only a fallback source.
+- **`AnyTracker-hxreborn` added, then enabled.** No store in `DL_SRCS` lists it:
+  APKMirror `arch_results: 0` (a real zero-result page, not a block), Aptoide's API
+  answers authoritatively `APP-1 ... not found`. Its bundle `patches-1.52.0.mpp`
+  covers 7.5.4/7.5.6, and the only APK found is an archive.org item holding a single
+  `AnyTracker.apk` (7.5.6, versionCode 388, no native libs). `archive-dlurl` matches
+  only `<pkg>-<version>-<arch>.apk`, so it can never match that name — used
+  `direct-dlurl` instead. Keepers → **28**.
 
 ---
 
@@ -107,8 +115,9 @@ Build-pruning + fork setup. Local checkout: `data`.
 - Crons UTC: `00:11 04:46 08:08 12:52 16:29 20:03`. Or Actions → CI → Run workflow.
 - **Manual CI:** `manual-ci.yml` never recompiles — `build_resolve_context.sh` only
   reads `patches-version`. Its `config_file` default is now
-  `configs/config.manual.toml` = **Google Maps only** (a single-app smoke test);
-  `auto` still compiles all 24 and is what the cron uses. The `*_build.json`
+  `configs/config.manual.toml` = **the newly added apps** (currently
+  `Discord-Venus`, `LinkedIn-michii`, `Truecaller-heval99`, `AnyTracker-hxreborn`);
+  `auto` still compiles all 28 and is what the cron uses. The `*_build.json`
   choices were upstream-stale. (The default lives in `manual-ci.yml` on **`main`**;
   the fixture itself lives on **`data`**, which `build.yml` materialises.)
 - **Repo setting: Workflow permissions → Read and write.** `manual-ci.yml` declares
@@ -122,7 +131,7 @@ Build-pruning + fork setup. Local checkout: `data`.
 | Fork inherits upstream's *generated* `configs/*_build.json` (17 apps), not your TOMLs | self-corrects on the first `ANYTHING_CHANGED=1` run (steps 7→8 order guarantees it) |
 | `ANYTHING_CHANGED` never looks at TOMLs — flipping `enabled` sets no trigger | step 3 (base compile) always runs; steps 7 & 12 wait for an upstream signal |
 | inherited `archive/beta.json` on `website` | **deleted** — `merge_archive_branch.sh:47` has an absent-case `else`; no `beta` release exists so it was never read |
-| `config.manual.toml` | **Google Maps only** (body byte-equal to the compile render) — Manual CI's default; it is a throwaway smoke-test set, *not* a copy of the keepers, so it shrinks to whatever is being trialled. The 24 keepers stay in `patches/*.toml` for the cron |
+| `config.manual.toml` | **the newly added apps** (body byte-equal to the preamble render) — Manual CI's default; it is a throwaway smoke-test set, *not* a copy of the keepers, so it shrinks to whatever is being trialled. The 28 keepers stay in `patches/*.toml` for the cron |
 | `data` branch has **no `.gitignore`** | keep scratch files outside the repo |
 
 ---
