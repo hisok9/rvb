@@ -43,6 +43,9 @@ uptodown-dlurl = "https://proton-pass.en.uptodown.com/android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/proton-pass-password-manager"
 apkpure-dlurl = "https://apkpure.com/password-manager-proton-pass/proton.android.pass"
 
-
+[AnyTracker-hxreborn]
+enabled = false
+pkg-name = "com.shervinkoushan.anyTracker"
+app-name = "AnyTracker"
 
 
