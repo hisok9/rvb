@@ -1,5 +1,5 @@
 [LinkedIn-michii]
-enabled = false
+enabled = true
 pkg-name = "com.linkedin.android"
 app-name = "LinkedIn"
 brand = "michii"

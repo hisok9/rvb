@@ -1,25 +1,5 @@
-# Manual CI fixture — a single-app test set, as a frozen snapshot.
-#
-# Manual CI's DEFAULT `config_file`, so a dispatch builds exactly this one table.
-# It exists to smoke-test an app before the cron carries it; the enabled set
-# itself always lives in configs/patches/*.toml, and the cron compiles all of it
-# (`auto`).
-#
-# Dispatch: Actions -> Manual CI -> Run workflow.
-# (The cron in ci.yml only fires when a patch source or an app APK upstream
-# changes — editing a TOML is not a trigger.)
-#
-# Why this file exists separately from configs/patches/*.toml: manual-ci.yml
-# hands its config_file straight to build.yml, which never recompiles TOMLs
-# (build_resolve_context.sh only reads patches-version). build.yml does
-# materialise configs/ from the `data` branch, so edits here ship on push.
-#
-# No file-level preamble on purpose: build_resolve_context.sh runs
-# `awk '/^\[/ {exit}'` and treats an empty preamble as stable / non-prerelease.
-# Every file-level default from the source TOML is therefore inlined per table,
-# and `patches-version` falls back to the stable channel.
-#
-# HAND-MAINTAINED: when you change an app in configs/patches/*.toml, mirror it here.
+# ---- bearinmindcat.toml ----
+
 [GoogleMaps-bearinmindcat]
 enabled = true
 pkg-name = "com.google.android.apps.maps"
@@ -30,3 +10,326 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/maps"
 uptodown-dlurl = "https://google-maps.en.uptodown.com/android/download"
 apkpure-dlurl = "https://apkpure.com/google-maps-app/com.google.android.apps.maps"
 apkcombo-dlurl = "https://apkcombo.com/google-maps/com.google.android.apps.maps"
+
+# ---- dh6k.toml ----
+
+[BraveBrowser-dh6k-Beta]
+enabled = true
+pkg-name = "com.brave.browser_beta"
+app-name = "Brave Browser"
+brand = "dh6k"
+patches-source = "dh6k/morphe-patches"
+variant = "Beta"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser-beta"
+uptodown-dlurl = "https://brave-browser-beta.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/brave-browser-beta/com.brave.browser_beta"
+apkcombo-dlurl = "https://apkcombo.com/brave-beta/com.brave.browser_beta"
+
+[BraveBrowser-dh6k-Nightly]
+enabled = true
+pkg-name = "com.brave.browser_nightly"
+app-name = "Brave Browser"
+brand = "dh6k"
+patches-source = "dh6k/morphe-patches"
+variant = "Nightly"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser-nightly"
+uptodown-dlurl = "https://brave-browser-nightly.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/brave-nightly/com.brave.browser_nightly"
+apkcombo-dlurl = "https://apkcombo.com/brave-nightly/com.brave.browser_nightly"
+
+# ---- discord.toml ----
+
+[Discord-Venus]
+enabled = true
+pkg-name = "com.discord"
+app-name = "Discord"
+brand = "Venus"
+patches-source = "VenusIsJaded/Venus-Patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/discord/discord-chat-for-gamers"
+uptodown-dlurl = "https://discord-chat-for-gamers.en.uptodown.com/android"
+apkcombo-dlurl = "https://apkcombo.com/discord/com.discord"
+
+# ---- hoodles.toml ----
+
+[Duolingo-hoodles]
+enabled = true
+pkg-name = "com.duolingo"
+app-name = "Duolingo"
+brand = "hoodles"
+patches-source = "hoo-dles/morphe-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/duolingo/duolingo-duolingo"
+uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/duolingo-learn-languages/com.duolingo"
+apkcombo-dlurl = "https://apkcombo.com/duolingo/com.duolingo"
+
+[CamScanner-hoodles]
+enabled = true
+pkg-name = "com.intsig.camscanner"
+app-name = "CamScanner"
+brand = "hoodles"
+patches-source = "hoo-dles/morphe-patches"
+# base APK pinned — the only version hoo-dles/morphe-patches v1.46.0 declares support for
+version = "7.20.0.2606230000"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator"
+uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"
+apkcombo-dlurl = "https://apkcombo.com/camscanner/com.intsig.camscanner"
+
+# ---- instagram.toml ----
+
+[Instagram-Aunali321]
+enabled = true
+pkg-name = "com.instagram.android"
+app-name = "Instagram"
+brand = "Aunali321"
+patches-source = "Aunali321/ReVancedExperiments"
+cli-source = "ReVanced/revanced-cli"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+
+[Instagram-brosssh]
+enabled = true
+pkg-name = "com.instagram.android"
+app-name = "Instagram"
+brand = "brosssh"
+patches-source = "brosssh/morphe-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
+
+[Instagram-brosssh-Clone]
+enabled = true
+pkg-name = "com.instagram.android"
+app-name = "Instagram"
+brand = "brosssh"
+patches-source = "brosssh/morphe-patches"
+variant = "Clone"
+included-patches = "'Clone'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
+
+[Instagram-InstaFel]
+enabled = true
+pkg-name = "com.instagram.android"
+app-name = "Instagram"
+brand = "Instafel"
+patches-source = "instafel/pc-rel"
+cli-source = "instafel/p-rel"
+included-patches = "'unlock_developer_options' 'remove_snooze_warning' 'remove_ads' 'amoled_theme' 'instafel'"
+dpi = "480dpi nodpi anydpi auto"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+
+[Instagram-InstaFel-Clone]
+enabled = true
+pkg-name = "com.instagram.android"
+app-name = "Instagram"
+brand = "Instafel"
+patches-source = "instafel/pc-rel"
+cli-source = "instafel/p-rel"
+variant = "Clone"
+included-patches = "'unlock_developer_options' 'remove_snooze_warning' 'remove_ads' 'amoled_theme' 'instafel' 'clone'"
+dpi = "480dpi nodpi anydpi auto"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+
+[Instagram-Piko]
+enabled = true
+pkg-name = "com.instagram.android"
+app-name = "Instagram"
+brand = "Piko"
+build-mode = "both"
+patches-source = "crimera/piko"
+arch = "arm64-v8a"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+
+[Instagram-Piko-Clone]
+enabled = true
+pkg-name = "com.instagram.android"
+app-name = "Instagram"
+brand = "Piko"
+build-mode = "apk"
+patches-source = "crimera/piko"
+sub-variant = "Clone"
+arch = "arm64-v8a"
+included-patches = "'Clone'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+
+[Instagram-HushGram]
+enabled = true
+pkg-name = "com.instagram.android"
+app-name = "Instagram"
+brand = "HushGram"
+patches-source = "SysAdminDoc/HushGram"
+arch = "arm64-v8a"
+inclusive-patches = true
+excluded-patches = "'Install next to Instagram'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/geologically/apks/com.instagram.android"
+
+# ---- kveld9.toml ----
+
+[BraveBrowser-kveld9]
+enabled = true
+pkg-name = "com.brave.browser"
+app-name = "Brave Browser"
+brand = "kveld9"
+patches-source = "kveld9/kveld-morphe-patches"
+github-regex = "arm64-v8a: BraveMonoarm64\\.apk | arm-v7a: BraveMonoarm\\.apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser"
+uptodown-dlurl = "https://brave-software-brave.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/brave-browser-private-ads-block/com.brave.browser"
+apkcombo-dlurl = "https://apkcombo.com/brave-browser/com.brave.browser"
+github-dlurl = "https://github.com/brave/brave-browser"
+
+# ---- michii.toml ----
+
+[LinkedIn-michii]
+enabled = true
+pkg-name = "com.linkedin.android"
+app-name = "LinkedIn"
+brand = "michii"
+patches-source = "heyymichii/michii-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/linkedin/linkedin-linkedin"
+uptodown-dlurl = "https://linkedin.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/linkedin-network-job-finder/com.linkedin.android"
+
+# ---- photos.toml ----
+
+[GooglePhotos-DeVanced]
+enabled = true
+pkg-name = "com.google.android.apps.photos"
+app-name = "Google Photos"
+brand = "DeVanced"
+build-mode = "both"
+patches-source = "RookieEnough/De-Vanced"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+
+[GooglePhotos-rushiranpise]
+enabled = true
+pkg-name = "com.google.android.apps.photos"
+app-name = "Google Photos"
+brand = "rushiranpise"
+patches-source = "rushiranpise/morphe-patches"
+included-patches = "'AMOLED dark theme' 'Change package name' 'Enable DCIM folders backup control' 'Fix DCIM folder classification'"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+
+[GooglePhotos-AkashSriram]
+enabled = true
+pkg-name = "com.google.android.apps.photos"
+app-name = "Google Photos"
+brand = "AkashSriram"
+build-mode = "both"
+patches-source = "Akash-Sriram/morphe-google-photos"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+
+# ---- protonvpn.toml ----
+
+[ProtonVPN-hoodles]
+enabled = true
+pkg-name = "ch.protonvpn.android"
+app-name = "Proton VPN"
+brand = "hoodles"
+patches-source = "hoo-dles/morphe-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn"
+uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
+apkcombo-dlurl = "https://apkcombo.com/proton-vpn/ch.protonvpn.android"
+
+# ---- quantavil.toml ----
+
+[MicrosoftEdge-quantavil]
+enabled = true
+pkg-name = "com.microsoft.emmx"
+app-name = "Microsoft Edge"
+brand = "quantavil"
+patches-source = "quantavil/edge-morphe-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/microsoft-corporation/microsoft-edge"
+uptodown-dlurl = "https://microsoft-edge.en.uptodown.com/android"
+
+# ---- rushiranpise.toml ----
+
+[CamScanner-rushiranpise]
+enabled = true
+pkg-name = "com.intsig.camscanner"
+app-name = "CamScanner"
+brand = "rushiranpise"
+patches-source = "rushiranpise/morphe-patches"
+# base APK pinned — the only version rushiranpise/morphe-patches v1.22.0 declares support for
+version = "7.24.5.2608200000"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator"
+uptodown-dlurl = "https://camscanner-pdf-creator.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/camscanner-scanner-pdf-maker/com.intsig.camscanner"
+apkcombo-dlurl = "https://apkcombo.com/camscanner/com.intsig.camscanner"
+
+# ---- truecaller.toml ----
+
+[Truecaller-Paresh]
+enabled = true
+pkg-name = "com.truecaller"
+app-name = "Truecaller"
+brand = "Paresh"
+build-mode = "both"
+patches-source = "Paresh-Maheshwari/paresh-patches"
+patches-source-host = "gitlab"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
+uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
+
+[Truecaller-bufferk]
+enabled = true
+pkg-name = "com.truecaller"
+app-name = "Truecaller"
+brand = "bufferk"
+build-mode = "both"
+patches-source = "bufferk/morphe-patches"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
+uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
+
+[Truecaller-heval99]
+enabled = true
+pkg-name = "com.truecaller"
+app-name = "Truecaller"
+brand = "heval99"
+build-mode = "both"
+patches-source = "heval99/Heval-Morphe-Patches"
+included-patches = "'GmsCore support' 'Hide Premium tab' 'Hide Scam feed' 'Hide family button' 'Spoof signature' 'Use SMS for verification codes'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
+uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
+
+# ---- youtube-music.toml ----
+
+[YouTubeMusic-Morphe]
+enabled = true
+pkg-name = "com.google.android.apps.youtube.music"
+app-name = "YouTube Music"
+brand = "Morphe"
+build-mode = "both"
+patch-folder = "music"
+patches-source = "MorpheApp/morphe-patches"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/youtube-music/com.google.android.apps.youtube.music"
+apkcombo-dlurl = "https://apkcombo.com/youtube-music/com.google.android.apps.youtube.music"
+
+# ---- youtube.toml ----
+
+[YouTube-Morphe]
+enabled = true
+pkg-name = "com.google.android.youtube"
+app-name = "YouTube"
+brand = "Morphe"
+build-mode = "both"
+patch-folder = "youtube"
+patches-source = "MorpheApp/morphe-patches"
+excluded-patches = "'Custom branding'"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/youtube-app/com.google.android.youtube"
+apkcombo-dlurl = "https://apkcombo.com/youtube/com.google.android.youtube"
+

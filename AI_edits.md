@@ -6,12 +6,12 @@ Build-pruning + fork setup. Local checkout: `data`.
 
 ## Scope
 
-- **24 keepers** in `configs/patches/*.toml` (54 files, 193 tables → 169 flips):
+- **27 keepers** in `configs/patches/*.toml` (56 files, 200 tables → 173 flips):
 
   | File | Keep |
   |---|---|
   | `photos.toml` | `GooglePhotos-DeVanced`, `GooglePhotos-rushiranpise`, `GooglePhotos-AkashSriram` |
-  | `morphe.toml` | `YouTube-Morphe`, `YouTubeMusic-Morphe` |
+  | `youtube.toml`, `youtube-music.toml` | `YouTube-Morphe`, `YouTubeMusic-Morphe` |
   | `bufferk.toml` | `Truecaller-bufferk` |
   | `paresh.toml` | `Truecaller-Paresh` |
   | `hoodles.toml` | `CamScanner-hoodles`, `Duolingo-hoodles`, `ProtonVPN-hoodles` |
@@ -20,11 +20,15 @@ Build-pruning + fork setup. Local checkout: `data`.
   | `dh6k.toml` | `BraveBrowser-dh6k-Beta`, `BraveBrowser-dh6k-Nightly` |
   | `quantavil.toml` | `MicrosoftEdge-quantavil` |
   | `bearinmindcat.toml` | `GoogleMaps-bearinmindcat` |
+  | `discord.toml` | `Discord-Venus` |
+  | `michii.toml` | `LinkedIn-michii` |
+  | `truecaller.toml` | `Truecaller-heval99` |
   | `instagram.toml` | `Instagram-Aunali321`, `-brosssh`, `-brosssh-Clone`, `-InstaFel`, `-InstaFel-Clone`, `-Piko`, `-Piko-Clone`, `-HushGram` |
 
   **Shared `pkg-name` = one installs at a time** (4 groups): 8 Instagram tables,
-  3 Google Photos, 2 each for CamScanner (`rushiranpise` 7.24.5 upgrades over
-  `hoodles` 7.20.0; going back needs an uninstall) and Truecaller.
+  3 Google Photos, 2 for CamScanner (`rushiranpise` 7.24.5 upgrades over
+  `hoodles` 7.20.0; going back needs an uninstall), 3 for Truecaller
+  (`bufferk`, `Paresh`, `heval99`).
   Output files never collide — `file_prefix` appends `variant`, which is what
   separates the Clone / Beta / Nightly tables.
 
@@ -45,9 +49,10 @@ Build-pruning + fork setup. Local checkout: `data`.
 - **Mechanism:** `enabled = false` **on each table**, never file-level —
   `build.sh:168` does `toml_get "$t" enabled) || enabled=true` (table only, falls
   back to *true*). Deleting the line re-enables. Config was never deleted.
-- **Pools:** `compile_patch_configs.py` → stable = 23, beta = 8
-  (beta = the 8 keepers with `patches-version = "both"`: YouTube ×2,
-  `Truecaller-bufferk`, `GooglePhotos-DeVanced`, Instagram `brosssh` ×2 + `Piko` ×2).
+- **Pools:** `compile_patch_configs.py` → stable = 27, beta = 9
+  (beta = the 9 keepers with `patches-version = "both"`: YouTube ×2,
+  `Truecaller-bufferk`, `Truecaller-heval99`, `GooglePhotos-DeVanced`,
+  Instagram `brosssh` ×2 + `Piko` ×2).
 - **Never touched:** `TG_TOKEN` (unset → notify skips), `APKS_REPO` (unset).
 
 ---
@@ -77,6 +82,18 @@ Build-pruning + fork setup. Local checkout: `data`.
   ships `patches-2.1.0.mpp` with **136 Maps classes** under
   `org/ungoogled/patches/maps/` (ads, offline, saved places, MicroG/GMS,
   speedometer). Bumps the keeper set to **24** (stable 24 / beta 8).
+- **Second sync `9ba674b3`** (75 commits, 7 conflicts) added 7 tables, all landed
+  disabled and **3 then enabled on request**. All three are Morphe bundles (no
+  `cli-source`), so none of them takes the Xposed path:
+  - `Discord-Venus` — `patches-1.12.0.mpp`. The first *buildable* Discord: the
+    other two carry `cli-source = "JingMatrix/LSPatch"` and stay off.
+  - `LinkedIn-michii` — `patches-1.1.0.mpp`; fills the gap that made us drop LinkedIn.
+  - `Truecaller-heval99` — stable `v1.14.0` + beta `v1.15.0-dev.12`, so its
+    `patches-version = "both"` resolves on both channels.
+  Still off: `Instagram-HushGram-Clone`, `OfflineGames-ggYasin`,
+  `ProtonPass-hxreborn`, `Sofascore-heval99`. **`CamScanner-rushiranpise` is still
+  absent upstream — restored a second time**; it sits in conflict hunks, so a
+  careless resolution drops it every sync.
 - Upstream also trimmed `archive-dlurl` from several keepers (their `fb440d23` /
   restructure) — kept as-is, it is only a fallback source.
 

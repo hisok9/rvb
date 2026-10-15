@@ -24,7 +24,7 @@ uptodown-dlurl = "https://discord-chat-for-gamers.en.uptodown.com/android"
 apkcombo-dlurl = "https://apkcombo.com/discord/com.discord"
 
 [Discord-Venus]
-enabled = false
+enabled = true
 pkg-name = "com.discord"
 app-name = "Discord"
 brand = "Venus"
