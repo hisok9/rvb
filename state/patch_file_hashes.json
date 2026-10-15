@@ -7,7 +7,7 @@
       "com.netflix.ninja": "1d5a8970336c0c9bfd4daa688e218684",
       "com.peacocktv.peacockandroid": "fd369c36ba65c72d7297980fb92ebb83",
       "com.tubitv": "496e5b5e41c0ecf996a25790ae9fea89",
-      "com.univision.prendetv": "5ae85ad4e573b75a3d4c55dc5de3469f",
+      "com.univision.prendetv": "c105da71166c302285d93a75a6808212",
       "com.wbd.hbomax": "04db80a6460c84ff5bb97c71ef770cdf",
       "shared": "d92474921acee7f63fe21a0e1c560201",
       "tv.pluto.android": "661b0cff26c5ddd8ffd53d2d271663ab",
@@ -256,13 +256,14 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "ch.protonmail.android": "55019817ba716523c10d0429216ed377",
-      "ch.protonvpn.android": "9fddd74fbeebb6a502bd2cc0699f8135",
-      "com.dubox.drive": "b22cf77f705903a0e3512cf9a16c3324",
-      "com.greenstone.pocketwhip": "fa2b1681e786aa50bb21b85281e64d77",
-      "com.michaldrabik.showly2": "2fd455dcbbb8ba81ef3837f0dab1b3cc",
-      "dev.vodik7.atvtools": "14179ab4ede545924e56842b4b7bbca2",
-      "shared": "4c4f255658dd7e72865ecd266f7af279"
+      "ch.protonmail.android": "17d65c3d8c5592f3518475a54fa8e1d4",
+      "ch.protonvpn.android": "6a14745ced0c5831e698ee7b9d4f4db9",
+      "com.dubox.drive": "1c2a1fa2f06ca67bb646d5b18a3583af",
+      "com.greenstone.pocketwhip": "0ebb20aee8172ca01eb6d91b8af527f9",
+      "com.michaldrabik.showly2": "cf93c6309ffc1d4ddd582b6fc1838b61",
+      "dev.vodik7.atvtools": "ba7aea4d29a0d84d2416524c6a150363",
+      "proton.android.pass": "4973b357e15ce7dd74556e560672db7a",
+      "shared": "395b646d532900ad9c419c3edaf2d47d"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -498,7 +499,7 @@
   "sysadmindoc/hushfeed": {
     "beta": {},
     "stable": {
-      "com.zhiliaoapp.musically": "8c8582842a06f88efb21fca2d67fbe7b",
+      "com.zhiliaoapp.musically": "531fdaa6b4f24e62c07aa86eebcb02ae",
       "shared": "46d8882e3e2552c9319178d27875fbae"
     }
   },
