@@ -288,8 +288,8 @@
     "stable_date": "2026-10-12T11:19:43Z"
   },
   "dh6k/morphe-patches": {
-    "beta": "v1.9.0-dev.15",
-    "beta_date": "2026-10-14T20:02:53Z",
+    "beta": "v1.9.0-dev.16",
+    "beta_date": "2026-10-15T08:54:14Z",
     "blocked": false,
     "host": "github",
     "repo": "dh6k/morphe-patches",
@@ -342,8 +342,8 @@
     "stable_date": "2026-09-27T13:12:56Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v1.15.0-dev.10",
-    "beta_date": "2026-10-14T17:20:19Z",
+    "beta": "v1.15.0-dev.11",
+    "beta_date": "2026-10-15T09:03:26Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -450,8 +450,8 @@
     "stable_date": "2026-10-09T18:16:59Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.7.0-experimental.23",
-    "beta_date": "2026-10-15T02:36:29Z",
+    "beta": "v2.7.0-experimental.24",
+    "beta_date": "2026-10-15T04:38:45Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
@@ -509,8 +509,8 @@
     "blocked": false,
     "host": "github",
     "repo": "revenge-mod/revenge-xposed",
-    "stable": "1701",
-    "stable_date": "2026-10-09T17:33:10Z"
+    "stable": "1800",
+    "stable_date": "2026-10-15T07:58:10Z"
   },
   "riky-dev/morphe-patches": {
     "beta": "v2.3.0-dev.1",
