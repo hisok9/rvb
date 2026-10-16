@@ -1,15 +1,3 @@
-# ---- discord.toml ----
-
-[Discord-Venus]
-enabled = true
-pkg-name = "com.discord"
-app-name = "Discord"
-brand = "Venus"
-patches-source = "VenusIsJaded/Venus-Patches"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/discord/discord-chat-for-gamers"
-uptodown-dlurl = "https://discord-chat-for-gamers.en.uptodown.com/android"
-apkcombo-dlurl = "https://apkcombo.com/discord/com.discord"
-
 # ---- hxreborn.toml ----
 
 [AnyTracker-hxreborn]
@@ -21,30 +9,4 @@ patches-source = "hxreborn/morphe-patches"
 # not on any Mirror listed in DL_SRCS; archive.org item holds a single
 # AnyTracker.apk, so `direct` (which ignores the filename) is the only fit
 direct-dlurl = "https://archive.org/download/any-tracker/AnyTracker.apk"
-
-# ---- michii.toml ----
-
-[LinkedIn-michii]
-enabled = true
-pkg-name = "com.linkedin.android"
-app-name = "LinkedIn"
-brand = "michii"
-patches-source = "heyymichii/michii-patches"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/linkedin/linkedin-linkedin"
-uptodown-dlurl = "https://linkedin.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/linkedin-network-job-finder/com.linkedin.android"
-
-# ---- truecaller.toml ----
-
-[Truecaller-heval99]
-enabled = true
-pkg-name = "com.truecaller"
-app-name = "Truecaller"
-brand = "heval99"
-build-mode = "both"
-patches-source = "heval99/Heval-Morphe-Patches"
-included-patches = "'GmsCore support' 'Hide Premium tab' 'Hide Scam feed' 'Hide family button' 'Spoof signature' 'Use SMS for verification codes'"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block"
-uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/truecaller-caller-id-block-for-android-2024/com.truecaller"
 
