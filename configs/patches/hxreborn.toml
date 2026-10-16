@@ -47,8 +47,11 @@ apkpure-dlurl = "https://apkpure.com/password-manager-proton-pass/proton.android
 enabled = true
 pkg-name = "com.shervinkoushan.anyTracker"
 app-name = "AnyTracker"
-# not on any Mirror listed in DL_SRCS; archive.org item holds a single
-# AnyTracker.apk, so `direct` (which ignores the filename) is the only fit
-direct-dlurl = "https://archive.org/download/any-tracker/AnyTracker.apk"
+# not on any Mirror listed in DL_SRCS; archive.org item anytracker holds the
+# merged complete APK at the item root, so `archive` (which suffix-matches
+# <pkg>-<version>-<arch>.<ext>) is the right source. version pinned to the
+# uploaded build (7.5.6) — archive.org is never polled for latest.
+version = "7.5.6"
+archive-dlurl = "https://archive.org/download/anytracker"
 
 
