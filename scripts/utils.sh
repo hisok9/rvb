@@ -4464,6 +4464,63 @@ _resolve_list_and_version() {
 	return 0
 }
 
+# Remove Android 12+ split-type requirements from a single-APK prep copy.
+# A base extracted from a Play split install declares
+# android:requiredSplitTypes (e.g. "base__abi,base__density") on <manifest>;
+# Android 12+ then rejects installation of the base alone with
+# INSTALL_FAILED_MISSING_SPLIT, which PackageInstaller surfaces to callers as
+# STATUS_FAILURE_INCOMPATIBLE - users see "app incompatible". Our outputs
+# never ship the config splits those names refer to, so the declaration makes
+# the artifact uninstallable. Only the declaring attribute records are
+# removed; the rest of the manifest stays byte-identical. No-op when nothing
+# declares, when python3 is unavailable (historical behaviour), or when the
+# manifest cannot be analysed - never worse than before.
+# $1 = stock copy to edit in place   $2 = table name (for messages)
+# rc 0 = ok (fixed or nothing to do); rc 1 = requirement present but could
+# not be removed - the caller must fail that app rather than publish it
+# broken.
+_strip_split_types() {
+	local apk="$1" table="${2:-$1}" py_cmd="" py_script rc tmpd apk_abs
+	py_script="${CWD}/scripts/strip_split_types.py"
+	[ ! -f "$py_script" ] && [ -n "${BASH_SOURCE[0]:-}" ] && py_script="$(dirname "${BASH_SOURCE[0]}")/strip_split_types.py"
+	[ ! -f "$py_script" ] && return 0
+	for c in python3 python; do
+		if command -v "$c" >/dev/null 2>&1 && "$c" -c 'import sys; sys.exit(sys.version_info[0] < 3)' 2>/dev/null; then
+			py_cmd="$c"
+			break
+		fi
+	done
+	if [ -z "$py_cmd" ]; then
+		wpr "No python3; '${table}' keeps any split-type requirement (may not install on Android 12+)"
+		return 0
+	fi
+	apk_abs="$(cd "$(dirname "$apk")" && pwd)/$(basename "$apk")"
+	tmpd="${TEMP_DIR}/split_strip.$$"
+	rm -rf "$tmpd"
+	mkdir -p "$tmpd" || return 1
+	if ! unzip -o -q "$apk_abs" AndroidManifest.xml -d "$tmpd"; then
+		rm -rf "$tmpd"
+		wpr "No readable AndroidManifest.xml in '${table}'; leaving it untouched"
+		return 0
+	fi
+	rc=0
+	"$py_cmd" "$py_script" "$tmpd/AndroidManifest.xml" >/dev/null || rc=$?
+	if [ "$rc" -ne 10 ]; then
+		rm -rf "$tmpd"
+		[ "$rc" -eq 0 ] && return 0
+		return 1
+	fi
+	# zip replaces the member in place (same dance the arch-lib strip uses);
+	# run from tmpd so the member path stays top-level in the archive.
+	if (cd "$tmpd" && zip -q "$apk_abs" AndroidManifest.xml); then
+		pr "Removed split-type requirement from '${table}' (Play-split base)"
+		rm -rf "$tmpd"
+		return 0
+	fi
+	rm -rf "$tmpd"
+	return 1
+}
+
 build_rv() {
 	eval "declare -A args=${1#*=}"
 	local version="${args[version]:-}" pkg_name="${args[pkg_name]:-}"
@@ -5453,6 +5510,16 @@ build_rv() {
 			else
 				zip -d "$stock_apk_to_patch" "lib/x86_64/*" "lib/x86/*" >/dev/null 2>&1 || :
 			fi
+			# Android 12+ refuses a Play-extracted base that declares
+			# requiredSplitTypes unless its config splits ride along in the
+			# same session (INSTALL_FAILED_MISSING_SPLIT surfaces to users as
+			# "incompatible"); single-APK outputs never carry them, so drop
+			# the declaration before patching. No-op for manifests without it.
+			_strip_split_types "$stock_apk_to_patch" "$table" || {
+				epr "Failed to strip split-type requirement for '${table}'"
+				rm -f "$stock_apk_to_patch"
+				return 0
+			}
 		fi
 		fi
 
