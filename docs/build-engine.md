@@ -213,8 +213,17 @@ for adding surface without a measured gain
    `-all` key and reused by both arch jobs from that single fetch.
 5. **Arch trimming** — bundles go through `_trim_bundle_for_arch` (config members
    filtered by ABI); plain APKs get foreign `lib/<abi>/*` entries removed with
-   `zip -d`. Result is cached as `<prefix>-<version>-<arch>.stripped.<ext>`, and
-   `all`/`universal` ships the raw bundle.
+   `zip -d`, then `_strip_split_types` runs `scripts/strip_split_types.py` over
+   the stock copy: a base pulled from a Play split install declares
+   `android:requiredSplitTypes` on `<manifest>`, and Android 12+ rejects the
+   base alone with `INSTALL_FAILED_MISSING_SPLIT` (callers see
+   "incompatible") — single-APK outputs never ship those config splits, so
+   the declaration is dropped before patching. It is a no-op when nothing
+   declares, when `python3` is missing, or when the manifest cannot be
+   analysed; if a requirement is present but cannot be removed the app fails
+   instead of publishing an uninstallable artifact. Result is cached as
+   `<prefix>-<version>-<arch>.stripped.<ext>`, and `all`/`universal` ships
+   the raw bundle.
 6. **Patching** — `patch_apk` dispatches on the tool kind resolved by the patcher
    registry (see below) and records which patches the tool reports as applied.
 7. **Naming and metadata** — `aapt2`/`aapt` re-reads the patched manifest, so a
