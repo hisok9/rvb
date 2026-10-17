@@ -21,13 +21,17 @@
     "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a": "1d3bc38f2130a37e56f310a45fe36c61",
     "google-photos-rushiranpise-v7.97.0.997578476-arm64-v8a": "2bb23e9ab7f2370b096a19d033fc328a",
     "google-photos-rushiranpise-v7.97.0.997578476-arm-v7a": "a458916f23020a6a7e34165fa461ca4f",
-    "anytracker-hxreborn-v7.5.6-arm-v7a": "baff3215acc2993eb398e6ded44c7857",
-    "anytracker-hxreborn-v7.5.6-arm64-v8a": "baff3215acc2993eb398e6ded44c7857",
-    "discord-venus-v348.10-Stable-arm64-v8a": "8336ad3026c2134aee19d5c030250eeb",
-    "discord-venus-v348.10-Stable-arm-v7a": "9dee1d4ac63832096851e5506f11b2de",
+    "anytracker-hxreborn-v7.5.6-arm-v7a": "32d1ebe81f6232637a98e5bab2bfe13d",
+    "anytracker-hxreborn-v7.5.6-arm64-v8a": "32d1ebe81f6232637a98e5bab2bfe13d",
+    "discord-venus-v348.10-Stable-arm64-v8a": "0c779c93dee1fc87a8282edf5cae220f",
+    "discord-venus-v348.10-Stable-arm-v7a": "471f9ca8204f2596969e01fe23d61b40",
     "linkedin-michii-v4.1.1259-arm64-v8a": "d6e3a1467639cbb72a0b7701c8ad5c9b",
     "linkedin-michii-v4.1.1259-arm-v7a": "1fb323ea73f0eb0d7019196a6f69171e",
     "truecaller-heval99-v26.39.6-arm-v7a": "fd6fc9fbd33914e2630c8aaa145e9eef",
-    "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855"
+    "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855",
+    "camscanner-rushiranpise-v7.24.5.2608200000-arm-v7a": "affc4d4d0f2c11000244b11e8005c601",
+    "camscanner-rushiranpise-v7.24.5.2608200000-arm64-v8a": "d6833434c09a9d69cb40526ef1d1f15e",
+    "google-photos-akashsriram-v7.97.0.997578476-arm-v7a": "fb3b978d94c9ebb15c970d3b84bde352",
+    "google-photos-akashsriram-v7.97.0.997578476-arm64-v8a": "522299047ffd586a5a3a47d3f013c510"
   }
 }
