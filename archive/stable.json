@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-17T04:37:29Z"
+    "publishedAt": "2026-10-17T08:49:30Z"
   },
   "files": {
     "google-photos-akashsriram-module-v7.95.0.989626323-arm64-v8a.zip": {
@@ -1353,8 +1353,8 @@
         "Disable telemetry",
         "Unlock Yearly"
       ],
-      "originBuild": "260221",
-      "publishedAt": "2026-10-14T20:36:04Z"
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
     },
     "camscanner-rushiranpise-v7.24.5.2608200000-arm64-v8a.apk": {
       "name": "camscanner-rushiranpise",
@@ -1378,8 +1378,8 @@
         "Disable telemetry",
         "Unlock Yearly"
       ],
-      "originBuild": "260221",
-      "publishedAt": "2026-10-14T20:36:04Z"
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -3492,16 +3492,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.52.0.mpp"
+        "hxreborn/patches-1.53.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.52.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.53.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260225",
-      "publishedAt": "2026-10-17T04:37:22Z"
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
     },
     "anytracker-hxreborn-v7.5.6-arm-v7a.apk": {
       "name": "anytracker-hxreborn",
@@ -3516,16 +3516,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.52.0.mpp"
+        "hxreborn/patches-1.53.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.52.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.53.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260225",
-      "publishedAt": "2026-10-17T04:37:22Z"
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
     },
     "discord-venus-v348.10-Stable-arm-v7a.apk": {
       "name": "discord-venus",
@@ -3540,15 +3540,16 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.12.0.mpp"
+        "VenusIsJaded/patches-1.15.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.12.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.15.0"
       ],
       "appliedPatches": [
         "Account switcher",
         "Complete Quests automatically",
         "Copy profile bios",
+        "Custom themes",
         "Disable advertising identifiers",
         "Disable analytics",
         "Disable crash reporting",
@@ -3563,6 +3564,7 @@
         "Hide typing indicator",
         "Jump to first message",
         "Keep deleted messages",
+        "Message highlights",
         "Pastel name colors",
         "Read all button",
         "Send Nitro stickers and emojis as links",
@@ -3582,8 +3584,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260223",
-      "publishedAt": "2026-10-15T17:25:22Z"
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
     },
     "discord-venus-v348.10-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
@@ -3598,15 +3600,16 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.12.0.mpp"
+        "VenusIsJaded/patches-1.15.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.12.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.15.0"
       ],
       "appliedPatches": [
         "Account switcher",
         "Complete Quests automatically",
         "Copy profile bios",
+        "Custom themes",
         "Disable advertising identifiers",
         "Disable analytics",
         "Disable crash reporting",
@@ -3621,6 +3624,7 @@
         "Hide typing indicator",
         "Jump to first message",
         "Keep deleted messages",
+        "Message highlights",
         "Pastel name colors",
         "Read all button",
         "Send Nitro stickers and emojis as links",
@@ -3640,8 +3644,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260223",
-      "publishedAt": "2026-10-15T17:25:22Z"
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
     },
     "linkedin-michii-v4.1.1259-arm64-v8a.apk": {
       "name": "linkedin-michii",
@@ -3840,6 +3844,120 @@
       ],
       "originBuild": "260223",
       "publishedAt": "2026-10-15T17:25:22Z"
+    },
+    "google-photos-akashsriram-v7.97.0.997578476-arm-v7a.apk": {
+      "name": "google-photos-akashsriram",
+      "version": "7.97.0.997578476",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.15.4.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.4"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "DCIM & backup control",
+        "Flag manager & Toolkit",
+        "Media engine & AI fixes",
+        "Spoof features",
+        "GmsCore support"
+      ],
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
+    },
+    "google-photos-akashsriram-module-v7.97.0.997578476-arm64-v8a.zip": {
+      "name": "google-photos-akashsriram",
+      "version": "7.97.0.997578476",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm64",
+      "fileType": "Module",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.15.4.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.4"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "DCIM & backup control",
+        "Flag manager & Toolkit",
+        "Media engine & AI fixes",
+        "Spoof features"
+      ],
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
+    },
+    "google-photos-akashsriram-module-v7.97.0.997578476-arm-v7a.zip": {
+      "name": "google-photos-akashsriram",
+      "version": "7.97.0.997578476",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm",
+      "fileType": "Module",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.15.4.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.4"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "DCIM & backup control",
+        "Flag manager & Toolkit",
+        "Media engine & AI fixes",
+        "Spoof features"
+      ],
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
+    },
+    "google-photos-akashsriram-v7.97.0.997578476-arm64-v8a.apk": {
+      "name": "google-photos-akashsriram",
+      "version": "7.97.0.997578476",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "akashsriram",
+      "brandName": "AkashSriram",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "Akash-Sriram/patches-1.15.4.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.4"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "DCIM & backup control",
+        "Flag manager & Toolkit",
+        "Media engine & AI fixes",
+        "Spoof features",
+        "GmsCore support"
+      ],
+      "originBuild": "260228",
+      "publishedAt": "2026-10-17T08:49:03Z"
     }
   }
 }
