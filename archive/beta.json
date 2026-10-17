@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-14T13:29:59Z"
+    "publishedAt": "2026-10-17T05:16:23Z"
   },
   "files": {
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
@@ -488,10 +488,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.7.mpp"
+        "MorpheApp/patches-1.48.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.9"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -542,8 +542,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260219",
-      "publishedAt": "2026-10-14T13:29:29Z"
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     },
     "youtube-music-morphe-v9.20.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -558,10 +558,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.7.mpp"
+        "MorpheApp/patches-1.48.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.9"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -584,6 +584,7 @@
         "Enable swipe to dismiss miniplayer",
         "Force original audio",
         "Force portrait orientation",
+        "GmsCore support",
         "Hide ads",
         "Hide buttons",
         "Hide flyout menu components",
@@ -612,8 +613,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260219",
-      "publishedAt": "2026-10-14T13:29:29Z"
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     },
     "youtube-music-morphe-v9.20.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -628,10 +629,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.7.mpp"
+        "MorpheApp/patches-1.48.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.9"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -654,6 +655,7 @@
         "Enable swipe to dismiss miniplayer",
         "Force original audio",
         "Force portrait orientation",
+        "GmsCore support",
         "Hide ads",
         "Hide buttons",
         "Hide flyout menu components",
@@ -682,8 +684,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260219",
-      "publishedAt": "2026-10-14T13:29:29Z"
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -698,10 +700,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.7.mpp"
+        "MorpheApp/patches-1.48.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.9"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -752,8 +754,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260219",
-      "publishedAt": "2026-10-14T13:29:29Z"
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     },
     "truecaller-bufferk-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-bufferk",
@@ -888,10 +890,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.7.mpp"
+        "MorpheApp/patches-1.48.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -931,9 +933,11 @@
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
+        "Feed card layout",
         "Force fullscreen landscape",
         "Force original audio",
         "Fullscreen video scale",
+        "GmsCore support",
         "Hide Shorts components",
         "Hide ads",
         "Hide autoplay preview",
@@ -974,6 +978,7 @@
         "Sanitize sharing links",
         "Save to Watch later",
         "Seekbar",
+        "Series tracking",
         "Settings menu filter",
         "Shorts autoplay",
         "Skip silence",
@@ -989,8 +994,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260219",
-      "publishedAt": "2026-10-14T13:29:29Z"
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     },
     "youtube-morphe-module-v21.20.405-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1005,10 +1010,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.7.mpp"
+        "MorpheApp/patches-1.48.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1048,6 +1053,7 @@
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
+        "Feed card layout",
         "Force fullscreen landscape",
         "Force original audio",
         "Fullscreen video scale",
@@ -1091,6 +1097,7 @@
         "Sanitize sharing links",
         "Save to Watch later",
         "Seekbar",
+        "Series tracking",
         "Settings menu filter",
         "Shorts autoplay",
         "Skip silence",
@@ -1106,8 +1113,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260219",
-      "publishedAt": "2026-10-14T13:29:29Z"
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     },
     "youtube-morphe-module-v21.20.405-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -1122,10 +1129,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.7.mpp"
+        "MorpheApp/patches-1.48.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1165,6 +1172,7 @@
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
+        "Feed card layout",
         "Force fullscreen landscape",
         "Force original audio",
         "Fullscreen video scale",
@@ -1208,6 +1216,7 @@
         "Sanitize sharing links",
         "Save to Watch later",
         "Seekbar",
+        "Series tracking",
         "Settings menu filter",
         "Shorts autoplay",
         "Skip silence",
@@ -1223,8 +1232,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260219",
-      "publishedAt": "2026-10-14T13:29:29Z"
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     },
     "youtube-morphe-v21.20.405-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1239,10 +1248,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.7.mpp"
+        "MorpheApp/patches-1.48.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1282,9 +1291,11 @@
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
+        "Feed card layout",
         "Force fullscreen landscape",
         "Force original audio",
         "Fullscreen video scale",
+        "GmsCore support",
         "Hide Shorts components",
         "Hide ads",
         "Hide autoplay preview",
@@ -1325,6 +1336,7 @@
         "Sanitize sharing links",
         "Save to Watch later",
         "Seekbar",
+        "Series tracking",
         "Settings menu filter",
         "Shorts autoplay",
         "Skip silence",
@@ -1340,8 +1352,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260219",
-      "publishedAt": "2026-10-14T13:29:29Z"
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     },
     "instagram-brosssh-clone-v439.0.0.37.89-arm-v7a.apk": {
       "name": "instagram-brosssh-clone",
@@ -1480,6 +1492,140 @@
       ],
       "originBuild": "260200",
       "publishedAt": "2026-10-10T16:47:30Z"
+    },
+    "truecaller-heval99-module-v26.40.5-arm64-v8a.zip": {
+      "name": "truecaller-heval99",
+      "version": "26.40.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "Module",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.16.0-dev.3.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.16.0-dev.3"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
+    },
+    "truecaller-heval99-module-v26.40.5-arm-v7a.zip": {
+      "name": "truecaller-heval99",
+      "version": "26.40.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm",
+      "fileType": "Module",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.16.0-dev.3.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.16.0-dev.3"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
+    },
+    "truecaller-heval99-v26.40.5-arm-v7a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.40.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.16.0-dev.3.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.16.0-dev.3"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
+    },
+    "truecaller-heval99-v26.40.5-arm64-v8a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.40.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.16.0-dev.3.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.16.0-dev.3"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260226",
+      "publishedAt": "2026-10-17T05:15:56Z"
     }
   }
 }
