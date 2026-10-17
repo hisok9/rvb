@@ -1,9 +1,11 @@
 {
   "beta": {
-    "youtube-morphe-v21.20.405-arm64-v8a": "8b5e0995dd5ed1fe26f8ac67129a2a00",
-    "youtube-morphe-v21.20.405-arm-v7a": "6091ffd4e089100f413a911288d31361",
-    "youtube-music-morphe-v9.20.53-arm-v7a": "48af395c496b8939de9e1b79d3246b5f",
-    "youtube-music-morphe-v9.20.53-arm64-v8a": "85a33862c564f97d2e4661d7c867a4a7"
+    "youtube-morphe-v21.20.405-arm64-v8a": "af3ece29f5787e678ddb9e2c5051ce8a",
+    "youtube-morphe-v21.20.405-arm-v7a": "cfd988d0f8fa855c040ad5e11142ecd5",
+    "youtube-music-morphe-v9.20.53-arm-v7a": "7205f613c25587aa658cdb0d8a774f5f",
+    "youtube-music-morphe-v9.20.53-arm64-v8a": "dbf57fe469e8b549cf2b59dc676404d0",
+    "truecaller-heval99-v26.40.5-arm-v7a": "0630cb3a7c6dd3d66ef24d6ec994f945",
+    "truecaller-heval99-v26.40.5-arm64-v8a": "5b400dde59a88e9043a0bb10f6bb0fed"
   },
   "stable": {
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a": "1a10cd6eec62a7234e3d9744c7c26d8a",
