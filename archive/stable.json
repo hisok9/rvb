@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-18T08:37:26Z"
+    "publishedAt": "2026-10-18T20:30:25Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -3960,6 +3960,126 @@
       ],
       "originBuild": "260230",
       "publishedAt": "2026-10-17T13:31:55Z"
+    },
+    "discord-venus-v349.9-Stable-arm-v7a.apk": {
+      "name": "discord-venus",
+      "version": "349.9-Stable",
+      "appKey": "discord",
+      "appName": "Discord",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "venus",
+      "brandName": "Venus",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.discord",
+      "patchSources": [
+        "VenusIsJaded/patches-1.16.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.16.0"
+      ],
+      "appliedPatches": [
+        "Account switcher",
+        "Complete Quests automatically",
+        "Copy profile bios",
+        "Custom themes",
+        "Disable advertising identifiers",
+        "Disable analytics",
+        "Disable crash reporting",
+        "Disable install attribution",
+        "Disable telemetry and touch logging",
+        "Double-tap to reply",
+        "Favourite any image or video",
+        "Fix unknown mentions",
+        "Hide the Quests banner",
+        "Hide the call button",
+        "Hide the gift button",
+        "Hide typing indicator",
+        "Jump to first message",
+        "Keep deleted messages",
+        "Message highlights",
+        "Pastel name colors",
+        "Read all button",
+        "Send Nitro stickers and emojis as links",
+        "Send audio as voice messages",
+        "Send long messages",
+        "Show device indicators",
+        "Show file sizes when attaching",
+        "Show hidden channels",
+        "Skip delete confirmation",
+        "Spaces in channel names",
+        "Translate messages",
+        "Unlock app icons",
+        "Use your phone's emojis",
+        "Use your phone's font",
+        "User activity notifications",
+        "User and server reviews",
+        "Venus button on profile bar",
+        "Venus settings"
+      ],
+      "originBuild": "260234",
+      "publishedAt": "2026-10-18T20:30:11Z"
+    },
+    "discord-venus-v349.9-Stable-arm64-v8a.apk": {
+      "name": "discord-venus",
+      "version": "349.9-Stable",
+      "appKey": "discord",
+      "appName": "Discord",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "venus",
+      "brandName": "Venus",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.discord",
+      "patchSources": [
+        "VenusIsJaded/patches-1.16.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.16.0"
+      ],
+      "appliedPatches": [
+        "Account switcher",
+        "Complete Quests automatically",
+        "Copy profile bios",
+        "Custom themes",
+        "Disable advertising identifiers",
+        "Disable analytics",
+        "Disable crash reporting",
+        "Disable install attribution",
+        "Disable telemetry and touch logging",
+        "Double-tap to reply",
+        "Favourite any image or video",
+        "Fix unknown mentions",
+        "Hide the Quests banner",
+        "Hide the call button",
+        "Hide the gift button",
+        "Hide typing indicator",
+        "Jump to first message",
+        "Keep deleted messages",
+        "Message highlights",
+        "Pastel name colors",
+        "Read all button",
+        "Send Nitro stickers and emojis as links",
+        "Send audio as voice messages",
+        "Send long messages",
+        "Show device indicators",
+        "Show file sizes when attaching",
+        "Show hidden channels",
+        "Skip delete confirmation",
+        "Spaces in channel names",
+        "Translate messages",
+        "Unlock app icons",
+        "Use your phone's emojis",
+        "Use your phone's font",
+        "User activity notifications",
+        "User and server reviews",
+        "Venus button on profile bar",
+        "Venus settings"
+      ],
+      "originBuild": "260234",
+      "publishedAt": "2026-10-18T20:30:11Z"
     }
   }
 }
