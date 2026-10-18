@@ -176,8 +176,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "5d0a5b0224f0793a28c08a81cfb69c13",
-      "shared": "97718d114c8cef927f8aa2cca8f86185"
+      "com.truecaller": "8518a63958360eefd6cb7bd2e2cd47b2",
+      "shared": "c174aae2c4208c19381f397aca8d8bdd"
     },
     "stable": {
       "com.truecaller": "d9812dc30838a08aaa0a2fbe06c467fc",
@@ -336,9 +336,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "7d75e7867037f03ab450be136c7efde4",
-      "com.google.android.youtube": "bdfec56fa95ff62fc84284656b511f92",
-      "shared": "0d5f225e6b33ae496b8770c9e2c7ec7a"
+      "com.google.android.apps.youtube.music": "a74ac0ed5aac3cde9e817f38552423c8",
+      "com.google.android.youtube": "fb5d6b8229e4e0d6ce15eb9e8aa0c16c",
+      "shared": "f1f55b5122a4ab72a2e5419d1a183f37"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "1e4aadd260009e9cc452874a2de1018d",
