@@ -1,6 +1,6 @@
 {
-  "version": "v26.40.5 (patches 1.16.0.mpp)",
-  "versionCode": 260230,
+  "version": "v26.40.5 (patches 1.17.0.mpp)",
+  "versionCode": 260237,
   "zipUrl": "https://github.com/hisok9/rvb/releases/download/stable/truecaller-heval99-module-v26.40.5-arm64-v8a.zip",
-  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260230.md"
+  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260237.md"
 }
