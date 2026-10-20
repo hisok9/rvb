@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-19T17:11:33Z"
+    "publishedAt": "2026-10-20T08:45:21Z"
   },
   "files": {
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
@@ -1518,13 +1518,14 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.17.1-dev.1.mpp"
+        "heval99/patches-1.18.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.17.1-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.18.0-dev.1"
       ],
       "appliedPatches": [
         "Disable ads",
+        "Disable contact upload",
         "Disable telemetry",
         "Disable update prompts",
         "Enable Premium",
@@ -1535,8 +1536,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260239",
-      "publishedAt": "2026-10-19T17:11:01Z"
+      "originBuild": "260242",
+      "publishedAt": "2026-10-20T08:45:01Z"
     },
     "truecaller-heval99-module-v26.40.5-arm-v7a.zip": {
       "name": "truecaller-heval99",
@@ -1551,13 +1552,14 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.17.1-dev.1.mpp"
+        "heval99/patches-1.18.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.17.1-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.18.0-dev.1"
       ],
       "appliedPatches": [
         "Disable ads",
+        "Disable contact upload",
         "Disable telemetry",
         "Disable update prompts",
         "Enable Premium",
@@ -1568,8 +1570,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260239",
-      "publishedAt": "2026-10-19T17:11:01Z"
+      "originBuild": "260242",
+      "publishedAt": "2026-10-20T08:45:01Z"
     },
     "truecaller-heval99-v26.40.5-arm-v7a.apk": {
       "name": "truecaller-heval99",
@@ -1584,13 +1586,14 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.17.1-dev.1.mpp"
+        "heval99/patches-1.18.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.17.1-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.18.0-dev.1"
       ],
       "appliedPatches": [
         "Disable ads",
+        "Disable contact upload",
         "Disable telemetry",
         "Disable update prompts",
         "Enable Premium",
@@ -1602,8 +1605,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260239",
-      "publishedAt": "2026-10-19T17:11:01Z"
+      "originBuild": "260242",
+      "publishedAt": "2026-10-20T08:45:01Z"
     },
     "truecaller-heval99-v26.40.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -1618,13 +1621,14 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.17.1-dev.1.mpp"
+        "heval99/patches-1.18.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.17.1-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.18.0-dev.1"
       ],
       "appliedPatches": [
         "Disable ads",
+        "Disable contact upload",
         "Disable telemetry",
         "Disable update prompts",
         "Enable Premium",
@@ -1636,8 +1640,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260239",
-      "publishedAt": "2026-10-19T17:11:01Z"
+      "originBuild": "260242",
+      "publishedAt": "2026-10-20T08:45:01Z"
     }
   }
 }
