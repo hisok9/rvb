@@ -1,9 +1,9 @@
 {
   "beta": {
-    "youtube-morphe-v21.20.405-arm64-v8a": "cf3f7fbbb37c38c09247e8089ed9da47",
-    "youtube-morphe-v21.20.405-arm-v7a": "8820a627a40d8d932d1f6c7f845e2cf8",
-    "youtube-music-morphe-v9.20.53-arm-v7a": "c2ec9bf0f8495146f9426fb56e1e9e6a",
-    "youtube-music-morphe-v9.20.53-arm64-v8a": "bf08f9dc43f176bbc6440c5e8fb295c7",
+    "youtube-morphe-v21.20.405-arm64-v8a": "ec767e13e1ed8f3f8449b37e996e73cd",
+    "youtube-morphe-v21.20.405-arm-v7a": "33a382b491870ae056387b0ef10c337f",
+    "youtube-music-morphe-v9.20.53-arm-v7a": "5027efffd5af7f392529f8d000e5f83d",
+    "youtube-music-morphe-v9.20.53-arm64-v8a": "000e6f164864c6dd4aa6c838a724f1d8",
     "truecaller-heval99-v26.40.5-arm-v7a": "68a567082a3fbcb9c95ebc414cf1b6ea",
     "truecaller-heval99-v26.40.5-arm64-v8a": "be21cc0cb6b2fc31a4b8c8e3cca99e37"
   },
