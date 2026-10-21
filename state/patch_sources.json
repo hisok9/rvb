@@ -50,8 +50,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.13",
-    "stable_date": "2026-10-19T01:09:35Z"
+    "stable": "v0.0.14",
+    "stable_date": "2026-10-21T04:31:45Z"
   },
   "VenusIsJaded/Venus-Patches": {
     "beta": "",
@@ -153,8 +153,8 @@
     "stable_date": "2026-10-15T17:48:51Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.8.0-experimental.4",
-    "beta_date": "2026-10-20T10:40:40Z",
+    "beta": "v2.8.0-experimental.5",
+    "beta_date": "2026-10-21T05:00:49Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
