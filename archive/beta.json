@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-21T00:52:39Z"
+    "publishedAt": "2026-10-21T08:49:42Z"
   },
   "files": {
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
@@ -488,10 +488,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.16.mpp"
+        "MorpheApp/patches-1.48.0-dev.17.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.17"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -542,8 +542,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260244",
-      "publishedAt": "2026-10-21T00:52:12Z"
+      "originBuild": "260247",
+      "publishedAt": "2026-10-21T08:49:11Z"
     },
     "youtube-music-morphe-v9.20.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -558,10 +558,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.16.mpp"
+        "MorpheApp/patches-1.48.0-dev.17.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.17"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -613,8 +613,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260244",
-      "publishedAt": "2026-10-21T00:52:12Z"
+      "originBuild": "260247",
+      "publishedAt": "2026-10-21T08:49:11Z"
     },
     "youtube-music-morphe-v9.20.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -629,10 +629,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.16.mpp"
+        "MorpheApp/patches-1.48.0-dev.17.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.17"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -684,8 +684,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260244",
-      "publishedAt": "2026-10-21T00:52:12Z"
+      "originBuild": "260247",
+      "publishedAt": "2026-10-21T08:49:11Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -700,10 +700,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.16.mpp"
+        "MorpheApp/patches-1.48.0-dev.17.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.17"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -754,8 +754,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260244",
-      "publishedAt": "2026-10-21T00:52:12Z"
+      "originBuild": "260247",
+      "publishedAt": "2026-10-21T08:49:11Z"
     },
     "truecaller-bufferk-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-bufferk",
@@ -890,10 +890,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.16.mpp"
+        "MorpheApp/patches-1.48.0-dev.17.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.17"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -997,8 +997,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260244",
-      "publishedAt": "2026-10-21T00:52:12Z"
+      "originBuild": "260247",
+      "publishedAt": "2026-10-21T08:49:11Z"
     },
     "youtube-morphe-module-v21.20.405-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1013,10 +1013,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.16.mpp"
+        "MorpheApp/patches-1.48.0-dev.17.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.17"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1119,8 +1119,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260244",
-      "publishedAt": "2026-10-21T00:52:12Z"
+      "originBuild": "260247",
+      "publishedAt": "2026-10-21T08:49:11Z"
     },
     "youtube-morphe-module-v21.20.405-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -1135,10 +1135,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.16.mpp"
+        "MorpheApp/patches-1.48.0-dev.17.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.17"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1241,8 +1241,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260244",
-      "publishedAt": "2026-10-21T00:52:12Z"
+      "originBuild": "260247",
+      "publishedAt": "2026-10-21T08:49:11Z"
     },
     "youtube-morphe-v21.20.405-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1257,10 +1257,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.48.0-dev.16.mpp"
+        "MorpheApp/patches-1.48.0-dev.17.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.17"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1364,8 +1364,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260244",
-      "publishedAt": "2026-10-21T00:52:12Z"
+      "originBuild": "260247",
+      "publishedAt": "2026-10-21T08:49:11Z"
     },
     "instagram-brosssh-clone-v439.0.0.37.89-arm-v7a.apk": {
       "name": "instagram-brosssh-clone",
