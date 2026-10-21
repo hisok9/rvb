@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.48.0-dev.15",
-    "beta_date": "2026-10-20T12:48:18Z",
+    "beta": "v1.48.0-dev.16",
+    "beta_date": "2026-10-20T23:46:03Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -59,8 +59,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.16.1",
-    "stable_date": "2026-10-19T10:49:04Z"
+    "stable": "v1.17.0",
+    "stable_date": "2026-10-20T22:17:26Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
