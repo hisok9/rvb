@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-20T00:49:30Z"
+    "publishedAt": "2026-10-21T00:56:01Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -3908,10 +3908,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.16.1.mpp"
+        "VenusIsJaded/patches-1.17.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.16.1"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.17.0"
       ],
       "appliedPatches": [
         "Account switcher",
@@ -3930,6 +3930,7 @@
         "Hide the call button",
         "Hide the gift button",
         "Hide typing indicator",
+        "Icon packs",
         "Jump to first message",
         "Keep deleted messages",
         "Message highlights",
@@ -3938,6 +3939,7 @@
         "Send Nitro stickers and emojis as links",
         "Send audio as voice messages",
         "Send long messages",
+        "Server info",
         "Show device indicators",
         "Show file sizes when attaching",
         "Show hidden channels",
@@ -3952,8 +3954,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260238",
-      "publishedAt": "2026-10-19T13:33:27Z"
+      "originBuild": "260245",
+      "publishedAt": "2026-10-21T00:55:42Z"
     },
     "discord-venus-v349.9-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
@@ -3968,10 +3970,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.16.1.mpp"
+        "VenusIsJaded/patches-1.17.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.16.1"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.17.0"
       ],
       "appliedPatches": [
         "Account switcher",
@@ -3990,6 +3992,7 @@
         "Hide the call button",
         "Hide the gift button",
         "Hide typing indicator",
+        "Icon packs",
         "Jump to first message",
         "Keep deleted messages",
         "Message highlights",
@@ -3998,6 +4001,7 @@
         "Send Nitro stickers and emojis as links",
         "Send audio as voice messages",
         "Send long messages",
+        "Server info",
         "Show device indicators",
         "Show file sizes when attaching",
         "Show hidden channels",
@@ -4012,8 +4016,8 @@
         "Venus button on profile bar",
         "Venus settings"
       ],
-      "originBuild": "260238",
-      "publishedAt": "2026-10-19T13:33:27Z"
+      "originBuild": "260245",
+      "publishedAt": "2026-10-21T00:55:42Z"
     },
     "instagram-hushgram-v451.0.0.53.80-arm64-v8a.apk": {
       "name": "instagram-hushgram",
