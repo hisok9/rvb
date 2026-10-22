@@ -29,8 +29,8 @@
     "linkedin-michii-v4.1.1259-arm-v7a": "1fb323ea73f0eb0d7019196a6f69171e",
     "truecaller-heval99-v26.39.6-arm-v7a": "fd6fc9fbd33914e2630c8aaa145e9eef",
     "truecaller-heval99-v26.39.6-arm64-v8a": "e1eb3b82fb9c25a04695825bb9fd6855",
-    "camscanner-rushiranpise-v7.24.5.2608200000-arm-v7a": "affc4d4d0f2c11000244b11e8005c601",
-    "camscanner-rushiranpise-v7.24.5.2608200000-arm64-v8a": "d6833434c09a9d69cb40526ef1d1f15e",
+    "camscanner-rushiranpise-v7.24.5.2608200000-arm-v7a": "853a3e4422318989402737ffdf19c8b9",
+    "camscanner-rushiranpise-v7.24.5.2608200000-arm64-v8a": "72f39404f951c11a97aa2fdd2efc32b7",
     "google-photos-akashsriram-v7.97.0.997578476-arm-v7a": "fb3b978d94c9ebb15c970d3b84bde352",
     "google-photos-akashsriram-v7.97.0.997578476-arm64-v8a": "522299047ffd586a5a3a47d3f013c510",
     "truecaller-heval99-v26.40.5-arm64-v8a": "fe7ff844403e30e5411ef5ab7f3b3b31",
@@ -38,6 +38,12 @@
     "discord-venus-v349.9-Stable-arm64-v8a": "84b011d862a3e8ede30f9eaafc14a7e9",
     "discord-venus-v349.9-Stable-arm-v7a": "919d5127fdb910a3c7d9bcca1ee494a3",
     "instagram-hushgram-v451.0.0.53.80-arm64-v8a": "c58e0f2e9db6579d53539725a7c66187",
-    "instagram-hushgram-v452.0.0.48.64-arm64-v8a": "d4eed9d1c6d0426b3ef9dc993b8b224b"
+    "instagram-hushgram-v452.0.0.48.64-arm64-v8a": "d4eed9d1c6d0426b3ef9dc993b8b224b",
+    "brave-browser-dh6k-nightly-v1.100.5-arm-v7a": "07f854c9efdf20784248cf29f9fb1295",
+    "brave-browser-dh6k-nightly-v1.100.5-arm64-v8a": "07f854c9efdf20784248cf29f9fb1295",
+    "brave-browser-dh6k-beta-v1.99.44-arm64-v8a": "80cbc8f9ac1c57b9cc4905c5d1ae5be8",
+    "brave-browser-dh6k-beta-v1.99.44-arm-v7a": "80cbc8f9ac1c57b9cc4905c5d1ae5be8",
+    "brave-browser-kveld9-v1.98.60-arm64-v8a": "b03f1e562b2ada6355826c2389b28506",
+    "brave-browser-kveld9-v1.98.60-arm-v7a": "ea9ef9670913e435f6443ab6db9f16a5"
   }
 }
