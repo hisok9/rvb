@@ -140,8 +140,8 @@
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.56.0",
-    "stable_date": "2026-10-20T00:13:13Z"
+    "stable": "v1.57.0",
+    "stable_date": "2026-10-22T00:12:45Z"
   },
   "instafel/pc-rel": {
     "beta": "",
@@ -153,8 +153,8 @@
     "stable_date": "2026-10-15T17:48:51Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.8.0-experimental.6",
-    "beta_date": "2026-10-21T05:16:38Z",
+    "beta": "v2.8.0-experimental.7",
+    "beta_date": "2026-10-21T22:29:18Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
