@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-22T05:35:59Z"
+    "publishedAt": "2026-10-22T13:35:43Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -1781,72 +1781,6 @@
       "originBuild": "260205",
       "publishedAt": "2026-10-11T13:02:29Z"
     },
-    "instagram-instafel-clone-v450.0.0.50.77-arm-v7a.apk": {
-      "name": "instagram-instafel-clone",
-      "version": "450.0.0.50.77",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": "Clone",
-      "subVariant": null,
-      "packageName": "com.instafel.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-db441b9.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger",
-        "Clone General",
-        "Replace Instagram Strings"
-      ],
-      "originBuild": "260205",
-      "publishedAt": "2026-10-11T13:02:29Z"
-    },
-    "instagram-instafel-v450.0.0.50.77-arm-v7a.apk": {
-      "name": "instagram-instafel",
-      "version": "450.0.0.50.77",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.instagram.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-db441b9.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger"
-      ],
-      "originBuild": "260205",
-      "publishedAt": "2026-10-11T13:02:29Z"
-    },
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a.apk": {
       "name": "instagram-piko-clone",
       "version": "447.0.0.55.81",
@@ -3033,72 +2967,6 @@
       "originBuild": "260207",
       "publishedAt": "2026-10-11T16:50:32Z"
     },
-    "instagram-instafel-clone-v451.0.0.53.80-arm64-v8a.apk": {
-      "name": "instagram-instafel-clone",
-      "version": "451.0.0.53.80",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": "Clone",
-      "subVariant": null,
-      "packageName": "com.instafel.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-db441b9.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger",
-        "Clone General",
-        "Replace Instagram Strings"
-      ],
-      "originBuild": "260216",
-      "publishedAt": "2026-10-13T08:44:22Z"
-    },
-    "instagram-instafel-v451.0.0.53.80-arm64-v8a.apk": {
-      "name": "instagram-instafel",
-      "version": "451.0.0.53.80",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.instagram.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-db441b9.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/db441b9-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger"
-      ],
-      "originBuild": "260216",
-      "publishedAt": "2026-10-13T08:44:22Z"
-    },
     "google-photos-rushiranpise-v7.97.0.997578476-arm-v7a.apk": {
       "name": "google-photos-rushiranpise",
       "version": "7.97.0.997578476",
@@ -3170,16 +3038,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.57.0.mpp"
+        "hxreborn/patches-1.58.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.57.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.58.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260249",
-      "publishedAt": "2026-10-22T00:49:04Z"
+      "originBuild": "260252",
+      "publishedAt": "2026-10-22T13:35:34Z"
     },
     "anytracker-hxreborn-v7.5.6-arm-v7a.apk": {
       "name": "anytracker-hxreborn",
@@ -3194,16 +3062,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.57.0.mpp"
+        "hxreborn/patches-1.58.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.57.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.58.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260249",
-      "publishedAt": "2026-10-22T00:49:04Z"
+      "originBuild": "260252",
+      "publishedAt": "2026-10-22T13:35:34Z"
     },
     "discord-venus-v348.10-Stable-arm-v7a.apk": {
       "name": "discord-venus",
