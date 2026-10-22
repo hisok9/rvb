@@ -256,7 +256,7 @@
     "beta": {},
     "stable": {
       "com.shervinkoushan.anyTracker": "5715e1fe896f9ecbaa81c3f3912d4eec",
-      "shared": "b484e1e498aca11d8fefb4752229907c"
+      "shared": "155058ea02b2d2678285686c86ed89ad"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -336,15 +336,14 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "a151e9e60af985a3c0becb3f19c6542d",
-      "com.google.android.youtube": "75ec5eb15e0a43e3aef98cae08506dc1",
-      "shared": "89b39370ac35c62c2e451906142a00da"
+      "com.google.android.apps.youtube.music": "5c699e38afa2b27c65f4d4cc10bd92d7",
+      "com.google.android.youtube": "9afc212e5ee6e7e41d12c397b48353dc",
+      "shared": "986a989b1f52ce1f548dd08c65941d53"
     },
     "stable": {
-      "com.google.android.apps.youtube.music": "1e4aadd260009e9cc452874a2de1018d",
-      "com.google.android.youtube": "ee369d0d806fec06676675abe4d472c9",
-      "com.reddit.frontpage": "59f4197c376045a317af241fe538c7eb",
-      "shared": "37419c431fbdcfb2c425a66d42d8aaba"
+      "com.google.android.apps.youtube.music": "5c699e38afa2b27c65f4d4cc10bd92d7",
+      "com.google.android.youtube": "9afc212e5ee6e7e41d12c397b48353dc",
+      "shared": "986a989b1f52ce1f548dd08c65941d53"
     }
   },
   "mvaishak/letterboxd-morphe-patches": {
