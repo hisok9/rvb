@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-22T17:07:07Z"
+    "publishedAt": "2026-10-22T20:58:43Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -1221,8 +1221,8 @@
         "Disable telemetry",
         "Unlock Yearly"
       ],
-      "originBuild": "260228",
-      "publishedAt": "2026-10-17T08:49:03Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
     },
     "camscanner-rushiranpise-v7.24.5.2608200000-arm64-v8a.apk": {
       "name": "camscanner-rushiranpise",
@@ -1246,8 +1246,8 @@
         "Disable telemetry",
         "Unlock Yearly"
       ],
-      "originBuild": "260228",
-      "publishedAt": "2026-10-17T08:49:03Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -4197,8 +4197,8 @@
         "Clone General",
         "Replace Instagram Strings"
       ],
-      "originBuild": "260250",
-      "publishedAt": "2026-10-22T05:35:44Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
     },
     "instagram-instafel-clone-v452.1.0.53.64-arm-v7a.apk": {
       "name": "instagram-instafel-clone",
@@ -4231,8 +4231,8 @@
         "Clone General",
         "Replace Instagram Strings"
       ],
-      "originBuild": "260250",
-      "publishedAt": "2026-10-22T05:35:44Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
     },
     "instagram-instafel-v452.1.0.53.64-arm-v7a.apk": {
       "name": "instagram-instafel",
@@ -4263,8 +4263,8 @@
         "Change Home Long Click",
         "Add App Trigger"
       ],
-      "originBuild": "260250",
-      "publishedAt": "2026-10-22T05:35:44Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
     },
     "instagram-instafel-v452.1.0.53.64-arm64-v8a.apk": {
       "name": "instagram-instafel",
@@ -4295,8 +4295,176 @@
         "Change Home Long Click",
         "Add App Trigger"
       ],
-      "originBuild": "260250",
-      "publishedAt": "2026-10-22T05:35:44Z"
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
+    },
+    "brave-browser-dh6k-beta-v1.99.44-arm64-v8a.apk": {
+      "name": "brave-browser-dh6k-beta",
+      "version": "1.99.44",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "dh6k",
+      "brandName": "dh6k",
+      "variant": "Beta",
+      "subVariant": null,
+      "packageName": "com.brave.browser_beta",
+      "patchSources": [
+        "dh6k/patches-1.9.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0"
+      ],
+      "appliedPatches": [
+        "Brave Origin",
+        "Brave Startup Performance Optimization"
+      ],
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
+    },
+    "brave-browser-dh6k-beta-v1.99.44-arm-v7a.apk": {
+      "name": "brave-browser-dh6k-beta",
+      "version": "1.99.44",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "dh6k",
+      "brandName": "dh6k",
+      "variant": "Beta",
+      "subVariant": null,
+      "packageName": "com.brave.browser_beta",
+      "patchSources": [
+        "dh6k/patches-1.9.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0"
+      ],
+      "appliedPatches": [
+        "Brave Origin",
+        "Brave Startup Performance Optimization"
+      ],
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
+    },
+    "brave-browser-dh6k-nightly-v1.100.5-arm-v7a.apk": {
+      "name": "brave-browser-dh6k-nightly",
+      "version": "1.100.5",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "dh6k",
+      "brandName": "dh6k",
+      "variant": "Nightly",
+      "subVariant": null,
+      "packageName": "com.brave.browser_nightly",
+      "patchSources": [
+        "dh6k/patches-1.9.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0"
+      ],
+      "appliedPatches": [
+        "Brave Origin",
+        "Brave Startup Performance Optimization"
+      ],
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
+    },
+    "brave-browser-dh6k-nightly-v1.100.5-arm64-v8a.apk": {
+      "name": "brave-browser-dh6k-nightly",
+      "version": "1.100.5",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "dh6k",
+      "brandName": "dh6k",
+      "variant": "Nightly",
+      "subVariant": null,
+      "packageName": "com.brave.browser_nightly",
+      "patchSources": [
+        "dh6k/patches-1.9.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0"
+      ],
+      "appliedPatches": [
+        "Brave Origin",
+        "Brave Startup Performance Optimization"
+      ],
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
+    },
+    "brave-browser-kveld9-v1.98.60-arm-v7a.apk": {
+      "name": "brave-browser-kveld9",
+      "version": "1.98.60",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "kveld9",
+      "brandName": "kveld9",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.brave.browser",
+      "patchSources": [
+        "kveld9/patches-2.8.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.8.0"
+      ],
+      "appliedPatches": [
+        "Block Motion Sensors",
+        "Block Popups & Rating Requests",
+        "Block Trackers",
+        "Brave Origin",
+        "Clean Start Page",
+        "Keep Tabs Open",
+        "Select Previous Tab on Close",
+        "Silence Promo Notifications",
+        "Skip Welcome Screens",
+        "Stop Background Sync",
+        "Stop Text Sharing with System"
+      ],
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
+    },
+    "brave-browser-kveld9-v1.98.60-arm64-v8a.apk": {
+      "name": "brave-browser-kveld9",
+      "version": "1.98.60",
+      "appKey": "bravebrowser",
+      "appName": "Brave Browser",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "kveld9",
+      "brandName": "kveld9",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.brave.browser",
+      "patchSources": [
+        "kveld9/patches-2.8.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.8.0"
+      ],
+      "appliedPatches": [
+        "Block Motion Sensors",
+        "Block Popups & Rating Requests",
+        "Block Trackers",
+        "Brave Origin",
+        "Clean Start Page",
+        "Keep Tabs Open",
+        "Select Previous Tab on Close",
+        "Silence Promo Notifications",
+        "Skip Welcome Screens",
+        "Stop Background Sync",
+        "Stop Text Sharing with System"
+      ],
+      "originBuild": "260254",
+      "publishedAt": "2026-10-22T20:58:07Z"
     }
   }
 }
