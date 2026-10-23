@@ -2,12 +2,16 @@
   "beta": {
     "youtube-morphe-v21.20.405-arm64-v8a": "aca4d5efec5d55e5eee1799ebadc6c1f",
     "youtube-morphe-v21.20.405-arm-v7a": "061fa4333ac86daa3d43f09b7a09a35c",
-    "youtube-music-morphe-v9.20.53-arm-v7a": "e9ab7702fa78e727156ad3c9eb867473",
-    "youtube-music-morphe-v9.20.53-arm64-v8a": "8a834601985d05dd616728ed68e3c496",
+    "youtube-music-morphe-v9.20.53-arm-v7a": "7368bcb507d01c76632df5da6a43111b",
+    "youtube-music-morphe-v9.20.53-arm64-v8a": "50bd74c166e41c11f3315a5ebbc6eda9",
     "truecaller-heval99-v26.40.5-arm-v7a": "68a567082a3fbcb9c95ebc414cf1b6ea",
     "truecaller-heval99-v26.40.5-arm64-v8a": "be21cc0cb6b2fc31a4b8c8e3cca99e37",
     "instagram-piko-v452.1.0.53.64-arm64-v8a": "e7af64848bdf568c1519cd5589bbb01c",
-    "instagram-piko-clone-v452.1.0.53.64-arm64-v8a": "1c9f9ab308ef27a64f5a92310dfc1f61"
+    "instagram-piko-clone-v452.1.0.53.64-arm64-v8a": "1c9f9ab308ef27a64f5a92310dfc1f61",
+    "truecaller-heval99-v26.41.5-arm64-v8a": "2031222a7e6ee32d7ca0dfe13f0d506a",
+    "truecaller-heval99-v26.41.5-arm-v7a": "6e8665ea42fe01f46f0930d3fe1c1d87",
+    "youtube-morphe-v21.23.492-arm64-v8a": "640b210e3b8d617cdf99c7c79674dfbf",
+    "youtube-morphe-v21.23.492-arm-v7a": "4b5abdac5f27b0200a9af1b0336164e5"
   },
   "stable": {
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a": "1a10cd6eec62a7234e3d9744c7c26d8a",
