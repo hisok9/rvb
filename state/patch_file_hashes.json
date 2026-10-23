@@ -63,7 +63,7 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "d1a946951921b8e51d00a34c663ad951",
+      "com.google.android.apps.maps": "f9618d17c16b011a631a840658d45a20",
       "shared": "ccad433d728a8fca2434563b046d8fc7"
     }
   },
@@ -173,8 +173,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "4418053d834c5c665a2cfad15532a3da",
-      "shared": "0e26988669f2caa4613084e845dcdafb"
+      "com.truecaller": "28b7a67d5256205acfef906efca80a5c",
+      "shared": "a24337d8ff2461e261b6cd21a582dbb8"
     },
     "stable": {
       "com.truecaller": "67ed401681c6cc9ba8c1ab4b0cd2e02d",
