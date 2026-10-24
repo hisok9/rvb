@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-24T08:41:33Z"
+    "publishedAt": "2026-10-24T13:39:54Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -70,18 +70,17 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.5.1.mpp"
+        "RookieEnough/patches-1.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.1"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
-        "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-10-05T16:32:39Z"
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm64-v8a.zip": {
       "name": "google-photos-devanced",
@@ -96,18 +95,17 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.5.1.mpp"
+        "RookieEnough/patches-1.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.1"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
-        "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-10-05T16:32:39Z"
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm64-v8a.apk": {
       "name": "google-photos-devanced",
@@ -122,18 +120,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.5.1.mpp"
+        "RookieEnough/patches-1.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.1"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-10-05T16:32:39Z"
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
@@ -148,18 +146,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.5.1.mpp"
+        "RookieEnough/patches-1.6.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.1"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-10-05T16:32:39Z"
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
     },
     "google-photos-rushiranpise-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-rushiranpise",
@@ -3038,16 +3036,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.59.0.mpp"
+        "hxreborn/patches-1.60.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.59.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.60.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260258",
-      "publishedAt": "2026-10-23T13:40:35Z"
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
     },
     "anytracker-hxreborn-v7.5.6-arm-v7a.apk": {
       "name": "anytracker-hxreborn",
@@ -3062,136 +3060,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.59.0.mpp"
+        "hxreborn/patches-1.60.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.59.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.60.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260258",
-      "publishedAt": "2026-10-23T13:40:35Z"
-    },
-    "discord-venus-v348.10-Stable-arm-v7a.apk": {
-      "name": "discord-venus",
-      "version": "348.10-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "venus",
-      "brandName": "Venus",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "VenusIsJaded/patches-1.15.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.15.0"
-      ],
-      "appliedPatches": [
-        "Account switcher",
-        "Complete Quests automatically",
-        "Copy profile bios",
-        "Custom themes",
-        "Disable advertising identifiers",
-        "Disable analytics",
-        "Disable crash reporting",
-        "Disable install attribution",
-        "Disable telemetry and touch logging",
-        "Double-tap to reply",
-        "Favourite any image or video",
-        "Fix unknown mentions",
-        "Hide the Quests banner",
-        "Hide the call button",
-        "Hide the gift button",
-        "Hide typing indicator",
-        "Jump to first message",
-        "Keep deleted messages",
-        "Message highlights",
-        "Pastel name colors",
-        "Read all button",
-        "Send Nitro stickers and emojis as links",
-        "Send audio as voice messages",
-        "Send long messages",
-        "Show device indicators",
-        "Show file sizes when attaching",
-        "Show hidden channels",
-        "Skip delete confirmation",
-        "Spaces in channel names",
-        "Translate messages",
-        "Unlock app icons",
-        "Use your phone's emojis",
-        "Use your phone's font",
-        "User activity notifications",
-        "User and server reviews",
-        "Venus button on profile bar",
-        "Venus settings"
-      ],
-      "originBuild": "260228",
-      "publishedAt": "2026-10-17T08:49:03Z"
-    },
-    "discord-venus-v348.10-Stable-arm64-v8a.apk": {
-      "name": "discord-venus",
-      "version": "348.10-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "venus",
-      "brandName": "Venus",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "VenusIsJaded/patches-1.15.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.15.0"
-      ],
-      "appliedPatches": [
-        "Account switcher",
-        "Complete Quests automatically",
-        "Copy profile bios",
-        "Custom themes",
-        "Disable advertising identifiers",
-        "Disable analytics",
-        "Disable crash reporting",
-        "Disable install attribution",
-        "Disable telemetry and touch logging",
-        "Double-tap to reply",
-        "Favourite any image or video",
-        "Fix unknown mentions",
-        "Hide the Quests banner",
-        "Hide the call button",
-        "Hide the gift button",
-        "Hide typing indicator",
-        "Jump to first message",
-        "Keep deleted messages",
-        "Message highlights",
-        "Pastel name colors",
-        "Read all button",
-        "Send Nitro stickers and emojis as links",
-        "Send audio as voice messages",
-        "Send long messages",
-        "Show device indicators",
-        "Show file sizes when attaching",
-        "Show hidden channels",
-        "Skip delete confirmation",
-        "Spaces in channel names",
-        "Translate messages",
-        "Unlock app icons",
-        "Use your phone's emojis",
-        "Use your phone's font",
-        "User activity notifications",
-        "User and server reviews",
-        "Venus button on profile bar",
-        "Venus settings"
-      ],
-      "originBuild": "260228",
-      "publishedAt": "2026-10-17T08:49:03Z"
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
     },
     "linkedin-michii-v4.1.1259-arm64-v8a.apk": {
       "name": "linkedin-michii",
@@ -4604,6 +4482,156 @@
       ],
       "originBuild": "260261",
       "publishedAt": "2026-10-24T08:41:18Z"
+    },
+    "truecaller-heval99-module-v26.41.5-arm-v7a.zip": {
+      "name": "truecaller-heval99",
+      "version": "26.41.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm",
+      "fileType": "Module",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.19.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable auto-launch",
+        "Disable contact upload",
+        "Disable nags",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Hide promotions",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
+    },
+    "truecaller-heval99-module-v26.41.5-arm64-v8a.zip": {
+      "name": "truecaller-heval99",
+      "version": "26.41.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "Module",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.19.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable auto-launch",
+        "Disable contact upload",
+        "Disable nags",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Hide promotions",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
+    },
+    "truecaller-heval99-v26.41.5-arm64-v8a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.41.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.19.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable auto-launch",
+        "Disable contact upload",
+        "Disable nags",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Hide promotions",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
+    },
+    "truecaller-heval99-v26.41.5-arm-v7a.apk": {
+      "name": "truecaller-heval99",
+      "version": "26.41.5",
+      "appKey": "truecaller",
+      "appName": "Truecaller",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "heval99",
+      "brandName": "heval99",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.truecaller",
+      "patchSources": [
+        "heval99/patches-1.19.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0"
+      ],
+      "appliedPatches": [
+        "Disable ads",
+        "Disable auto-launch",
+        "Disable contact upload",
+        "Disable nags",
+        "Disable telemetry",
+        "Disable update prompts",
+        "Enable Premium",
+        "GmsCore support",
+        "Hide Premium tab",
+        "Hide Scam feed",
+        "Hide Wear OS settings",
+        "Hide family button",
+        "Hide promotions",
+        "Spoof signature",
+        "Use SMS for verification codes"
+      ],
+      "originBuild": "260263",
+      "publishedAt": "2026-10-24T13:39:27Z"
     }
   }
 }
