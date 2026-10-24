@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-24T17:17:27Z"
+    "publishedAt": "2026-10-24T20:32:30Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -1582,10 +1582,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.4.mpp"
+        "MorpheApp/patches-1.49.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1692,8 +1692,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260264",
-      "publishedAt": "2026-10-24T17:17:07Z"
+      "originBuild": "260265",
+      "publishedAt": "2026-10-24T20:32:15Z"
     },
     "youtube-morphe-v21.23.492-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -1708,10 +1708,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.4.mpp"
+        "MorpheApp/patches-1.49.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1819,8 +1819,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260264",
-      "publishedAt": "2026-10-24T17:17:07Z"
+      "originBuild": "260265",
+      "publishedAt": "2026-10-24T20:32:15Z"
     },
     "youtube-morphe-v21.23.492-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1835,10 +1835,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.4.mpp"
+        "MorpheApp/patches-1.49.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1946,8 +1946,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260264",
-      "publishedAt": "2026-10-24T17:17:07Z"
+      "originBuild": "260265",
+      "publishedAt": "2026-10-24T20:32:15Z"
     },
     "youtube-morphe-module-v21.23.492-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1962,10 +1962,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.4.mpp"
+        "MorpheApp/patches-1.49.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -2072,8 +2072,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260264",
-      "publishedAt": "2026-10-24T17:17:07Z"
+      "originBuild": "260265",
+      "publishedAt": "2026-10-24T20:32:15Z"
     }
   }
 }
