@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-24T13:30:35Z"
+    "publishedAt": "2026-10-24T17:17:27Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -20,10 +20,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.3.mpp"
+        "MorpheApp/patches-1.49.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -74,8 +74,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260262",
-      "publishedAt": "2026-10-24T13:30:14Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "youtube-music-morphe-v9.20.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -90,10 +90,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.3.mpp"
+        "MorpheApp/patches-1.49.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -145,8 +145,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260262",
-      "publishedAt": "2026-10-24T13:30:14Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "youtube-music-morphe-v9.20.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -161,10 +161,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.3.mpp"
+        "MorpheApp/patches-1.49.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -216,8 +216,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260262",
-      "publishedAt": "2026-10-24T13:30:14Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -232,10 +232,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.3.mpp"
+        "MorpheApp/patches-1.49.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -286,8 +286,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260262",
-      "publishedAt": "2026-10-24T13:30:14Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "truecaller-bufferk-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-bufferk",
@@ -1432,10 +1432,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.19.0-dev.5.mpp"
+        "heval99/patches-2.0.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0-dev.5"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.0.0-dev.1"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -1453,8 +1453,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-10-24T00:54:56Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "truecaller-heval99-module-v26.41.5-arm64-v8a.zip": {
       "name": "truecaller-heval99",
@@ -1469,10 +1469,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.19.0-dev.5.mpp"
+        "heval99/patches-2.0.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0-dev.5"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.0.0-dev.1"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -1490,8 +1490,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-10-24T00:54:56Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "truecaller-heval99-v26.41.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -1506,10 +1506,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.19.0-dev.5.mpp"
+        "heval99/patches-2.0.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0-dev.5"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.0.0-dev.1"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -1528,8 +1528,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-10-24T00:54:56Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "truecaller-heval99-v26.41.5-arm-v7a.apk": {
       "name": "truecaller-heval99",
@@ -1544,10 +1544,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-1.19.0-dev.5.mpp"
+        "heval99/patches-2.0.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0-dev.5"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.0.0-dev.1"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -1566,8 +1566,8 @@
         "Spoof signature",
         "Use SMS for verification codes"
       ],
-      "originBuild": "260260",
-      "publishedAt": "2026-10-24T00:54:56Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "youtube-morphe-module-v21.23.492-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -1582,10 +1582,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.3.mpp"
+        "MorpheApp/patches-1.49.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1692,8 +1692,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260262",
-      "publishedAt": "2026-10-24T13:30:14Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "youtube-morphe-v21.23.492-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -1708,10 +1708,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.3.mpp"
+        "MorpheApp/patches-1.49.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1819,8 +1819,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260262",
-      "publishedAt": "2026-10-24T13:30:14Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "youtube-morphe-v21.23.492-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1835,10 +1835,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.3.mpp"
+        "MorpheApp/patches-1.49.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1946,8 +1946,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260262",
-      "publishedAt": "2026-10-24T13:30:14Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     },
     "youtube-morphe-module-v21.23.492-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1962,10 +1962,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.3.mpp"
+        "MorpheApp/patches-1.49.0-dev.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -2072,8 +2072,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260262",
-      "publishedAt": "2026-10-24T13:30:14Z"
+      "originBuild": "260264",
+      "publishedAt": "2026-10-24T17:17:07Z"
     }
   }
 }
