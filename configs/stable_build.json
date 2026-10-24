@@ -3,7 +3,7 @@
   "GoogleMaps-bearinmindcat": {
     "patches-source": "bearinmindcat/morphe-patches",
     "brand": "bearinmindcat",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/maps",
@@ -36,7 +36,7 @@
     "apkcombo-dlurl": "https://apkcombo.com/brave-nightly/com.brave.browser_nightly"
   },
   "Discord-Venus": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.discord",
     "app-name": "Discord",
     "brand": "Venus",
