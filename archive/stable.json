@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-24T13:39:54Z"
+    "publishedAt": "2026-10-24T20:35:54Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -3139,136 +3139,6 @@
       "originBuild": "260223",
       "publishedAt": "2026-10-15T17:25:22Z"
     },
-    "truecaller-heval99-module-v26.39.6-arm-v7a.zip": {
-      "name": "truecaller-heval99",
-      "version": "26.39.6",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm",
-      "fileType": "Module",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-1.14.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide family button",
-        "Spoof signature",
-        "Use SMS for verification codes"
-      ],
-      "originBuild": "260223",
-      "publishedAt": "2026-10-15T17:25:22Z"
-    },
-    "truecaller-heval99-v26.39.6-arm64-v8a.apk": {
-      "name": "truecaller-heval99",
-      "version": "26.39.6",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-1.14.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "GmsCore support",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide family button",
-        "Spoof signature",
-        "Use SMS for verification codes"
-      ],
-      "originBuild": "260223",
-      "publishedAt": "2026-10-15T17:25:22Z"
-    },
-    "truecaller-heval99-module-v26.39.6-arm64-v8a.zip": {
-      "name": "truecaller-heval99",
-      "version": "26.39.6",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm64",
-      "fileType": "Module",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-1.14.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide family button",
-        "Spoof signature",
-        "Use SMS for verification codes"
-      ],
-      "originBuild": "260223",
-      "publishedAt": "2026-10-15T17:25:22Z"
-    },
-    "truecaller-heval99-v26.39.6-arm-v7a.apk": {
-      "name": "truecaller-heval99",
-      "version": "26.39.6",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-1.14.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "GmsCore support",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide family button",
-        "Spoof signature",
-        "Use SMS for verification codes"
-      ],
-      "originBuild": "260223",
-      "publishedAt": "2026-10-15T17:25:22Z"
-    },
     "google-photos-akashsriram-v7.97.0.997578476-arm-v7a.apk": {
       "name": "google-photos-akashsriram",
       "version": "7.97.0.997578476",
@@ -4226,10 +4096,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "SysAdminDoc/patches-0.0.15.mpp"
+        "SysAdminDoc/patches-0.0.16.mpp"
       ],
       "changelogs": [
-        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.15"
+        "https://github.com/SysAdminDoc/HushGram/releases/tag/v0.0.16"
       ],
       "appliedPatches": [
         "Accent color",
@@ -4275,6 +4145,7 @@
         "Hide paid partnership Reels",
         "Hide profile tabs",
         "Hide reels by caption words",
+        "Hide rows in Instagram's settings",
         "Hide suggested accounts in DMs",
         "Hide suggested accounts in Reels",
         "Hide suggested people on profiles",
@@ -4303,6 +4174,7 @@
         "Message box buttons",
         "Open comments without the keyboard",
         "Open links in external browser",
+        "Pick the app icon",
         "Profile posts as a list",
         "Pure black dark mode",
         "Read messages without the seen receipt",
@@ -4336,6 +4208,7 @@
         "Stop swipe up to reply",
         "Stop swiping between tabs",
         "Story ring size",
+        "Story text fonts",
         "Swipe left to open the profile",
         "Tap a feed video to pause it",
         "Tap to play",
@@ -4346,8 +4219,8 @@
         "View live anonymously",
         "View stories anonymously"
       ],
-      "originBuild": "260256",
-      "publishedAt": "2026-10-23T00:56:47Z"
+      "originBuild": "260266",
+      "publishedAt": "2026-10-24T20:35:38Z"
     },
     "discord-venus-v350.8-Stable-arm-v7a.apk": {
       "name": "discord-venus",
