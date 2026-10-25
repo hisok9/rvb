@@ -1,6 +1,6 @@
 {
-  "version": "v26.10.6 (patches 1.8.0.mpp)",
-  "versionCode": 260182,
+  "version": "v26.10.6 (patches 1.8.1.mpp)",
+  "versionCode": 260268,
   "zipUrl": "https://github.com/hisok9/rvb/releases/download/stable/truecaller-bufferk-module-v26.10.6-arm-v7a.zip",
-  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260182.md"
+  "changelog": "https://raw.githubusercontent.com/hisok9/rvb/update/changelogs/260268.md"
 }
