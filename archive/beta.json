@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-25T17:02:59Z"
+    "publishedAt": "2026-10-25T20:31:24Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -1200,10 +1200,10 @@
       "subVariant": "Clone",
       "packageName": "com.instagram.android.piko",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.2.mpp"
+        "crimera/patches-3.11.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.2"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.3"
       ],
       "appliedPatches": [
         "Add settings",
@@ -1217,14 +1217,17 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
+        "Disable analytics",
         "Disable comments",
         "Disable discover people",
         "Disable double tap like",
         "Disable explore",
         "Disable highlights",
+        "Disable screenshot detection",
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
+        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -1249,6 +1252,7 @@
         "Inbox lock",
         "Limit feed to following profiles",
         "Loop story",
+        "Make ephemeral media permanent",
         "Mark as read after reply",
         "Mark chat as read manually",
         "More options on post",
@@ -1262,11 +1266,14 @@
         "Save media comment",
         "Theme",
         "Unlock developer options",
+        "View DMs anonymously",
+        "View live anonymously",
+        "View stories anonymously",
         "View story mentions",
         "Clone"
       ],
-      "originBuild": "260267",
-      "publishedAt": "2026-10-25T08:39:21Z"
+      "originBuild": "260271",
+      "publishedAt": "2026-10-25T20:31:06Z"
     },
     "instagram-piko-v452.1.0.53.64-arm64-v8a.apk": {
       "name": "instagram-piko",
@@ -1281,10 +1288,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.2.mpp"
+        "crimera/patches-3.11.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.2"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.3"
       ],
       "appliedPatches": [
         "Add settings",
@@ -1298,14 +1305,17 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
+        "Disable analytics",
         "Disable comments",
         "Disable discover people",
         "Disable double tap like",
         "Disable explore",
         "Disable highlights",
+        "Disable screenshot detection",
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
+        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -1330,6 +1340,7 @@
         "Inbox lock",
         "Limit feed to following profiles",
         "Loop story",
+        "Make ephemeral media permanent",
         "Mark as read after reply",
         "Mark chat as read manually",
         "More options on post",
@@ -1343,10 +1354,13 @@
         "Save media comment",
         "Theme",
         "Unlock developer options",
+        "View DMs anonymously",
+        "View live anonymously",
+        "View stories anonymously",
         "View story mentions"
       ],
-      "originBuild": "260267",
-      "publishedAt": "2026-10-25T08:39:21Z"
+      "originBuild": "260271",
+      "publishedAt": "2026-10-25T20:31:06Z"
     },
     "instagram-piko-module-v452.1.0.53.64-arm64-v8a.zip": {
       "name": "instagram-piko",
@@ -1361,10 +1375,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.2.mpp"
+        "crimera/patches-3.11.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.2"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.3"
       ],
       "appliedPatches": [
         "Add settings",
@@ -1378,14 +1392,17 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
+        "Disable analytics",
         "Disable comments",
         "Disable discover people",
         "Disable double tap like",
         "Disable explore",
         "Disable highlights",
+        "Disable screenshot detection",
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
+        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -1410,6 +1427,7 @@
         "Inbox lock",
         "Limit feed to following profiles",
         "Loop story",
+        "Make ephemeral media permanent",
         "Mark as read after reply",
         "Mark chat as read manually",
         "More options on post",
@@ -1423,10 +1441,13 @@
         "Save media comment",
         "Theme",
         "Unlock developer options",
+        "View DMs anonymously",
+        "View live anonymously",
+        "View stories anonymously",
         "View story mentions"
       ],
-      "originBuild": "260267",
-      "publishedAt": "2026-10-25T08:39:21Z"
+      "originBuild": "260271",
+      "publishedAt": "2026-10-25T20:31:06Z"
     },
     "truecaller-heval99-module-v26.41.5-arm-v7a.zip": {
       "name": "truecaller-heval99",
