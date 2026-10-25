@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-24T20:35:54Z"
+    "publishedAt": "2026-10-25T13:29:41Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -362,10 +362,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "bufferk/patches-1.8.0.mpp"
+        "bufferk/patches-1.8.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/bufferk/morphe-patches/releases/tag/v1.8.0"
+        "https://github.com/bufferk/morphe-patches/releases/tag/v1.8.1"
       ],
       "appliedPatches": [
         "Disable analytics",
@@ -376,8 +376,8 @@
         "Mock premium",
         "Remove Premium UI"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-10-05T16:32:39Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-25T13:29:22Z"
     },
     "truecaller-bufferk-module-v26.10.6-arm64-v8a.zip": {
       "name": "truecaller-bufferk",
@@ -392,10 +392,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "bufferk/patches-1.8.0.mpp"
+        "bufferk/patches-1.8.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/bufferk/morphe-patches/releases/tag/v1.8.0"
+        "https://github.com/bufferk/morphe-patches/releases/tag/v1.8.1"
       ],
       "appliedPatches": [
         "Disable analytics",
@@ -406,8 +406,8 @@
         "Mock premium",
         "Remove Premium UI"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-10-05T16:32:39Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-25T13:29:22Z"
     },
     "truecaller-bufferk-v26.10.6-arm-v7a.apk": {
       "name": "truecaller-bufferk",
@@ -422,10 +422,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "bufferk/patches-1.8.0.mpp"
+        "bufferk/patches-1.8.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/bufferk/morphe-patches/releases/tag/v1.8.0"
+        "https://github.com/bufferk/morphe-patches/releases/tag/v1.8.1"
       ],
       "appliedPatches": [
         "Disable analytics",
@@ -436,8 +436,8 @@
         "Mock premium",
         "Remove Premium UI"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-10-05T16:32:39Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-25T13:29:22Z"
     },
     "truecaller-bufferk-module-v26.10.6-arm-v7a.zip": {
       "name": "truecaller-bufferk",
@@ -452,10 +452,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "bufferk/patches-1.8.0.mpp"
+        "bufferk/patches-1.8.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/bufferk/morphe-patches/releases/tag/v1.8.0"
+        "https://github.com/bufferk/morphe-patches/releases/tag/v1.8.1"
       ],
       "appliedPatches": [
         "Disable analytics",
@@ -466,8 +466,8 @@
         "Mock premium",
         "Remove Premium UI"
       ],
-      "originBuild": "260182",
-      "publishedAt": "2026-10-05T16:32:39Z"
+      "originBuild": "260268",
+      "publishedAt": "2026-10-25T13:29:22Z"
     },
     "youtube-morphe-v21.16.256-arm64-v8a.apk": {
       "name": "youtube-morphe",
