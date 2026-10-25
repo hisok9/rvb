@@ -89,7 +89,10 @@
       "com.truecaller": "489986318f92ef172605b81e181fc5e4",
       "shared": "6162a6fd363e6dd0b9320fd151ad11df"
     },
-    "stable": {}
+    "stable": {
+      "com.truecaller": "489986318f92ef172605b81e181fc5e4",
+      "shared": "6162a6fd363e6dd0b9320fd151ad11df"
+    }
   },
   "byehi98/okish-morphe-patches": {
     "beta": {},
@@ -100,8 +103,8 @@
   },
   "crimera/piko": {
     "beta": {
-      "com.instagram.android": "727b486ded2593dc841a0f37a8a1c7fd",
-      "shared": "213c1158aef5f11e5b1d2876b302e851"
+      "com.instagram.android": "2a3226968e15363f4d0570728b2dc62e",
+      "shared": "221135cfb774e1d17ecaeaa7e2e1e946"
     },
     "stable": {
       "com.instagram.android": "90b1539aa4fd996d64df92684f5747b4",
