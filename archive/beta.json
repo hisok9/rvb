@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-24T20:32:30Z"
+    "publishedAt": "2026-10-25T08:39:46Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -1200,16 +1200,15 @@
       "subVariant": "Clone",
       "packageName": "com.instagram.android.piko",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.1.mpp"
+        "crimera/patches-3.11.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.1"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.2"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
         "Change version code",
-        "Clone",
         "Copy comment",
         "Custom font",
         "Custom sharing domain",
@@ -1236,6 +1235,7 @@
         "Friendship status indicator",
         "Hidden chats",
         "Hide Reels follow button",
+        "Hide feed posts",
         "Hide group creation button on sharesheet",
         "Hide hidden requests",
         "Hide notes tray",
@@ -1243,11 +1243,13 @@
         "Hide save buttons",
         "Hide share button",
         "Hide stories tray",
+        "Hide story follow button",
         "Hide suggested content",
         "Improve image viewing",
         "Inbox lock",
         "Limit feed to following profiles",
         "Loop story",
+        "Mark as read after reply",
         "Mark chat as read manually",
         "More options on post",
         "More options on profile",
@@ -1260,10 +1262,11 @@
         "Save media comment",
         "Theme",
         "Unlock developer options",
-        "View story mentions"
+        "View story mentions",
+        "Clone"
       ],
-      "originBuild": "260255",
-      "publishedAt": "2026-10-23T00:53:14Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-10-25T08:39:21Z"
     },
     "instagram-piko-v452.1.0.53.64-arm64-v8a.apk": {
       "name": "instagram-piko",
@@ -1278,10 +1281,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.1.mpp"
+        "crimera/patches-3.11.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.1"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.2"
       ],
       "appliedPatches": [
         "Add settings",
@@ -1313,6 +1316,7 @@
         "Friendship status indicator",
         "Hidden chats",
         "Hide Reels follow button",
+        "Hide feed posts",
         "Hide group creation button on sharesheet",
         "Hide hidden requests",
         "Hide notes tray",
@@ -1320,11 +1324,13 @@
         "Hide save buttons",
         "Hide share button",
         "Hide stories tray",
+        "Hide story follow button",
         "Hide suggested content",
         "Improve image viewing",
         "Inbox lock",
         "Limit feed to following profiles",
         "Loop story",
+        "Mark as read after reply",
         "Mark chat as read manually",
         "More options on post",
         "More options on profile",
@@ -1339,8 +1345,8 @@
         "Unlock developer options",
         "View story mentions"
       ],
-      "originBuild": "260255",
-      "publishedAt": "2026-10-23T00:53:14Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-10-25T08:39:21Z"
     },
     "instagram-piko-module-v452.1.0.53.64-arm64-v8a.zip": {
       "name": "instagram-piko",
@@ -1355,10 +1361,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.1.mpp"
+        "crimera/patches-3.11.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.1"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.2"
       ],
       "appliedPatches": [
         "Add settings",
@@ -1390,6 +1396,7 @@
         "Friendship status indicator",
         "Hidden chats",
         "Hide Reels follow button",
+        "Hide feed posts",
         "Hide group creation button on sharesheet",
         "Hide hidden requests",
         "Hide notes tray",
@@ -1397,11 +1404,13 @@
         "Hide save buttons",
         "Hide share button",
         "Hide stories tray",
+        "Hide story follow button",
         "Hide suggested content",
         "Improve image viewing",
         "Inbox lock",
         "Limit feed to following profiles",
         "Loop story",
+        "Mark as read after reply",
         "Mark chat as read manually",
         "More options on post",
         "More options on profile",
@@ -1416,8 +1425,8 @@
         "Unlock developer options",
         "View story mentions"
       ],
-      "originBuild": "260255",
-      "publishedAt": "2026-10-23T00:53:14Z"
+      "originBuild": "260267",
+      "publishedAt": "2026-10-25T08:39:21Z"
     },
     "truecaller-heval99-module-v26.41.5-arm-v7a.zip": {
       "name": "truecaller-heval99",
