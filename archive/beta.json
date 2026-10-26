@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-10-25T20:31:24Z"
+    "publishedAt": "2026-10-26T08:55:57Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -20,10 +20,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.6.mpp"
+        "MorpheApp/patches-1.49.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -74,8 +74,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260269",
-      "publishedAt": "2026-10-25T17:02:42Z"
+      "originBuild": "260273",
+      "publishedAt": "2026-10-26T08:55:34Z"
     },
     "youtube-music-morphe-v9.20.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -90,10 +90,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.6.mpp"
+        "MorpheApp/patches-1.49.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -145,8 +145,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260269",
-      "publishedAt": "2026-10-25T17:02:42Z"
+      "originBuild": "260273",
+      "publishedAt": "2026-10-26T08:55:34Z"
     },
     "youtube-music-morphe-v9.20.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -161,10 +161,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.6.mpp"
+        "MorpheApp/patches-1.49.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -216,8 +216,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260269",
-      "publishedAt": "2026-10-25T17:02:42Z"
+      "originBuild": "260273",
+      "publishedAt": "2026-10-26T08:55:34Z"
     },
     "youtube-music-morphe-module-v9.20.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -232,10 +232,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.6.mpp"
+        "MorpheApp/patches-1.49.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -286,8 +286,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260269",
-      "publishedAt": "2026-10-25T17:02:42Z"
+      "originBuild": "260273",
+      "publishedAt": "2026-10-26T08:55:34Z"
     },
     "truecaller-bufferk-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-bufferk",
@@ -1612,10 +1612,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.6.mpp"
+        "MorpheApp/patches-1.49.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1653,6 +1653,7 @@
         "Disable sign in to TV popup",
         "Disable video codecs",
         "Double tap to seek",
+        "Download post images",
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
@@ -1722,8 +1723,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260269",
-      "publishedAt": "2026-10-25T17:02:42Z"
+      "originBuild": "260273",
+      "publishedAt": "2026-10-26T08:55:34Z"
     },
     "youtube-morphe-v21.23.492-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -1738,10 +1739,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.6.mpp"
+        "MorpheApp/patches-1.49.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1779,6 +1780,7 @@
         "Disable sign in to TV popup",
         "Disable video codecs",
         "Double tap to seek",
+        "Download post images",
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
@@ -1849,8 +1851,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260269",
-      "publishedAt": "2026-10-25T17:02:42Z"
+      "originBuild": "260273",
+      "publishedAt": "2026-10-26T08:55:34Z"
     },
     "youtube-morphe-v21.23.492-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1865,10 +1867,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.6.mpp"
+        "MorpheApp/patches-1.49.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1906,6 +1908,7 @@
         "Disable sign in to TV popup",
         "Disable video codecs",
         "Double tap to seek",
+        "Download post images",
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
@@ -1976,8 +1979,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260269",
-      "publishedAt": "2026-10-25T17:02:42Z"
+      "originBuild": "260273",
+      "publishedAt": "2026-10-26T08:55:34Z"
     },
     "youtube-morphe-module-v21.23.492-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1992,10 +1995,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-1.49.0-dev.6.mpp"
+        "MorpheApp/patches-1.49.0-dev.7.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.6"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -2033,6 +2036,7 @@
         "Disable sign in to TV popup",
         "Disable video codecs",
         "Double tap to seek",
+        "Download post images",
         "Downloads",
         "Enable debugging",
         "Exit fullscreen mode",
@@ -2102,8 +2106,8 @@
         "Shorts icon style",
         "Player icon style"
       ],
-      "originBuild": "260269",
-      "publishedAt": "2026-10-25T17:02:42Z"
+      "originBuild": "260273",
+      "publishedAt": "2026-10-26T08:55:34Z"
     }
   }
 }
