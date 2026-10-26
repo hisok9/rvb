@@ -68,8 +68,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.6.3",
-    "stable_date": "2026-10-26T14:45:55Z"
+    "stable": "v2.6.4",
+    "stable_date": "2026-10-26T18:16:30Z"
   },
   "brosssh/morphe-patches": {
     "beta": "v2.8.3-dev.2",
