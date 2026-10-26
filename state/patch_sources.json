@@ -68,8 +68,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.6.0",
-    "stable_date": "2026-10-25T16:25:34Z"
+    "stable": "v2.6.3",
+    "stable_date": "2026-10-26T14:45:55Z"
   },
   "brosssh/morphe-patches": {
     "beta": "v2.8.3-dev.2",
@@ -113,8 +113,8 @@
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
-    "stable": "v1.19.0",
-    "stable_date": "2026-10-24T12:33:51Z"
+    "stable": "v2.0.0",
+    "stable_date": "2026-10-26T09:33:36Z"
   },
   "heyymichii/michii-patches": {
     "beta": "v1.2.0-dev.3",
@@ -135,13 +135,13 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.62.0-dev.10",
-    "beta_date": "2026-10-26T08:20:45Z",
+    "beta": "v1.63.0-dev.3",
+    "beta_date": "2026-10-26T13:18:42Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.61.0",
-    "stable_date": "2026-10-25T14:59:16Z"
+    "stable": "v1.62.0",
+    "stable_date": "2026-10-26T09:58:58Z"
   },
   "instafel/pc-rel": {
     "beta": "",

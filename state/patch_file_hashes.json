@@ -63,8 +63,8 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "f9618d17c16b011a631a840658d45a20",
-      "shared": "ccad433d728a8fca2434563b046d8fc7"
+      "com.google.android.apps.maps": "0231c0d1b72c3f8d991352f37c4f715b",
+      "shared": "19bc25f6b1b38d8ac29280ed630dc132"
     }
   },
   "brosssh/morphe-patches": {
@@ -180,8 +180,8 @@
       "shared": "4d927554f35a558cf0b43a28d3c560e2"
     },
     "stable": {
-      "com.truecaller": "1ccdc5dd19fe2c131e9d7e2b99417fca",
-      "shared": "a24337d8ff2461e261b6cd21a582dbb8"
+      "com.truecaller": "8a714b34f84ca95da973ae9d2d4147a9",
+      "shared": "9559484535a8399740bc1d5c127a6356"
     }
   },
   "heyymichii/michii-patches": {
@@ -255,8 +255,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "787136d1f2ddaf0f335164a8c0364518",
-      "shared": "6121deeb89d1b880b91c06f0a77b6c18"
+      "com.shervinkoushan.anyTracker": "98d105f5cd066c49ac34c07b923a2f6f",
+      "shared": "4ed8726f0bb89e289301fc3a10c04e78"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
