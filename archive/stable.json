@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-25T20:37:24Z"
+    "publishedAt": "2026-10-26T09:01:26Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -1522,134 +1522,6 @@
       ],
       "originBuild": "260207",
       "publishedAt": "2026-10-11T16:50:32Z"
-    },
-    "google-photos-akashsriram-module-v7.96.0.993165104-arm-v7a.zip": {
-      "name": "google-photos-akashsriram",
-      "version": "7.96.0.993165104",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm",
-      "fileType": "Module",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.14.4.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "Account avatar",
-        "Enable DCIM folders backup control",
-        "Enable Phenotype flag manager",
-        "Fix memory style font loading",
-        "Google One Bento Badge",
-        "Local creation downloader",
-        "Model Readiness Gates",
-        "Spoof features"
-      ],
-      "originBuild": "260212",
-      "publishedAt": "2026-10-12T13:35:55Z"
-    },
-    "google-photos-akashsriram-v7.96.0.993165104-arm64-v8a.apk": {
-      "name": "google-photos-akashsriram",
-      "version": "7.96.0.993165104",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.14.4.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "Account avatar",
-        "Enable DCIM folders backup control",
-        "Enable Phenotype flag manager",
-        "Fix memory style font loading",
-        "Google One Bento Badge",
-        "Local creation downloader",
-        "Model Readiness Gates",
-        "Spoof features"
-      ],
-      "originBuild": "260212",
-      "publishedAt": "2026-10-12T13:35:55Z"
-    },
-    "google-photos-akashsriram-v7.96.0.993165104-arm-v7a.apk": {
-      "name": "google-photos-akashsriram",
-      "version": "7.96.0.993165104",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.14.4.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "Account avatar",
-        "Enable DCIM folders backup control",
-        "Enable Phenotype flag manager",
-        "Fix memory style font loading",
-        "Google One Bento Badge",
-        "Local creation downloader",
-        "Model Readiness Gates",
-        "Spoof features"
-      ],
-      "originBuild": "260212",
-      "publishedAt": "2026-10-12T13:35:55Z"
-    },
-    "google-photos-akashsriram-module-v7.96.0.993165104-arm64-v8a.zip": {
-      "name": "google-photos-akashsriram",
-      "version": "7.96.0.993165104",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm64",
-      "fileType": "Module",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.14.4.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "Account avatar",
-        "Enable DCIM folders backup control",
-        "Enable Phenotype flag manager",
-        "Fix memory style font loading",
-        "Google One Bento Badge",
-        "Local creation downloader",
-        "Model Readiness Gates",
-        "Spoof features"
-      ],
-      "originBuild": "260212",
-      "publishedAt": "2026-10-12T13:35:55Z"
     },
     "brave-browser-kveld9-v1.97.56-arm-v7a.apk": {
       "name": "brave-browser-kveld9",
@@ -4519,10 +4391,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.16.0.mpp"
+        "Akash-Sriram/patches-1.16.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.0"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4532,8 +4404,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260272",
-      "publishedAt": "2026-10-25T20:36:59Z"
+      "originBuild": "260274",
+      "publishedAt": "2026-10-26T09:01:05Z"
     },
     "google-photos-akashsriram-v7.98.0.1001971222-arm-v7a.apk": {
       "name": "google-photos-akashsriram",
@@ -4548,10 +4420,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.16.0.mpp"
+        "Akash-Sriram/patches-1.16.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.0"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4561,8 +4433,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260272",
-      "publishedAt": "2026-10-25T20:36:59Z"
+      "originBuild": "260274",
+      "publishedAt": "2026-10-26T09:01:05Z"
     },
     "google-photos-akashsriram-module-v7.98.0.1001971222-arm64-v8a.zip": {
       "name": "google-photos-akashsriram",
@@ -4577,10 +4449,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.16.0.mpp"
+        "Akash-Sriram/patches-1.16.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.0"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4589,8 +4461,8 @@
         "Media engine & AI fixes",
         "Spoof features"
       ],
-      "originBuild": "260272",
-      "publishedAt": "2026-10-25T20:36:59Z"
+      "originBuild": "260274",
+      "publishedAt": "2026-10-26T09:01:05Z"
     },
     "google-photos-akashsriram-module-v7.98.0.1001971222-arm-v7a.zip": {
       "name": "google-photos-akashsriram",
@@ -4605,10 +4477,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.16.0.mpp"
+        "Akash-Sriram/patches-1.16.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.0"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4617,8 +4489,8 @@
         "Media engine & AI fixes",
         "Spoof features"
       ],
-      "originBuild": "260272",
-      "publishedAt": "2026-10-25T20:36:59Z"
+      "originBuild": "260274",
+      "publishedAt": "2026-10-26T09:01:05Z"
     }
   }
 }
