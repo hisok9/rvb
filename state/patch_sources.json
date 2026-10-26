@@ -135,13 +135,13 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.63.0-dev.3",
-    "beta_date": "2026-10-26T13:18:42Z",
+    "beta": "v1.64.0-dev.1",
+    "beta_date": "2026-10-26T15:50:22Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.62.0",
-    "stable_date": "2026-10-26T09:58:58Z"
+    "stable": "v1.63.0",
+    "stable_date": "2026-10-26T15:40:53Z"
   },
   "instafel/pc-rel": {
     "beta": "",
