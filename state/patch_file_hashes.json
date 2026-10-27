@@ -176,8 +176,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "8a714b34f84ca95da973ae9d2d4147a9",
-      "shared": "4d927554f35a558cf0b43a28d3c560e2"
+      "com.truecaller": "517f805ac8e9da696e0001674ddfb5c5",
+      "shared": "9559484535a8399740bc1d5c127a6356"
     },
     "stable": {
       "com.truecaller": "8a714b34f84ca95da973ae9d2d4147a9",
@@ -323,8 +323,8 @@
   "kveld9/kveld-morphe-patches": {
     "beta": {},
     "stable": {
-      "com.brave.browser": "1679caaf244ee91d4db5525ec71971df",
-      "shared": "c02ef9d0166b1af11d6153922aaac10a"
+      "com.brave.browser": "1cb64511e3a97939106796f275d4efda",
+      "shared": "d0abc65e69ba0b1af9bd47a8f8420731"
     }
   },
   "liongalahad/nuviotv-morphe-patches": {
@@ -494,8 +494,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "bed57294995c2d65e29fe4741477cf78",
-      "shared": "0f718e329d05bc04eb43f3d88e8d39e9"
+      "com.discord": "066d86666be54d40457d95e0b037ef63",
+      "shared": "8c8125f8f58cef17c4cae7240812da7c"
     }
   }
 }
