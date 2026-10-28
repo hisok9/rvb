@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-28T17:23:29Z"
+    "publishedAt": "2026-10-28T20:49:22Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -70,17 +70,17 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.6.0.mpp"
+        "RookieEnough/patches-1.6.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.1"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "Spoof features"
       ],
-      "originBuild": "260263",
-      "publishedAt": "2026-10-24T13:39:27Z"
+      "originBuild": "260289",
+      "publishedAt": "2026-10-28T20:48:53Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm64-v8a.zip": {
       "name": "google-photos-devanced",
@@ -95,17 +95,17 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.6.0.mpp"
+        "RookieEnough/patches-1.6.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.1"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "Spoof features"
       ],
-      "originBuild": "260263",
-      "publishedAt": "2026-10-24T13:39:27Z"
+      "originBuild": "260289",
+      "publishedAt": "2026-10-28T20:48:53Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm64-v8a.apk": {
       "name": "google-photos-devanced",
@@ -120,18 +120,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.6.0.mpp"
+        "RookieEnough/patches-1.6.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.1"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260263",
-      "publishedAt": "2026-10-24T13:39:27Z"
+      "originBuild": "260289",
+      "publishedAt": "2026-10-28T20:48:53Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
@@ -146,18 +146,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.6.0.mpp"
+        "RookieEnough/patches-1.6.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.1"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260263",
-      "publishedAt": "2026-10-24T13:39:27Z"
+      "originBuild": "260289",
+      "publishedAt": "2026-10-28T20:48:53Z"
     },
     "google-photos-rushiranpise-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-rushiranpise",
@@ -4512,6 +4512,132 @@
       ],
       "originBuild": "260286",
       "publishedAt": "2026-10-28T09:03:48Z"
+    },
+    "google-photos-rushiranpise-v7.98.0.1001971222-arm-v7a.apk": {
+      "name": "google-photos-rushiranpise",
+      "version": "7.98.0.1001971222",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "rushiranpise",
+      "brandName": "rushiranpise",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "rushiranpise/patches-1.23.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Change package name",
+        "Enable DCIM folders backup control",
+        "Fix DCIM folder classification",
+        "GmsCore support",
+        "Spoof features"
+      ],
+      "originBuild": "260289",
+      "publishedAt": "2026-10-28T20:48:53Z"
+    },
+    "google-photos-rushiranpise-v7.98.0.1001971222-arm64-v8a.apk": {
+      "name": "google-photos-rushiranpise",
+      "version": "7.98.0.1001971222",
+      "appKey": "googlephotos",
+      "appName": "Google Photos",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "rushiranpise",
+      "brandName": "rushiranpise",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "app.morphe.android.apps.photos",
+      "patchSources": [
+        "rushiranpise/patches-1.23.1.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1"
+      ],
+      "appliedPatches": [
+        "AMOLED dark theme",
+        "Change package name",
+        "Enable DCIM folders backup control",
+        "Fix DCIM folder classification",
+        "GmsCore support",
+        "Spoof features"
+      ],
+      "originBuild": "260289",
+      "publishedAt": "2026-10-28T20:48:53Z"
+    },
+    "linkedin-michii-v4.1.1261-arm-v7a.apk": {
+      "name": "linkedin-michii",
+      "version": "4.1.1261",
+      "appKey": "linkedin",
+      "appName": "LinkedIn",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "michii",
+      "brandName": "michii",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.linkedin.android",
+      "patchSources": [
+        "heyymichii/patches-1.2.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heyymichii/michii-patches/releases/tag/v1.2.0"
+      ],
+      "appliedPatches": [
+        "Block tracking",
+        "Disable double-tap like",
+        "Download media",
+        "Feed filters",
+        "Hide Premium upsells",
+        "Hide ads",
+        "Hide promoted jobs",
+        "Hide suggested posts",
+        "Messaging",
+        "Open links directly",
+        "Sanitize share links"
+      ],
+      "originBuild": "260289",
+      "publishedAt": "2026-10-28T20:48:53Z"
+    },
+    "linkedin-michii-v4.1.1261-arm64-v8a.apk": {
+      "name": "linkedin-michii",
+      "version": "4.1.1261",
+      "appKey": "linkedin",
+      "appName": "LinkedIn",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "michii",
+      "brandName": "michii",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.linkedin.android",
+      "patchSources": [
+        "heyymichii/patches-1.2.0.mpp"
+      ],
+      "changelogs": [
+        "https://github.com/heyymichii/michii-patches/releases/tag/v1.2.0"
+      ],
+      "appliedPatches": [
+        "Block tracking",
+        "Disable double-tap like",
+        "Download media",
+        "Feed filters",
+        "Hide Premium upsells",
+        "Hide ads",
+        "Hide promoted jobs",
+        "Hide suggested posts",
+        "Messaging",
+        "Open links directly",
+        "Sanitize share links"
+      ],
+      "originBuild": "260289",
+      "publishedAt": "2026-10-28T20:48:53Z"
     }
   }
 }
