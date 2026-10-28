@@ -176,7 +176,7 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "517f805ac8e9da696e0001674ddfb5c5",
+      "com.truecaller": "0e4433fb56df979dd923595de2eb25af",
       "shared": "9559484535a8399740bc1d5c127a6356"
     },
     "stable": {
@@ -255,8 +255,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "9ecf0411dbf14822e21d38c9d49ec033",
-      "shared": "9688fcfbe22590e1c3f83b19fbf21a9d"
+      "com.shervinkoushan.anyTracker": "beb8920061127fd12f03a050cccd9bab",
+      "shared": "4b2766e72f5769e5d8e0e997ea6613fd"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
