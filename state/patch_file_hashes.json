@@ -187,7 +187,7 @@
   "heyymichii/michii-patches": {
     "beta": {},
     "stable": {
-      "com.linkedin.android": "0d90bf490b506104b0abdd6d51975a27",
+      "com.linkedin.android": "d4f570ccdfee99348889574a1d9c17a1",
       "shared": "3d14bd460d712e88a7ab80afd48cd175"
     }
   },
@@ -423,15 +423,15 @@
       "shared": "53bc29bd97211283f3f3a9270f0e64bb"
     },
     "stable": {
-      "com.google.android.apps.photos": "764598fbf94549e11671704108a07f76",
+      "com.google.android.apps.photos": "8b0432157cfb838d72cd097af8d351bf",
       "shared": "53bc29bd97211283f3f3a9270f0e64bb"
     }
   },
   "rushiranpise/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "95db4ec7e17094158f22e5da2adae0a1",
-      "com.intsig.camscanner": "b8106aa72c69b2cd0ecd59c6bf970b77",
+      "com.google.android.apps.photos": "5e8e110864c04c249da8f5156883b096",
+      "com.intsig.camscanner": "6ac75afbf1de27296d8af399e7a98e98",
       "shared": "3feee68e9fca7acb1461160dc0edc12a"
     }
   },

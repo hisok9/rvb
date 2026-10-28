@@ -3,7 +3,7 @@
   "GoogleMaps-bearinmindcat": {
     "patches-source": "bearinmindcat/morphe-patches",
     "brand": "bearinmindcat",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/maps",
@@ -183,7 +183,7 @@
     "github-regex": "arm64-v8a: BraveMonoarm64\\.apk | arm-v7a: BraveMonoarm\\.apk"
   },
   "LinkedIn-michii": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.linkedin.android",
     "app-name": "LinkedIn",
     "brand": "michii",
@@ -193,7 +193,7 @@
     "apkpure-dlurl": "https://apkpure.com/linkedin-network-job-finder/com.linkedin.android"
   },
   "GooglePhotos-DeVanced": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "DeVanced",
@@ -202,7 +202,7 @@
     "apkmirror-dlurl": "https://apkmirror.com/apk/google-inc/photos"
   },
   "GooglePhotos-rushiranpise": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "rushiranpise",
@@ -243,7 +243,7 @@
   "CamScanner-rushiranpise": {
     "patches-source": "rushiranpise/morphe-patches",
     "brand": "rushiranpise",
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.intsig.camscanner",
     "app-name": "CamScanner",
     "version": "7.24.5.2608200000",
