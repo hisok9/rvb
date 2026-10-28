@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-28T13:47:37Z"
+    "publishedAt": "2026-10-28T17:23:29Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -2282,10 +2282,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.7.1.mpp"
+        "bearinmindcat/patches-2.7.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.1"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2316,8 +2316,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260284",
-      "publishedAt": "2026-10-27T20:48:23Z"
+      "originBuild": "260288",
+      "publishedAt": "2026-10-28T17:23:11Z"
     },
     "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -2332,10 +2332,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.7.1.mpp"
+        "bearinmindcat/patches-2.7.4.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.1"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.7.4"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -2366,8 +2366,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260284",
-      "publishedAt": "2026-10-27T20:48:23Z"
+      "originBuild": "260288",
+      "publishedAt": "2026-10-28T17:23:11Z"
     },
     "youtube-morphe-v21.20.405-arm64-v8a.apk": {
       "name": "youtube-morphe",
