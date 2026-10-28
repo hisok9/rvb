@@ -68,8 +68,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.7.2",
-    "stable_date": "2026-10-27T21:10:07Z"
+    "stable": "v2.7.4",
+    "stable_date": "2026-10-28T14:34:45Z"
   },
   "brosssh/morphe-patches": {
     "beta": "v2.8.3-dev.2",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.65.0-dev.9",
-    "beta_date": "2026-10-28T08:54:38Z",
+    "beta": "v1.66.0-dev.1",
+    "beta_date": "2026-10-28T14:34:18Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
