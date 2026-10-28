@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.49.0-dev.9",
-    "beta_date": "2026-10-27T19:52:31Z",
+    "beta": "v1.49.0-dev.10",
+    "beta_date": "2026-10-28T08:25:09Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -50,8 +50,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.16",
-    "stable_date": "2026-10-24T17:17:49Z"
+    "stable": "v0.0.17",
+    "stable_date": "2026-10-28T06:49:05Z"
   },
   "VenusIsJaded/Venus-Patches": {
     "beta": "",
