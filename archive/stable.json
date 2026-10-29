@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-29T09:07:23Z"
+    "publishedAt": "2026-10-29T13:50:09Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -2850,16 +2850,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.65.0.mpp"
+        "hxreborn/patches-1.66.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.65.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.66.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260287",
-      "publishedAt": "2026-10-28T13:47:23Z"
+      "originBuild": "260293",
+      "publishedAt": "2026-10-29T13:49:56Z"
     },
     "anytracker-hxreborn-v7.5.6-arm-v7a.apk": {
       "name": "anytracker-hxreborn",
@@ -2874,16 +2874,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.65.0.mpp"
+        "hxreborn/patches-1.66.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.65.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.66.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260287",
-      "publishedAt": "2026-10-28T13:47:23Z"
+      "originBuild": "260293",
+      "publishedAt": "2026-10-29T13:49:56Z"
     },
     "linkedin-michii-v4.1.1259-arm64-v8a.apk": {
       "name": "linkedin-michii",
