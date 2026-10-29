@@ -110,7 +110,7 @@
     "archive-dlurl": "https://archive.org/download/geologically/apks/com.instagram.android"
   },
   "Instagram-InstaFel": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "instafel/pc-rel",
@@ -121,7 +121,7 @@
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/instagram/instagram-instagram"
   },
   "Instagram-InstaFel-Clone": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.instagram.android",
     "app-name": "Instagram",
     "patches-source": "instafel/pc-rel",
@@ -183,7 +183,7 @@
     "github-regex": "arm64-v8a: BraveMonoarm64\\.apk | arm-v7a: BraveMonoarm\\.apk"
   },
   "LinkedIn-michii": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.linkedin.android",
     "app-name": "LinkedIn",
     "brand": "michii",
@@ -193,7 +193,7 @@
     "apkpure-dlurl": "https://apkpure.com/linkedin-network-job-finder/com.linkedin.android"
   },
   "GooglePhotos-DeVanced": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "DeVanced",
@@ -202,7 +202,7 @@
     "apkmirror-dlurl": "https://apkmirror.com/apk/google-inc/photos"
   },
   "GooglePhotos-rushiranpise": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "rushiranpise",
@@ -243,7 +243,7 @@
   "CamScanner-rushiranpise": {
     "patches-source": "rushiranpise/morphe-patches",
     "brand": "rushiranpise",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.intsig.camscanner",
     "app-name": "CamScanner",
     "version": "7.24.5.2608200000",
