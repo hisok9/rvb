@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v1.49.0-dev.10",
-    "beta_date": "2026-10-28T08:25:09Z",
+    "beta": "v1.49.0-dev.11",
+    "beta_date": "2026-10-29T08:24:08Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -41,8 +41,8 @@
     "blocked": false,
     "host": "github",
     "repo": "RookieEnough/De-Vanced",
-    "stable": "v1.6.1",
-    "stable_date": "2026-10-28T20:23:58Z"
+    "stable": "v1.6.2",
+    "stable_date": "2026-10-29T08:29:05Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.66.0-dev.2",
-    "beta_date": "2026-10-28T19:58:55Z",
+    "beta": "v1.66.0-dev.3",
+    "beta_date": "2026-10-29T08:03:53Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
