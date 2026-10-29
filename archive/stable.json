@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-29T01:15:28Z"
+    "publishedAt": "2026-10-29T09:07:23Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -70,17 +70,17 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.6.1.mpp"
+        "RookieEnough/patches-1.6.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.1"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.2"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "Spoof features"
       ],
-      "originBuild": "260289",
-      "publishedAt": "2026-10-28T20:48:53Z"
+      "originBuild": "260292",
+      "publishedAt": "2026-10-29T09:06:53Z"
     },
     "google-photos-devanced-module-v7.92.0.977185651-arm64-v8a.zip": {
       "name": "google-photos-devanced",
@@ -95,17 +95,17 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.6.1.mpp"
+        "RookieEnough/patches-1.6.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.1"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.2"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "Spoof features"
       ],
-      "originBuild": "260289",
-      "publishedAt": "2026-10-28T20:48:53Z"
+      "originBuild": "260292",
+      "publishedAt": "2026-10-29T09:06:53Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm64-v8a.apk": {
       "name": "google-photos-devanced",
@@ -120,18 +120,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.6.1.mpp"
+        "RookieEnough/patches-1.6.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.1"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.2"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260289",
-      "publishedAt": "2026-10-28T20:48:53Z"
+      "originBuild": "260292",
+      "publishedAt": "2026-10-29T09:06:53Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
@@ -146,18 +146,18 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "RookieEnough/patches-1.6.1.mpp"
+        "RookieEnough/patches-1.6.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.1"
+        "https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.2"
       ],
       "appliedPatches": [
         "Fix selected account persistence",
         "GmsCore support",
         "Spoof features"
       ],
-      "originBuild": "260289",
-      "publishedAt": "2026-10-28T20:48:53Z"
+      "originBuild": "260292",
+      "publishedAt": "2026-10-29T09:06:53Z"
     },
     "truecaller-paresh-v26.10.6-arm64-v8a.apk": {
       "name": "truecaller-paresh",
@@ -3328,138 +3328,6 @@
       ],
       "originBuild": "260245",
       "publishedAt": "2026-10-21T00:55:42Z"
-    },
-    "instagram-instafel-clone-v452.1.0.53.64-arm64-v8a.apk": {
-      "name": "instagram-instafel-clone",
-      "version": "452.1.0.53.64",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": "Clone",
-      "subVariant": null,
-      "packageName": "com.instafel.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-ce49607.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/ce49607-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger",
-        "Clone General",
-        "Replace Instagram Strings"
-      ],
-      "originBuild": "260254",
-      "publishedAt": "2026-10-22T20:58:07Z"
-    },
-    "instagram-instafel-clone-v452.1.0.53.64-arm-v7a.apk": {
-      "name": "instagram-instafel-clone",
-      "version": "452.1.0.53.64",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": "Clone",
-      "subVariant": null,
-      "packageName": "com.instafel.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-ce49607.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/ce49607-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger",
-        "Clone General",
-        "Replace Instagram Strings"
-      ],
-      "originBuild": "260254",
-      "publishedAt": "2026-10-22T20:58:07Z"
-    },
-    "instagram-instafel-v452.1.0.53.64-arm-v7a.apk": {
-      "name": "instagram-instafel",
-      "version": "452.1.0.53.64",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.instagram.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-ce49607.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/ce49607-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger"
-      ],
-      "originBuild": "260254",
-      "publishedAt": "2026-10-22T20:58:07Z"
-    },
-    "instagram-instafel-v452.1.0.53.64-arm64-v8a.apk": {
-      "name": "instagram-instafel",
-      "version": "452.1.0.53.64",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.instagram.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-ce49607.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/ce49607-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger"
-      ],
-      "originBuild": "260254",
-      "publishedAt": "2026-10-22T20:58:07Z"
     },
     "brave-browser-dh6k-beta-v1.99.44-arm64-v8a.apk": {
       "name": "brave-browser-dh6k-beta",
