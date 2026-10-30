@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.0.0-dev.1",
-    "beta_date": "2026-10-29T18:33:56Z",
+    "beta": "v2.0.0-dev.2",
+    "beta_date": "2026-10-30T08:05:40Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -59,8 +59,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.19.0",
-    "stable_date": "2026-10-26T23:55:19Z"
+    "stable": "v1.20.0",
+    "stable_date": "2026-10-30T08:51:04Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -108,8 +108,8 @@
     "stable_date": "2026-10-22T16:40:51Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.1.0-dev.4",
-    "beta_date": "2026-10-29T21:06:29Z",
+    "beta": "v2.1.0-dev.5",
+    "beta_date": "2026-10-30T08:24:26Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.66.0-dev.3",
-    "beta_date": "2026-10-29T08:03:53Z",
+    "beta": "v1.67.0-dev.1",
+    "beta_date": "2026-10-30T07:13:31Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
