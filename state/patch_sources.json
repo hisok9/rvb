@@ -18,13 +18,13 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.0.0-dev.2",
-    "beta_date": "2026-10-30T08:05:40Z",
+    "beta": "v2.0.0-dev.4",
+    "beta_date": "2026-10-30T11:01:50Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
-    "stable": "v1.48.0",
-    "stable_date": "2026-10-22T13:14:23Z"
+    "stable": "v2.0.0",
+    "stable_date": "2026-10-30T11:16:04Z"
   },
   "Paresh-Maheshwari/paresh-patches": {
     "beta": "v1.20.0-dev.4",
