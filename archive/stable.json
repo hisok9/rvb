@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-10-29T13:50:09Z"
+    "publishedAt": "2026-10-30T09:06:52Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -3649,13 +3649,16 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.19.0.mpp"
+        "VenusIsJaded/patches-1.20.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.19.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.20.0"
       ],
       "appliedPatches": [
         "Account switcher",
+        "Alert when you're removed",
+        "Always trust links and files",
+        "Anonymous file names",
         "Bring back Tenor GIFs",
         "Bulk delete messages",
         "Clean channel names",
@@ -3669,23 +3672,22 @@
         "Disable install attribution",
         "Disable telemetry and touch logging",
         "Double-tap to reply",
+        "Edit servers locally",
         "Favourite any image or video",
         "Fix link previews",
         "Fix unknown mentions",
         "Hide blocked or ignored messages",
-        "Hide extra buttons",
-        "Hide the Quests banner",
-        "Hide the call button",
-        "Hide the gift button",
         "Hide typing indicator",
         "Icon packs",
         "Jump to first message",
         "Keep Bluetooth audio clear in calls",
         "Keep deleted messages",
+        "Load full-quality images",
         "Material You colors",
         "Message highlights",
         "Pastel name colors",
         "Read all button",
+        "Remove anything",
         "Send Nitro stickers and emojis as links",
         "Send audio as voice messages",
         "Send long messages",
@@ -3693,8 +3695,10 @@
         "Show device indicators",
         "Show file sizes when attaching",
         "Show hidden channels",
+        "Show owner and mod tags",
         "Skip delete confirmation",
-        "Spaces in channel names",
+        "Skip pin confirmation",
+        "Tap mentions to open profiles",
         "Translate messages",
         "Unlock Discord experiments",
         "Unlock Nitro themes",
@@ -3704,10 +3708,11 @@
         "User activity notifications",
         "User and server reviews",
         "Venus button on profile bar",
-        "Venus settings"
+        "Venus settings",
+        "Voice channel options"
       ],
-      "originBuild": "260278",
-      "publishedAt": "2026-10-27T00:58:39Z"
+      "originBuild": "260296",
+      "publishedAt": "2026-10-30T09:06:34Z"
     },
     "discord-venus-v350.8-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
@@ -3722,13 +3727,16 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.19.0.mpp"
+        "VenusIsJaded/patches-1.20.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.19.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.20.0"
       ],
       "appliedPatches": [
         "Account switcher",
+        "Alert when you're removed",
+        "Always trust links and files",
+        "Anonymous file names",
         "Bring back Tenor GIFs",
         "Bulk delete messages",
         "Clean channel names",
@@ -3742,23 +3750,22 @@
         "Disable install attribution",
         "Disable telemetry and touch logging",
         "Double-tap to reply",
+        "Edit servers locally",
         "Favourite any image or video",
         "Fix link previews",
         "Fix unknown mentions",
         "Hide blocked or ignored messages",
-        "Hide extra buttons",
-        "Hide the Quests banner",
-        "Hide the call button",
-        "Hide the gift button",
         "Hide typing indicator",
         "Icon packs",
         "Jump to first message",
         "Keep Bluetooth audio clear in calls",
         "Keep deleted messages",
+        "Load full-quality images",
         "Material You colors",
         "Message highlights",
         "Pastel name colors",
         "Read all button",
+        "Remove anything",
         "Send Nitro stickers and emojis as links",
         "Send audio as voice messages",
         "Send long messages",
@@ -3766,8 +3773,10 @@
         "Show device indicators",
         "Show file sizes when attaching",
         "Show hidden channels",
+        "Show owner and mod tags",
         "Skip delete confirmation",
-        "Spaces in channel names",
+        "Skip pin confirmation",
+        "Tap mentions to open profiles",
         "Translate messages",
         "Unlock Discord experiments",
         "Unlock Nitro themes",
@@ -3777,10 +3786,11 @@
         "User activity notifications",
         "User and server reviews",
         "Venus button on profile bar",
-        "Venus settings"
+        "Venus settings",
+        "Voice channel options"
       ],
-      "originBuild": "260278",
-      "publishedAt": "2026-10-27T00:58:39Z"
+      "originBuild": "260296",
+      "publishedAt": "2026-10-30T09:06:34Z"
     },
     "truecaller-heval99-module-v26.41.5-arm-v7a.zip": {
       "name": "truecaller-heval99",
