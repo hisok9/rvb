@@ -17,7 +17,7 @@
   "akash-sriram/morphe-google-photos": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "c368aa2b261214079983a293f4f00e13",
+      "com.google.android.apps.photos": "b0705fa8786a4fedc39d93263cebf064",
       "shared": "cb2a7725c3365cbe6e29daf444e8c2b8"
     }
   },
@@ -103,8 +103,8 @@
   },
   "crimera/piko": {
     "beta": {
-      "com.instagram.android": "74e205b3d2d1660e1448088296b14918",
-      "shared": "221135cfb774e1d17ecaeaa7e2e1e946"
+      "com.instagram.android": "a982ca1f1f7e11cf8f6e324186bf915c",
+      "shared": "4190f095983e3deac0e70dd851523d6c"
     },
     "stable": {
       "com.instagram.android": "90b1539aa4fd996d64df92684f5747b4",
@@ -336,9 +336,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "9f1ce862a8cc49cfe8a71fabdf1dc5f5",
-      "com.google.android.youtube": "3f043dc8e490c773582d23a8fc57d225",
-      "shared": "473229ba612fe8bd97b5d50f5f355add"
+      "com.google.android.apps.youtube.music": "643b444e20518a66dc9c3cf8997eeaf8",
+      "com.google.android.youtube": "871a74f6be4f5858c467b2c7c045408d",
+      "shared": "ba8c143da5fcf0b1e1c7fc8baec09b58"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "5997a31d4f87678f5b659cf4e0b83a6e",

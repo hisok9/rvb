@@ -5,8 +5,8 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.17.2",
-    "stable_date": "2026-11-01T04:16:04Z"
+    "stable": "v1.17.4",
+    "stable_date": "2026-11-01T10:37:56Z"
   },
   "Aunali321/ReVancedExperiments": {
     "beta": "v2.0.0-dev.1",
@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.4",
-    "beta_date": "2026-10-31T17:10:04Z",
+    "beta": "v2.1.0-dev.5",
+    "beta_date": "2026-11-01T09:55:14Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -90,8 +90,8 @@
     "stable_date": "2026-10-25T06:39:44Z"
   },
   "crimera/piko": {
-    "beta": "v3.11.0-dev.3",
-    "beta_date": "2026-10-25T17:20:44Z",
+    "beta": "v3.11.0-dev.4",
+    "beta_date": "2026-11-01T13:26:43Z",
     "blocked": false,
     "host": "github",
     "repo": "crimera/piko",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.68.0-dev.8",
-    "beta_date": "2026-11-01T07:45:49Z",
+    "beta": "v1.69.0-dev.4",
+    "beta_date": "2026-11-01T11:26:27Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -149,8 +149,8 @@
     "blocked": false,
     "host": "github",
     "repo": "instafel/pc-rel",
-    "stable": "ce49607-4.7.0",
-    "stable_date": "2026-10-15T17:48:51Z"
+    "stable": "b7764c7-4.7.0",
+    "stable_date": "2026-11-01T13:27:24Z"
   },
   "kveld9/kveld-morphe-patches": {
     "beta": "v2.10.0-experimental.10",
