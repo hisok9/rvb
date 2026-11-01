@@ -1,15 +1,3 @@
-# ---- hxreborn.toml ----
-
-[AnyTracker-hxreborn]
-enabled = true
-pkg-name = "com.shervinkoushan.anyTracker"
-app-name = "AnyTracker"
-brand = "hxreborn"
-patches-source = "hxreborn/morphe-patches"
-# not on any Mirror listed in DL_SRCS; archive.org item holds a single
-# AnyTracker.apk, so `direct` (which ignores the filename) is the only fit
-direct-dlurl = "https://archive.org/download/any-tracker/AnyTracker.apk"
-
 # ---- vipinvip.toml ----
 
 [RailOne-VipinVIP]
