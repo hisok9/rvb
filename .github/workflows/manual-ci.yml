@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       config_file:
-        description: "Default builds configs/config.manual.toml (the 15 newly added apps); 'auto' compiles configs/patches/*.toml and builds every enabled app"
+        description: "Default builds configs/config.manual.toml (the hand-built fixture); 'auto' compiles configs/patches/*.toml and builds every enabled app"
         required: true
         type: choice
         default: "configs/config.manual.toml"
