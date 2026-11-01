@@ -36,8 +36,8 @@
     "stable_date": "2026-09-01T16:37:52.954Z"
   },
   "RookieEnough/De-Vanced": {
-    "beta": "v1.5.1-dev.1",
-    "beta_date": "2026-10-04T09:36:11Z",
+    "beta": "v1.6.3-dev.1",
+    "beta_date": "2026-10-31T23:55:33Z",
     "blocked": false,
     "host": "github",
     "repo": "RookieEnough/De-Vanced",
@@ -50,8 +50,8 @@
     "blocked": false,
     "host": "github",
     "repo": "SysAdminDoc/HushGram",
-    "stable": "v0.0.17",
-    "stable_date": "2026-10-28T06:49:05Z"
+    "stable": "v0.0.18",
+    "stable_date": "2026-10-31T22:50:09Z"
   },
   "VenusIsJaded/Venus-Patches": {
     "beta": "",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.68.0-dev.6",
-    "beta_date": "2026-10-31T20:18:20Z",
+    "beta": "v1.68.0-dev.7",
+    "beta_date": "2026-10-31T20:51:24Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",

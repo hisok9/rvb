@@ -419,7 +419,7 @@
   },
   "rookieenough/de-vanced": {
     "beta": {
-      "com.google.android.apps.photos": "af2e73af0995a512d84ea8d150c75cb5",
+      "com.google.android.apps.photos": "379a0efe80302a06087b997a0cd7729b",
       "shared": "53bc29bd97211283f3f3a9270f0e64bb"
     },
     "stable": {
@@ -466,8 +466,8 @@
   "sysadmindoc/hushgram": {
     "beta": {},
     "stable": {
-      "com.instagram.android": "61b5de210f4f5119ca7a31d6150a7d93",
-      "shared": "5d0e780a05160c9f8db07a2c5601def5"
+      "com.instagram.android": "13ffc3adc663b8f0d85740c420e0880f",
+      "shared": "fd96a32e2357ac51432bb1dd7217cdd8"
     }
   },
   "sysadmindoc/hushmessenger": {
