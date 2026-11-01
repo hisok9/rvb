@@ -1,0 +1,13 @@
+patches-source = "VipinVIP/railone-patches"
+brand = "VipinVIP"
+
+# Uptodown is the only store that lists this app (APKMirror returns zero results
+# for RailOne/"Rail One"/aikyam, Aptoide has no entry for the package). It carries
+# 2.1.70/2.1.66/2.1.57/2.1.48/2.1.45/2.1.3, while the bundle only supports
+# 2.1.71/2.1.66/2.1.62 — so the build tries 2.1.71 first, misses, and lands on
+# 2.1.66, the single version both sides agree on.
+[RailOne-VipinVIP]
+enabled = false
+pkg-name = "org.cris.aikyam"
+app-name = "RailOne"
+uptodown-dlurl = "https://railone.en.uptodown.com/android"
