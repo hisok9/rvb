@@ -10,3 +10,14 @@ patches-source = "hxreborn/morphe-patches"
 # AnyTracker.apk, so `direct` (which ignores the filename) is the only fit
 direct-dlurl = "https://archive.org/download/any-tracker/AnyTracker.apk"
 
+# ---- vipinvip.toml ----
+
+[RailOne-VipinVIP]
+enabled = true
+pkg-name = "org.cris.aikyam"
+app-name = "RailOne"
+brand = "VipinVIP"
+patches-source = "VipinVIP/railone-patches"
+# only store that lists the app; the bundle and the store agree on 2.1.66 alone
+uptodown-dlurl = "https://railone.en.uptodown.com/android"
+
