@@ -27,13 +27,13 @@
     "stable_date": "2026-10-30T11:16:04Z"
   },
   "Paresh-Maheshwari/paresh-patches": {
-    "beta": "v1.20.0-dev.4",
-    "beta_date": "2026-09-01T16:25:25.186Z",
+    "beta": "v1.20.1-dev.1",
+    "beta_date": "2026-11-01T05:46:10.874Z",
     "blocked": false,
     "host": "gitlab",
     "repo": "Paresh-Maheshwari/paresh-patches",
-    "stable": "v1.20.0",
-    "stable_date": "2026-09-01T16:37:52.954Z"
+    "stable": "v1.20.1",
+    "stable_date": "2026-11-01T05:56:32.681Z"
   },
   "RookieEnough/De-Vanced": {
     "beta": "v1.6.3-dev.1",
@@ -68,8 +68,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.8.1",
-    "stable_date": "2026-11-01T05:18:09Z"
+    "stable": "v2.8.2",
+    "stable_date": "2026-11-01T09:12:54Z"
   },
   "brosssh/morphe-patches": {
     "beta": "v2.8.3-dev.2",
@@ -135,13 +135,13 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.68.0-dev.7",
-    "beta_date": "2026-10-31T20:51:24Z",
+    "beta": "v1.68.0-dev.8",
+    "beta_date": "2026-11-01T07:45:49Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.67.0",
-    "stable_date": "2026-10-31T07:35:46Z"
+    "stable": "v1.68.0",
+    "stable_date": "2026-11-01T07:51:54Z"
   },
   "instafel/pc-rel": {
     "beta": "",

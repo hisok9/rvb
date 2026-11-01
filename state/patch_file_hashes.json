@@ -255,8 +255,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "b73c2523100fe7155790b884acbc7f68",
-      "shared": "97b62a08a64b34ecbaf03d4fa7bdec84"
+      "com.shervinkoushan.anyTracker": "745cba10fac8f357d5423d9b955c8e4d",
+      "shared": "7ad6f4c6938873b69bfb2b5f123af765"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -365,20 +365,8 @@
   "paresh-maheshwari/paresh-patches": {
     "beta": {},
     "stable": {
-      "alldocumentreader.office.viewer.filereader.pdfviewerscanner": "d41d8cd98f00b204e9800998ecf8427e",
-      "ch.protonvpn.android": "070b150b4a0e8349c92b34ef53ced15c",
-      "com.arlosoft.macrodroid": "b6c935a80266c830553f85ecfa09f270",
-      "com.cricbuzz.android": "fb45b341d76e3102a945ca2ff3ec5a22",
-      "com.eyecon.global": "be047f0f61610288c570630680d32fd7",
-      "com.lumina.wallpapers": "107fc7ebcfae4b563609ab5f2539d1db",
-      "com.mxtech.videoplayer.ad": "d41d8cd98f00b204e9800998ecf8427e",
-      "com.overlook.android.fing": "6c0dbc6f6ce9cacf53ea6178feebbf1f",
-      "com.ticktick.task": "6e1cf519d16cdc86dea964188a7c9d70",
       "com.truecaller": "1cadfabcdc2586ef950e4b8edb6620ee",
-      "eu.darken.sdmse": "966690fa9aceaa328c1277d83a6c2bd3",
-      "org.telegram.messenger.web": "d590bc2abddd94ca5c49a27aa191abfc",
-      "org.telegram.plus": "abb92126213b44e2d638188fe926c99e",
-      "shared": "5b84fc998e5bc59f64763778f064cd4f"
+      "shared": "5af86c3cdca34c8905405c37c7ba004c"
     }
   },
   "prathxmop/prathxm-patches": {
