@@ -18,6 +18,10 @@ pkg-name = "org.cris.aikyam"
 app-name = "RailOne"
 brand = "VipinVIP"
 patches-source = "VipinVIP/railone-patches"
-# only store that lists the app; the bundle and the store agree on 2.1.66 alone
+# DL_SRCS order keeps uptodown primary and apkpure as the fallback it reaches
+# only when the download fails. APKPure lists every bundle-supported version
+# (2.1.71/2.1.66/2.1.62 at 245/237/231) where Uptodown agrees on 2.1.66 alone,
+# but serves arm64-v8a only - arm-v7a still resolves through Uptodown.
 uptodown-dlurl = "https://railone.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/swarail-app/org.cris.aikyam"
 

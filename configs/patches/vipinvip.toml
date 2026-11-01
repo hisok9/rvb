@@ -1,13 +1,22 @@
 patches-source = "VipinVIP/railone-patches"
 brand = "VipinVIP"
 
-# Uptodown is the only store that lists this app (APKMirror returns zero results
-# for RailOne/"Rail One"/aikyam, Aptoide has no entry for the package). It carries
-# 2.1.70/2.1.66/2.1.57/2.1.48/2.1.45/2.1.3, while the bundle only supports
-# 2.1.71/2.1.66/2.1.62 — so the build tries 2.1.71 first, misses, and lands on
-# 2.1.66, the single version both sides agree on.
+# DL_SRCS order keeps uptodown ahead of apkpure, so Uptodown stays the primary
+# source and APKPure is only reached when its download fails. Uptodown carries
+# 2.1.70/2.1.66/2.1.57/2.1.48/2.1.45/2.1.3 against the bundle's 2.1.71/2.1.66/
+# 2.1.62, so 2.1.71 misses there; APKPure lists all three (versionCodes 245/237/
+# 231) and can supply it instead of the build falling through to 2.1.66 alone.
+#
+# APKPure publishes arm64-v8a only for this app (2.1.66 additionally has x86_64),
+# never armeabi-v7a, so the arm-v7a channel still resolves via Uptodown. Wrong
+# ABIs are rejected by the arch-honesty gate rather than relabelled
+# (docs/decisions/0007).
+#
+# APKMirror returns zero results for RailOne/"Rail One"/aikyam and Aptoide has
+# no entry for the package, so neither carries a dlurl.
 [RailOne-VipinVIP]
 enabled = false
 pkg-name = "org.cris.aikyam"
 app-name = "RailOne"
 uptodown-dlurl = "https://railone.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/swarail-app/org.cris.aikyam"
