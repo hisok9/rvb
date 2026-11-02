@@ -36,13 +36,13 @@
     "stable_date": "2026-11-01T05:56:32.681Z"
   },
   "RookieEnough/De-Vanced": {
-    "beta": "v1.6.3-dev.1",
-    "beta_date": "2026-10-31T23:55:33Z",
+    "beta": "v1.6.3-dev.3",
+    "beta_date": "2026-11-02T19:34:34Z",
     "blocked": false,
     "host": "github",
     "repo": "RookieEnough/De-Vanced",
-    "stable": "v1.6.2",
-    "stable_date": "2026-10-29T08:29:05Z"
+    "stable": "v1.6.3",
+    "stable_date": "2026-11-02T19:58:05Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -113,8 +113,8 @@
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
-    "stable": "v2.0.0",
-    "stable_date": "2026-10-26T09:33:36Z"
+    "stable": "v2.1.0",
+    "stable_date": "2026-11-02T20:02:11Z"
   },
   "heyymichii/michii-patches": {
     "beta": "v1.2.0-dev.3",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.70.0-dev.1",
-    "beta_date": "2026-11-02T11:04:04Z",
+    "beta": "v1.70.0-dev.8",
+    "beta_date": "2026-11-02T19:08:36Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -153,13 +153,13 @@
     "stable_date": "2026-11-01T13:27:24Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.10.0-experimental.10",
-    "beta_date": "2026-10-31T19:46:37Z",
+    "beta": "v2.10.0-experimental.11",
+    "beta_date": "2026-11-02T18:55:31Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
-    "stable": "v2.9.0",
-    "stable_date": "2026-10-27T00:24:54Z"
+    "stable": "v2.10.0",
+    "stable_date": "2026-11-02T19:25:47Z"
   },
   "quantavil/edge-morphe-patches": {
     "beta": "",

@@ -180,7 +180,7 @@
       "shared": "9559484535a8399740bc1d5c127a6356"
     },
     "stable": {
-      "com.truecaller": "8a714b34f84ca95da973ae9d2d4147a9",
+      "com.truecaller": "e19a6b4fc8f4fb4bf044f5b3c6f556fe",
       "shared": "9559484535a8399740bc1d5c127a6356"
     }
   },
@@ -323,8 +323,8 @@
   "kveld9/kveld-morphe-patches": {
     "beta": {},
     "stable": {
-      "com.brave.browser": "1cb64511e3a97939106796f275d4efda",
-      "shared": "d0abc65e69ba0b1af9bd47a8f8420731"
+      "com.brave.browser": "ca1486dea61a7a9cc89de65c99dbf0bc",
+      "shared": "284d5669d1225b91375cb66107fd7d0d"
     }
   },
   "liongalahad/nuviotv-morphe-patches": {
@@ -407,11 +407,11 @@
   },
   "rookieenough/de-vanced": {
     "beta": {
-      "com.google.android.apps.photos": "379a0efe80302a06087b997a0cd7729b",
+      "com.google.android.apps.photos": "66cc5569c9dfe38d9f5a60be21645a4f",
       "shared": "53bc29bd97211283f3f3a9270f0e64bb"
     },
     "stable": {
-      "com.google.android.apps.photos": "c11b4c4e4113ec49e3435fac075287b0",
+      "com.google.android.apps.photos": "66cc5569c9dfe38d9f5a60be21645a4f",
       "shared": "53bc29bd97211283f3f3a9270f0e64bb"
     }
   },
