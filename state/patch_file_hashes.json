@@ -17,8 +17,8 @@
   "akash-sriram/morphe-google-photos": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "93b449d9db0044c5f5750a4441e81622",
-      "shared": "cb2a7725c3365cbe6e29daf444e8c2b8"
+      "com.google.android.apps.photos": "e045cf0a7e940f52dae14419defdf868",
+      "shared": "e398f3e7e1185956256d3394bfdd58ae"
     }
   },
   "anddea/revanced-patches": {
