@@ -255,8 +255,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "bd60f63bfe37e3099f4c0443c552b5e4",
-      "shared": "720b4b1442fad705697904dac8cff4ea"
+      "com.shervinkoushan.anyTracker": "21aee9942fe6409cce310c5e64e32c35",
+      "shared": "f28af64f35c3a06f77e1ea1c61537163"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -407,8 +407,8 @@
   },
   "rookieenough/de-vanced": {
     "beta": {
-      "com.google.android.apps.photos": "66cc5569c9dfe38d9f5a60be21645a4f",
-      "shared": "53bc29bd97211283f3f3a9270f0e64bb"
+      "com.google.android.apps.photos": "17c55cfef1cf082763e8926fb4e39541",
+      "shared": "30500b6db4f67c18bdb86c102c75eaf3"
     },
     "stable": {
       "com.google.android.apps.photos": "66cc5569c9dfe38d9f5a60be21645a4f",
@@ -482,8 +482,8 @@
   "venusisjaded/venus-patches": {
     "beta": {},
     "stable": {
-      "com.discord": "b9a63b7bd845aabc24a721e047f69ac6",
-      "shared": "a3f1ce81da8cb95c9ffefef8500657c7"
+      "com.discord": "6bacc5f932d8870523b4ac59d9c5f82a",
+      "shared": "9b1c9a22435cf7362a9e7de7e8eca429"
     }
   }
 }

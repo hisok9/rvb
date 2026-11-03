@@ -36,8 +36,8 @@
     "stable_date": "2026-11-01T05:56:32.681Z"
   },
   "RookieEnough/De-Vanced": {
-    "beta": "v1.6.3-dev.3",
-    "beta_date": "2026-11-02T19:34:34Z",
+    "beta": "v1.6.4-dev.1",
+    "beta_date": "2026-11-03T09:12:28Z",
     "blocked": false,
     "host": "github",
     "repo": "RookieEnough/De-Vanced",
@@ -59,8 +59,8 @@
     "blocked": false,
     "host": "github",
     "repo": "VenusIsJaded/Venus-Patches",
-    "stable": "v1.21.0",
-    "stable_date": "2026-11-03T00:46:05Z"
+    "stable": "v1.21.1",
+    "stable_date": "2026-11-03T09:15:56Z"
   },
   "bearinmindcat/morphe-patches": {
     "beta": "",
@@ -140,8 +140,8 @@
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.69.0",
-    "stable_date": "2026-11-02T08:53:39Z"
+    "stable": "v1.70.0",
+    "stable_date": "2026-11-03T13:24:15Z"
   },
   "instafel/pc-rel": {
     "beta": "",
