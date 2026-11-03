@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-03T09:11:20Z"
+    "publishedAt": "2026-11-03T14:04:21Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -2048,16 +2048,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.69.0.mpp"
+        "hxreborn/patches-1.70.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.69.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.70.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260316",
-      "publishedAt": "2026-11-02T09:15:25Z"
+      "originBuild": "260324",
+      "publishedAt": "2026-11-03T14:04:00Z"
     },
     "anytracker-hxreborn-v7.5.6-arm-v7a.apk": {
       "name": "anytracker-hxreborn",
@@ -2072,16 +2072,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.69.0.mpp"
+        "hxreborn/patches-1.70.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.69.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.70.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260316",
-      "publishedAt": "2026-11-02T09:15:25Z"
+      "originBuild": "260324",
+      "publishedAt": "2026-11-03T14:04:00Z"
     },
     "linkedin-michii-v4.1.1259-arm64-v8a.apk": {
       "name": "linkedin-michii",
@@ -4658,10 +4658,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.21.0.mpp"
+        "VenusIsJaded/patches-1.21.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.1"
       ],
       "appliedPatches": [
         "Account switcher",
@@ -4743,8 +4743,8 @@
         "View raw data",
         "Voice channel options"
       ],
-      "originBuild": "260320",
-      "publishedAt": "2026-11-03T01:08:48Z"
+      "originBuild": "260324",
+      "publishedAt": "2026-11-03T14:04:00Z"
     },
     "discord-venus-v351.11-Stable-arm64-v8a.apk": {
       "name": "discord-venus",
@@ -4759,10 +4759,10 @@
       "subVariant": null,
       "packageName": "com.discord",
       "patchSources": [
-        "VenusIsJaded/patches-1.21.0.mpp"
+        "VenusIsJaded/patches-1.21.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.0"
+        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.1"
       ],
       "appliedPatches": [
         "Account switcher",
@@ -4844,8 +4844,8 @@
         "View raw data",
         "Voice channel options"
       ],
-      "originBuild": "260320",
-      "publishedAt": "2026-11-03T01:08:48Z"
+      "originBuild": "260324",
+      "publishedAt": "2026-11-03T14:04:00Z"
     }
   }
 }
