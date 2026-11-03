@@ -5,8 +5,8 @@
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
-    "stable": "v1.17.7",
-    "stable_date": "2026-11-02T10:11:27Z"
+    "stable": "v1.17.8",
+    "stable_date": "2026-11-03T08:07:00Z"
   },
   "Aunali321/ReVancedExperiments": {
     "beta": "v2.0.0-dev.1",
@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.6",
-    "beta_date": "2026-11-02T08:28:24Z",
+    "beta": "v2.1.0-dev.7",
+    "beta_date": "2026-11-03T08:24:27Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.70.0-dev.8",
-    "beta_date": "2026-11-02T19:08:36Z",
+    "beta": "v1.70.0-dev.9",
+    "beta_date": "2026-11-03T07:01:54Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",

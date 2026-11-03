@@ -17,8 +17,8 @@
   "akash-sriram/morphe-google-photos": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "e045cf0a7e940f52dae14419defdf868",
-      "shared": "e398f3e7e1185956256d3394bfdd58ae"
+      "com.google.android.apps.photos": "b1ba81b387824a08b8edea700a57f658",
+      "shared": "796c2550311378527b1a1c1d14685ff2"
     }
   },
   "anddea/revanced-patches": {
@@ -336,9 +336,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "5c24a2a6e0ea18cc2023f9b448eb921b",
-      "com.google.android.youtube": "d775a26941296206165eb7d68baf19bc",
-      "shared": "6b91ecc6dc902dbe9570980447180795"
+      "com.google.android.apps.youtube.music": "900f0f7f244434e52ad98dddc2bfb90c",
+      "com.google.android.youtube": "88b390d0ba7be056ac42ee0946d6c21b",
+      "shared": "059ef944aa2d25598de65f22d917c9ca"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "5997a31d4f87678f5b659cf4e0b83a6e",
