@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-03T01:09:24Z"
+    "publishedAt": "2026-11-03T09:11:20Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -736,80 +736,6 @@
       ],
       "originBuild": "260207",
       "publishedAt": "2026-10-11T16:50:32Z"
-    },
-    "brave-browser-kveld9-v1.97.56-arm-v7a.apk": {
-      "name": "brave-browser-kveld9",
-      "version": "1.97.56",
-      "appKey": "bravebrowser",
-      "appName": "Brave Browser",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "kveld9",
-      "brandName": "kveld9",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.brave.browser",
-      "patchSources": [
-        "kveld9/patches-2.6.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.6.0"
-      ],
-      "appliedPatches": [
-        "Block Brave Telemetry",
-        "Brave In-Product & Commercial Notification Optimizer",
-        "Brave Origin",
-        "Brave Startup Performance Optimization",
-        "Clean New Tab Page",
-        "Clean Share URL",
-        "Disable Background Sync & Periodic Sync",
-        "Disable Battery Status API & OS Listener",
-        "Disable Content Capture",
-        "Disable Tab Auto-Minimization",
-        "Sensor Privacy Guard",
-        "Skip First Run",
-        "Suppress In-App Promos & Surveys",
-        "Tab Group Close Selection"
-      ],
-      "originBuild": "260205",
-      "publishedAt": "2026-10-11T13:02:29Z"
-    },
-    "brave-browser-kveld9-v1.97.56-arm64-v8a.apk": {
-      "name": "brave-browser-kveld9",
-      "version": "1.97.56",
-      "appKey": "bravebrowser",
-      "appName": "Brave Browser",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "kveld9",
-      "brandName": "kveld9",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.brave.browser",
-      "patchSources": [
-        "kveld9/patches-2.6.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/kveld9/kveld-morphe-patches/releases/tag/v2.6.0"
-      ],
-      "appliedPatches": [
-        "Block Brave Telemetry",
-        "Brave In-Product & Commercial Notification Optimizer",
-        "Brave Origin",
-        "Brave Startup Performance Optimization",
-        "Clean New Tab Page",
-        "Clean Share URL",
-        "Disable Background Sync & Periodic Sync",
-        "Disable Battery Status API & OS Listener",
-        "Disable Content Capture",
-        "Disable Tab Auto-Minimization",
-        "Sensor Privacy Guard",
-        "Skip First Run",
-        "Suppress In-App Promos & Surveys",
-        "Tab Group Close Selection"
-      ],
-      "originBuild": "260205",
-      "publishedAt": "2026-10-11T13:02:29Z"
     },
     "instagram-aunali321-v450.0.0.50.77-arm64-v8a.apk": {
       "name": "instagram-aunali321",
@@ -2362,130 +2288,6 @@
       ],
       "originBuild": "260253",
       "publishedAt": "2026-10-22T17:06:40Z"
-    },
-    "discord-venus-v349.9-Stable-arm-v7a.apk": {
-      "name": "discord-venus",
-      "version": "349.9-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "venus",
-      "brandName": "Venus",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "VenusIsJaded/patches-1.17.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.17.0"
-      ],
-      "appliedPatches": [
-        "Account switcher",
-        "Complete Quests automatically",
-        "Copy profile bios",
-        "Custom themes",
-        "Disable advertising identifiers",
-        "Disable analytics",
-        "Disable crash reporting",
-        "Disable install attribution",
-        "Disable telemetry and touch logging",
-        "Double-tap to reply",
-        "Favourite any image or video",
-        "Fix unknown mentions",
-        "Hide the Quests banner",
-        "Hide the call button",
-        "Hide the gift button",
-        "Hide typing indicator",
-        "Icon packs",
-        "Jump to first message",
-        "Keep deleted messages",
-        "Message highlights",
-        "Pastel name colors",
-        "Read all button",
-        "Send Nitro stickers and emojis as links",
-        "Send audio as voice messages",
-        "Send long messages",
-        "Server info",
-        "Show device indicators",
-        "Show file sizes when attaching",
-        "Show hidden channels",
-        "Skip delete confirmation",
-        "Spaces in channel names",
-        "Translate messages",
-        "Unlock app icons",
-        "Use your phone's emojis",
-        "Use your phone's font",
-        "User activity notifications",
-        "User and server reviews",
-        "Venus button on profile bar",
-        "Venus settings"
-      ],
-      "originBuild": "260245",
-      "publishedAt": "2026-10-21T00:55:42Z"
-    },
-    "discord-venus-v349.9-Stable-arm64-v8a.apk": {
-      "name": "discord-venus",
-      "version": "349.9-Stable",
-      "appKey": "discord",
-      "appName": "Discord",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "venus",
-      "brandName": "Venus",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.discord",
-      "patchSources": [
-        "VenusIsJaded/patches-1.17.0.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.17.0"
-      ],
-      "appliedPatches": [
-        "Account switcher",
-        "Complete Quests automatically",
-        "Copy profile bios",
-        "Custom themes",
-        "Disable advertising identifiers",
-        "Disable analytics",
-        "Disable crash reporting",
-        "Disable install attribution",
-        "Disable telemetry and touch logging",
-        "Double-tap to reply",
-        "Favourite any image or video",
-        "Fix unknown mentions",
-        "Hide the Quests banner",
-        "Hide the call button",
-        "Hide the gift button",
-        "Hide typing indicator",
-        "Icon packs",
-        "Jump to first message",
-        "Keep deleted messages",
-        "Message highlights",
-        "Pastel name colors",
-        "Read all button",
-        "Send Nitro stickers and emojis as links",
-        "Send audio as voice messages",
-        "Send long messages",
-        "Server info",
-        "Show device indicators",
-        "Show file sizes when attaching",
-        "Show hidden channels",
-        "Skip delete confirmation",
-        "Spaces in channel names",
-        "Translate messages",
-        "Unlock app icons",
-        "Use your phone's emojis",
-        "Use your phone's font",
-        "User activity notifications",
-        "User and server reviews",
-        "Venus button on profile bar",
-        "Venus settings"
-      ],
-      "originBuild": "260245",
-      "publishedAt": "2026-10-21T00:55:42Z"
     },
     "brave-browser-dh6k-beta-v1.99.44-arm64-v8a.apk": {
       "name": "brave-browser-dh6k-beta",
@@ -4423,10 +4225,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.7.mpp"
+        "Akash-Sriram/patches-1.17.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.7"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4436,8 +4238,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260317",
-      "publishedAt": "2026-11-02T14:00:17Z"
+      "originBuild": "260322",
+      "publishedAt": "2026-11-03T09:10:53Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm-v7a.apk": {
       "name": "google-photos-akashsriram",
@@ -4452,10 +4254,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.7.mpp"
+        "Akash-Sriram/patches-1.17.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.7"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4465,8 +4267,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260317",
-      "publishedAt": "2026-11-02T14:00:17Z"
+      "originBuild": "260322",
+      "publishedAt": "2026-11-03T09:10:53Z"
     },
     "google-photos-akashsriram-module-v7.99.0.1007655401-arm-v7a.zip": {
       "name": "google-photos-akashsriram",
@@ -4481,10 +4283,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.7.mpp"
+        "Akash-Sriram/patches-1.17.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.7"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4493,8 +4295,8 @@
         "Media engine & AI fixes",
         "Spoof features"
       ],
-      "originBuild": "260317",
-      "publishedAt": "2026-11-02T14:00:17Z"
+      "originBuild": "260322",
+      "publishedAt": "2026-11-03T09:10:53Z"
     },
     "google-photos-akashsriram-module-v7.99.0.1007655401-arm64-v8a.zip": {
       "name": "google-photos-akashsriram",
@@ -4509,10 +4311,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.7.mpp"
+        "Akash-Sriram/patches-1.17.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.7"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4521,8 +4323,8 @@
         "Media engine & AI fixes",
         "Spoof features"
       ],
-      "originBuild": "260317",
-      "publishedAt": "2026-11-02T14:00:17Z"
+      "originBuild": "260322",
+      "publishedAt": "2026-11-03T09:10:53Z"
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a.apk": {
       "name": "instagram-hushgram",
