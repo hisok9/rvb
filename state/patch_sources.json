@@ -36,13 +36,13 @@
     "stable_date": "2026-11-01T05:56:32.681Z"
   },
   "RookieEnough/De-Vanced": {
-    "beta": "v1.6.4-dev.1",
-    "beta_date": "2026-11-03T09:12:28Z",
+    "beta": "v1.6.4-dev.2",
+    "beta_date": "2026-11-04T16:28:08Z",
     "blocked": false,
     "host": "github",
     "repo": "RookieEnough/De-Vanced",
-    "stable": "v1.6.3",
-    "stable_date": "2026-11-02T19:58:05Z"
+    "stable": "v1.6.4",
+    "stable_date": "2026-11-04T16:34:58Z"
   },
   "SysAdminDoc/HushGram": {
     "beta": "",
@@ -108,8 +108,8 @@
     "stable_date": "2026-10-22T16:40:51Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.2.0-dev.4",
-    "beta_date": "2026-11-04T13:38:03Z",
+    "beta": "v2.2.0-dev.5",
+    "beta_date": "2026-11-04T20:02:35Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.71.0-dev.4",
-    "beta_date": "2026-11-04T10:10:27Z",
+    "beta": "v1.72.0-dev.1",
+    "beta_date": "2026-11-04T19:58:56Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",

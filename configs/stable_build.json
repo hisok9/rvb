@@ -71,7 +71,7 @@
   "AnyTracker-hxreborn": {
     "patches-source": "hxreborn/morphe-patches",
     "brand": "hxreborn",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.shervinkoushan.anyTracker",
     "app-name": "AnyTracker",
     "version": "7.5.6",
@@ -193,7 +193,7 @@
     "apkpure-dlurl": "https://apkpure.com/linkedin-network-job-finder/com.linkedin.android"
   },
   "GooglePhotos-DeVanced": {
-    "enabled": false,
+    "enabled": true,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "DeVanced",
@@ -212,7 +212,7 @@
     "uptodown-dlurl": "https://google-photos.en.uptodown.com/android"
   },
   "GooglePhotos-AkashSriram": {
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.photos",
     "app-name": "Google Photos",
     "brand": "AkashSriram",

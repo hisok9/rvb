@@ -176,7 +176,7 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "2c49383c271641e0ee4faedeb5f3802c",
+      "com.truecaller": "beb27f33322addf610aecc855aa46c5c",
       "shared": "d34c26a61bc73d3dc2fb40582b05774f"
     },
     "stable": {
@@ -407,12 +407,12 @@
   },
   "rookieenough/de-vanced": {
     "beta": {
-      "com.google.android.apps.photos": "17c55cfef1cf082763e8926fb4e39541",
+      "com.google.android.apps.photos": "63b1209d4e165ee57de3dfe54644cdbc",
       "shared": "30500b6db4f67c18bdb86c102c75eaf3"
     },
     "stable": {
-      "com.google.android.apps.photos": "66cc5569c9dfe38d9f5a60be21645a4f",
-      "shared": "53bc29bd97211283f3f3a9270f0e64bb"
+      "com.google.android.apps.photos": "63b1209d4e165ee57de3dfe54644cdbc",
+      "shared": "30500b6db4f67c18bdb86c102c75eaf3"
     }
   },
   "rushiranpise/morphe-patches": {
