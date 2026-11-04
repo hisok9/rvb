@@ -17,7 +17,7 @@
   "akash-sriram/morphe-google-photos": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.photos": "e0927add228847c39e18c5440373e378",
+      "com.google.android.apps.photos": "6e73b85a2f73ad70279eee9e0d435082",
       "shared": "796c2550311378527b1a1c1d14685ff2"
     }
   },
@@ -176,8 +176,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "8fdb11f5bcc85bbaf07794dcc0f7e6d6",
-      "shared": "75d61059f0ab246cdbf3776ef06a83d6"
+      "com.truecaller": "2c49383c271641e0ee4faedeb5f3802c",
+      "shared": "d34c26a61bc73d3dc2fb40582b05774f"
     },
     "stable": {
       "com.truecaller": "e19a6b4fc8f4fb4bf044f5b3c6f556fe",
@@ -255,8 +255,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "21aee9942fe6409cce310c5e64e32c35",
-      "shared": "f28af64f35c3a06f77e1ea1c61537163"
+      "com.shervinkoushan.anyTracker": "8d0ad5bef770a65bd8e0b0bd9900c165",
+      "shared": "0fc2f398cdb8bf24c52dc4ba582666d5"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -336,9 +336,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "900f0f7f244434e52ad98dddc2bfb90c",
-      "com.google.android.youtube": "88b390d0ba7be056ac42ee0946d6c21b",
-      "shared": "059ef944aa2d25598de65f22d917c9ca"
+      "com.google.android.apps.youtube.music": "05854c243482d55501b743fa590b6903",
+      "com.google.android.youtube": "deca2b7f9988b4aee5d5c75655cc6ea3",
+      "shared": "9a53ab7b341ab16ff7bf138c301f52ff"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "5997a31d4f87678f5b659cf4e0b83a6e",
