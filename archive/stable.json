@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-03T14:04:21Z"
+    "publishedAt": "2026-11-04T01:07:18Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -4225,10 +4225,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.8.mpp"
+        "Akash-Sriram/patches-1.17.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.9"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4238,8 +4238,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260322",
-      "publishedAt": "2026-11-03T09:10:53Z"
+      "originBuild": "260326",
+      "publishedAt": "2026-11-04T01:06:59Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm-v7a.apk": {
       "name": "google-photos-akashsriram",
@@ -4254,10 +4254,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.8.mpp"
+        "Akash-Sriram/patches-1.17.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.9"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4267,8 +4267,8 @@
         "Spoof features",
         "GmsCore support"
       ],
-      "originBuild": "260322",
-      "publishedAt": "2026-11-03T09:10:53Z"
+      "originBuild": "260326",
+      "publishedAt": "2026-11-04T01:06:59Z"
     },
     "google-photos-akashsriram-module-v7.99.0.1007655401-arm-v7a.zip": {
       "name": "google-photos-akashsriram",
@@ -4283,10 +4283,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.8.mpp"
+        "Akash-Sriram/patches-1.17.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.9"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4295,8 +4295,8 @@
         "Media engine & AI fixes",
         "Spoof features"
       ],
-      "originBuild": "260322",
-      "publishedAt": "2026-11-03T09:10:53Z"
+      "originBuild": "260326",
+      "publishedAt": "2026-11-04T01:06:59Z"
     },
     "google-photos-akashsriram-module-v7.99.0.1007655401-arm64-v8a.zip": {
       "name": "google-photos-akashsriram",
@@ -4311,10 +4311,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.photos",
       "patchSources": [
-        "Akash-Sriram/patches-1.17.8.mpp"
+        "Akash-Sriram/patches-1.17.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8"
+        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.9"
       ],
       "appliedPatches": [
         "AMOLED dark theme",
@@ -4323,8 +4323,8 @@
         "Media engine & AI fixes",
         "Spoof features"
       ],
-      "originBuild": "260322",
-      "publishedAt": "2026-11-03T09:10:53Z"
+      "originBuild": "260326",
+      "publishedAt": "2026-11-04T01:06:59Z"
     },
     "instagram-hushgram-v453.0.0.57.79-arm64-v8a.apk": {
       "name": "instagram-hushgram",
