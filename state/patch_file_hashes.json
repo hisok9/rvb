@@ -187,7 +187,7 @@
   "heyymichii/michii-patches": {
     "beta": {},
     "stable": {
-      "com.linkedin.android": "997af877cb66cba11c97e28df3087409",
+      "com.linkedin.android": "f7393c885900a55e5ca393ffa4a06651",
       "shared": "3d14bd460d712e88a7ab80afd48cd175"
     }
   },
@@ -255,8 +255,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "8d0ad5bef770a65bd8e0b0bd9900c165",
-      "shared": "0fc2f398cdb8bf24c52dc4ba582666d5"
+      "com.shervinkoushan.anyTracker": "c39226e3dd5d7603a7564cf5f0f7f932",
+      "shared": "5bf2465f01ccd6f36b6664fbfd6f9a5c"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
