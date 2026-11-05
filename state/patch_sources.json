@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.10",
-    "beta_date": "2026-11-04T15:00:43Z",
+    "beta": "v2.1.0-dev.11",
+    "beta_date": "2026-11-05T08:23:09Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -68,8 +68,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.8.5",
-    "stable_date": "2026-11-02T04:01:07Z"
+    "stable": "v2.8.6",
+    "stable_date": "2026-11-05T07:15:19Z"
   },
   "brosssh/morphe-patches": {
     "beta": "v2.8.3-dev.2",
@@ -122,8 +122,8 @@
     "blocked": false,
     "host": "github",
     "repo": "heyymichii/michii-patches",
-    "stable": "v1.2.0",
-    "stable_date": "2026-10-28T18:21:12Z"
+    "stable": "v1.2.1",
+    "stable_date": "2026-11-05T12:28:41Z"
   },
   "hoo-dles/morphe-patches": {
     "beta": "v1.47.1-dev.2",

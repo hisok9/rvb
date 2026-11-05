@@ -187,7 +187,7 @@
   "heyymichii/michii-patches": {
     "beta": {},
     "stable": {
-      "com.linkedin.android": "d4f570ccdfee99348889574a1d9c17a1",
+      "com.linkedin.android": "997af877cb66cba11c97e28df3087409",
       "shared": "3d14bd460d712e88a7ab80afd48cd175"
     }
   },
@@ -336,9 +336,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "05854c243482d55501b743fa590b6903",
-      "com.google.android.youtube": "deca2b7f9988b4aee5d5c75655cc6ea3",
-      "shared": "9a53ab7b341ab16ff7bf138c301f52ff"
+      "com.google.android.apps.youtube.music": "39ff523fa1d7a63df062c8e9993d8a43",
+      "com.google.android.youtube": "064f74fddbfd5849746cfcc4004cfa90",
+      "shared": "b2f52ed5459a69480d3a99643bda10af"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "5997a31d4f87678f5b659cf4e0b83a6e",
