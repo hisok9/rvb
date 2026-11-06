@@ -153,8 +153,8 @@
     "stable_date": "2026-11-01T13:27:24Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.10.1-experimental.1",
-    "beta_date": "2026-11-02T21:12:01Z",
+    "beta": "v2.10.2-experimental.1",
+    "beta_date": "2026-11-06T01:51:11Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
