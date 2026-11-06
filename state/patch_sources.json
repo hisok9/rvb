@@ -18,13 +18,13 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.1.0-dev.11",
-    "beta_date": "2026-11-05T08:23:09Z",
+    "beta": "v2.1.0-dev.12",
+    "beta_date": "2026-11-06T13:10:15Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
-    "stable": "v2.0.0",
-    "stable_date": "2026-10-30T11:16:04Z"
+    "stable": "v2.1.0",
+    "stable_date": "2026-11-06T14:15:16Z"
   },
   "Paresh-Maheshwari/paresh-patches": {
     "beta": "v1.20.1-dev.1",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.72.1-dev.1",
-    "beta_date": "2026-11-05T22:46:25Z",
+    "beta": "v1.73.0-dev.1",
+    "beta_date": "2026-11-06T14:24:00Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",

@@ -336,14 +336,14 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "39ff523fa1d7a63df062c8e9993d8a43",
-      "com.google.android.youtube": "064f74fddbfd5849746cfcc4004cfa90",
-      "shared": "b2f52ed5459a69480d3a99643bda10af"
+      "com.google.android.apps.youtube.music": "8b1b42785b041acec50d8685f0484d56",
+      "com.google.android.youtube": "502191b95cc0c725e5fd051af5a3b0eb",
+      "shared": "524bdc55d024f4263ec858843466e574"
     },
     "stable": {
-      "com.google.android.apps.youtube.music": "5997a31d4f87678f5b659cf4e0b83a6e",
-      "com.google.android.youtube": "aa338f9e66a405bc372ef0e0184aa583",
-      "shared": "611bacde1e2cb8fa57c91a7d8bd61938"
+      "com.google.android.apps.youtube.music": "8b1b42785b041acec50d8685f0484d56",
+      "com.google.android.youtube": "502191b95cc0c725e5fd051af5a3b0eb",
+      "shared": "524bdc55d024f4263ec858843466e574"
     }
   },
   "mvaishak/letterboxd-morphe-patches": {
