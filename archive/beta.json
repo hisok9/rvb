@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-07T14:56:19Z"
+    "publishedAt": "2026-11-07T20:28:23Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -2425,10 +2425,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0-dev.1.mpp"
+        "heval99/patches-2.3.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.2"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -2448,8 +2448,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260331",
-      "publishedAt": "2026-11-06T19:50:12Z"
+      "originBuild": "260338",
+      "publishedAt": "2026-11-07T20:28:01Z"
     },
     "truecaller-heval99-v26.43.5-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -2464,10 +2464,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0-dev.1.mpp"
+        "heval99/patches-2.3.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.2"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -2488,8 +2488,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260331",
-      "publishedAt": "2026-11-06T19:50:12Z"
+      "originBuild": "260338",
+      "publishedAt": "2026-11-07T20:28:01Z"
     },
     "truecaller-heval99-v26.43.5-arm-v7a.apk": {
       "name": "truecaller-heval99",
@@ -2504,10 +2504,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0-dev.1.mpp"
+        "heval99/patches-2.3.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.2"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -2528,8 +2528,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260331",
-      "publishedAt": "2026-11-06T19:50:12Z"
+      "originBuild": "260338",
+      "publishedAt": "2026-11-07T20:28:01Z"
     },
     "truecaller-heval99-module-v26.43.5-arm-v7a.zip": {
       "name": "truecaller-heval99",
@@ -2544,10 +2544,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0-dev.1.mpp"
+        "heval99/patches-2.3.0-dev.2.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.1"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0-dev.2"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -2567,8 +2567,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260331",
-      "publishedAt": "2026-11-06T19:50:12Z"
+      "originBuild": "260338",
+      "publishedAt": "2026-11-07T20:28:01Z"
     }
   }
 }
