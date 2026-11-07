@@ -26,16 +26,16 @@
   "stable": {
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a": "1a10cd6eec62a7234e3d9744c7c26d8a",
     "instagram-piko-v447.0.0.55.81-arm64-v8a": "c661c5ea8677fc82dc1ffc271a6813be",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "0aadb42e21b8bf1375f26c9e8f13ff4f",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "08827143b3df6e7a2ae74c332f081057",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "1ff54d9350235a3e0101798458bfeff6",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "f56345ee71a6f0f34b6a6df899ecb05e",
     "youtube-music-morphe-v9.20.53-arm-v7a": "d63ab17e3a8681f2d2e7f18ba51a1c81",
     "youtube-music-morphe-v9.20.53-arm64-v8a": "85794d6ab2ad6ac70c4a831744954cd4",
     "youtube-morphe-v21.20.405-arm64-v8a": "53218f667e4fd62e33e081a57ec8c69e",
     "youtube-morphe-v21.20.405-arm-v7a": "2aee79d54baf005f944ce172d97d0416",
     "google-photos-rushiranpise-v7.97.0.997578476-arm64-v8a": "2bb23e9ab7f2370b096a19d033fc328a",
     "google-photos-rushiranpise-v7.97.0.997578476-arm-v7a": "a458916f23020a6a7e34165fa461ca4f",
-    "anytracker-hxreborn-v7.5.6-arm-v7a": "a0e20881032711dea6afd1706efacab1",
-    "anytracker-hxreborn-v7.5.6-arm64-v8a": "a0e20881032711dea6afd1706efacab1",
+    "anytracker-hxreborn-v7.5.6-arm-v7a": "b60a76abf5ae18b9a0ae8d347f8d4776",
+    "anytracker-hxreborn-v7.5.6-arm64-v8a": "b60a76abf5ae18b9a0ae8d347f8d4776",
     "linkedin-michii-v4.1.1259-arm64-v8a": "d6e3a1467639cbb72a0b7701c8ad5c9b",
     "linkedin-michii-v4.1.1259-arm-v7a": "1fb323ea73f0eb0d7019196a6f69171e",
     "camscanner-rushiranpise-v7.24.5.2608200000-arm-v7a": "853a3e4422318989402737ffdf19c8b9",
@@ -83,6 +83,7 @@
     "discord-venus-v351.11-Stable-arm-v7a": "eec98d0a2dc3f52b43f66ab2e8cc025f",
     "brave-browser-kveld9-v1.98.63-arm-v7a": "89b82b5ed46dc4e65e4aa709c293db13",
     "discord-venus-v351.11-Stable-arm64-v8a": "e72031092fe584d8937912fe4d858a23",
-    "brave-browser-kveld9-v1.98.63-arm64-v8a": "84fb38dd54f14cc21aef93e40a5398c4"
+    "brave-browser-kveld9-v1.98.63-arm64-v8a": "84fb38dd54f14cc21aef93e40a5398c4",
+    "instagram-hushgram-v454.0.0.54.77-arm64-v8a": "b890e467495bbc159aa76646165a34c4"
   }
 }
