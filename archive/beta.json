@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-07T11:28:39Z"
+    "publishedAt": "2026-11-07T14:56:19Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -560,10 +560,10 @@
       "subVariant": "Clone",
       "packageName": "com.instagram.android.piko",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.4.mpp"
+        "crimera/patches-3.11.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.4"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.5"
       ],
       "appliedPatches": [
         "Add settings",
@@ -602,6 +602,7 @@
         "Hide feed posts",
         "Hide group creation button on sharesheet",
         "Hide hidden requests",
+        "Hide like buttons",
         "Hide notes tray",
         "Hide reshare button",
         "Hide save buttons",
@@ -621,6 +622,7 @@
         "Open links externally",
         "Recommended flags",
         "Remove empty bottom space",
+        "Resume Reels after scrolling",
         "Sanitize share links",
         "Save Instants",
         "Save deleted messages",
@@ -633,8 +635,8 @@
         "View story mentions",
         "Clone"
       ],
-      "originBuild": "260309",
-      "publishedAt": "2026-11-01T13:41:39Z"
+      "originBuild": "260337",
+      "publishedAt": "2026-11-07T14:55:55Z"
     },
     "instagram-piko-v452.1.0.53.64-arm64-v8a.apk": {
       "name": "instagram-piko",
@@ -649,10 +651,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.4.mpp"
+        "crimera/patches-3.11.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.4"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.5"
       ],
       "appliedPatches": [
         "Add settings",
@@ -691,6 +693,7 @@
         "Hide feed posts",
         "Hide group creation button on sharesheet",
         "Hide hidden requests",
+        "Hide like buttons",
         "Hide notes tray",
         "Hide reshare button",
         "Hide save buttons",
@@ -710,6 +713,7 @@
         "Open links externally",
         "Recommended flags",
         "Remove empty bottom space",
+        "Resume Reels after scrolling",
         "Sanitize share links",
         "Save Instants",
         "Save deleted messages",
@@ -721,8 +725,8 @@
         "View stories anonymously",
         "View story mentions"
       ],
-      "originBuild": "260309",
-      "publishedAt": "2026-11-01T13:41:39Z"
+      "originBuild": "260337",
+      "publishedAt": "2026-11-07T14:55:55Z"
     },
     "instagram-piko-module-v452.1.0.53.64-arm64-v8a.zip": {
       "name": "instagram-piko",
@@ -737,10 +741,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.4.mpp"
+        "crimera/patches-3.11.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.4"
+        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.5"
       ],
       "appliedPatches": [
         "Add settings",
@@ -779,6 +783,7 @@
         "Hide feed posts",
         "Hide group creation button on sharesheet",
         "Hide hidden requests",
+        "Hide like buttons",
         "Hide notes tray",
         "Hide reshare button",
         "Hide save buttons",
@@ -798,6 +803,7 @@
         "Open links externally",
         "Recommended flags",
         "Remove empty bottom space",
+        "Resume Reels after scrolling",
         "Sanitize share links",
         "Save Instants",
         "Save deleted messages",
@@ -809,8 +815,8 @@
         "View stories anonymously",
         "View story mentions"
       ],
-      "originBuild": "260309",
-      "publishedAt": "2026-11-01T13:41:39Z"
+      "originBuild": "260337",
+      "publishedAt": "2026-11-07T14:55:55Z"
     },
     "youtube-morphe-module-v21.23.492-arm-v7a.zip": {
       "name": "youtube-morphe",
