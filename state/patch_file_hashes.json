@@ -176,8 +176,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "fcdfb9387b27513da3efeb3240de6da0",
-      "shared": "0bb6d4417067f14d452a001e47cc1a71"
+      "com.truecaller": "ec001be34f1abec8e75d068ba3c91272",
+      "shared": "76fc913963887402e0104de4efaf15ec"
     },
     "stable": {
       "com.truecaller": "beb27f33322addf610aecc855aa46c5c",

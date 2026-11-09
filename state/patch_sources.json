@@ -108,8 +108,8 @@
     "stable_date": "2026-10-22T16:40:51Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.3.0-dev.3",
-    "beta_date": "2026-11-08T17:19:16Z",
+    "beta": "v2.3.0-dev.4",
+    "beta_date": "2026-11-09T00:29:39Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -153,8 +153,8 @@
     "stable_date": "2026-11-01T13:27:24Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.11.0-experimental.3",
-    "beta_date": "2026-11-08T23:09:20Z",
+    "beta": "v2.11.0-experimental.4",
+    "beta_date": "2026-11-09T00:11:31Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
