@@ -108,8 +108,8 @@
     "stable_date": "2026-10-22T16:40:51Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v2.3.0-dev.5",
-    "beta_date": "2026-11-09T15:52:05Z",
+    "beta": "v2.3.0-dev.6",
+    "beta_date": "2026-11-09T19:37:57Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.75.1-dev.1",
-    "beta_date": "2026-11-09T15:10:48Z",
+    "beta": "v1.76.0-dev.6",
+    "beta_date": "2026-11-09T22:19:46Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
