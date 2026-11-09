@@ -1,7 +1,7 @@
 {
   "Akash-Sriram/morphe-google-photos": {
-    "beta": "v1.18.0-dev.4",
-    "beta_date": "2026-11-07T20:09:48Z",
+    "beta": "v1.18.0-dev.5",
+    "beta_date": "2026-11-09T06:33:06Z",
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.2.0-dev.2",
-    "beta_date": "2026-11-08T12:20:03Z",
+    "beta": "v2.2.0-dev.3",
+    "beta_date": "2026-11-09T11:58:23Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -95,8 +95,8 @@
     "blocked": false,
     "host": "github",
     "repo": "crimera/piko",
-    "stable": "v3.10.0",
-    "stable_date": "2026-10-10T14:58:13Z"
+    "stable": "v3.11.0",
+    "stable_date": "2026-11-09T10:54:44Z"
   },
   "dh6k/morphe-patches": {
     "beta": "v1.10.0-dev.1",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.75.0-dev.5",
-    "beta_date": "2026-11-08T20:36:48Z",
+    "beta": "v1.75.0-dev.8",
+    "beta_date": "2026-11-09T12:14:20Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -153,8 +153,8 @@
     "stable_date": "2026-11-01T13:27:24Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.11.0-experimental.4",
-    "beta_date": "2026-11-09T00:11:31Z",
+    "beta": "v2.11.0-experimental.5",
+    "beta_date": "2026-11-09T11:46:58Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
