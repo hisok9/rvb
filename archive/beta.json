@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-09T22:50:22Z"
+    "publishedAt": "2026-11-10T13:08:55Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -560,15 +560,14 @@
       "subVariant": "Clone",
       "packageName": "com.instagram.android.piko",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.5.mpp"
+        "crimera/patches-3.11.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.5"
+        "https://github.com/crimera/piko/releases/tag/v3.11.1-dev.1"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
-        "Change version code",
         "Copy comment",
         "Custom font",
         "Custom sharing domain",
@@ -577,7 +576,6 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
-        "Disable analytics",
         "Disable comments",
         "Disable disappearing messages swipe",
         "Disable discover people",
@@ -588,7 +586,6 @@
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
-        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -633,10 +630,11 @@
         "View live anonymously",
         "View stories anonymously",
         "View story mentions",
+        "Disable Play Store updates",
         "Clone"
       ],
-      "originBuild": "260337",
-      "publishedAt": "2026-11-07T14:55:55Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "instagram-piko-v452.1.0.53.64-arm64-v8a.apk": {
       "name": "instagram-piko",
@@ -651,15 +649,14 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.5.mpp"
+        "crimera/patches-3.11.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.5"
+        "https://github.com/crimera/piko/releases/tag/v3.11.1-dev.1"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
-        "Change version code",
         "Copy comment",
         "Custom font",
         "Custom sharing domain",
@@ -668,7 +665,6 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
-        "Disable analytics",
         "Disable comments",
         "Disable disappearing messages swipe",
         "Disable discover people",
@@ -679,7 +675,6 @@
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
-        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -723,10 +718,11 @@
         "View DMs anonymously",
         "View live anonymously",
         "View stories anonymously",
-        "View story mentions"
+        "View story mentions",
+        "Disable Play Store updates"
       ],
-      "originBuild": "260337",
-      "publishedAt": "2026-11-07T14:55:55Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "instagram-piko-module-v452.1.0.53.64-arm64-v8a.zip": {
       "name": "instagram-piko",
@@ -741,15 +737,14 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0-dev.5.mpp"
+        "crimera/patches-3.11.1-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0-dev.5"
+        "https://github.com/crimera/piko/releases/tag/v3.11.1-dev.1"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
-        "Change version code",
         "Copy comment",
         "Custom font",
         "Custom sharing domain",
@@ -758,7 +753,6 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
-        "Disable analytics",
         "Disable comments",
         "Disable disappearing messages swipe",
         "Disable discover people",
@@ -769,7 +763,6 @@
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
-        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -813,10 +806,11 @@
         "View DMs anonymously",
         "View live anonymously",
         "View stories anonymously",
-        "View story mentions"
+        "View story mentions",
+        "Disable Play Store updates"
       ],
-      "originBuild": "260337",
-      "publishedAt": "2026-11-07T14:55:55Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "youtube-morphe-module-v21.23.492-arm-v7a.zip": {
       "name": "youtube-morphe",
@@ -1345,10 +1339,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.4.mpp"
+        "MorpheApp/patches-2.2.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1463,8 +1457,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260345",
-      "publishedAt": "2026-11-09T18:49:10Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "youtube-morphe-module-v21.30.216-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1479,10 +1473,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.4.mpp"
+        "MorpheApp/patches-2.2.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1597,8 +1591,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260345",
-      "publishedAt": "2026-11-09T18:49:10Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "youtube-morphe-v21.30.216-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1613,10 +1607,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.4.mpp"
+        "MorpheApp/patches-2.2.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1732,8 +1726,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260345",
-      "publishedAt": "2026-11-09T18:49:10Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -1748,10 +1742,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.4.mpp"
+        "MorpheApp/patches-2.2.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.4"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.5"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1867,8 +1861,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260345",
-      "publishedAt": "2026-11-09T18:49:10Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -1883,10 +1877,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.3.mpp"
+        "MorpheApp/patches-2.2.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.5"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -1939,8 +1933,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260343",
-      "publishedAt": "2026-11-09T13:29:47Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -1955,10 +1949,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.3.mpp"
+        "MorpheApp/patches-2.2.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.5"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -2011,8 +2005,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260343",
-      "publishedAt": "2026-11-09T13:29:47Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "youtube-music-morphe-v9.30.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -2027,10 +2021,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.3.mpp"
+        "MorpheApp/patches-2.2.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.5"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -2084,8 +2078,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260343",
-      "publishedAt": "2026-11-09T13:29:47Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "youtube-music-morphe-v9.30.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -2100,10 +2094,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.2.0-dev.3.mpp"
+        "MorpheApp/patches-2.2.0-dev.5.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.3"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.5"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -2157,8 +2151,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260343",
-      "publishedAt": "2026-11-09T13:29:47Z"
+      "originBuild": "260348",
+      "publishedAt": "2026-11-10T13:08:18Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
