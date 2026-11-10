@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-09T18:52:47Z"
+    "publishedAt": "2026-11-10T16:34:02Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -3286,10 +3286,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -3302,6 +3302,7 @@
         "Captions",
         "Change form factor",
         "Change header",
+        "Change picture-in-picture actions",
         "Change start page",
         "Channel search",
         "Channel whitelist",
@@ -3356,8 +3357,8 @@
         "Media notification controls",
         "Miniplayer",
         "Mute button",
-        "Navigation bar",
         "Niconico comments",
+        "On-the-go player",
         "Open Shorts in regular player",
         "Open channel of live avatar",
         "Open links externally",
@@ -3369,6 +3370,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist improvements",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
@@ -3385,22 +3387,25 @@
         "Shorts autoplay",
         "Skip live Shorts",
         "Skip silence",
+        "Snackbar",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
         "Spoof video streams",
         "Swipe controls",
         "Theme",
+        "Translate live chat",
         "Translate posts",
         "Video delay",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
         "Shorts icon style",
-        "Player icon style"
+        "Player icon style",
+        "Navigation bar"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-10-30T13:52:02Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "youtube-morphe-module-v21.30.216-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -3415,10 +3420,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -3431,6 +3436,7 @@
         "Captions",
         "Change form factor",
         "Change header",
+        "Change picture-in-picture actions",
         "Change start page",
         "Channel search",
         "Channel whitelist",
@@ -3485,8 +3491,8 @@
         "Media notification controls",
         "Miniplayer",
         "Mute button",
-        "Navigation bar",
         "Niconico comments",
+        "On-the-go player",
         "Open Shorts in regular player",
         "Open channel of live avatar",
         "Open links externally",
@@ -3498,6 +3504,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist improvements",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
@@ -3514,22 +3521,25 @@
         "Shorts autoplay",
         "Skip live Shorts",
         "Skip silence",
+        "Snackbar",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
         "Spoof video streams",
         "Swipe controls",
         "Theme",
+        "Translate live chat",
         "Translate posts",
         "Video delay",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
         "Shorts icon style",
-        "Player icon style"
+        "Player icon style",
+        "Navigation bar"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-10-30T13:52:02Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "youtube-morphe-v21.30.216-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -3544,10 +3554,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -3560,6 +3570,7 @@
         "Captions",
         "Change form factor",
         "Change header",
+        "Change picture-in-picture actions",
         "Change start page",
         "Channel search",
         "Channel whitelist",
@@ -3615,8 +3626,8 @@
         "Media notification controls",
         "Miniplayer",
         "Mute button",
-        "Navigation bar",
         "Niconico comments",
+        "On-the-go player",
         "Open Shorts in regular player",
         "Open channel of live avatar",
         "Open links externally",
@@ -3628,6 +3639,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist improvements",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
@@ -3644,22 +3656,25 @@
         "Shorts autoplay",
         "Skip live Shorts",
         "Skip silence",
+        "Snackbar",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
         "Spoof video streams",
         "Swipe controls",
         "Theme",
+        "Translate live chat",
         "Translate posts",
         "Video delay",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
         "Shorts icon style",
-        "Player icon style"
+        "Player icon style",
+        "Navigation bar"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-10-30T13:52:02Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -3674,10 +3689,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -3690,6 +3705,7 @@
         "Captions",
         "Change form factor",
         "Change header",
+        "Change picture-in-picture actions",
         "Change start page",
         "Channel search",
         "Channel whitelist",
@@ -3745,8 +3761,8 @@
         "Media notification controls",
         "Miniplayer",
         "Mute button",
-        "Navigation bar",
         "Niconico comments",
+        "On-the-go player",
         "Open Shorts in regular player",
         "Open channel of live avatar",
         "Open links externally",
@@ -3758,6 +3774,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist improvements",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
@@ -3774,22 +3791,25 @@
         "Shorts autoplay",
         "Skip live Shorts",
         "Skip silence",
+        "Snackbar",
         "SponsorBlock",
         "Spoof app version",
         "Spoof device dimensions",
         "Spoof video streams",
         "Swipe controls",
         "Theme",
+        "Translate live chat",
         "Translate posts",
         "Video delay",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
         "Shorts icon style",
-        "Player icon style"
+        "Player icon style",
+        "Navigation bar"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-10-30T13:52:02Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -3804,10 +3824,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -3841,6 +3861,7 @@
         "Navigation bar",
         "Play albums songs",
         "Playback speed",
+        "Playlist tags",
         "Playlist track tap action",
         "PoToken provider",
         "Remember repeat state",
@@ -3852,14 +3873,15 @@
         "Scrobbling",
         "Settings menu filter",
         "Skip silence",
+        "SoundProof",
         "SponsorBlock",
         "Spoof app version",
         "Spoof video streams",
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-10-30T13:52:02Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -3874,10 +3896,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -3911,6 +3933,7 @@
         "Navigation bar",
         "Play albums songs",
         "Playback speed",
+        "Playlist tags",
         "Playlist track tap action",
         "PoToken provider",
         "Remember repeat state",
@@ -3922,14 +3945,15 @@
         "Scrobbling",
         "Settings menu filter",
         "Skip silence",
+        "SoundProof",
         "SponsorBlock",
         "Spoof app version",
         "Spoof video streams",
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-10-30T13:52:02Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "youtube-music-morphe-v9.30.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -3944,10 +3968,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -3982,6 +4006,7 @@
         "Navigation bar",
         "Play albums songs",
         "Playback speed",
+        "Playlist tags",
         "Playlist track tap action",
         "PoToken provider",
         "Remember repeat state",
@@ -3993,14 +4018,15 @@
         "Scrobbling",
         "Settings menu filter",
         "Skip silence",
+        "SoundProof",
         "SponsorBlock",
         "Spoof app version",
         "Spoof video streams",
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-10-30T13:52:02Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "youtube-music-morphe-v9.30.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -4015,10 +4041,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.0.0.mpp"
+        "MorpheApp/patches-2.2.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
       ],
       "appliedPatches": [
         "Android Auto",
@@ -4053,6 +4079,7 @@
         "Navigation bar",
         "Play albums songs",
         "Playback speed",
+        "Playlist tags",
         "Playlist track tap action",
         "PoToken provider",
         "Remember repeat state",
@@ -4064,14 +4091,15 @@
         "Scrobbling",
         "Settings menu filter",
         "Skip silence",
+        "SoundProof",
         "SponsorBlock",
         "Spoof app version",
         "Spoof video streams",
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260297",
-      "publishedAt": "2026-10-30T13:52:02Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
@@ -4897,15 +4925,14 @@
       "subVariant": "Clone",
       "packageName": "com.instagram.android.piko",
       "patchSources": [
-        "crimera/patches-3.11.0.mpp"
+        "crimera/patches-3.11.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0"
+        "https://github.com/crimera/piko/releases/tag/v3.11.1"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
-        "Change version code",
         "Copy comment",
         "Custom font",
         "Custom sharing domain",
@@ -4914,7 +4941,6 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
-        "Disable analytics",
         "Disable comments",
         "Disable disappearing messages swipe",
         "Disable discover people",
@@ -4925,7 +4951,6 @@
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
-        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -4970,10 +4995,11 @@
         "View live anonymously",
         "View stories anonymously",
         "View story mentions",
+        "Disable Play Store updates",
         "Clone"
       ],
-      "originBuild": "260344",
-      "publishedAt": "2026-11-09T13:33:14Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "instagram-piko-module-v452.1.0.53.64-arm64-v8a.zip": {
       "name": "instagram-piko",
@@ -4988,15 +5014,14 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0.mpp"
+        "crimera/patches-3.11.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0"
+        "https://github.com/crimera/piko/releases/tag/v3.11.1"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
-        "Change version code",
         "Copy comment",
         "Custom font",
         "Custom sharing domain",
@@ -5005,7 +5030,6 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
-        "Disable analytics",
         "Disable comments",
         "Disable disappearing messages swipe",
         "Disable discover people",
@@ -5016,7 +5040,6 @@
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
-        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -5060,10 +5083,11 @@
         "View DMs anonymously",
         "View live anonymously",
         "View stories anonymously",
-        "View story mentions"
+        "View story mentions",
+        "Disable Play Store updates"
       ],
-      "originBuild": "260344",
-      "publishedAt": "2026-11-09T13:33:14Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     },
     "instagram-piko-v452.1.0.53.64-arm64-v8a.apk": {
       "name": "instagram-piko",
@@ -5078,15 +5102,14 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.0.mpp"
+        "crimera/patches-3.11.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.0"
+        "https://github.com/crimera/piko/releases/tag/v3.11.1"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
-        "Change version code",
         "Copy comment",
         "Custom font",
         "Custom sharing domain",
@@ -5095,7 +5118,6 @@
         "Customize navigation bar",
         "Disable Reels scrolling",
         "Disable ads",
-        "Disable analytics",
         "Disable comments",
         "Disable disappearing messages swipe",
         "Disable discover people",
@@ -5106,7 +5128,6 @@
         "Disable stories",
         "Disable story flipping",
         "Disable swipe to create",
-        "Disable telemetry",
         "Disable typing status",
         "Disable video autoplay",
         "Download media",
@@ -5150,10 +5171,11 @@
         "View DMs anonymously",
         "View live anonymously",
         "View stories anonymously",
-        "View story mentions"
+        "View story mentions",
+        "Disable Play Store updates"
       ],
-      "originBuild": "260344",
-      "publishedAt": "2026-11-09T13:33:14Z"
+      "originBuild": "260349",
+      "publishedAt": "2026-11-10T16:33:35Z"
     }
   }
 }
