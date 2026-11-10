@@ -99,8 +99,8 @@
     "stable_date": "2026-11-10T12:59:39Z"
   },
   "dh6k/morphe-patches": {
-    "beta": "v1.10.0-dev.1",
-    "beta_date": "2026-10-30T14:54:11Z",
+    "beta": "v1.10.0-dev.3",
+    "beta_date": "2026-11-10T19:26:09Z",
     "blocked": false,
     "host": "github",
     "repo": "dh6k/morphe-patches",
@@ -135,13 +135,13 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.76.0-dev.7",
-    "beta_date": "2026-11-10T09:12:26Z",
+    "beta": "v1.76.0-dev.8",
+    "beta_date": "2026-11-10T19:20:59Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.75.1",
-    "stable_date": "2026-11-09T15:26:45Z"
+    "stable": "v1.76.0",
+    "stable_date": "2026-11-10T19:31:28Z"
   },
   "instafel/pc-rel": {
     "beta": "",
