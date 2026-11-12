@@ -175,12 +175,12 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "ca92f32cb57bc72e43866222ef5e6361",
-      "shared": "1572545ccfc18170e7b0b2af35cef2c8"
+      "com.truecaller": "b6aecfbe5e8512e9b2cfb74fc783bf82",
+      "shared": "f4493247a72aabe702c485a2e3726850"
     },
     "stable": {
-      "com.truecaller": "beb27f33322addf610aecc855aa46c5c",
-      "shared": "d34c26a61bc73d3dc2fb40582b05774f"
+      "com.truecaller": "b6aecfbe5e8512e9b2cfb74fc783bf82",
+      "shared": "f4493247a72aabe702c485a2e3726850"
     }
   },
   "heyymichii/michii-patches": {
@@ -335,9 +335,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "9144e9645b766707fb13526272293c20",
-      "com.google.android.youtube": "c56b564197b6e4c7542e22b9bbfa3396",
-      "shared": "efd1ddd3e920f5ac8d48c9a4a7627794"
+      "com.google.android.apps.youtube.music": "6b35bf7510b45dcb96a9a4b4156761a0",
+      "com.google.android.youtube": "d9645ed8a1b5834a7799741c5a24203d",
+      "shared": "fdbcb260b126f5423950105d0ea83eec"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "208e1dacd9e69e1d6ac02d64e1a6c540",
