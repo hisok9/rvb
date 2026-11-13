@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-12T22:26:20Z"
+    "publishedAt": "2026-11-13T12:46:11Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -1339,10 +1339,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1350,6 +1350,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -1391,6 +1392,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "Hide Shorts components",
         "Hide ads",
@@ -1424,6 +1426,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -1458,8 +1461,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260353",
-      "publishedAt": "2026-11-12T16:53:56Z"
+      "originBuild": "260357",
+      "publishedAt": "2026-11-13T12:45:43Z"
     },
     "youtube-morphe-module-v21.30.216-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1474,10 +1477,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1485,6 +1488,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -1526,6 +1530,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "Hide Shorts components",
         "Hide ads",
@@ -1559,6 +1564,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -1593,8 +1599,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260353",
-      "publishedAt": "2026-11-12T16:53:56Z"
+      "originBuild": "260357",
+      "publishedAt": "2026-11-13T12:45:43Z"
     },
     "youtube-morphe-v21.30.216-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1609,10 +1615,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1620,6 +1626,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -1661,6 +1668,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "GmsCore support",
         "Hide Shorts components",
@@ -1695,6 +1703,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -1729,8 +1738,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260353",
-      "publishedAt": "2026-11-12T16:53:56Z"
+      "originBuild": "260357",
+      "publishedAt": "2026-11-13T12:45:43Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -1745,10 +1754,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1756,6 +1765,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -1797,6 +1807,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "GmsCore support",
         "Hide Shorts components",
@@ -1831,6 +1842,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -1865,8 +1877,8 @@
         "Player icon style",
         "Navigation bar"
       ],
-      "originBuild": "260353",
-      "publishedAt": "2026-11-12T16:53:56Z"
+      "originBuild": "260357",
+      "publishedAt": "2026-11-13T12:45:43Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -1881,10 +1893,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -1900,6 +1912,7 @@
         "Disable DRC audio",
         "Disable QUIC protocol",
         "Disable audio ducking",
+        "Disable auto captions",
         "Disable dislike redirection",
         "Downloads",
         "Enable audio/video switch",
@@ -1918,6 +1931,7 @@
         "Media notification controls",
         "Miniplayer previous and next buttons",
         "Navigation bar",
+        "Open system share sheet",
         "Play albums songs",
         "Playback speed",
         "Playlist tags",
@@ -1925,6 +1939,7 @@
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
+        "Remember video quality",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
         "Return YouTube Dislike",
@@ -1939,8 +1954,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260353",
-      "publishedAt": "2026-11-12T16:53:56Z"
+      "originBuild": "260357",
+      "publishedAt": "2026-11-13T12:45:43Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -1955,10 +1970,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -1974,6 +1989,7 @@
         "Disable DRC audio",
         "Disable QUIC protocol",
         "Disable audio ducking",
+        "Disable auto captions",
         "Disable dislike redirection",
         "Downloads",
         "Enable audio/video switch",
@@ -1992,6 +2008,7 @@
         "Media notification controls",
         "Miniplayer previous and next buttons",
         "Navigation bar",
+        "Open system share sheet",
         "Play albums songs",
         "Playback speed",
         "Playlist tags",
@@ -1999,6 +2016,7 @@
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
+        "Remember video quality",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
         "Return YouTube Dislike",
@@ -2013,8 +2031,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260353",
-      "publishedAt": "2026-11-12T16:53:56Z"
+      "originBuild": "260357",
+      "publishedAt": "2026-11-13T12:45:43Z"
     },
     "youtube-music-morphe-v9.30.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -2029,10 +2047,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -2048,6 +2066,7 @@
         "Disable DRC audio",
         "Disable QUIC protocol",
         "Disable audio ducking",
+        "Disable auto captions",
         "Disable dislike redirection",
         "Downloads",
         "Enable audio/video switch",
@@ -2067,6 +2086,7 @@
         "Media notification controls",
         "Miniplayer previous and next buttons",
         "Navigation bar",
+        "Open system share sheet",
         "Play albums songs",
         "Playback speed",
         "Playlist tags",
@@ -2074,6 +2094,7 @@
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
+        "Remember video quality",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
         "Return YouTube Dislike",
@@ -2088,8 +2109,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260353",
-      "publishedAt": "2026-11-12T16:53:56Z"
+      "originBuild": "260357",
+      "publishedAt": "2026-11-13T12:45:43Z"
     },
     "youtube-music-morphe-v9.30.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -2104,10 +2125,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.3.0-dev.2.mpp"
+        "MorpheApp/patches-2.3.0-dev.3.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -2123,6 +2144,7 @@
         "Disable DRC audio",
         "Disable QUIC protocol",
         "Disable audio ducking",
+        "Disable auto captions",
         "Disable dislike redirection",
         "Downloads",
         "Enable audio/video switch",
@@ -2142,6 +2164,7 @@
         "Media notification controls",
         "Miniplayer previous and next buttons",
         "Navigation bar",
+        "Open system share sheet",
         "Play albums songs",
         "Playback speed",
         "Playlist tags",
@@ -2149,6 +2172,7 @@
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
+        "Remember video quality",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
         "Return YouTube Dislike",
@@ -2163,8 +2187,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260353",
-      "publishedAt": "2026-11-12T16:53:56Z"
+      "originBuild": "260357",
+      "publishedAt": "2026-11-13T12:45:43Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
@@ -2267,160 +2291,6 @@
       ],
       "originBuild": "260323",
       "publishedAt": "2026-11-03T13:59:25Z"
-    },
-    "truecaller-heval99-module-v26.42.5-arm-v7a.zip": {
-      "name": "truecaller-heval99",
-      "version": "26.42.5",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm",
-      "fileType": "Module",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-2.2.0-dev.3.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.2.0-dev.3"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable auto-launch",
-        "Disable contact upload",
-        "Disable nags",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide Wear OS settings",
-        "Hide family button",
-        "Hide promotions",
-        "Spoof signature",
-        "Use SMS for verification codes",
-        "Patch settings"
-      ],
-      "originBuild": "260325",
-      "publishedAt": "2026-11-03T20:52:29Z"
-    },
-    "truecaller-heval99-v26.42.5-arm-v7a.apk": {
-      "name": "truecaller-heval99",
-      "version": "26.42.5",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-2.2.0-dev.3.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.2.0-dev.3"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable auto-launch",
-        "Disable contact upload",
-        "Disable nags",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "GmsCore support",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide Wear OS settings",
-        "Hide family button",
-        "Hide promotions",
-        "Spoof signature",
-        "Use SMS for verification codes",
-        "Patch settings"
-      ],
-      "originBuild": "260325",
-      "publishedAt": "2026-11-03T20:52:29Z"
-    },
-    "truecaller-heval99-module-v26.42.5-arm64-v8a.zip": {
-      "name": "truecaller-heval99",
-      "version": "26.42.5",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm64",
-      "fileType": "Module",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-2.2.0-dev.3.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.2.0-dev.3"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable auto-launch",
-        "Disable contact upload",
-        "Disable nags",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide Wear OS settings",
-        "Hide family button",
-        "Hide promotions",
-        "Spoof signature",
-        "Use SMS for verification codes",
-        "Patch settings"
-      ],
-      "originBuild": "260325",
-      "publishedAt": "2026-11-03T20:52:29Z"
-    },
-    "truecaller-heval99-v26.42.5-arm64-v8a.apk": {
-      "name": "truecaller-heval99",
-      "version": "26.42.5",
-      "appKey": "truecaller",
-      "appName": "Truecaller",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "heval99",
-      "brandName": "heval99",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.truecaller",
-      "patchSources": [
-        "heval99/patches-2.2.0-dev.3.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.2.0-dev.3"
-      ],
-      "appliedPatches": [
-        "Disable ads",
-        "Disable auto-launch",
-        "Disable contact upload",
-        "Disable nags",
-        "Disable telemetry",
-        "Disable update prompts",
-        "Enable Premium",
-        "GmsCore support",
-        "Hide Premium tab",
-        "Hide Scam feed",
-        "Hide Wear OS settings",
-        "Hide family button",
-        "Hide promotions",
-        "Spoof signature",
-        "Use SMS for verification codes",
-        "Patch settings"
-      ],
-      "originBuild": "260325",
-      "publishedAt": "2026-11-03T20:52:29Z"
     },
     "truecaller-heval99-module-v26.43.5-arm64-v8a.zip": {
       "name": "truecaller-heval99",
