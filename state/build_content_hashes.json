@@ -26,16 +26,16 @@
   "stable": {
     "instagram-piko-clone-v447.0.0.55.81-arm64-v8a": "1a10cd6eec62a7234e3d9744c7c26d8a",
     "instagram-piko-v447.0.0.55.81-arm64-v8a": "c661c5ea8677fc82dc1ffc271a6813be",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "8a38b9c3aa3f7ac2b3be6b50c8b0c118",
-    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "9baae3b8afd6a89ca41dc60150254532",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm-v7a": "ef909ab1eeeb6b5cc40e714648c77227",
+    "google-maps-bearinmindcat-v26.36.04.973607363-arm64-v8a": "ab488d28d0a365bd3df9a20212a0aad2",
     "youtube-music-morphe-v9.20.53-arm-v7a": "d63ab17e3a8681f2d2e7f18ba51a1c81",
     "youtube-music-morphe-v9.20.53-arm64-v8a": "85794d6ab2ad6ac70c4a831744954cd4",
     "youtube-morphe-v21.20.405-arm64-v8a": "53218f667e4fd62e33e081a57ec8c69e",
     "youtube-morphe-v21.20.405-arm-v7a": "2aee79d54baf005f944ce172d97d0416",
     "google-photos-rushiranpise-v7.97.0.997578476-arm64-v8a": "2bb23e9ab7f2370b096a19d033fc328a",
     "google-photos-rushiranpise-v7.97.0.997578476-arm-v7a": "a458916f23020a6a7e34165fa461ca4f",
-    "anytracker-hxreborn-v7.5.6-arm-v7a": "ee185f7228a244ebda8fb7277a8d6f6a",
-    "anytracker-hxreborn-v7.5.6-arm64-v8a": "ee185f7228a244ebda8fb7277a8d6f6a",
+    "anytracker-hxreborn-v7.5.6-arm-v7a": "97b81edae0e3b92395302e7e251ed670",
+    "anytracker-hxreborn-v7.5.6-arm64-v8a": "97b81edae0e3b92395302e7e251ed670",
     "linkedin-michii-v4.1.1259-arm64-v8a": "d6e3a1467639cbb72a0b7701c8ad5c9b",
     "linkedin-michii-v4.1.1259-arm-v7a": "1fb323ea73f0eb0d7019196a6f69171e",
     "camscanner-rushiranpise-v7.24.5.2608200000-arm-v7a": "853a3e4422318989402737ffdf19c8b9",
@@ -82,6 +82,8 @@
     "instagram-piko-v452.1.0.53.64-arm64-v8a": "b80c42289dbb032ba7db54688a633df8",
     "instagram-piko-clone-v452.1.0.53.64-arm64-v8a": "5f6ca66da2d32e9076b809236533bec6",
     "truecaller-heval99-v26.44.6-arm-v7a": "77ff361c65a75025665b94bdbe78f9a8",
-    "truecaller-heval99-v26.44.6-arm64-v8a": "69e34b4e9f6467dd9a1160df4bbca141"
+    "truecaller-heval99-v26.44.6-arm64-v8a": "69e34b4e9f6467dd9a1160df4bbca141",
+    "microsoft-edge-quantavil-v157.0.4341.53-arm-v7a": "d23f6101ceee38928008db64421bdcd1",
+    "microsoft-edge-quantavil-v157.0.4341.53-arm64-v8a": "d23f6101ceee38928008db64421bdcd1"
   }
 }
