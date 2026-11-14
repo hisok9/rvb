@@ -175,8 +175,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "bef2cdb711726fe69b665215d0072413",
-      "shared": "cc731049083cedc164ae718dd0a8cc1a"
+      "com.truecaller": "8bb14e69efdbdae1445b647e804944c6",
+      "shared": "48abc57a15fcf2f8d33adf011db47dd1"
     },
     "stable": {
       "com.truecaller": "b6aecfbe5e8512e9b2cfb74fc783bf82",
@@ -255,7 +255,7 @@
     "beta": {},
     "stable": {
       "com.shervinkoushan.anyTracker": "7600c191c688ddf4865a6592694a5e00",
-      "shared": "9bd21bac0080ec36ad94c5ab9c140e4b"
+      "shared": "0c9d85466ef3f1a2549cc1621d86ee36"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -335,9 +335,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "1b3955b3436a31b0a8e5d3c4c0625415",
-      "com.google.android.youtube": "fe2e01e2619720fab2620432ff1fc9d5",
-      "shared": "4f895125eaa9c8e0ea05385d8413bbb9"
+      "com.google.android.apps.youtube.music": "6d84122ca4d63aa698a77f9a2b7545d5",
+      "com.google.android.youtube": "6724c6fe32f4d324ac95b2287eab340c",
+      "shared": "07429c752574f3ab298ee5d5d01b683e"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "208e1dacd9e69e1d6ac02d64e1a6c540",

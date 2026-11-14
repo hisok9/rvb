@@ -3,7 +3,7 @@
   "GoogleMaps-bearinmindcat": {
     "patches-source": "bearinmindcat/morphe-patches",
     "brand": "bearinmindcat",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.google.android.apps.maps",
     "app-name": "Google Maps",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/google-inc/maps",
@@ -234,7 +234,7 @@
   "MicrosoftEdge-quantavil": {
     "patches-source": "quantavil/edge-morphe-patches",
     "brand": "quantavil",
-    "enabled": true,
+    "enabled": false,
     "pkg-name": "com.microsoft.emmx",
     "app-name": "Microsoft Edge",
     "apkmirror-dlurl": "https://www.apkmirror.com/apk/microsoft-corporation/microsoft-edge",
