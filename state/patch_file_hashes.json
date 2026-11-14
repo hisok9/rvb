@@ -63,8 +63,8 @@
   "bearinmindcat/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.google.android.apps.maps": "1dc31644f4e31c2788a9794f7e4c5e31",
-      "shared": "f47ba329d95d0f762d8e1cc33ace781d"
+      "com.google.android.apps.maps": "bada5822a0f451e8526b65f3f5da343c",
+      "shared": "d81f86bf5726fa729e87bd5956d47f33"
     }
   },
   "brosssh/morphe-patches": {
@@ -254,8 +254,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "85ded86644cc44f5bf8153195a3f5b9c",
-      "shared": "d91dccb4c20c04cb198e6088aafb441f"
+      "com.shervinkoushan.anyTracker": "7600c191c688ddf4865a6592694a5e00",
+      "shared": "9bd21bac0080ec36ad94c5ab9c140e4b"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -378,8 +378,8 @@
   "quantavil/edge-morphe-patches": {
     "beta": {},
     "stable": {
-      "com.microsoft.emmx": "6aa60cfb49e4185ad36ce7a8641348d2",
-      "shared": "285c206f162c8d5522d4910243aa3d2a"
+      "com.microsoft.emmx": "d1c41aebb58d0edd60db17d7abb8fa66",
+      "shared": "492f74a9ccd3749d3979d08dd93a06ea"
     }
   },
   "quantro100/morphe-patches": {
