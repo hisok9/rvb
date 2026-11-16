@@ -1,0 +1,15 @@
+[n-Morphe]
+enabled = true
+pkg-name = "y"
+app-name = "n"
+patches-source = "both"
+brand = "MorpheApp/morphe-patches"
+patches-version = "both"
+build-mode = "Morphe"
+variant = "y"
+patch-folder = "y"
+excluded-patches = "n"
+apkmirror-dlurl = "https://apkmirror.com/apk/y"
+uptodown-dlurl = "https://y.en.uptodown.com/android"
+apkpure-dlurl = "https://apkpure.com/y"
+apkcombo-dlurl = "https://apkcombo.com/y"

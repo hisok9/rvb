@@ -25,6 +25,14 @@ app-name = "Google Photos"
 brand = "AkashSriram"
 build-mode = "both"
 patches-source = "Akash-Sriram/morphe-google-photos"
+# v1.18.0 flipped 'GmsCore support' to default-OFF, and it is the only patch in
+# this source that rewrites the manifest package to app.morphe.android.apps.photos.
+# Left unnamed, the apk build keeps com.google.android.apps.photos and so cannot be
+# installed beside stock Photos on an unrooted phone. Naming it here forces the
+# rename back on for apk builds; module builds are unaffected because utils.sh
+# strips -e and forces -d per build mode. 'Official package name' stays default-OFF,
+# so nothing can flip the package back the other way.
+included-patches = "'GmsCore support'"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 
