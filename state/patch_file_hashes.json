@@ -175,8 +175,8 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "72ac5c56d2a789ab8f8cc5824f765009",
-      "shared": "d1c87387b1ce0c2088ec760a9a0e82c1"
+      "com.truecaller": "8cbabf0ea0d56903cba0ed140168ff25",
+      "shared": "7b517c65f3c59ee8f1ace3f39a90c2ba"
     },
     "stable": {
       "com.truecaller": "b6aecfbe5e8512e9b2cfb74fc783bf82",
@@ -340,9 +340,9 @@
       "shared": "19c080895fc4849a352c98f64dc0d767"
     },
     "stable": {
-      "com.google.android.apps.youtube.music": "208e1dacd9e69e1d6ac02d64e1a6c540",
-      "com.google.android.youtube": "b0d90012b8e172e6665dbaa32cf1b246",
-      "shared": "a6f067af81f0c9d47e6d1db136df2db8"
+      "com.google.android.apps.youtube.music": "e46398df179c37761aa86ad25912e086",
+      "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
+      "shared": "19c080895fc4849a352c98f64dc0d767"
     }
   },
   "mvaishak/letterboxd-morphe-patches": {

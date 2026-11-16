@@ -23,8 +23,8 @@
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
-    "stable": "v2.2.0",
-    "stable_date": "2026-11-10T14:41:45Z"
+    "stable": "v2.3.0",
+    "stable_date": "2026-11-16T13:10:51Z"
   },
   "Paresh-Maheshwari/paresh-patches": {
     "beta": "v1.20.1-dev.1",
@@ -108,8 +108,8 @@
     "stable_date": "2026-10-22T16:40:51Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v3.0.0-dev.1",
-    "beta_date": "2026-11-14T18:45:07Z",
+    "beta": "v3.0.0-dev.2",
+    "beta_date": "2026-11-16T17:23:27Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.80.0-dev.3",
-    "beta_date": "2026-11-16T08:45:48Z",
+    "beta": "v1.80.1-dev.1",
+    "beta_date": "2026-11-16T15:36:05Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
