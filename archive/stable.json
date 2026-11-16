@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-16T08:15:59Z"
+    "publishedAt": "2026-11-16T13:19:08Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -2058,16 +2058,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.79.0.mpp"
+        "hxreborn/patches-1.80.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.79.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.80.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260365",
-      "publishedAt": "2026-11-15T12:24:39Z"
+      "originBuild": "260371",
+      "publishedAt": "2026-11-16T13:18:53Z"
     },
     "anytracker-hxreborn-v7.5.6-arm-v7a.apk": {
       "name": "anytracker-hxreborn",
@@ -2082,16 +2082,16 @@
       "subVariant": null,
       "packageName": "com.shervinkoushan.anyTracker",
       "patchSources": [
-        "hxreborn/patches-1.79.0.mpp"
+        "hxreborn/patches-1.80.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.79.0"
+        "https://github.com/hxreborn/morphe-patches/releases/tag/v1.80.0"
       ],
       "appliedPatches": [
         "Unlock Platinum"
       ],
-      "originBuild": "260365",
-      "publishedAt": "2026-11-15T12:24:39Z"
+      "originBuild": "260371",
+      "publishedAt": "2026-11-16T13:18:53Z"
     },
     "linkedin-michii-v4.1.1259-arm64-v8a.apk": {
       "name": "linkedin-michii",
@@ -2566,120 +2566,6 @@
       ],
       "originBuild": "260275",
       "publishedAt": "2026-10-26T15:12:54Z"
-    },
-    "google-photos-akashsriram-v7.98.0.1001971222-arm64-v8a.apk": {
-      "name": "google-photos-akashsriram",
-      "version": "7.98.0.1001971222",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.16.1.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "DCIM & backup control",
-        "Flag manager & Toolkit",
-        "Media engine & AI fixes",
-        "Spoof features",
-        "GmsCore support"
-      ],
-      "originBuild": "260274",
-      "publishedAt": "2026-10-26T09:01:05Z"
-    },
-    "google-photos-akashsriram-v7.98.0.1001971222-arm-v7a.apk": {
-      "name": "google-photos-akashsriram",
-      "version": "7.98.0.1001971222",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm",
-      "fileType": "APK",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.16.1.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "DCIM & backup control",
-        "Flag manager & Toolkit",
-        "Media engine & AI fixes",
-        "Spoof features",
-        "GmsCore support"
-      ],
-      "originBuild": "260274",
-      "publishedAt": "2026-10-26T09:01:05Z"
-    },
-    "google-photos-akashsriram-module-v7.98.0.1001971222-arm64-v8a.zip": {
-      "name": "google-photos-akashsriram",
-      "version": "7.98.0.1001971222",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm64",
-      "fileType": "Module",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.16.1.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "DCIM & backup control",
-        "Flag manager & Toolkit",
-        "Media engine & AI fixes",
-        "Spoof features"
-      ],
-      "originBuild": "260274",
-      "publishedAt": "2026-10-26T09:01:05Z"
-    },
-    "google-photos-akashsriram-module-v7.98.0.1001971222-arm-v7a.zip": {
-      "name": "google-photos-akashsriram",
-      "version": "7.98.0.1001971222",
-      "appKey": "googlephotos",
-      "appName": "Google Photos",
-      "arch": "arm",
-      "fileType": "Module",
-      "brandKey": "akashsriram",
-      "brandName": "AkashSriram",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "app.morphe.android.apps.photos",
-      "patchSources": [
-        "Akash-Sriram/patches-1.16.1.mpp"
-      ],
-      "changelogs": [
-        "https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1"
-      ],
-      "appliedPatches": [
-        "AMOLED dark theme",
-        "DCIM & backup control",
-        "Flag manager & Toolkit",
-        "Media engine & AI fixes",
-        "Spoof features"
-      ],
-      "originBuild": "260274",
-      "publishedAt": "2026-10-26T09:01:05Z"
     },
     "instagram-instafel-clone-v453.0.0.55.79-arm64-v8a.apk": {
       "name": "instagram-instafel-clone",
@@ -5217,10 +5103,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.9.11.mpp"
+        "bearinmindcat/patches-2.10.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.11"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -5256,8 +5142,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260367",
-      "publishedAt": "2026-11-15T19:12:39Z"
+      "originBuild": "260371",
+      "publishedAt": "2026-11-16T13:18:53Z"
     },
     "google-maps-bearinmindcat-v26.44.06.1006895251-arm-v7a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -5272,10 +5158,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.9.11.mpp"
+        "bearinmindcat/patches-2.10.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.11"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.0"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -5311,8 +5197,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260367",
-      "publishedAt": "2026-11-15T19:12:39Z"
+      "originBuild": "260371",
+      "publishedAt": "2026-11-16T13:18:53Z"
     },
     "brave-browser-kveld9-v1.99.57-arm-v7a.apk": {
       "name": "brave-browser-kveld9",
