@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-16T13:19:08Z"
+    "publishedAt": "2026-11-16T18:35:32Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -2906,10 +2906,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -2917,6 +2917,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -2950,7 +2951,6 @@
         "Double tap to seek",
         "Download post images",
         "Downloads",
-        "Enable debugging",
         "Exit fullscreen mode",
         "Feed card layout",
         "Feed video actions",
@@ -2958,6 +2958,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "Hide Shorts components",
         "Hide ads",
@@ -2973,6 +2974,7 @@
         "Hide status bar",
         "Hide timestamp",
         "Hide video action buttons",
+        "Loop count",
         "Loop video",
         "Media notification controls",
         "Miniplayer",
@@ -2990,6 +2992,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -3022,10 +3025,11 @@
         "Wide search bar",
         "Shorts icon style",
         "Player icon style",
-        "Navigation bar"
+        "Navigation bar",
+        "Enable debugging"
       ],
-      "originBuild": "260349",
-      "publishedAt": "2026-11-10T16:33:35Z"
+      "originBuild": "260373",
+      "publishedAt": "2026-11-16T18:35:01Z"
     },
     "youtube-morphe-module-v21.30.216-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -3040,10 +3044,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -3051,6 +3055,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -3084,7 +3089,6 @@
         "Double tap to seek",
         "Download post images",
         "Downloads",
-        "Enable debugging",
         "Exit fullscreen mode",
         "Feed card layout",
         "Feed video actions",
@@ -3092,6 +3096,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "Hide Shorts components",
         "Hide ads",
@@ -3107,6 +3112,7 @@
         "Hide status bar",
         "Hide timestamp",
         "Hide video action buttons",
+        "Loop count",
         "Loop video",
         "Media notification controls",
         "Miniplayer",
@@ -3124,6 +3130,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -3156,10 +3163,11 @@
         "Wide search bar",
         "Shorts icon style",
         "Player icon style",
-        "Navigation bar"
+        "Navigation bar",
+        "Enable debugging"
       ],
-      "originBuild": "260349",
-      "publishedAt": "2026-11-10T16:33:35Z"
+      "originBuild": "260373",
+      "publishedAt": "2026-11-16T18:35:01Z"
     },
     "youtube-morphe-v21.30.216-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -3174,10 +3182,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -3185,6 +3193,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -3218,7 +3227,6 @@
         "Double tap to seek",
         "Download post images",
         "Downloads",
-        "Enable debugging",
         "Exit fullscreen mode",
         "Feed card layout",
         "Feed video actions",
@@ -3226,6 +3234,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "GmsCore support",
         "Hide Shorts components",
@@ -3242,6 +3251,7 @@
         "Hide status bar",
         "Hide timestamp",
         "Hide video action buttons",
+        "Loop count",
         "Loop video",
         "Media notification controls",
         "Miniplayer",
@@ -3259,6 +3269,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -3291,10 +3302,11 @@
         "Wide search bar",
         "Shorts icon style",
         "Player icon style",
-        "Navigation bar"
+        "Navigation bar",
+        "Enable debugging"
       ],
-      "originBuild": "260349",
-      "publishedAt": "2026-11-10T16:33:35Z"
+      "originBuild": "260373",
+      "publishedAt": "2026-11-16T18:35:01Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -3309,10 +3321,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -3320,6 +3332,7 @@
         "Ambient mode",
         "App refresh rate",
         "Ask flyout menu",
+        "Autoplay control",
         "Bypass image region restrictions",
         "Bypass link redirects",
         "Captions",
@@ -3353,7 +3366,6 @@
         "Double tap to seek",
         "Download post images",
         "Downloads",
-        "Enable debugging",
         "Exit fullscreen mode",
         "Feed card layout",
         "Feed video actions",
@@ -3361,6 +3373,7 @@
         "Force animations",
         "Force fullscreen landscape",
         "Force original audio",
+        "Fullscreen playlist panel",
         "Fullscreen video scale",
         "GmsCore support",
         "Hide Shorts components",
@@ -3377,6 +3390,7 @@
         "Hide status bar",
         "Hide timestamp",
         "Hide video action buttons",
+        "Loop count",
         "Loop video",
         "Media notification controls",
         "Miniplayer",
@@ -3394,6 +3408,7 @@
         "Playback buffer",
         "Playback in feeds",
         "Playback speed",
+        "Playlist button",
         "Playlist improvements",
         "PoToken provider",
         "Reload video",
@@ -3426,10 +3441,11 @@
         "Wide search bar",
         "Shorts icon style",
         "Player icon style",
-        "Navigation bar"
+        "Navigation bar",
+        "Enable debugging"
       ],
-      "originBuild": "260349",
-      "publishedAt": "2026-11-10T16:33:35Z"
+      "originBuild": "260373",
+      "publishedAt": "2026-11-16T18:35:01Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -3444,12 +3460,13 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
+        "A-B loop",
         "Android Auto",
         "App refresh rate",
         "Change header",
@@ -3461,6 +3478,8 @@
         "Custom font",
         "Disable DRC audio",
         "Disable QUIC protocol",
+        "Disable audio ducking",
+        "Disable auto captions",
         "Disable dislike redirection",
         "Downloads",
         "Enable audio/video switch",
@@ -3479,6 +3498,8 @@
         "Media notification controls",
         "Miniplayer previous and next buttons",
         "Navigation bar",
+        "Open system share sheet",
+        "Pause when muted",
         "Play albums songs",
         "Playback speed",
         "Playlist tags",
@@ -3486,6 +3507,7 @@
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
+        "Remember video quality",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
         "Return YouTube Dislike",
@@ -3500,8 +3522,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260349",
-      "publishedAt": "2026-11-10T16:33:35Z"
+      "originBuild": "260373",
+      "publishedAt": "2026-11-16T18:35:01Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -3516,12 +3538,13 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
+        "A-B loop",
         "Android Auto",
         "App refresh rate",
         "Change header",
@@ -3533,6 +3556,8 @@
         "Custom font",
         "Disable DRC audio",
         "Disable QUIC protocol",
+        "Disable audio ducking",
+        "Disable auto captions",
         "Disable dislike redirection",
         "Downloads",
         "Enable audio/video switch",
@@ -3551,6 +3576,8 @@
         "Media notification controls",
         "Miniplayer previous and next buttons",
         "Navigation bar",
+        "Open system share sheet",
+        "Pause when muted",
         "Play albums songs",
         "Playback speed",
         "Playlist tags",
@@ -3558,6 +3585,7 @@
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
+        "Remember video quality",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
         "Return YouTube Dislike",
@@ -3572,8 +3600,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260349",
-      "publishedAt": "2026-11-10T16:33:35Z"
+      "originBuild": "260373",
+      "publishedAt": "2026-11-16T18:35:01Z"
     },
     "youtube-music-morphe-v9.30.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -3588,12 +3616,13 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
+        "A-B loop",
         "Android Auto",
         "App refresh rate",
         "Change header",
@@ -3605,6 +3634,8 @@
         "Custom font",
         "Disable DRC audio",
         "Disable QUIC protocol",
+        "Disable audio ducking",
+        "Disable auto captions",
         "Disable dislike redirection",
         "Downloads",
         "Enable audio/video switch",
@@ -3624,6 +3655,8 @@
         "Media notification controls",
         "Miniplayer previous and next buttons",
         "Navigation bar",
+        "Open system share sheet",
+        "Pause when muted",
         "Play albums songs",
         "Playback speed",
         "Playlist tags",
@@ -3631,6 +3664,7 @@
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
+        "Remember video quality",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
         "Return YouTube Dislike",
@@ -3645,8 +3679,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260349",
-      "publishedAt": "2026-11-10T16:33:35Z"
+      "originBuild": "260373",
+      "publishedAt": "2026-11-16T18:35:01Z"
     },
     "youtube-music-morphe-v9.30.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -3661,12 +3695,13 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.2.0.mpp"
+        "MorpheApp/patches-2.3.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0"
       ],
       "appliedPatches": [
+        "A-B loop",
         "Android Auto",
         "App refresh rate",
         "Change header",
@@ -3678,6 +3713,8 @@
         "Custom font",
         "Disable DRC audio",
         "Disable QUIC protocol",
+        "Disable audio ducking",
+        "Disable auto captions",
         "Disable dislike redirection",
         "Downloads",
         "Enable audio/video switch",
@@ -3697,6 +3734,8 @@
         "Media notification controls",
         "Miniplayer previous and next buttons",
         "Navigation bar",
+        "Open system share sheet",
+        "Pause when muted",
         "Play albums songs",
         "Playback speed",
         "Playlist tags",
@@ -3704,6 +3743,7 @@
         "PoToken provider",
         "Remember repeat state",
         "Remember shuffle state",
+        "Remember video quality",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
         "Return YouTube Dislike",
@@ -3718,8 +3758,8 @@
         "Theme",
         "Third-party lyrics"
       ],
-      "originBuild": "260349",
-      "publishedAt": "2026-11-10T16:33:35Z"
+      "originBuild": "260373",
+      "publishedAt": "2026-11-16T18:35:01Z"
     },
     "google-photos-akashsriram-v7.99.0.1007655401-arm64-v8a.apk": {
       "name": "google-photos-akashsriram",
