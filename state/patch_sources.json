@@ -1,7 +1,7 @@
 {
   "Akash-Sriram/morphe-google-photos": {
-    "beta": "v1.18.0-dev.8",
-    "beta_date": "2026-11-13T01:12:13Z",
+    "beta": "v1.18.0-dev.9",
+    "beta_date": "2026-11-16T10:53:17Z",
     "blocked": false,
     "host": "github",
     "repo": "Akash-Sriram/morphe-google-photos",
@@ -18,8 +18,8 @@
     "stable_date": "2026-03-23T06:50:11Z"
   },
   "MorpheApp/morphe-patches": {
-    "beta": "v2.3.0-dev.7",
-    "beta_date": "2026-11-15T11:13:07Z",
+    "beta": "v2.3.0-dev.9",
+    "beta_date": "2026-11-16T11:07:51Z",
     "blocked": false,
     "host": "github",
     "repo": "MorpheApp/morphe-patches",
@@ -68,8 +68,8 @@
     "blocked": false,
     "host": "github",
     "repo": "bearinmindcat/morphe-patches",
-    "stable": "v2.9.11",
-    "stable_date": "2026-11-15T18:42:28Z"
+    "stable": "v2.10.0",
+    "stable_date": "2026-11-16T09:03:26Z"
   },
   "brosssh/morphe-patches": {
     "beta": "v2.8.3-dev.2",
@@ -135,13 +135,13 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.80.0-dev.1",
-    "beta_date": "2026-11-15T19:31:18Z",
+    "beta": "v1.80.0-dev.3",
+    "beta_date": "2026-11-16T08:45:48Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
-    "stable": "v1.79.0",
-    "stable_date": "2026-11-15T07:52:45Z"
+    "stable": "v1.80.0",
+    "stable_date": "2026-11-16T08:55:10Z"
   },
   "instafel/pc-rel": {
     "beta": "",
