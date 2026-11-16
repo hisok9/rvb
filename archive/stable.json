@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-16T18:35:32Z"
+    "publishedAt": "2026-11-16T22:51:52Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -4933,10 +4933,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0.mpp"
+        "heval99/patches-3.0.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -4956,8 +4956,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260354",
-      "publishedAt": "2026-11-12T16:58:45Z"
+      "originBuild": "260374",
+      "publishedAt": "2026-11-16T22:51:35Z"
     },
     "truecaller-heval99-module-v26.44.6-arm64-v8a.zip": {
       "name": "truecaller-heval99",
@@ -4972,10 +4972,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0.mpp"
+        "heval99/patches-3.0.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -4995,8 +4995,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260354",
-      "publishedAt": "2026-11-12T16:58:45Z"
+      "originBuild": "260374",
+      "publishedAt": "2026-11-16T22:51:35Z"
     },
     "truecaller-heval99-v26.44.6-arm-v7a.apk": {
       "name": "truecaller-heval99",
@@ -5011,10 +5011,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0.mpp"
+        "heval99/patches-3.0.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -5035,8 +5035,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260354",
-      "publishedAt": "2026-11-12T16:58:45Z"
+      "originBuild": "260374",
+      "publishedAt": "2026-11-16T22:51:35Z"
     },
     "truecaller-heval99-v26.44.6-arm64-v8a.apk": {
       "name": "truecaller-heval99",
@@ -5051,10 +5051,10 @@
       "subVariant": null,
       "packageName": "com.truecaller",
       "patchSources": [
-        "heval99/patches-2.3.0.mpp"
+        "heval99/patches-3.0.0.mpp"
       ],
       "changelogs": [
-        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0"
+        "https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0"
       ],
       "appliedPatches": [
         "Disable ads",
@@ -5075,8 +5075,8 @@
         "Use SMS for verification codes",
         "Patch settings"
       ],
-      "originBuild": "260354",
-      "publishedAt": "2026-11-12T16:58:45Z"
+      "originBuild": "260374",
+      "publishedAt": "2026-11-16T22:51:35Z"
     },
     "microsoft-edge-quantavil-v157.0.4341.53-arm64-v8a.apk": {
       "name": "microsoft-edge-quantavil",
@@ -5421,6 +5421,70 @@
       ],
       "originBuild": "260369",
       "publishedAt": "2026-11-16T08:15:36Z"
+    },
+    "instagram-instafel-v456.0.0.53.78-arm64-v8a.apk": {
+      "name": "instagram-instafel",
+      "version": "456.0.0.53.78",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "instafel",
+      "brandName": "Instafel",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "instafel/ifl-patcher-core-b7764c7.jar"
+      ],
+      "changelogs": [
+        "https://github.com/instafel/pc-rel/releases/tag/b7764c7-4.7.0"
+      ],
+      "appliedPatches": [
+        "Unlock Developer Options",
+        "Remove Snooze Warning",
+        "Remove Ads",
+        "AMOLED Theme",
+        "Get Generation Info",
+        "Copy Instafel Sources",
+        "Add Initialize Instafel",
+        "Change Home Long Click",
+        "Add App Trigger"
+      ],
+      "originBuild": "260374",
+      "publishedAt": "2026-11-16T22:51:35Z"
+    },
+    "instagram-instafel-v456.0.0.53.78-arm-v7a.apk": {
+      "name": "instagram-instafel",
+      "version": "456.0.0.53.78",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "instafel",
+      "brandName": "Instafel",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "instafel/ifl-patcher-core-b7764c7.jar"
+      ],
+      "changelogs": [
+        "https://github.com/instafel/pc-rel/releases/tag/b7764c7-4.7.0"
+      ],
+      "appliedPatches": [
+        "Unlock Developer Options",
+        "Remove Snooze Warning",
+        "Remove Ads",
+        "AMOLED Theme",
+        "Get Generation Info",
+        "Copy Instafel Sources",
+        "Add Initialize Instafel",
+        "Change Home Long Click",
+        "Add App Trigger"
+      ],
+      "originBuild": "260374",
+      "publishedAt": "2026-11-16T22:51:35Z"
     }
   }
 }
