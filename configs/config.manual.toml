@@ -1,15 +1,19 @@
-# ---- vipinvip.toml ----
+# ---- photos.toml ----
 
-[RailOne-VipinVIP]
+[GooglePhotos-AkashSriram]
 enabled = true
-pkg-name = "org.cris.aikyam"
-app-name = "RailOne"
-brand = "VipinVIP"
-patches-source = "VipinVIP/railone-patches"
-# DL_SRCS order keeps uptodown primary and apkpure as the fallback it reaches
-# only when the download fails. APKPure lists every bundle-supported version
-# (2.1.71/2.1.66/2.1.62 at 245/237/231) where Uptodown agrees on 2.1.66 alone,
-# but serves arm64-v8a only - arm-v7a still resolves through Uptodown.
-uptodown-dlurl = "https://railone.en.uptodown.com/android"
-apkpure-dlurl = "https://apkpure.com/swarail-app/org.cris.aikyam"
-
+pkg-name = "com.google.android.apps.photos"
+app-name = "Google Photos"
+brand = "AkashSriram"
+build-mode = "both"
+patches-source = "Akash-Sriram/morphe-google-photos"
+# v1.18.0 flipped 'GmsCore support' to default-OFF, and it is the only patch in
+# this source that rewrites the manifest package to app.morphe.android.apps.photos.
+# Left unnamed, the apk build keeps com.google.android.apps.photos and so cannot be
+# installed beside stock Photos on an unrooted phone. Naming it here forces the
+# rename back on for apk builds; module builds are unaffected because utils.sh
+# strips -e and forces -d per build mode. 'Official package name' stays default-OFF,
+# so nothing can flip the package back the other way.
+included-patches = "'GmsCore support'"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/photos"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
