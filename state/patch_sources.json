@@ -90,8 +90,8 @@
     "stable_date": "2026-10-25T06:39:44Z"
   },
   "crimera/piko": {
-    "beta": "v3.11.1-dev.1",
-    "beta_date": "2026-11-10T10:19:04Z",
+    "beta": "v3.12.0-dev.1",
+    "beta_date": "2026-11-17T00:10:03Z",
     "blocked": false,
     "host": "github",
     "repo": "crimera/piko",
@@ -135,8 +135,8 @@
     "stable_date": "2026-10-04T18:45:44Z"
   },
   "hxreborn/morphe-patches": {
-    "beta": "v1.81.0-dev.2",
-    "beta_date": "2026-11-16T20:58:33Z",
+    "beta": "v1.81.0-dev.4",
+    "beta_date": "2026-11-16T22:55:17Z",
     "blocked": false,
     "host": "github",
     "repo": "hxreborn/morphe-patches",
@@ -153,8 +153,8 @@
     "stable_date": "2026-11-01T13:27:24Z"
   },
   "kveld9/kveld-morphe-patches": {
-    "beta": "v2.11.0-experimental.13",
-    "beta_date": "2026-11-16T00:13:46Z",
+    "beta": "v2.12.0-experimental.1",
+    "beta_date": "2026-11-16T23:26:20Z",
     "blocked": false,
     "host": "github",
     "repo": "kveld9/kveld-morphe-patches",
