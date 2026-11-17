@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-16T18:29:27Z"
+    "publishedAt": "2026-11-17T00:26:01Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -560,10 +560,10 @@
       "subVariant": "Clone",
       "packageName": "com.instagram.android.piko",
       "patchSources": [
-        "crimera/patches-3.11.1-dev.1.mpp"
+        "crimera/patches-3.12.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.1-dev.1"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.1"
       ],
       "appliedPatches": [
         "Add settings",
@@ -633,8 +633,8 @@
         "Disable Play Store updates",
         "Clone"
       ],
-      "originBuild": "260348",
-      "publishedAt": "2026-11-10T13:08:18Z"
+      "originBuild": "260375",
+      "publishedAt": "2026-11-17T00:25:32Z"
     },
     "instagram-piko-v452.1.0.53.64-arm64-v8a.apk": {
       "name": "instagram-piko",
@@ -649,10 +649,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.1-dev.1.mpp"
+        "crimera/patches-3.12.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.1-dev.1"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.1"
       ],
       "appliedPatches": [
         "Add settings",
@@ -721,8 +721,8 @@
         "View story mentions",
         "Disable Play Store updates"
       ],
-      "originBuild": "260348",
-      "publishedAt": "2026-11-10T13:08:18Z"
+      "originBuild": "260375",
+      "publishedAt": "2026-11-17T00:25:32Z"
     },
     "instagram-piko-module-v452.1.0.53.64-arm64-v8a.zip": {
       "name": "instagram-piko",
@@ -737,10 +737,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.11.1-dev.1.mpp"
+        "crimera/patches-3.12.0-dev.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.11.1-dev.1"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.1"
       ],
       "appliedPatches": [
         "Add settings",
@@ -809,8 +809,8 @@
         "View story mentions",
         "Disable Play Store updates"
       ],
-      "originBuild": "260348",
-      "publishedAt": "2026-11-10T13:08:18Z"
+      "originBuild": "260375",
+      "publishedAt": "2026-11-17T00:25:32Z"
     },
     "youtube-morphe-module-v21.23.492-arm-v7a.zip": {
       "name": "youtube-morphe",
