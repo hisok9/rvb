@@ -34,8 +34,8 @@
     "youtube-morphe-v21.20.405-arm-v7a": "2aee79d54baf005f944ce172d97d0416",
     "google-photos-rushiranpise-v7.97.0.997578476-arm64-v8a": "2bb23e9ab7f2370b096a19d033fc328a",
     "google-photos-rushiranpise-v7.97.0.997578476-arm-v7a": "a458916f23020a6a7e34165fa461ca4f",
-    "anytracker-hxreborn-v7.5.6-arm-v7a": "af9ef9fe5b5c682095c4a89fddc1aeb4",
-    "anytracker-hxreborn-v7.5.6-arm64-v8a": "af9ef9fe5b5c682095c4a89fddc1aeb4",
+    "anytracker-hxreborn-v7.5.6-arm-v7a": "ca627ed1d35b74e362ec9da9c2c30b2b",
+    "anytracker-hxreborn-v7.5.6-arm64-v8a": "ca627ed1d35b74e362ec9da9c2c30b2b",
     "linkedin-michii-v4.1.1259-arm64-v8a": "d6e3a1467639cbb72a0b7701c8ad5c9b",
     "linkedin-michii-v4.1.1259-arm-v7a": "1fb323ea73f0eb0d7019196a6f69171e",
     "camscanner-rushiranpise-v7.24.5.2608200000-arm-v7a": "853a3e4422318989402737ffdf19c8b9",
@@ -85,6 +85,7 @@
     "brave-browser-kveld9-v1.99.57-arm64-v8a": "5c6d53c7a8f878e54ea8baef503ac69b",
     "brave-browser-kveld9-v1.99.57-arm-v7a": "c381a048764451431b71690470a122d4",
     "google-photos-akashsriram-v8.0.0.1011730683-arm-v7a": "fb0f69d94aa926ddf8a24da453b32759",
-    "google-photos-akashsriram-v8.0.0.1011730683-arm64-v8a": "16686ebb47ced1c54469334ab671a4dd"
+    "google-photos-akashsriram-v8.0.0.1011730683-arm64-v8a": "16686ebb47ced1c54469334ab671a4dd",
+    "instagram-hushgram-v456.0.0.53.78-arm64-v8a": "582c43e38a9faed849aa715fd7b3b42c"
   }
 }
