@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-19T14:12:08Z"
+    "publishedAt": "2026-11-20T14:00:09Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -4663,38 +4663,6 @@
       "originBuild": "260350",
       "publishedAt": "2026-11-10T20:20:07Z"
     },
-    "instagram-instafel-v455.0.0.51.72-arm64-v8a.apk": {
-      "name": "instagram-instafel",
-      "version": "455.0.0.51.72",
-      "appKey": "instagram",
-      "appName": "Instagram",
-      "arch": "arm64",
-      "fileType": "APK",
-      "brandKey": "instafel",
-      "brandName": "Instafel",
-      "variant": null,
-      "subVariant": null,
-      "packageName": "com.instagram.android",
-      "patchSources": [
-        "instafel/ifl-patcher-core-b7764c7.jar"
-      ],
-      "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/b7764c7-4.7.0"
-      ],
-      "appliedPatches": [
-        "Unlock Developer Options",
-        "Remove Snooze Warning",
-        "Remove Ads",
-        "AMOLED Theme",
-        "Get Generation Info",
-        "Copy Instafel Sources",
-        "Add Initialize Instafel",
-        "Change Home Long Click",
-        "Add App Trigger"
-      ],
-      "originBuild": "260350",
-      "publishedAt": "2026-11-10T20:20:07Z"
-    },
     "truecaller-heval99-module-v26.44.6-arm-v7a.zip": {
       "name": "truecaller-heval99",
       "version": "26.44.6",
@@ -5482,10 +5450,10 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "instafel/ifl-patcher-core-b7764c7.jar"
+        "instafel/ifl-patcher-core-aa5afbc.jar"
       ],
       "changelogs": [
-        "https://github.com/instafel/pc-rel/releases/tag/b7764c7-4.7.0"
+        "https://github.com/instafel/pc-rel/releases/tag/aa5afbc-4.7.0"
       ],
       "appliedPatches": [
         "Unlock Developer Options",
@@ -5498,8 +5466,108 @@
         "Change Home Long Click",
         "Add App Trigger"
       ],
-      "originBuild": "260384",
-      "publishedAt": "2026-11-19T14:11:52Z"
+      "originBuild": "260386",
+      "publishedAt": "2026-11-20T13:59:48Z"
+    },
+    "instagram-instafel-clone-v456.1.0.56.78-arm-v7a.apk": {
+      "name": "instagram-instafel-clone",
+      "version": "456.1.0.56.78",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "instafel",
+      "brandName": "Instafel",
+      "variant": "Clone",
+      "subVariant": null,
+      "packageName": "com.instafel.android",
+      "patchSources": [
+        "instafel/ifl-patcher-core-aa5afbc.jar"
+      ],
+      "changelogs": [
+        "https://github.com/instafel/pc-rel/releases/tag/aa5afbc-4.7.0"
+      ],
+      "appliedPatches": [
+        "Unlock Developer Options",
+        "Remove Snooze Warning",
+        "Remove Ads",
+        "AMOLED Theme",
+        "Get Generation Info",
+        "Copy Instafel Sources",
+        "Add Initialize Instafel",
+        "Change Home Long Click",
+        "Add App Trigger",
+        "Clone General",
+        "Replace Instagram Strings"
+      ],
+      "originBuild": "260386",
+      "publishedAt": "2026-11-20T13:59:48Z"
+    },
+    "instagram-instafel-clone-v456.1.0.56.78-arm64-v8a.apk": {
+      "name": "instagram-instafel-clone",
+      "version": "456.1.0.56.78",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm64",
+      "fileType": "APK",
+      "brandKey": "instafel",
+      "brandName": "Instafel",
+      "variant": "Clone",
+      "subVariant": null,
+      "packageName": "com.instafel.android",
+      "patchSources": [
+        "instafel/ifl-patcher-core-aa5afbc.jar"
+      ],
+      "changelogs": [
+        "https://github.com/instafel/pc-rel/releases/tag/aa5afbc-4.7.0"
+      ],
+      "appliedPatches": [
+        "Unlock Developer Options",
+        "Remove Snooze Warning",
+        "Remove Ads",
+        "AMOLED Theme",
+        "Get Generation Info",
+        "Copy Instafel Sources",
+        "Add Initialize Instafel",
+        "Change Home Long Click",
+        "Add App Trigger",
+        "Clone General",
+        "Replace Instagram Strings"
+      ],
+      "originBuild": "260386",
+      "publishedAt": "2026-11-20T13:59:48Z"
+    },
+    "instagram-instafel-v456.1.0.56.78-arm-v7a.apk": {
+      "name": "instagram-instafel",
+      "version": "456.1.0.56.78",
+      "appKey": "instagram",
+      "appName": "Instagram",
+      "arch": "arm",
+      "fileType": "APK",
+      "brandKey": "instafel",
+      "brandName": "Instafel",
+      "variant": null,
+      "subVariant": null,
+      "packageName": "com.instagram.android",
+      "patchSources": [
+        "instafel/ifl-patcher-core-aa5afbc.jar"
+      ],
+      "changelogs": [
+        "https://github.com/instafel/pc-rel/releases/tag/aa5afbc-4.7.0"
+      ],
+      "appliedPatches": [
+        "Unlock Developer Options",
+        "Remove Snooze Warning",
+        "Remove Ads",
+        "AMOLED Theme",
+        "Get Generation Info",
+        "Copy Instafel Sources",
+        "Add Initialize Instafel",
+        "Change Home Long Click",
+        "Add App Trigger"
+      ],
+      "originBuild": "260386",
+      "publishedAt": "2026-11-20T13:59:48Z"
     }
   }
 }
