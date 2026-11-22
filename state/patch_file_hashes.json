@@ -175,12 +175,12 @@
   },
   "heval99/heval-morphe-patches": {
     "beta": {
-      "com.truecaller": "cc7d359f43916337f2503c08f654024e",
+      "com.truecaller": "bda011eeac7fdb93360ab8bf9c464422",
       "shared": "7b517c65f3c59ee8f1ace3f39a90c2ba"
     },
     "stable": {
-      "com.truecaller": "cc7d359f43916337f2503c08f654024e",
-      "shared": "d1c87387b1ce0c2088ec760a9a0e82c1"
+      "com.truecaller": "bda011eeac7fdb93360ab8bf9c464422",
+      "shared": "7b517c65f3c59ee8f1ace3f39a90c2ba"
     }
   },
   "heyymichii/michii-patches": {
