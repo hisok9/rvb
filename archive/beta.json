@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-21T19:57:13Z"
+    "publishedAt": "2026-11-22T16:19:57Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -1345,10 +1345,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1463,6 +1463,7 @@
         "Translate posts",
         "Ungroup notifications",
         "Video delay",
+        "Video effects",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
@@ -1472,8 +1473,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260391",
-      "publishedAt": "2026-11-21T19:56:51Z"
+      "originBuild": "260392",
+      "publishedAt": "2026-11-22T16:19:31Z"
     },
     "youtube-morphe-module-v21.30.216-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1488,10 +1489,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1606,6 +1607,7 @@
         "Translate posts",
         "Ungroup notifications",
         "Video delay",
+        "Video effects",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
@@ -1615,8 +1617,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260391",
-      "publishedAt": "2026-11-21T19:56:51Z"
+      "originBuild": "260392",
+      "publishedAt": "2026-11-22T16:19:31Z"
     },
     "youtube-morphe-v21.30.216-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1631,10 +1633,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1750,6 +1752,7 @@
         "Translate posts",
         "Ungroup notifications",
         "Video delay",
+        "Video effects",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
@@ -1759,8 +1762,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260391",
-      "publishedAt": "2026-11-21T19:56:51Z"
+      "originBuild": "260392",
+      "publishedAt": "2026-11-22T16:19:31Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -1775,10 +1778,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1894,6 +1897,7 @@
         "Translate posts",
         "Ungroup notifications",
         "Video delay",
+        "Video effects",
         "Video quality",
         "Voice over translation",
         "Wide search bar",
@@ -1903,8 +1907,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260391",
-      "publishedAt": "2026-11-21T19:56:51Z"
+      "originBuild": "260392",
+      "publishedAt": "2026-11-22T16:19:31Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -1919,10 +1923,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -1950,6 +1954,7 @@
         "Enable swipe to dismiss miniplayer",
         "Force original audio",
         "Force portrait orientation",
+        "Glass menus",
         "Hide ads",
         "Hide flyout menu components",
         "Hide layout components",
@@ -1960,7 +1965,7 @@
         "Navigation bar",
         "Open system share sheet",
         "Pause when muted",
-        "Play albums songs",
+        "Play album songs",
         "Playback speed",
         "Playlist tags",
         "Playlist track tap action",
@@ -1982,10 +1987,11 @@
         "Spoof app version",
         "Spoof video streams",
         "Theme",
+        "Video effects",
         "Third-party lyrics"
       ],
-      "originBuild": "260391",
-      "publishedAt": "2026-11-21T19:56:51Z"
+      "originBuild": "260392",
+      "publishedAt": "2026-11-22T16:19:31Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -2000,10 +2006,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -2031,6 +2037,7 @@
         "Enable swipe to dismiss miniplayer",
         "Force original audio",
         "Force portrait orientation",
+        "Glass menus",
         "Hide ads",
         "Hide flyout menu components",
         "Hide layout components",
@@ -2041,7 +2048,7 @@
         "Navigation bar",
         "Open system share sheet",
         "Pause when muted",
-        "Play albums songs",
+        "Play album songs",
         "Playback speed",
         "Playlist tags",
         "Playlist track tap action",
@@ -2063,10 +2070,11 @@
         "Spoof app version",
         "Spoof video streams",
         "Theme",
+        "Video effects",
         "Third-party lyrics"
       ],
-      "originBuild": "260391",
-      "publishedAt": "2026-11-21T19:56:51Z"
+      "originBuild": "260392",
+      "publishedAt": "2026-11-22T16:19:31Z"
     },
     "youtube-music-morphe-v9.30.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -2081,10 +2089,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -2112,6 +2120,7 @@
         "Enable swipe to dismiss miniplayer",
         "Force original audio",
         "Force portrait orientation",
+        "Glass menus",
         "GmsCore support",
         "Hide ads",
         "Hide flyout menu components",
@@ -2123,7 +2132,7 @@
         "Navigation bar",
         "Open system share sheet",
         "Pause when muted",
-        "Play albums songs",
+        "Play album songs",
         "Playback speed",
         "Playlist tags",
         "Playlist track tap action",
@@ -2145,10 +2154,11 @@
         "Spoof app version",
         "Spoof video streams",
         "Theme",
+        "Video effects",
         "Third-party lyrics"
       ],
-      "originBuild": "260391",
-      "publishedAt": "2026-11-21T19:56:51Z"
+      "originBuild": "260392",
+      "publishedAt": "2026-11-22T16:19:31Z"
     },
     "youtube-music-morphe-v9.30.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -2163,10 +2173,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.7.mpp"
+        "MorpheApp/patches-2.4.0-dev.8.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -2194,6 +2204,7 @@
         "Enable swipe to dismiss miniplayer",
         "Force original audio",
         "Force portrait orientation",
+        "Glass menus",
         "GmsCore support",
         "Hide ads",
         "Hide flyout menu components",
@@ -2205,7 +2216,7 @@
         "Navigation bar",
         "Open system share sheet",
         "Pause when muted",
-        "Play albums songs",
+        "Play album songs",
         "Playback speed",
         "Playlist tags",
         "Playlist track tap action",
@@ -2227,10 +2238,11 @@
         "Spoof app version",
         "Spoof video streams",
         "Theme",
+        "Video effects",
         "Third-party lyrics"
       ],
-      "originBuild": "260391",
-      "publishedAt": "2026-11-21T19:56:51Z"
+      "originBuild": "260392",
+      "publishedAt": "2026-11-22T16:19:31Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
