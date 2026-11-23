@@ -4,7 +4,7 @@
   "meta": {
     "build": "beta",
     "channel": "beta",
-    "publishedAt": "2026-11-23T07:29:27Z"
+    "publishedAt": "2026-11-23T15:31:41Z"
   },
   "files": {
     "youtube-music-morphe-module-v9.20.53-arm-v7a.zip": {
@@ -1345,10 +1345,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1436,13 +1436,17 @@
         "Playback speed",
         "Playlist button",
         "Playlist improvements",
+        "Playlist search",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
+        "Replay slower button",
         "Restore original titles",
         "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Reverse playlist autoplay",
         "Sanitize sharing links",
         "Save to Watch later",
         "Search comments",
@@ -1473,8 +1477,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260392",
-      "publishedAt": "2026-11-22T16:19:31Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "youtube-morphe-module-v21.30.216-arm64-v8a.zip": {
       "name": "youtube-morphe",
@@ -1489,10 +1493,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1580,13 +1584,17 @@
         "Playback speed",
         "Playlist button",
         "Playlist improvements",
+        "Playlist search",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
+        "Replay slower button",
         "Restore original titles",
         "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Reverse playlist autoplay",
         "Sanitize sharing links",
         "Save to Watch later",
         "Search comments",
@@ -1617,8 +1625,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260392",
-      "publishedAt": "2026-11-22T16:19:31Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "youtube-morphe-v21.30.216-arm-v7a.apk": {
       "name": "youtube-morphe",
@@ -1633,10 +1641,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1725,13 +1733,17 @@
         "Playback speed",
         "Playlist button",
         "Playlist improvements",
+        "Playlist search",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
+        "Replay slower button",
         "Restore original titles",
         "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Reverse playlist autoplay",
         "Sanitize sharing links",
         "Save to Watch later",
         "Search comments",
@@ -1762,8 +1774,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260392",
-      "publishedAt": "2026-11-22T16:19:31Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "youtube-morphe-v21.30.216-arm64-v8a.apk": {
       "name": "youtube-morphe",
@@ -1778,10 +1790,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.youtube",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "AI channel filter",
@@ -1870,13 +1882,17 @@
         "Playback speed",
         "Playlist button",
         "Playlist improvements",
+        "Playlist search",
         "PoToken provider",
         "Reload video",
         "Remember live stream playback position",
         "Remove background playback restrictions",
         "Remove viewer discretion dialog",
+        "Replay slower button",
         "Restore original titles",
         "Return YouTube Dislike",
+        "Return YouTube Username",
+        "Reverse playlist autoplay",
         "Sanitize sharing links",
         "Save to Watch later",
         "Search comments",
@@ -1907,8 +1923,8 @@
         "Enable debugging",
         "Android Auto parked app mode"
       ],
-      "originBuild": "260392",
-      "publishedAt": "2026-11-22T16:19:31Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm64-v8a.zip": {
       "name": "youtube-music-morphe",
@@ -1923,10 +1939,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -1990,8 +2006,8 @@
         "Video effects",
         "Third-party lyrics"
       ],
-      "originBuild": "260392",
-      "publishedAt": "2026-11-22T16:19:31Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "youtube-music-morphe-module-v9.30.53-arm-v7a.zip": {
       "name": "youtube-music-morphe",
@@ -2006,10 +2022,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -2073,8 +2089,8 @@
         "Video effects",
         "Third-party lyrics"
       ],
-      "originBuild": "260392",
-      "publishedAt": "2026-11-22T16:19:31Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "youtube-music-morphe-v9.30.53-arm-v7a.apk": {
       "name": "youtube-music-morphe",
@@ -2089,10 +2105,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -2157,8 +2173,8 @@
         "Video effects",
         "Third-party lyrics"
       ],
-      "originBuild": "260392",
-      "publishedAt": "2026-11-22T16:19:31Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "youtube-music-morphe-v9.30.53-arm64-v8a.apk": {
       "name": "youtube-music-morphe",
@@ -2173,10 +2189,10 @@
       "subVariant": null,
       "packageName": "app.morphe.android.apps.youtube.music",
       "patchSources": [
-        "MorpheApp/patches-2.4.0-dev.8.mpp"
+        "MorpheApp/patches-2.4.0-dev.9.mpp"
       ],
       "changelogs": [
-        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8"
+        "https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.9"
       ],
       "appliedPatches": [
         "A-B loop",
@@ -2241,8 +2257,8 @@
         "Video effects",
         "Third-party lyrics"
       ],
-      "originBuild": "260392",
-      "publishedAt": "2026-11-22T16:19:31Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "google-photos-devanced-v7.92.0.977185651-arm-v7a.apk": {
       "name": "google-photos-devanced",
@@ -2679,15 +2695,16 @@
       "subVariant": "Clone",
       "packageName": "com.instagram.android.piko",
       "patchSources": [
-        "crimera/patches-3.12.0-dev.5.mpp"
+        "crimera/patches-3.12.0-dev.6.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.5"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.6"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
         "Copy comment",
+        "Custom emoji font",
         "Custom font",
         "Custom sharing domain",
         "Customise story ring size",
@@ -2701,7 +2718,6 @@
         "Disable double tap like",
         "Disable explore",
         "Disable highlights",
-        "Disable onboarding permission prompts",
         "Disable screenshot detection",
         "Disable stories",
         "Disable story flipping",
@@ -2754,8 +2770,8 @@
         "Disable Play Store updates",
         "Clone"
       ],
-      "originBuild": "260389",
-      "publishedAt": "2026-11-21T01:27:45Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "instagram-piko-module-v456.0.0.53.78-arm64-v8a.zip": {
       "name": "instagram-piko",
@@ -2770,15 +2786,16 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.12.0-dev.5.mpp"
+        "crimera/patches-3.12.0-dev.6.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.5"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.6"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
         "Copy comment",
+        "Custom emoji font",
         "Custom font",
         "Custom sharing domain",
         "Customise story ring size",
@@ -2792,7 +2809,6 @@
         "Disable double tap like",
         "Disable explore",
         "Disable highlights",
-        "Disable onboarding permission prompts",
         "Disable screenshot detection",
         "Disable stories",
         "Disable story flipping",
@@ -2844,8 +2860,8 @@
         "View story mentions",
         "Disable Play Store updates"
       ],
-      "originBuild": "260389",
-      "publishedAt": "2026-11-21T01:27:45Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     },
     "instagram-piko-v456.0.0.53.78-arm64-v8a.apk": {
       "name": "instagram-piko",
@@ -2860,15 +2876,16 @@
       "subVariant": null,
       "packageName": "com.instagram.android",
       "patchSources": [
-        "crimera/patches-3.12.0-dev.5.mpp"
+        "crimera/patches-3.12.0-dev.6.mpp"
       ],
       "changelogs": [
-        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.5"
+        "https://github.com/crimera/piko/releases/tag/v3.12.0-dev.6"
       ],
       "appliedPatches": [
         "Add settings",
         "Change like animation",
         "Copy comment",
+        "Custom emoji font",
         "Custom font",
         "Custom sharing domain",
         "Customise story ring size",
@@ -2882,7 +2899,6 @@
         "Disable double tap like",
         "Disable explore",
         "Disable highlights",
-        "Disable onboarding permission prompts",
         "Disable screenshot detection",
         "Disable stories",
         "Disable story flipping",
@@ -2934,8 +2950,8 @@
         "View story mentions",
         "Disable Play Store updates"
       ],
-      "originBuild": "260389",
-      "publishedAt": "2026-11-21T01:27:45Z"
+      "originBuild": "260398",
+      "publishedAt": "2026-11-23T15:31:03Z"
     }
   }
 }
