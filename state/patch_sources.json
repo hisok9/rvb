@@ -108,8 +108,8 @@
     "stable_date": "2026-10-22T16:40:51Z"
   },
   "heval99/Heval-Morphe-Patches": {
-    "beta": "v3.2.1-dev.1",
-    "beta_date": "2026-11-22T21:56:33Z",
+    "beta": "v3.3.0-dev.1",
+    "beta_date": "2026-11-23T01:05:55Z",
     "blocked": false,
     "host": "github",
     "repo": "heval99/Heval-Morphe-Patches",
