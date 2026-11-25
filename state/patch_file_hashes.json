@@ -254,8 +254,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "7750cf0bcb8c97fbac839e58e19169b6",
-      "shared": "37f553164a229d49689afbcb42b099d2"
+      "com.shervinkoushan.anyTracker": "6a2771586312ef119233f4b7fc786022",
+      "shared": "fa7023c08223475d8a02094c3d435c44"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
@@ -335,9 +335,9 @@
   },
   "morpheapp/morphe-patches": {
     "beta": {
-      "com.google.android.apps.youtube.music": "3cc7e2cc0dc64ed3036e0d4ccdfb6175",
-      "com.google.android.youtube": "eb5c073c8c663a0ae3a647bceab5d82b",
-      "shared": "b6f85dfb5ede416251196929b194d95e"
+      "com.google.android.apps.youtube.music": "973f19e5c2fcd55f88ef5dfccd668634",
+      "com.google.android.youtube": "c731bac796dda299c0df24d322c6a8f2",
+      "shared": "0e007a7ccfdba5821c7e0b138d83a971"
     },
     "stable": {
       "com.google.android.apps.youtube.music": "e46398df179c37761aa86ad25912e086",
