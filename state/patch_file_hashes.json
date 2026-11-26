@@ -340,9 +340,9 @@
       "shared": "68538fa20773c87b6443d10f3b68cbdb"
     },
     "stable": {
-      "com.google.android.apps.youtube.music": "e46398df179c37761aa86ad25912e086",
-      "com.google.android.youtube": "bfda500df262da1a9f05dda701214434",
-      "shared": "19c080895fc4849a352c98f64dc0d767"
+      "com.google.android.apps.youtube.music": "c4de07e4543ea677ccf7c3ea889c9b61",
+      "com.google.android.youtube": "186f73957110d9ee6d7717524ab890f6",
+      "shared": "68538fa20773c87b6443d10f3b68cbdb"
     }
   },
   "mvaishak/letterboxd-morphe-patches": {
