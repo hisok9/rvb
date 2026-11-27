@@ -4,7 +4,7 @@
   "meta": {
     "build": "stable",
     "channel": "stable",
-    "publishedAt": "2026-11-27T00:46:21Z"
+    "publishedAt": "2026-11-27T08:18:21Z"
   },
   "files": {
     "camscanner-hoodles-v7.20.0.2606230000-arm-v7a.apk": {
@@ -4636,10 +4636,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.10.0.mpp"
+        "bearinmindcat/patches-2.10.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.0"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.1"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -4675,8 +4675,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260371",
-      "publishedAt": "2026-11-16T13:18:53Z"
+      "originBuild": "260410",
+      "publishedAt": "2026-11-27T08:18:10Z"
     },
     "google-maps-bearinmindcat-v26.44.06.1006895251-arm-v7a.apk": {
       "name": "google-maps-bearinmindcat",
@@ -4691,10 +4691,10 @@
       "subVariant": null,
       "packageName": "org.ungoogled.android.apps.maps",
       "patchSources": [
-        "bearinmindcat/patches-2.10.0.mpp"
+        "bearinmindcat/patches-2.10.1.mpp"
       ],
       "changelogs": [
-        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.0"
+        "https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.1"
       ],
       "appliedPatches": [
         "120 refresh rate",
@@ -4730,8 +4730,8 @@
         "Zoom controls in navigation",
         "Power saving mode"
       ],
-      "originBuild": "260371",
-      "publishedAt": "2026-11-16T13:18:53Z"
+      "originBuild": "260410",
+      "publishedAt": "2026-11-27T08:18:10Z"
     },
     "brave-browser-kveld9-v1.99.57-arm-v7a.apk": {
       "name": "brave-browser-kveld9",
