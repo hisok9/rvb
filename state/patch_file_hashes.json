@@ -254,8 +254,8 @@
   "hxreborn/morphe-patches": {
     "beta": {},
     "stable": {
-      "com.shervinkoushan.anyTracker": "6a2771586312ef119233f4b7fc786022",
-      "shared": "fa7023c08223475d8a02094c3d435c44"
+      "com.shervinkoushan.anyTracker": "9930d897175c80e8a07d6581efa8e97e",
+      "shared": "03ee10bbbb20579665be4d1433cb3c3c"
     }
   },
   "icysymmetra/tiktok-patches-for-morphe": {
